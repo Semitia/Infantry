@@ -335,7 +335,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,STM32F40_41xxx, MATH_CM4,__FPU_PRESENT=1,__FPU_USED =1, ARM_MATH_CM4, __CC_ARM</Define>
               <Undefine></Undefine>
-              <IncludePath>..\User;..\Mylib;..\Library\CMSIS;..\Library\inc;..\Library\src;..\Task;..\Mylib;..\FreeRTOS\src;..\FreeRTOS\port\MemMang;..\FreeRTOS\port\RVDS\ARM_CM4F;..\FreeRTOS\include</IncludePath>
+              <IncludePath>..\User;..\Mylib;..\Library\CMSIS;..\Library\inc;..\Library\src;..\Task;..\Mylib;..\FreeRTOS\src;..\FreeRTOS\port\MemMang;..\FreeRTOS\port\RVDS\ARM_CM4F;..\FreeRTOS\include;..\Algorithm;..\Hardware;..\Software;..\Task</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -478,16 +478,6 @@
               <FileName>stm32f4xx_rcc.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Library\src\stm32f4xx_rcc.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Task</GroupName>
-          <Files>
-            <File>
-              <FileName>Start_Task.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Task\Start_Task.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -638,6 +628,41 @@
         </Group>
         <Group>
           <GroupName>Algorithm</GroupName>
+          <Files>
+            <File>
+              <FileName>algorithmOfCRC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Algorithm\algorithmOfCRC.c</FilePath>
+            </File>
+            <File>
+              <FileName>pid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Algorithm\pid.c</FilePath>
+            </File>
+            <File>
+              <FileName>filters.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Algorithm\filters.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Software</GroupName>
+        </Group>
+        <Group>
+          <GroupName>Tasks</GroupName>
+          <Files>
+            <File>
+              <FileName>DataReceiveTask.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Task\DataReceiveTask.c</FilePath>
+            </File>
+            <File>
+              <FileName>Start_Task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Task\Start_Task.c</FilePath>
+            </File>
+          </Files>
         </Group>
       </Groups>
     </Target>

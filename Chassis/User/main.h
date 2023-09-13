@@ -47,15 +47,15 @@
 
 /*Task*/
 #include "DataReceiveTask.h"
-#include "DataSendTask.h"
-#include "ChassisTask.h"
-#include "PowerControlTask.h"
-#include "GraphicsSendTask.h"
-#include "CharSendTask.h"
-#include "StartTask.h"
-#include "JumpCal_Task.h"
-#include "SDCardTask.h"
-#include "ZeroCheckTask.h"
+// #include "DataSendTask.h"
+// #include "ChassisTask.h"
+// #include "PowerControlTask.h"
+// #include "GraphicsSendTask.h"
+// #include "CharSendTask.h"
+// #include "StartTask.h"
+// #include "JumpCal_Task.h"
+// #include "SDCardTask.h"
+// #include "ZeroCheckTask.h"
 /*FreeRTOS*/
 #include "FreeRTOS.h"
 #include "task.h"
@@ -65,7 +65,6 @@
 
 
 #define ABS(x) ((x)>0? (x):(-(x))) 
-#define LIMIT_MAX_MIN(x, max, min)	(((x) <= (min)) ? (min):(((x) >= (max)) ? (max) : (x)))
 #define POWER_OFF 0
 #define CHARGE_ENABLE 1
 

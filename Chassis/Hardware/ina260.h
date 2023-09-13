@@ -32,7 +32,7 @@ void INA_READ_Current(void);
 void INA_READ_Vol(void);
 void INA_READ_Power(void);
 short INA260_Read(u8 address, u8 reg);
-float INA_cal_capVol();
+float INA_cal_capVol(void);
 #endif
 
 

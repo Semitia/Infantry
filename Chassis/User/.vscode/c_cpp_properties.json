@@ -13,9 +13,11 @@
                 "d:\\WORK\\RM\\主力考核\\Infantry\\Chassis\\FreeRTOS\\port\\MemMang",
                 "d:\\WORK\\RM\\主力考核\\Infantry\\Chassis\\FreeRTOS\\port\\RVDS\\ARM_CM4F",
                 "d:\\WORK\\RM\\主力考核\\Infantry\\Chassis\\FreeRTOS\\include",
+                "d:\\WORK\\RM\\主力考核\\Infantry\\Chassis\\Algorithm",
+                "d:\\WORK\\RM\\主力考核\\Infantry\\Chassis\\Hardware",
+                "d:\\WORK\\RM\\主力考核\\Infantry\\Chassis\\Software",
                 "D:\\WORK\\SOFTWARES\\MDK5\\ARM\\ARMCC\\include",
-                "D:\\WORK\\SOFTWARES\\MDK5\\ARM\\ARMCC\\include\\rw",
-                "d:\\WORK\\RM\\主力考核\\Infantry\\Chassis\\Hardware"
+                "D:\\WORK\\SOFTWARES\\MDK5\\ARM\\ARMCC\\include\\rw"
             ],
             "defines": [
                 "USE_STDPERIPH_DRIVER",
