@@ -43,10 +43,10 @@
 .\objects\i2c.o: ..\Hardware\counter.h
 .\objects\i2c.o: ..\FreeRTOS\include\os_tick.h
 .\objects\i2c.o: ..\Algorithm\pid.h
-.\objects\i2c.o: ..\Algorithm\FIR.h
 .\objects\i2c.o: ..\Algorithm\DataScope_DP.h
 .\objects\i2c.o: ..\Mylib\algorithmOfCRC.h
 .\objects\i2c.o: ..\Task\DataReceiveTask.h
+.\objects\i2c.o: ..\Task\StartTask.h
 .\objects\i2c.o: ..\FreeRTOS\include\FreeRTOS.h
 .\objects\i2c.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\i2c.o: ..\User\FreeRTOSConfig.h

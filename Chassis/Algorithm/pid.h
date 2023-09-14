@@ -1,5 +1,9 @@
 #ifndef __PID_H
 #define __PID_H
+
+/**
+ * @brief  PID结构体
+*/
 typedef struct PID{
 		float SetPoint;			//设定目标值
 		float SetPointLast;

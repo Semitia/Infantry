@@ -1,5 +1,8 @@
 {
     "files.associations": {
-        "main.h": "c"
+        "main.h": "c",
+        "motor.h": "c",
+        "datascope_dp.h": "c",
+        "pid.h": "c"
     }
 }

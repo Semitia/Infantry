@@ -125,7 +125,7 @@ void CAN1_RX0_IRQHandler()
 	if (CAN_GetITStatus(CAN1,CAN_IT_FMP0)!= RESET) 
 	{
 		CAN_Receive(CAN1, CAN_FIFO0, &rx_message_1);
-		Can1Receive0(rx_message_1);
+		//Can1Receive0(rx_message_1);
 		CAN_ClearITPendingBit(CAN1, CAN_IT_FMP0);
 	}
 }
@@ -140,7 +140,7 @@ void CAN1_RX1_IRQHandler()
 	if (CAN_GetITStatus(CAN1,CAN_IT_FMP1)!= RESET) 
 	{
 		CAN_Receive(CAN1, CAN_FIFO1, &rx_message_1);
-		Can1Receive1(rx_message_1);
+		//Can1Receive1(rx_message_1);
 		CAN_ClearITPendingBit(CAN1, CAN_IT_FMP1);
 	}
 }

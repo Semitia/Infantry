@@ -9,7 +9,7 @@
 
 unsigned char JudgeReceiveBuffer[JudgeBufBiggestSize];
 extern uint8_t Transmit_Pack[128];//裁判系统数据帧
-unsigned char JudgeSend[SEND_MAX_SIZE];
+unsigned char JudgeSend[128];//SEND_MAX_SIZE];
 /**********************************************************************************************************
 *形    参: 无
 *返 回 值: 无
@@ -102,7 +102,7 @@ void UART4_Configuration(void)
 			DMA_InitStructure.DMA_PeripheralBaseAddr = (u32)&(UART4->DR);      //DMA外设地址
 			DMA_InitStructure.DMA_Memory0BaseAddr    = (u32)Transmit_Pack;      //DMA 存储器0地址
 			DMA_InitStructure.DMA_DIR                = DMA_DIR_MemoryToPeripheral;  //存储器到外设模式
-			DMA_InitStructure.DMA_BufferSize         = SEND_MAX_SIZE;       //数据传输量 
+			DMA_InitStructure.DMA_BufferSize         = 128;//SEND_MAX_SIZE;       //数据传输量 
 			DMA_InitStructure.DMA_PeripheralInc      = DMA_PeripheralInc_Disable;   //外设非增量模式
 			DMA_InitStructure.DMA_MemoryInc          = DMA_MemoryInc_Enable;        //存储器增量模式
 			DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_Byte; //外设数据长度:8位

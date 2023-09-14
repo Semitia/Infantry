@@ -43,10 +43,10 @@
 .\objects\ina260.o: ..\Hardware\counter.h
 .\objects\ina260.o: ..\FreeRTOS\include\os_tick.h
 .\objects\ina260.o: ..\Algorithm\pid.h
-.\objects\ina260.o: ..\Algorithm\FIR.h
 .\objects\ina260.o: ..\Algorithm\DataScope_DP.h
 .\objects\ina260.o: ..\Mylib\algorithmOfCRC.h
 .\objects\ina260.o: ..\Task\DataReceiveTask.h
+.\objects\ina260.o: ..\Task\StartTask.h
 .\objects\ina260.o: ..\FreeRTOS\include\FreeRTOS.h
 .\objects\ina260.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\ina260.o: ..\User\FreeRTOSConfig.h

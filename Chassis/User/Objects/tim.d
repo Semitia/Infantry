@@ -43,10 +43,10 @@
 .\objects\tim.o: ..\Hardware\counter.h
 .\objects\tim.o: ..\FreeRTOS\include\os_tick.h
 .\objects\tim.o: ..\Algorithm\pid.h
-.\objects\tim.o: ..\Algorithm\FIR.h
 .\objects\tim.o: ..\Algorithm\DataScope_DP.h
 .\objects\tim.o: ..\Mylib\algorithmOfCRC.h
 .\objects\tim.o: ..\Task\DataReceiveTask.h
+.\objects\tim.o: ..\Task\StartTask.h
 .\objects\tim.o: ..\FreeRTOS\include\FreeRTOS.h
 .\objects\tim.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\tim.o: ..\User\FreeRTOSConfig.h

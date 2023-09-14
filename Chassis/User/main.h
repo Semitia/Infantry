@@ -41,7 +41,6 @@
 #include "os_tick.h"
 /*Algorithm*/
 #include "pid.h"
-#include "FIR.h"
 #include "DataScope_DP.h"
 #include "algorithmOfCRC.h"
 
@@ -52,14 +51,14 @@
 // #include "PowerControlTask.h"
 // #include "GraphicsSendTask.h"
 // #include "CharSendTask.h"
-// #include "StartTask.h"
+ #include "StartTask.h"
 // #include "JumpCal_Task.h"
 // #include "SDCardTask.h"
 // #include "ZeroCheckTask.h"
+
 /*FreeRTOS*/
 #include "FreeRTOS.h"
 #include "task.h"
-
 
 #include "tools.h"
 

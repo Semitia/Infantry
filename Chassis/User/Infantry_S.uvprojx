@@ -402,21 +402,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Mylib</GroupName>
-          <Files>
-            <File>
-              <FileName>algorithmOfCRC.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Mylib\algorithmOfCRC.c</FilePath>
-            </File>
-            <File>
-              <FileName>tim.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Mylib\tim.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>Library</GroupName>
           <Files>
             <File>
@@ -478,6 +463,11 @@
               <FileName>stm32f4xx_rcc.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Library\src\stm32f4xx_rcc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_dac.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Library\src\stm32f4xx_dac.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -580,29 +570,9 @@
               <FilePath>..\Hardware\tim2.c</FilePath>
             </File>
             <File>
-              <FileName>tim4.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Hardware\tim4.c</FilePath>
-            </File>
-            <File>
               <FileName>uart4.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Hardware\uart4.c</FilePath>
-            </File>
-            <File>
-              <FileName>uart5.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Hardware\uart5.c</FilePath>
-            </File>
-            <File>
-              <FileName>uart6.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Hardware\uart6.c</FilePath>
-            </File>
-            <File>
-              <FileName>usart1.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Hardware\usart1.c</FilePath>
             </File>
             <File>
               <FileName>usart2.c</FileName>
@@ -610,19 +580,9 @@
               <FilePath>..\Hardware\usart2.c</FilePath>
             </File>
             <File>
-              <FileName>usart2_2.c</FileName>
+              <FileName>tim.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Hardware\usart2_2.c</FilePath>
-            </File>
-            <File>
-              <FileName>usart3.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Hardware\usart3.c</FilePath>
-            </File>
-            <File>
-              <FileName>WTBI_MOTOR_CONTROL.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Hardware\WTBI_MOTOR_CONTROL.c</FilePath>
+              <FilePath>..\Mylib\tim.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -648,6 +608,13 @@
         </Group>
         <Group>
           <GroupName>Software</GroupName>
+          <Files>
+            <File>
+              <FileName>motor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\motor.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>Tasks</GroupName>

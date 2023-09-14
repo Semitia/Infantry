@@ -43,10 +43,10 @@
 .\objects\can2.o: ..\Hardware\counter.h
 .\objects\can2.o: ..\FreeRTOS\include\os_tick.h
 .\objects\can2.o: ..\Algorithm\pid.h
-.\objects\can2.o: ..\Algorithm\FIR.h
 .\objects\can2.o: ..\Algorithm\DataScope_DP.h
 .\objects\can2.o: ..\Mylib\algorithmOfCRC.h
 .\objects\can2.o: ..\Task\DataReceiveTask.h
+.\objects\can2.o: ..\Task\StartTask.h
 .\objects\can2.o: ..\FreeRTOS\include\FreeRTOS.h
 .\objects\can2.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\can2.o: ..\User\FreeRTOSConfig.h
