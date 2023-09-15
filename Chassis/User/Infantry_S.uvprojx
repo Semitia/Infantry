@@ -614,6 +614,11 @@
               <FileType>1</FileType>
               <FilePath>..\Software\motor.c</FilePath>
             </File>
+            <File>
+              <FileName>Chassis.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\Chassis.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

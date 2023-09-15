@@ -24,7 +24,7 @@
 	  2	     1
 			 |
 ***************************************************************************************/
-#include "main.h"
+#include "can1.h"
 /**********************************************************************************************************
 *函 数 名: CAN1_Configuration
 *功能说明: can1初始化
@@ -43,14 +43,14 @@ void CAN1_Configuration()
 		RCC_APB1PeriphClockCmd(RCC_APB1Periph_CAN1, ENABLE);
 
 		GPIO_PinAFConfig(GPIOA, GPIO_PinSource12, GPIO_AF_CAN1);
-    GPIO_PinAFConfig(GPIOA, GPIO_PinSource11, GPIO_AF_CAN1);
-	
-    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_12 | GPIO_Pin_11;
-    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
-	  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-    GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
-	  GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
-    GPIO_Init(GPIOA, &GPIO_InitStructure);
+		GPIO_PinAFConfig(GPIOA, GPIO_PinSource11, GPIO_AF_CAN1);
+
+		GPIO_InitStructure.GPIO_Pin = GPIO_Pin_12 | GPIO_Pin_11;
+		GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
+		GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+		GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+		GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
+		GPIO_Init(GPIOA, &GPIO_InitStructure);
 
 		/* CAN1 Enabling interrupt */									  
 		NVIC_InitStructure.NVIC_IRQChannel=CAN1_RX0_IRQn;
@@ -113,34 +113,71 @@ void CAN1_Configuration()
 		CAN_ITConfig(CAN1,CAN_IT_TME,ENABLE); 
 }
 
+void addCanMsg(CanMsgList_t* list, CanRxMsg new_msg) {
+	//获取互斥信号量
+	xSemaphoreTake(list->mutex, portMAX_DELAY);
+    // 创建一个新的链表节点
+    CanMsgNode_t* new_node = (CanMsgNode_t*)pvPortMalloc(sizeof(CanMsgNode_t));
+    if (new_node == NULL) {
+        // 内存分配失败
+        printf("内存分配失败\r\n");
+        xSemaphoreGive(list->list_mutex);  // 解锁互斥锁
+        return;
+    }
+
+    // 将新消息存储到新节点中
+    new_node->msg = new_msg;
+    new_node->next = NULL;
+
+    if (list->head == NULL) {
+        // 如果链表为空，新节点就是头节点和尾节点
+        new_node->prev = NULL;
+        list->head = new_node;
+        list->tail = new_node;
+    } else {
+        // 否则，将新节点添加到尾部
+        new_node->prev = list->tail;
+        list->tail->next = new_node;
+        list->tail = new_node;
+    }
+    // 更新消息数量
+    list->num++;
+	//释放互斥信号量
+	xSemaphoreGive(list->mutex);
+}
+
 /**********************************************************************************************************
 *函 数 名: CAN1_RX0_IRQHandler
 *功能说明: can1接收轮毂电机反馈
 *形    参: 无
 *返 回 值: 无
 **********************************************************************************************************/
-CanRxMsg rx_message_1;
+CanRxMsg rx_message;
+CanMsgList_t can1_rx0 = {0};
 void CAN1_RX0_IRQHandler()
 {
 	if (CAN_GetITStatus(CAN1,CAN_IT_FMP0)!= RESET) 
 	{
-		CAN_Receive(CAN1, CAN_FIFO0, &rx_message_1);
-		//Can1Receive0(rx_message_1);
+		CAN_Receive(CAN1, CAN_FIFO0, &rx_message);
+		addCanMsg(&can1_rx0, rx_message);
 		CAN_ClearITPendingBit(CAN1, CAN_IT_FMP0);
 	}
 }
+
 /**********************************************************************************************************
 *函 数 名: CAN1_RX1_IRQHandler
 *功能说明: can1接收舵向中断
 *形    参: 无
 *返 回 值: 无
 **********************************************************************************************************/
+CanMsgList_t can1_rx1 = {0};
 void CAN1_RX1_IRQHandler()
 {
 	if (CAN_GetITStatus(CAN1,CAN_IT_FMP1)!= RESET) 
 	{
-		CAN_Receive(CAN1, CAN_FIFO1, &rx_message_1);
-		//Can1Receive1(rx_message_1);
+		CAN_Receive(CAN1, CAN_FIFO1, rx_message);
+		addCanMsg(&can1_rx1, rx_message);
 		CAN_ClearITPendingBit(CAN1, CAN_IT_FMP1);
 	}
 }
+

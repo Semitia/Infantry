@@ -3,6 +3,9 @@
         "main.h": "c",
         "motor.h": "c",
         "datascope_dp.h": "c",
-        "pid.h": "c"
+        "pid.h": "c",
+        "chassis.h": "c",
+        "can1.h": "c",
+        "chassistask.h": "c"
     }
 }
