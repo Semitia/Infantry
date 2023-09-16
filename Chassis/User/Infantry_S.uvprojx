@@ -604,6 +604,11 @@
               <FileType>1</FileType>
               <FilePath>..\Algorithm\filters.c</FilePath>
             </File>
+            <File>
+              <FileName>myMath.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Algorithm\myMath.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -618,6 +623,11 @@
               <FileName>Chassis.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Software\Chassis.c</FilePath>
+            </File>
+            <File>
+              <FileName>Kinematic.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\Kinematic.c</FilePath>
             </File>
           </Files>
         </Group>

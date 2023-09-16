@@ -8,13 +8,38 @@
 
 #include "motor.h"
 
-void motorInit(Motor_t *m, uint8_t id) {
+void motorInit(Motor_t *m, MotorTypeEnum type, uint8_t id) {
+    m->type_enum = type;
     m->id = id;
     m->temperature = 0;
-    m->raw_angle = 0;
     m->speed = 0;
+    m->last_speed = 0;
     m->current = 0;
     m->angle = 0;
+    m->last_angle = 0;
+    m->revolutions = 0;
+    switch(type) {
+        case RM2006:
+            // m->current_ratio = RM2006_CURRENT_RATIO;
+            // m->rpm_rad = RM2006_RPM_RAD;
+            // m->max_voltage = RM2006_MAX_VOLTAGE;
+            // m->min_voltage = RM2006_MIN_VOLTAGE;
+            break;
+        case RM3508:
+            m->current_ratio = RM3508_CURRENT_RATIO;
+            m->rpm_rad = RM3508_RPM_RAD;
+            // m->max_voltage = RM3508_MAX_VOLTAGE;
+            // m->min_voltage = RM3508_MIN_VOLTAGE;
+            break;
+        case RM6020:
+            m->current_ratio = RM6020_CURRENT_RATIO;
+            m->rpm_rad = RM6020_RPM_RAD;
+            m->max_voltage = GM6020_MAX_VOLTAGE;
+            m->max_current = GM6020_MAX_CURRENT;
+            break;
+        default:
+            break;
+    }
     return;
 }
 

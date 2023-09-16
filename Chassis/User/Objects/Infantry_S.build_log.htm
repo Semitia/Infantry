@@ -22,24 +22,136 @@ Dialog DLL:      TCM.DLL V1.14.14.0
  
 <h2>Project:</h2>
 D:\WORK\RM\Ö÷Á¦¿¼ºË\Infantry\Chassis\User\Infantry_S.uvprojx
-Project File Date:  09/13/2023
+Project File Date:  09/15/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 3 (build 300)', folder: 'D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin'
 Build target 'Target 1'
+compiling counter.c...
+..\Hardware\can2.h(4): error:  #84: invalid combination of type specifiers
+  void CAN2_Configuration(void);
+..\Hardware\counter.c: 0 warnings, 1 error
+compiling can1.c...
+..\Hardware\can1.c(40): error:  #84: invalid combination of type specifiers
+  void CAN1_Configuration()
+..\Hardware\can1.c(129): warning:  #223-D: function "printf" declared implicitly
+          printf("?Ú´æ·???Ê§??\r\n");
+..\Hardware\can1.c(130): error:  #136: struct "__CanMsgList_t" has no field "list_mutex"
+          
+SemaphoreGive(list->list_mutex);  // ???ø»¥³???
+..\Hardware\can1.c(184): error:  #167: argument of type "CanRxMsg" is incompatible with parameter of type "CanRxMsg *"
+  		CAN_Receive(
+AN1, 
+AN_FIFO1, rx_message);
+..\Hardware\can1.c: 1 warning, 3 errors
 compiling can2.c...
-linking...
-.\Objects\Infantry_S.axf: Error: L6218E: Undefined symbol delay_us_f (referred from ina260.o).
-.\Objects\Infantry_S.axf: Error: L6218E: Undefined symbol IWDG_Enable (referred from iwdg.o).
-.\Objects\Infantry_S.axf: Error: L6218E: Undefined symbol IWDG_ReloadCounter (referred from iwdg.o).
-.\Objects\Infantry_S.axf: Error: L6218E: Undefined symbol IWDG_SetPrescaler (referred from iwdg.o).
-.\Objects\Infantry_S.axf: Error: L6218E: Undefined symbol IWDG_SetReload (referred from iwdg.o).
-.\Objects\Infantry_S.axf: Error: L6218E: Undefined symbol IWDG_WriteAccessCmd (referred from iwdg.o).
-.\Objects\Infantry_S.axf: Error: L6218E: Undefined symbol DMAsendflag (referred from uart4.o).
-.\Objects\Infantry_S.axf: Error: L6218E: Undefined symbol Transmit_Pack (referred from uart4.o).
-Not enough information to list image symbols.
-Finished: 1 information, 0 warning and 8 error messages.
-".\Objects\Infantry_S.axf" - 8 Error(s), 0 Warning(s).
+..\Hardware\can2.h(4): error:  #84: invalid combination of type specifiers
+  void CAN2_Configuration(void);
+..\Hardware\can2.c: 0 warnings, 1 error
+compiling main.c...
+..\Hardware\can2.h(4): error:  #84: invalid combination of type specifiers
+  void CAN2_Configuration(void);
+main.c: 0 warnings, 1 error
+compiling i2c.c...
+..\Hardware\can2.h(4): error:  #84: invalid combination of type specifiers
+  void CAN2_Configuration(void);
+..\Hardware\i2c.c: 0 warnings, 1 error
+compiling tim2.c...
+..\Hardware\can2.h(4): error:  #84: invalid combination of type specifiers
+  void CAN2_Configuration(void);
+..\Hardware\tim2.c: 0 warnings, 1 error
+compiling adc.c...
+..\Hardware\can2.h(4): error:  #84: invalid combination of type specifiers
+  void CAN2_Configuration(void);
+..\Hardware\adc.c(127): warning:  #223-D: function "PowerAdc_Configuration" declared implicitly
+      PowerAdc_Configuration();
+..\Hardware\adc.c: 1 warning, 1 error
+compiling usart2.c...
+..\Hardware\can2.h(4): error:  #84: invalid combination of type specifiers
+  void CAN2_Configuration(void);
+..\Hardware\usart2.c: 0 warnings, 1 error
+compiling dac.c...
+..\Hardware\can2.h(4): error:  #84: invalid combination of type specifiers
+  void CAN2_Configuration(void);
+..\Hardware\dac.c: 0 warnings, 1 error
+compiling ina260.c...
+..\Hardware\can2.h(4): error:  #84: invalid combination of type specifiers
+  void CAN2_Configuration(void);
+..\Hardware\ina260.c(22): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	INA260_1.Current = 
+SB_CURRENT * Cur;
+..\Hardware\ina260.c(24): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	INA260_2.Current = 
+SB_CURRENT * Cur;
+..\Hardware\ina260.c(36): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	INA260_1.Voltage = 
+SB_VOLTAGE * Vol;
+..\Hardware\ina260.c(38): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	INA260_2.Voltage = 
+SB_VOLTAGE * Vol;
+..\Hardware\ina260.c: 4 warnings, 1 error
+compiling uart4.c...
+..\Hardware\can2.h(4): error:  #84: invalid combination of type specifiers
+  void CAN2_Configuration(void);
+..\Hardware\uart4.c(22): warning:  #177-D: variable "dma" was declared but never referenced
+  	DMA_InitTypeDef   dma;
+..\Hardware\uart4.c: 1 warning, 1 error
+compiling tim.c...
+..\Hardware\can2.h(4): error:  #84: invalid combination of type specifiers
+  void CAN2_Configuration(void);
+..\Mylib\tim.c: 0 warnings, 1 error
+compiling motor.c...
+..\Software\motor.c(30): error:  #20: identifier "PI" is undefined
+              m->rpm_rad = 
+M3508_RPM_RAD;
+..\Software\motor.c(53): error:  #136: struct "__Motor_t" has no field "raw_angle"
+      m->raw_angle = (data[0] << 8) | data[1];
+..\Software\motor.c(57): error:  #136: struct "__Motor_t" has no field "raw_angle"
+      m->angle = m->raw_angle / 8191.0f * 360.0f;
+..\Software\motor.c(59): warning:  #1-D: last line of file ends without a newline
+  }
+..\Software\motor.c: 1 warning, 3 errors
+compiling algorithmOfCRC.c...
+..\Hardware\can2.h(4): error:  #84: invalid combination of type specifiers
+  void CAN2_Configuration(void);
+..\Algorithm\algorithmOfCRC.c: 0 warnings, 1 error
+compiling pid.c...
+..\Hardware\can2.h(4): error:  #84: invalid combination of type specifiers
+  void CAN2_Configuration(void);
+..\Algorithm\pid.c: 0 warnings, 1 error
+compiling Chassis.c...
+..\Software\Chassis.h(13): error:  #84: invalid combination of type specifiers
+  typedef enum __ChassisTypeEnum{
+..\Software\Chassis.h(22): error:  #65: expected a ";"
+  typedef struct __Velocity_t {
+..\Software\Chassis.h(26): warning:  #12-D: parsing restarts here after previous syntax error
+  }Velocity_t;
+..\Software\Chassis.h(34): error:  #20: identifier "Velocity_t" is undefined
+      Velocity_t real_vel;                            //å®?é™?é€?åº?
+..\Software\Chassis.h(35): error:  #20: identifier "Velocity_t" is undefined
+      Velocity_t target_vel;                          //ç›?æ ?é€?åº?
+..\Software\Chassis.h(38): error:  #20: identifier "Pid_Typedef" is undefined
+      Pid_Typedef pid_speed[8];                       //é€?åº?çŽ?pid
+..\Software\Chassis.h(39): error:  #20: identifier "Pid_Typedef" is undefined
+      Pid_Typedef pid_angle[8];                       //è§?åº?çŽ?pid
+KB: Unexpected type: 0
+error type>(57): warning:  #1-D: last line of file ends without a newline
+  #endif
+KB: Unexpected type: 0
+error type>(32): warning:  #513-D: a value of type "void (*)(Chassis_t *, CanMsgList_t *)" cannot be assigned to an entity of type "void (*)(struct __Chassis_t *)"
+              chassis->update = update_4wheels;
+..\Software\Chassis.c: 3 warnings, 6 errors
+compiling Start_Task.c...
+..\Hardware\can2.h(4): error:  #84: invalid combination of type specifiers
+  void CAN2_Configuration(void);
+..\Task\Start_Task.c(16): warning:  #177-D: variable "CPUTask_Handler" was declared but never referenced
+  static TaskHandle_t CPUTask_Handler; //???ñ¾ä±?
+..\Task\Start_Task.c: 1 warning, 1 error
+compiling DataReceiveTask.c...
+..\Hardware\can2.h(4): error:  #84: invalid combination of type specifiers
+  void CAN2_Configuration(void);
+..\Task\DataReceiveTask.c: 0 warnings, 1 error
+".\Objects\Infantry_S.axf" - 27 Error(s), 12 Warning(s).
 
 <h2>Collection of Component include folders:</h2>
   D:\WORK\RM\Ö÷Á¦¿¼ºË\Infantry\Chassis\User\RTE
@@ -47,7 +159,7 @@ Finished: 1 information, 0 warning and 8 error messages.
 
 <h2>Collection of Component Files used:</h2>
 Target not created.
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>

@@ -4,7 +4,7 @@
 /**
  * @brief  PID结构体
 */
-typedef struct PID{
+typedef struct __PID_t{
 		float SetPoint;			//设定目标值
 		float SetPointLast;
 		float deadband; //死区
@@ -25,7 +25,7 @@ typedef struct PID{
 		float IOut;					//积分输出
 		float DOut;					//微分输出
 	  float OutMax;       //限幅
-}Pid_Typedef;
+}Pid_t;
 
-float PID_Calc(Pid_Typedef * P, float ActualValue);
+float PID_Calc(Pid_t * P, float target, float ActualValue);
 #endif

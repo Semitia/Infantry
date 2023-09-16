@@ -84,6 +84,7 @@ void CAN2_Configuration(void)
 	CAN_ITConfig(CAN2,CAN_IT_FMP0,ENABLE);
 	//CAN_ITConfig(CAN2,CAN_IT_FMP1,ENABLE);
 	CAN_ITConfig(CAN2,CAN_IT_TME,ENABLE);
+	return;
 }
 /**********************************************************************************************************
 *º¯ Êý Ãû: CAN2_TX_IRQHandler

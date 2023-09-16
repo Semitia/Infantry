@@ -6,6 +6,8 @@
         "pid.h": "c",
         "chassis.h": "c",
         "can1.h": "c",
-        "chassistask.h": "c"
+        "chassistask.h": "c",
+        "filters.h": "c",
+        "kinematic.h": "c"
     }
 }

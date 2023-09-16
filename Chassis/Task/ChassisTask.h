@@ -119,7 +119,7 @@ typedef struct{
 	float HalfCAP_Power;
 	//静态配置参数
 	
-	Pid_Typedef pidChassisWheelSpeed[4];//转速控制
+	Pid_t pidChassisWheelSpeed[4];//转速控制
 	
 	float No_limited_Power;//没有限制时跑的功率
 	float Add_HalfCAP_Power;//被动电容时多跑的功率
@@ -171,9 +171,9 @@ typedef struct {
 	Velocity_vector_type Velocity_vectors_last[4];//上一次速度；
 	
 	
-	Pid_Typedef	PIDSteeringCurrent[4];
-	Pid_Typedef	PIDSteeringAngleSpeed[4]; //舵角控制
-	Pid_Typedef	PIDSteeringAnglePosition[4];
+	Pid_t	PIDSteeringCurrent[4];
+	Pid_t	PIDSteeringAngleSpeed[4]; //舵角控制
+	Pid_t	PIDSteeringAnglePosition[4];
 	float Current_set[4];
 	
 	//八个底盘电机发送值

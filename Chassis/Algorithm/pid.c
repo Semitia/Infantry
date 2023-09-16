@@ -2,11 +2,13 @@
 /**
   * @brief  PID反馈算法
   * @param  PID_Struct *P  PID参数结构体
-  *         ActualValue    PID计算反馈量（当前真实检测值）
+  * @param  target         PID设定目标值
+  * @param  ActualValue    PID计算反馈量（当前真实检测值）
   * @retval PID反馈计算输出值
   */
-float PID_Calc(Pid_Typedef *P, float ActualValue)
+float PID_Calc(Pid_t *P, float target, float ActualValue)
 {
+	P->SetPoint = target;
 	P->PreError = P->SetPoint - ActualValue;
 	if(ABS(P->PreError)<P->deadband){
 		return 0;
