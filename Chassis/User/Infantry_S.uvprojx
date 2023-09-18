@@ -629,6 +629,11 @@
               <FileType>1</FileType>
               <FilePath>..\Software\Kinematic.c</FilePath>
             </File>
+            <File>
+              <FileName>Power.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\Power.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

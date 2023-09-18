@@ -9,9 +9,8 @@
 void chassisInit(Chassis_t *chassis, ChassisTypeEnum type_enum) {
     int i=0;
     chassis->type_enum = type_enum;
-    chassis->real_vel.x = 0;
-    chassis->real_vel.y = 0;
-    chassis->real_vel.w = 0;
+    kinematicInit(&(chassis->kinematic));
+
     for(i=0; i<4; i++) {
         motorInit(&(chassis->motor[i]), RM3508, i);
         chassis->pid_speed[i].deadband = 0;
@@ -70,29 +69,4 @@ void chassisInit(Chassis_t *chassis, ChassisTypeEnum type_enum) {
             break;
     }
     return;
-}
-
-/**
- * @brief  麦克纳母轮底盘前向运动学解算
- * @param  Chassis_t *chassis 底盘结构体指针
- * @retval None
- * 
-*/
-void mecanumForKinematic(Chassis_t *chassis) {
-    chassis->real_vel.x = (chassis->motor[0].speed + chassis->motor[1].speed + chassis->motor[2].speed + chassis->motor[3].speed);
-    chassis->real_vel.y = (chassis->motor[0].speed - chassis->motor[1].speed + chassis->motor[2].speed - chassis->motor[3].speed);
-    chassis->real_vel.w = (chassis->motor[0].speed - chassis->motor[1].speed - chassis->motor[2].speed + chassis->motor[3].speed);
-}
-
-/**
- * @brief  麦克纳母轮底盘逆向运动学解算
- * @param  Chassis_t *chassis 底盘结构体指针
- * @retval None
- * 
-*/
-void mecanumInvKinematic(Chassis_t *chassis) { 
-    chassis->motor[0].target_speed = + chassis->target_vel.x + chassis->target_vel.y - chassis->target_vel.w;
-    chassis->motor[1].target_speed = - chassis->target_vel.x + chassis->target_vel.y - chassis->target_vel.w;
-    chassis->motor[2].target_speed = + chassis->target_vel.x - chassis->target_vel.y - chassis->target_vel.w;
-    chassis->motor[3].target_speed = - chassis->target_vel.x - chassis->target_vel.y - chassis->target_vel.w;
 }

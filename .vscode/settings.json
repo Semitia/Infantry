@@ -8,6 +8,7 @@
         "can1.h": "c",
         "chassistask.h": "c",
         "filters.h": "c",
-        "kinematic.h": "c"
+        "kinematic.h": "c",
+        "power.h": "c"
     }
 }
