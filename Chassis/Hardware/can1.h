@@ -29,7 +29,6 @@ extern CanMsgList_t can1_rx1;
 
 void CAN1_Configuration(void);
 void addCanMsg(CanMsgList_t* list, CanRxMsg new_msg);
-void 
 
 #endif
 

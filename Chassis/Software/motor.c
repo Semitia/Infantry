@@ -50,10 +50,11 @@ void motorUpdate(Motor_t *m, uint8_t *data) {
 }
 
 void motorUpdateAll(Motor_t *m, uint8_t *data) {
-    m->raw_angle = (data[0] << 8) | data[1];
+    uint16_t raw_angle = (data[0] << 8) | data[1];							
     m->speed = (data[2] << 8) | data[3];
     m->current = (data[4] << 8) | data[5];
     m->temperature = data[6];
-    m->angle = m->raw_angle / 8191.0f * 360.0f;
+    m->angle = raw_angle / 8191.0f * 360.0f;
     return;
 }
+

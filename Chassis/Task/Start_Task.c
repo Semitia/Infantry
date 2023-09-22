@@ -13,7 +13,7 @@ static TaskHandle_t StartTask_Handler; //任务句柄
 
 #define CPU_TASK_PRIO 20  //任务优先级
 #define CPU_STK_SIZE 512 //任务堆栈
-static TaskHandle_t CPUTask_Handler; //任务句柄
+//static TaskHandle_t CPUTask_Handler; //任务句柄
 
 void start_task(void *pvParameters)
 {

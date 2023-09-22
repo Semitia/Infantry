@@ -1,11 +1,10 @@
 .\objects\chassis.o: ..\Software\Chassis.c
 .\objects\chassis.o: ..\Software\Chassis.h
-.\objects\chassis.o: ..\Software\motor.h
-.\objects\chassis.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\chassis.o: ..\Algorithm\pid.h
+.\objects\chassis.o: ..\Software\Kinematic.h
 .\objects\chassis.o: ..\Hardware\can1.h
 .\objects\chassis.o: ..\User\stm32f4xx.h
 .\objects\chassis.o: ..\Library\CMSIS\core_cm4.h
+.\objects\chassis.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\chassis.o: ..\Library\CMSIS\core_cmInstr.h
 .\objects\chassis.o: ..\Library\CMSIS\core_cmFunc.h
 .\objects\chassis.o: ..\Library\CMSIS\core_cm4_simd.h
@@ -32,3 +31,5 @@
 .\objects\chassis.o: ..\FreeRTOS\include\mpu_wrappers.h
 .\objects\chassis.o: ..\FreeRTOS\include\semphr.h
 .\objects\chassis.o: ..\FreeRTOS\include\queue.h
+.\objects\chassis.o: ..\Algorithm\pid.h
+.\objects\chassis.o: ..\Software\motor.h

@@ -126,8 +126,8 @@ void addCanMsg(CanMsgList_t* list, CanRxMsg new_msg) {
     CanMsgNode_t* new_node = (CanMsgNode_t*)pvPortMalloc(sizeof(CanMsgNode_t));
     if (new_node == NULL) {
         // 内存分配失败
-        printf("内存分配失败\r\n");
-        xSemaphoreGive(list->list_mutex);  // 解锁互斥锁
+        //printf("内存分配失败\r\n");
+        xSemaphoreGive(list->mutex);  // 解锁互斥锁
         return;
     }
 
@@ -151,6 +151,37 @@ void addCanMsg(CanMsgList_t* list, CanRxMsg new_msg) {
 	//释放互斥信号量
 	xSemaphoreGive(list->mutex);
 }
+
+/**
+ * @brief 清空链表
+ * @param list 链表指针
+ * @retval None
+ */
+void clearList(CanMsgList_t *list) {
+    // 获取互斥信号量
+    xSemaphoreTake(list->mutex, portMAX_DELAY);
+
+    // 从头开始遍历链表
+    CanMsgNode_t *node = list->head;
+    while (node != NULL) {
+        // 保存下一个节点的指针
+        CanMsgNode_t *nextNode = node->next;
+
+        // 释放当前节点的内存
+        vPortFree(node);
+
+        // 移动到下一个节点
+        node = nextNode;
+    }
+
+    // 将链表的头和尾都设置为NULL，表示链表已经为空
+    list->head = NULL;
+    list->tail = NULL;
+
+    // 释放互斥信号量
+    xSemaphoreGive(list->mutex);
+}
+
 
 /**********************************************************************************************************
 *函 数 名: CAN1_RX0_IRQHandler
@@ -181,7 +212,7 @@ void CAN1_RX1_IRQHandler()
 {
 	if (CAN_GetITStatus(CAN1,CAN_IT_FMP1)!= RESET) 
 	{
-		CAN_Receive(CAN1, CAN_FIFO1, rx_message);
+		CAN_Receive(CAN1, CAN_FIFO1, &rx_message);
 		addCanMsg(&can1_rx1, rx_message);
 		CAN_ClearITPendingBit(CAN1, CAN_IT_FMP1);
 	}

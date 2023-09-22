@@ -24,10 +24,17 @@ void invKinematic(Kinematic_t *kinematic) {
     return;
 }
 
+
 #elif CHASSIS_TYPE == 1 //麦克纳母轮
 
+/**
+ * @brief 麦克纳母轮底盘初始化
+ * @param kinematic 运动学结构体
+ * @retval None
+*/
 void kinematicInit(Kinematic_t *kinematic) {
     int i=0;
+    kinematic->can_datalist = &can1_rx0;                    //分配一个can接口
     kinematic->real_vel.x = 0;
     kinematic->real_vel.y = 0;
     kinematic->real_vel.w = 0;
@@ -60,9 +67,37 @@ void invKinematic(Kinematic_t *kinematic) {
     return;
 }
 
+/**
+ * @brief 遍历can消息链表并更新电机数据
+ * @param kinematic 运动控制结构体
+ * @retval None
+ * @note 这里电机报文ID为0x201-0x204，因此可以这样方便地接收。
+*/
+void updateWheels(Kinematic_t *kinematic) {
+    uint8_t received_flag[4] = {0};                          //用于判断某序号的电机是否已经接收到了数据
+    CanMsgNode_t *node,*prev_node;
+    CanMsgList_t *p = kinematic->can_datalist;              //指向can消息链表的指针
+    xSemaphoreTake(p->mutex, portMAX_DELAY);                //获取互斥信号量
+    //开始从后向前遍历
+    node = p->tail;
+    while(node != NULL) {
+        uint32_t id = node->msg.StdId;
+        if(!received_flag[id-0x201]) {                      //还没有接收到这个序号的电机数据
+            received_flag[id-0x201] = 1;
+            motorUpdate(&(kinematic->motor[id-0x201]), node->msg.Data);
+        }
+        prev_node = node->prev;                             //保存上一个节点的指针,释放当前节点的内存
+        vPortFree(node);
+        node = prev_node;
+    }
+    xSemaphoreGive(p->mutex);                               //释放互斥信号量
+}
+
 #elif CHASSIS_TYPE == 2 //舵轮
 void kinematicInit(Kinematic_t *kinematic) {
     int i=0;
+    kinematic->can_datalist = &can1_rx0;                    //分配can接口
+    kinematic->can_datalist_steering = &can1_rx1;           
     kinematic->real_vel.x = 0;
     kinematic->real_vel.y = 0;
     kinematic->real_vel.w = 0;

@@ -8,7 +8,7 @@
 #include "main.h"
 
 unsigned char JudgeReceiveBuffer[JudgeBufBiggestSize];
-extern uint8_t Transmit_Pack[128];//裁判系统数据帧
+uint8_t Transmit_Pack[128];//裁判系统数据帧////////////////////////////////////////////////////////
 unsigned char JudgeSend[128];//SEND_MAX_SIZE];
 /**********************************************************************************************************
 *形    参: 无
@@ -141,7 +141,7 @@ void DMA1_Stream2_IRQHandler(void)
 //*形    参: 无
 //*返 回 值: 无
 //**********************************************************************************************************/
-extern uint8_t DMAsendflag;
+uint8_t DMAsendflag;
 void DMA1_Stream4_IRQHandler(void)
 {	
 	if(DMA_GetITStatus(DMA1_Stream4, DMA_IT_TCIF4))
@@ -149,7 +149,7 @@ void DMA1_Stream4_IRQHandler(void)
 		DMA_ClearFlag(DMA1_Stream4, DMA_FLAG_TCIF4);
 		DMA_ClearITPendingBit(DMA1_Stream4, DMA_IT_TCIF4);
 		DMA_Cmd(DMA1_Stream4, DISABLE);			
-        DMAsendflag = 0;
+    DMAsendflag = 0;
 	}
 }
 

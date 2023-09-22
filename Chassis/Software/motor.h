@@ -4,6 +4,7 @@
 #include <stdint.h>
 
 //电机参数宏定义
+#define PI 3.1415926
 #define RM3508_CURRENT_RATIO (20.0/16384.0)         //电流转换比例
 #define RM3508_RPM_RAD (PI/30)
 #define RM3508_R 0.1231
