@@ -189,10 +189,10 @@ void clearList(CanMsgList_t *list) {
 *形    参: 无
 *返 回 值: 无
 **********************************************************************************************************/
-CanRxMsg rx_message;
 CanMsgList_t can1_rx0 = {0};
 void CAN1_RX0_IRQHandler()
 {
+	CanRxMsg rx_message;
 	if (CAN_GetITStatus(CAN1,CAN_IT_FMP0)!= RESET) 
 	{
 		CAN_Receive(CAN1, CAN_FIFO0, &rx_message);
@@ -210,6 +210,7 @@ void CAN1_RX0_IRQHandler()
 CanMsgList_t can1_rx1 = {0};
 void CAN1_RX1_IRQHandler()
 {
+	CanRxMsg rx_message;
 	if (CAN_GetITStatus(CAN1,CAN_IT_FMP1)!= RESET) 
 	{
 		CAN_Receive(CAN1, CAN_FIFO1, &rx_message);

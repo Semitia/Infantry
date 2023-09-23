@@ -44,7 +44,8 @@ typedef struct __Motor_t {
     short last_speed;           //上一次的速度
     short target_speed;         //目标速度
     short current;              //电流, short类型为16位有符号整型
-    float angle;                //角度, 原始角度, 0-8191，对应0-360度
+    short target_current;       //目标电流
+    float angle;                //角度, 原始角度为0-8191，对应0-360度
     float last_angle;           //上一次的角度
     uint8_t revolutions;        //转数
 }Motor_t;

@@ -26,6 +26,8 @@
 .\objects\dac.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\dac.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\dac.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\dac.o: ..\Hardware\cap.h
+.\objects\dac.o: ..\User\main.h
 .\objects\dac.o: ..\Hardware\can1.h
 .\objects\dac.o: ..\FreeRTOS\include\FreeRTOS.h
 .\objects\dac.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
@@ -41,8 +43,7 @@
 .\objects\dac.o: ..\Hardware\usart2.h
 .\objects\dac.o: ..\Hardware\uart4.h
 .\objects\dac.o: ..\Hardware\tim2.h
-.\objects\dac.o: ..\Hardware\tim4.h
-.\objects\dac.o: ..\User\main.h
+.\objects\dac.o: ..\Mylib\tim.h
 .\objects\dac.o: ..\Hardware\iwdg.h
 .\objects\dac.o: ..\Library\inc\stm32f4xx_iwdg.h
 .\objects\dac.o: ..\Hardware\adc.h
@@ -59,6 +60,6 @@
 .\objects\dac.o: ..\Task\ChassisTask.h
 .\objects\dac.o: ..\Task\PowerControlTask.h
 .\objects\dac.o: ..\Task\ZeroCheckTask.h
-.\objects\dac.o: ..\Task\StartTask.h
+.\objects\dac.o: ..\Task\Start_Task.h
 .\objects\dac.o: ..\FreeRTOS\include\task.h
 .\objects\dac.o: ..\FreeRTOS\include\list.h

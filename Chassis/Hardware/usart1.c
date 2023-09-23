@@ -6,8 +6,8 @@
  * @日期     2020.1
 **********************************************************************************************************/
 #include "main.h"
-extern RC_Ctl_t RC_Ctl; 
-volatile unsigned char sbus_rx_buffer[18];
+
+unsigned char sbus_rx_buffer[18];
 /**********************************************************************************************************
 *函 数 名: USART1_Configuration
 *功能说明: 遥控器串口初始化
@@ -31,7 +31,7 @@ void USART1_Configuration(void)
     gpio.GPIO_PuPd = GPIO_PuPd_NOPULL;
 		GPIO_Init(GPIOA,&gpio);
 
-		usart1.USART_BaudRate = 100000;
+		usart1.USART_BaudRate = 115200;
 		usart1.USART_WordLength = USART_WordLength_8b;
 		usart1.USART_StopBits = USART_StopBits_1;
 		usart1.USART_Parity = USART_Parity_Even;
@@ -57,7 +57,7 @@ void USART1_Configuration(void)
 			dma.DMA_PeripheralBaseAddr = (uint32_t)&(USART1->DR);
 			dma.DMA_Memory0BaseAddr = (uint32_t)sbus_rx_buffer;
 			dma.DMA_DIR = DMA_DIR_PeripheralToMemory;
-			dma.DMA_BufferSize = RX_USART1_BUFFER;
+			dma.DMA_BufferSize = 50;
 			dma.DMA_PeripheralInc = DMA_PeripheralInc_Disable;
 			dma.DMA_MemoryInc = DMA_MemoryInc_Enable;
 			dma.DMA_PeripheralDataSize = DMA_PeripheralDataSize_Byte;
@@ -79,7 +79,7 @@ void USART1_Configuration(void)
 *功能说明: USART1遥控器数据闲时中断
 *形    参: 无
 *返 回 值: 无
-**********************************************************************************************************/
+*********************************************************************************************************
 void USART1_IRQHandler(void)
 {
 	static int DATA_LENGTH=0;
@@ -96,4 +96,4 @@ void USART1_IRQHandler(void)
 		DMA_SetCurrDataCounter(DMA2_Stream5,RX_USART1_BUFFER);	
 		DMA_Cmd(DMA2_Stream5,ENABLE);
   }
-}
+}*/

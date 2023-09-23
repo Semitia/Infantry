@@ -86,25 +86,14 @@ void CAN2_Configuration(void)
 	CAN_ITConfig(CAN2,CAN_IT_TME,ENABLE);
 	return;
 }
-/**********************************************************************************************************
-*函 数 名: CAN2_TX_IRQHandler
-*功能说明: can2发送中断
-*形    参: 无
-*返 回 值: 无
-**********************************************************************************************************/
-//void CAN2_TX_IRQHandler(void)
-//{
-//	if (CAN_GetITStatus(CAN2,CAN_IT_TME)!= RESET) 
-//	{
-//		CAN_ClearITPendingBit(CAN2,CAN_IT_TME);
-//	}
-//}
+
 /**********************************************************************************************************
 *函 数 名: CAN2_RX0_IRQHandler
 *功能说明: can2接收中断(Pitch,Yaw电机角度接收)
 *形    参: 无
 *返 回 值: 无
 **********************************************************************************************************/
+CanMsgList_t can2_rx0 = {0};
 void CAN2_RX0_IRQHandler(void)
 {
 	CanRxMsg rx_message0;
@@ -112,22 +101,6 @@ void CAN2_RX0_IRQHandler(void)
 	{
 		CAN_ClearITPendingBit(CAN2, CAN_IT_FMP0);
 		CAN_Receive(CAN2, CAN_FIFO0, &rx_message0);
-		//Can2Receive1(&rx_message0);
+		addCanMsg(&can2_rx0, rx_message0);
 	}
 }
-/**********************************************************************************************************
-*函 数 名: CAN2_RX1_IRQHandler
-*功能说明: can2接收中断(陀螺仪数据接收)
-*形    参: 无
-*返 回 值: 无
-**********************************************************************************************************/
-//void CAN2_RX1_IRQHandler(void)
-//{
-//	CanRxMsg rx_message1;
-//	if (CAN_GetITStatus(CAN2,CAN_IT_FMP1)!= RESET)
-//	{
-//		CAN_ClearITPendingBit(CAN2, CAN_IT_FMP1);
-//		CAN_Receive(CAN2, CAN_FIFO1, &rx_message1);
-//		Can2Receive1(&rx_message1); // ID陀螺仪代码冲突
-//	}
-//}

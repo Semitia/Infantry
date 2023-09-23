@@ -26,6 +26,8 @@
 .\objects\algorithmofcrc_1.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\algorithmofcrc_1.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\algorithmofcrc_1.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\algorithmofcrc_1.o: ..\Hardware\cap.h
+.\objects\algorithmofcrc_1.o: ..\User\main.h
 .\objects\algorithmofcrc_1.o: ..\Hardware\can1.h
 .\objects\algorithmofcrc_1.o: ..\FreeRTOS\include\FreeRTOS.h
 .\objects\algorithmofcrc_1.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
@@ -41,8 +43,7 @@
 .\objects\algorithmofcrc_1.o: ..\Hardware\usart2.h
 .\objects\algorithmofcrc_1.o: ..\Hardware\uart4.h
 .\objects\algorithmofcrc_1.o: ..\Hardware\tim2.h
-.\objects\algorithmofcrc_1.o: ..\Hardware\tim4.h
-.\objects\algorithmofcrc_1.o: ..\User\main.h
+.\objects\algorithmofcrc_1.o: ..\Mylib\tim.h
 .\objects\algorithmofcrc_1.o: ..\Hardware\iwdg.h
 .\objects\algorithmofcrc_1.o: ..\Library\inc\stm32f4xx_iwdg.h
 .\objects\algorithmofcrc_1.o: ..\Hardware\adc.h
@@ -59,6 +60,6 @@
 .\objects\algorithmofcrc_1.o: ..\Task\ChassisTask.h
 .\objects\algorithmofcrc_1.o: ..\Task\PowerControlTask.h
 .\objects\algorithmofcrc_1.o: ..\Task\ZeroCheckTask.h
-.\objects\algorithmofcrc_1.o: ..\Task\StartTask.h
+.\objects\algorithmofcrc_1.o: ..\Task\Start_Task.h
 .\objects\algorithmofcrc_1.o: ..\FreeRTOS\include\task.h
 .\objects\algorithmofcrc_1.o: ..\FreeRTOS\include\list.h

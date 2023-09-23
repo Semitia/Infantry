@@ -4,10 +4,11 @@
  * @版本  	 V1.0
  * @作者     吴磊
  * @日期     2023-9-16
- **********************************************************************************************************/
+ *********************************************************************************************************/
 #include "Kinematic.h"
 
-#if CHASSIS_TYPE == 0 //全向轮
+/****************************************全向轮***********************************************/
+#if CHASSIS_TYPE == 0 
 /**
  * @brief 全向轮底盘正解
  * @param kinematic 运动学结构体
@@ -24,9 +25,8 @@ void invKinematic(Kinematic_t *kinematic) {
     return;
 }
 
-
+/**************************************麦克纳母轮***********************************************/
 #elif CHASSIS_TYPE == 1 //麦克纳母轮
-
 /**
  * @brief 麦克纳母轮底盘初始化
  * @param kinematic 运动学结构体
@@ -93,6 +93,7 @@ void updateWheels(Kinematic_t *kinematic) {
     xSemaphoreGive(p->mutex);                               //释放互斥信号量
 }
 
+/**************************************舵轮***********************************************/
 #elif CHASSIS_TYPE == 2 //舵轮
 void kinematicInit(Kinematic_t *kinematic) {
     int i=0;
@@ -145,4 +146,109 @@ void invKinematic(Kinematic_t *kinematic) {
     return;
 }
 
+/**
+ * @brief 求两个0-360电机位置的绝对距离，适用于舵轮舵角目标的最短旋转距离
+ * @param yaw_now_360 当前位置
+ * @param yaw_set_360 目标位置
+ * @param reverflag 是否反向
+ * @retval 最短移动距离和是否反向，最短旋转距离该函数结果一定能保证不超过90度
+*/
+float calculateShortestDistance(float yaw_now_360, float yaw_set_360,float* reverflag) {
+    float clockwise_distance = fmodf((yaw_set_360 - yaw_now_360 + 360), 360);
+    float counter_clockwise_distance = 360 - clockwise_distance;
+    float reverse_distance = fabsf(fmodf(yaw_set_360 - yaw_now_360 + 180, 360)) - 180;
+
+    float shortest_distance = clockwise_distance;
+	
+    if (counter_clockwise_distance < shortest_distance) {
+        shortest_distance = -counter_clockwise_distance;
+    }
+	*reverflag = 1.0;
+	//如果反向正向距离都要大于90
+	if(ABS(shortest_distance)>90){
+		//翻转
+		float flipped_yaw_now = yaw_now_360 + 180;
+		
+		if (flipped_yaw_now >= 360) {
+			flipped_yaw_now -= 360;
+		}
+		if(clockwise_distance > counter_clockwise_distance)//未翻转前正向大于反向，则反转后取反向
+		{
+			reverse_distance = fmodf((yaw_set_360 - flipped_yaw_now + 360), 360);//求正向距离
+		}else{
+			reverse_distance = -fmodf(flipped_yaw_now - yaw_set_360 + 360, 360);//求反向距离
+		}
+		*reverflag = -1.0;
+        shortest_distance = reverse_distance;
+	}
+
+    return shortest_distance;
+}
+
+/**
+ * @brief 使用can通信发送舵轮电机角度
+*/
+void SteerCan1Send(short a,short b,short c,short d)
+{
+	CanTxMsg tx_message;
+	tx_message.IDE = CAN_ID_STD;    
+	tx_message.RTR = CAN_RTR_DATA; 
+	tx_message.DLC = 0x08;    
+	tx_message.StdId = 0x1FF;
+	a=LIMIT_MAX_MIN(a,30000,-30000);
+	b=LIMIT_MAX_MIN(b,30000,-30000);
+	c=LIMIT_MAX_MIN(c,30000,-30000);
+	d=LIMIT_MAX_MIN(d,30000,-30000);
+	tx_message.Data[0] = (unsigned char)((a>>8)&0xff);
+	tx_message.Data[1] = (unsigned char)(a&0xff);  
+	tx_message.Data[2] = (unsigned char)((b>>8)&0xff);
+	tx_message.Data[3] = (unsigned char)(b&0xff);
+	tx_message.Data[4] = (unsigned char)((c>>8)&0xff);
+	tx_message.Data[5] = (unsigned char)(c&0xff);
+	tx_message.Data[6] = (unsigned char)((d>>8)&0xff);
+	tx_message.Data[7] = (unsigned char)(d&0xff);
+	CAN_Transmit(CAN1,&tx_message);
+	
+}
+
 #endif
+
+
+/**
+ * @brief 速度向量相加
+ * @param a 向量a
+ * @param b 向量b
+ * @retval 相加后的向量
+*/
+Velocity_t addVector(Velocity_t *a, Velocity_t *b) {
+    Velocity_t temp;
+    float a_yaw = DEG2R(a->w);
+    float b_yaw = DEG2R(b->w);
+    float x = a->x * arm_cos_f32(a_yaw) + b->x * arm_cos_f32(b_yaw);
+    float y = a->y * arm_sin_f32(a_yaw) + b->y * arm_sin_f32(b_yaw);
+    arm_sqrt_f32(x * x + y * y,&(temp.x));
+    temp.w = R2DEG(atan2(y, x));
+    return temp;
+}
+
+/**
+ * @brief 使用Can通信发送电机期望电流
+*/
+void setMotorCurrent(Kinematic_t *kinematic) {
+    CanTxMsg tx_msg;
+    tx_msg.IDE = CAN_ID_STD;
+    tx_msg.RTR = CAN_RTR_DATA;
+    tx_msg.DLC = 0x08;
+    tx_msg.StdId = 0x200;
+
+    tx_msg.Data[0] = (uint8_t)((kinematic->motor[0].target_current >> 8)&0xff);
+    tx_msg.Data[1] = (uint8_t)(kinematic->motor[0].target_current&0xff);
+    tx_msg.Data[2] = (uint8_t)((kinematic->motor[1].target_current >> 8)&0xff);
+    tx_msg.Data[3] = (uint8_t)(kinematic->motor[1].target_current&0xff);
+    tx_msg.Data[4] = (uint8_t)((kinematic->motor[2].target_current >> 8)&0xff);
+    tx_msg.Data[5] = (uint8_t)(kinematic->motor[2].target_current&0xff);
+    tx_msg.Data[6] = (uint8_t)((kinematic->motor[3].target_current >> 8)&0xff);
+    tx_msg.Data[7] = (uint8_t)(kinematic->motor[3].target_current&0xff);
+    CAN_Transmit(kinematic->can_tx, &tx_msg);
+    return;
+}

@@ -26,12 +26,13 @@
 #include <stdlib.h>
 
 /*Hardware*/
+#include "cap.h"
 #include "can1.h"
 #include "can2.h"
 #include "usart2.h"
 #include "uart4.h"
 #include "tim2.h"
-#include "tim4.h"
+#include "tim.h"
 #include "iwdg.h"
 #include "adc.h"
 #include "dac.h"
@@ -51,10 +52,10 @@
 // #include "PowerControlTask.h"
 // #include "GraphicsSendTask.h"
 // #include "CharSendTask.h"
- #include "StartTask.h"
 // #include "JumpCal_Task.h"
 // #include "SDCardTask.h"
 // #include "ZeroCheckTask.h"
+#include "Start_Task.h"
 
 /*FreeRTOS*/
 #include "FreeRTOS.h"

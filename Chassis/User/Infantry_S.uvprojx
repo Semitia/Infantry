@@ -469,6 +469,21 @@
               <FileType>1</FileType>
               <FilePath>..\Library\src\stm32f4xx_dac.c</FilePath>
             </File>
+            <File>
+              <FileName>stm32f4xx_iwdg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Library\src\stm32f4xx_iwdg.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Library\src\stm32f4xx_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_dbgmcu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Library\src\stm32f4xx_dbgmcu.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -580,9 +595,19 @@
               <FilePath>..\Hardware\usart2.c</FilePath>
             </File>
             <File>
+              <FileName>cap.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\cap.c</FilePath>
+            </File>
+            <File>
               <FileName>tim.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Mylib\tim.c</FilePath>
+            </File>
+            <File>
+              <FileName>usart1.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\usart1.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -608,6 +633,16 @@
               <FileName>myMath.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Algorithm\myMath.c</FilePath>
+            </File>
+            <File>
+              <FileName>tool.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Algorithm\tool.c</FilePath>
+            </File>
+            <File>
+              <FileName>Matrix.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Algorithm\Matrix.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -648,6 +683,11 @@
               <FileName>Start_Task.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Task\Start_Task.c</FilePath>
+            </File>
+            <File>
+              <FileName>ChassisTask.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Task\ChassisTask.c</FilePath>
             </File>
           </Files>
         </Group>

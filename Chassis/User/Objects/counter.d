@@ -26,6 +26,8 @@
 .\objects\counter.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\counter.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\counter.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\counter.o: ..\Hardware\cap.h
+.\objects\counter.o: ..\User\main.h
 .\objects\counter.o: ..\Hardware\can1.h
 .\objects\counter.o: ..\FreeRTOS\include\FreeRTOS.h
 .\objects\counter.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
@@ -41,8 +43,7 @@
 .\objects\counter.o: ..\Hardware\usart2.h
 .\objects\counter.o: ..\Hardware\uart4.h
 .\objects\counter.o: ..\Hardware\tim2.h
-.\objects\counter.o: ..\Hardware\tim4.h
-.\objects\counter.o: ..\User\main.h
+.\objects\counter.o: ..\Mylib\tim.h
 .\objects\counter.o: ..\Hardware\iwdg.h
 .\objects\counter.o: ..\Library\inc\stm32f4xx_iwdg.h
 .\objects\counter.o: ..\Hardware\adc.h
@@ -59,6 +60,6 @@
 .\objects\counter.o: ..\Task\ChassisTask.h
 .\objects\counter.o: ..\Task\PowerControlTask.h
 .\objects\counter.o: ..\Task\ZeroCheckTask.h
-.\objects\counter.o: ..\Task\StartTask.h
+.\objects\counter.o: ..\Task\Start_Task.h
 .\objects\counter.o: ..\FreeRTOS\include\task.h
 .\objects\counter.o: ..\FreeRTOS\include\list.h

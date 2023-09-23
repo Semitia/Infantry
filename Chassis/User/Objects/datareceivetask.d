@@ -26,6 +26,8 @@
 .\objects\datareceivetask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\datareceivetask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\datareceivetask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\datareceivetask.o: ..\Hardware\cap.h
+.\objects\datareceivetask.o: ..\User\main.h
 .\objects\datareceivetask.o: ..\Hardware\can1.h
 .\objects\datareceivetask.o: ..\FreeRTOS\include\FreeRTOS.h
 .\objects\datareceivetask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
@@ -41,8 +43,7 @@
 .\objects\datareceivetask.o: ..\Hardware\usart2.h
 .\objects\datareceivetask.o: ..\Hardware\uart4.h
 .\objects\datareceivetask.o: ..\Hardware\tim2.h
-.\objects\datareceivetask.o: ..\Hardware\tim4.h
-.\objects\datareceivetask.o: ..\User\main.h
+.\objects\datareceivetask.o: ..\Mylib\tim.h
 .\objects\datareceivetask.o: ..\Hardware\iwdg.h
 .\objects\datareceivetask.o: ..\Library\inc\stm32f4xx_iwdg.h
 .\objects\datareceivetask.o: ..\Hardware\adc.h
@@ -59,6 +60,6 @@
 .\objects\datareceivetask.o: ..\Task\ChassisTask.h
 .\objects\datareceivetask.o: ..\Task\PowerControlTask.h
 .\objects\datareceivetask.o: ..\Task\ZeroCheckTask.h
-.\objects\datareceivetask.o: ..\Task\StartTask.h
+.\objects\datareceivetask.o: ..\Task\Start_Task.h
 .\objects\datareceivetask.o: ..\FreeRTOS\include\task.h
 .\objects\datareceivetask.o: ..\FreeRTOS\include\list.h

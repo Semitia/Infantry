@@ -9,6 +9,13 @@
         "chassistask.h": "c",
         "filters.h": "c",
         "kinematic.h": "c",
-        "power.h": "c"
+        "power.h": "c",
+        "can2.h": "c",
+        "matrix.h": "c",
+        "math.h": "c",
+        "stdio.h": "c",
+        "freertos.h": "c",
+        "cap.h": "c",
+        "mymath.h": "c"
     }
 }

@@ -8,8 +8,8 @@
 #define REG_CURRENT		0x01
 #define REG_VOLTAGE 	0x02
 #define REG_POWER			0x03
-#define LSB_CURRENT		1.25	//mA
-#define LSB_VOLTAGE 	1.25	//mV
+#define LSB_CURRENT		1.25f	//mA
+#define LSB_VOLTAGE 	1.25f	//mV
 #define LSB_POWER			10		//mW
 //#define  I_Max 				5
 #define CAP_VOLTAGE_LOW 11

@@ -19,7 +19,6 @@ void UART4_Configuration(void)
 	USART_InitTypeDef usart;
 	GPIO_InitTypeDef  gpio;
 	NVIC_InitTypeDef  nvic;
-	DMA_InitTypeDef   dma;
 		
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOC,ENABLE);
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_UART4,ENABLE);

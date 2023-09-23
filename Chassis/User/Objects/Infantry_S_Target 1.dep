@@ -1,6 +1,6 @@
 Dependencies for Project 'Infantry_S', Target 'Target 1': (DO NOT MODIFY !)
-F (.\main.c)(0x650315F3)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (main.h)(0x650463A3)
+F (.\main.c)(0x650EF19F)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (main.h)(0x650EF2CF)
 I (..\User\stm32f4xx.h)(0x6437E243)
 I (..\Library\CMSIS\core_cm4.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -25,6 +25,8 @@ I (..\Library\CMSIS\arm_math.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+I (..\Hardware\cap.h)(0x650EE103)
+I (..\User\main.h)(0x650EF2CF)
 I (..\Hardware\can1.h)(0x650C4044)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
@@ -36,18 +38,17 @@ I (..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h)(0x6437E243)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x6437E243)
 I (..\FreeRTOS\include\semphr.h)(0x6437E243)
 I (..\FreeRTOS\include\queue.h)(0x6437E243)
-I (..\Hardware\can2.h)(0x650C3B49)
+I (..\Hardware\can2.h)(0x650D0B8B)
 I (..\Hardware\usart2.h)(0x62F84D4C)
 I (..\Hardware\uart4.h)(0x62F84D4C)
 I (..\Hardware\tim2.h)(0x62F84D4C)
-I (..\Hardware\tim4.h)(0x62F84D4C)
-I (..\User\main.h)(0x650463A3)
+I (..\Mylib\tim.h)(0x6437E243)
 I (..\Hardware\iwdg.h)(0x62F84D4C)
 I (..\Library\inc\stm32f4xx_iwdg.h)(0x6437E243)
-I (..\Hardware\adc.h)(0x649E9EF0)
+I (..\Hardware\adc.h)(0x650EE021)
 I (..\FreeRTOS\include\tools.h)(0x6501D19F)
 I (..\Hardware\dac.h)(0x62F84D4C)
-I (..\Hardware\ina260.h)(0x6501D15F)
+I (..\Hardware\ina260.h)(0x650EEF9E)
 I (..\Hardware\i2c.h)(0x62F84D4C)
 I (..\Hardware\counter.h)(0x64BF93ED)
 I (..\FreeRTOS\include\os_tick.h)(0x64413CB4)
@@ -58,7 +59,7 @@ I (..\Task\DataReceiveTask.h)(0x64B39C51)
 I (..\Task\ChassisTask.h)(0x6505A180)
 I (..\Task\PowerControlTask.h)(0x64FB14BB)
 I (..\Task\ZeroCheckTask.h)(0x64B52A49)
-I (..\Task\StartTask.h)(0x64451DD6)
+I (..\Task\Start_Task.h)(0x650EF333)
 I (..\FreeRTOS\include\task.h)(0x6437E243)
 I (..\FreeRTOS\include\list.h)(0x6437E243)
 F (.\stm32f4xx_it.c)(0x6437E243)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\stm32f4xx_it.o --omf_browse .\objects\stm32f4xx_it.crf --depend .\objects\stm32f4xx_it.d)
@@ -643,7 +644,7 @@ I (..\FreeRTOS\include\mpu_wrappers.h)(0x6437E243)
 I (..\FreeRTOS\include\task.h)(0x6437E243)
 I (..\FreeRTOS\include\list.h)(0x6437E243)
 F (..\Hardware\adc.c)(0x650C4218)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
-I (..\User\main.h)(0x650463A3)
+I (..\User\main.h)(0x650EF2CF)
 I (..\User\stm32f4xx.h)(0x6437E243)
 I (..\Library\CMSIS\core_cm4.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -668,6 +669,7 @@ I (..\Library\CMSIS\arm_math.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+I (..\Hardware\cap.h)(0x650EE103)
 I (..\Hardware\can1.h)(0x650C4044)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
@@ -679,17 +681,17 @@ I (..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h)(0x6437E243)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x6437E243)
 I (..\FreeRTOS\include\semphr.h)(0x6437E243)
 I (..\FreeRTOS\include\queue.h)(0x6437E243)
-I (..\Hardware\can2.h)(0x650C3B49)
+I (..\Hardware\can2.h)(0x650D0B8B)
 I (..\Hardware\usart2.h)(0x62F84D4C)
 I (..\Hardware\uart4.h)(0x62F84D4C)
 I (..\Hardware\tim2.h)(0x62F84D4C)
-I (..\Hardware\tim4.h)(0x62F84D4C)
+I (..\Mylib\tim.h)(0x6437E243)
 I (..\Hardware\iwdg.h)(0x62F84D4C)
 I (..\Library\inc\stm32f4xx_iwdg.h)(0x6437E243)
-I (..\Hardware\adc.h)(0x649E9EF0)
+I (..\Hardware\adc.h)(0x650EE021)
 I (..\FreeRTOS\include\tools.h)(0x6501D19F)
 I (..\Hardware\dac.h)(0x62F84D4C)
-I (..\Hardware\ina260.h)(0x6501D15F)
+I (..\Hardware\ina260.h)(0x650EEF9E)
 I (..\Hardware\i2c.h)(0x62F84D4C)
 I (..\Hardware\counter.h)(0x64BF93ED)
 I (..\FreeRTOS\include\os_tick.h)(0x64413CB4)
@@ -700,10 +702,10 @@ I (..\Task\DataReceiveTask.h)(0x64B39C51)
 I (..\Task\ChassisTask.h)(0x6505A180)
 I (..\Task\PowerControlTask.h)(0x64FB14BB)
 I (..\Task\ZeroCheckTask.h)(0x64B52A49)
-I (..\Task\StartTask.h)(0x64451DD6)
+I (..\Task\Start_Task.h)(0x650EF333)
 I (..\FreeRTOS\include\task.h)(0x6437E243)
 I (..\FreeRTOS\include\list.h)(0x6437E243)
-F (..\Hardware\can1.c)(0x650D03E9)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\can1.o --omf_browse .\objects\can1.crf --depend .\objects\can1.d)
+F (..\Hardware\can1.c)(0x650D09D9)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\can1.o --omf_browse .\objects\can1.crf --depend .\objects\can1.d)
 I (..\Hardware\can1.h)(0x650C4044)
 I (..\User\stm32f4xx.h)(0x6437E243)
 I (..\Library\CMSIS\core_cm4.h)(0x6437E243)
@@ -733,8 +735,8 @@ I (..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h)(0x6437E243)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x6437E243)
 I (..\FreeRTOS\include\semphr.h)(0x6437E243)
 I (..\FreeRTOS\include\queue.h)(0x6437E243)
-F (..\Hardware\can2.c)(0x6505A34E)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\can2.o --omf_browse .\objects\can2.crf --depend .\objects\can2.d)
-I (..\User\main.h)(0x650463A3)
+F (..\Hardware\can2.c)(0x650D0A47)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\can2.o --omf_browse .\objects\can2.crf --depend .\objects\can2.d)
+I (..\User\main.h)(0x650EF2CF)
 I (..\User\stm32f4xx.h)(0x6437E243)
 I (..\Library\CMSIS\core_cm4.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -759,6 +761,7 @@ I (..\Library\CMSIS\arm_math.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+I (..\Hardware\cap.h)(0x650EE103)
 I (..\Hardware\can1.h)(0x650C4044)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
@@ -770,17 +773,17 @@ I (..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h)(0x6437E243)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x6437E243)
 I (..\FreeRTOS\include\semphr.h)(0x6437E243)
 I (..\FreeRTOS\include\queue.h)(0x6437E243)
-I (..\Hardware\can2.h)(0x650C3B49)
+I (..\Hardware\can2.h)(0x650D0B8B)
 I (..\Hardware\usart2.h)(0x62F84D4C)
 I (..\Hardware\uart4.h)(0x62F84D4C)
 I (..\Hardware\tim2.h)(0x62F84D4C)
-I (..\Hardware\tim4.h)(0x62F84D4C)
+I (..\Mylib\tim.h)(0x6437E243)
 I (..\Hardware\iwdg.h)(0x62F84D4C)
 I (..\Library\inc\stm32f4xx_iwdg.h)(0x6437E243)
-I (..\Hardware\adc.h)(0x649E9EF0)
+I (..\Hardware\adc.h)(0x650EE021)
 I (..\FreeRTOS\include\tools.h)(0x6501D19F)
 I (..\Hardware\dac.h)(0x62F84D4C)
-I (..\Hardware\ina260.h)(0x6501D15F)
+I (..\Hardware\ina260.h)(0x650EEF9E)
 I (..\Hardware\i2c.h)(0x62F84D4C)
 I (..\Hardware\counter.h)(0x64BF93ED)
 I (..\FreeRTOS\include\os_tick.h)(0x64413CB4)
@@ -791,11 +794,11 @@ I (..\Task\DataReceiveTask.h)(0x64B39C51)
 I (..\Task\ChassisTask.h)(0x6505A180)
 I (..\Task\PowerControlTask.h)(0x64FB14BB)
 I (..\Task\ZeroCheckTask.h)(0x64B52A49)
-I (..\Task\StartTask.h)(0x64451DD6)
+I (..\Task\Start_Task.h)(0x650EF333)
 I (..\FreeRTOS\include\task.h)(0x6437E243)
 I (..\FreeRTOS\include\list.h)(0x6437E243)
 F (..\Hardware\counter.c)(0x64BF93D7)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\counter.o --omf_browse .\objects\counter.crf --depend .\objects\counter.d)
-I (..\User\main.h)(0x650463A3)
+I (..\User\main.h)(0x650EF2CF)
 I (..\User\stm32f4xx.h)(0x6437E243)
 I (..\Library\CMSIS\core_cm4.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -820,6 +823,7 @@ I (..\Library\CMSIS\arm_math.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+I (..\Hardware\cap.h)(0x650EE103)
 I (..\Hardware\can1.h)(0x650C4044)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
@@ -831,17 +835,17 @@ I (..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h)(0x6437E243)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x6437E243)
 I (..\FreeRTOS\include\semphr.h)(0x6437E243)
 I (..\FreeRTOS\include\queue.h)(0x6437E243)
-I (..\Hardware\can2.h)(0x650C3B49)
+I (..\Hardware\can2.h)(0x650D0B8B)
 I (..\Hardware\usart2.h)(0x62F84D4C)
 I (..\Hardware\uart4.h)(0x62F84D4C)
 I (..\Hardware\tim2.h)(0x62F84D4C)
-I (..\Hardware\tim4.h)(0x62F84D4C)
+I (..\Mylib\tim.h)(0x6437E243)
 I (..\Hardware\iwdg.h)(0x62F84D4C)
 I (..\Library\inc\stm32f4xx_iwdg.h)(0x6437E243)
-I (..\Hardware\adc.h)(0x649E9EF0)
+I (..\Hardware\adc.h)(0x650EE021)
 I (..\FreeRTOS\include\tools.h)(0x6501D19F)
 I (..\Hardware\dac.h)(0x62F84D4C)
-I (..\Hardware\ina260.h)(0x6501D15F)
+I (..\Hardware\ina260.h)(0x650EEF9E)
 I (..\Hardware\i2c.h)(0x62F84D4C)
 I (..\Hardware\counter.h)(0x64BF93ED)
 I (..\FreeRTOS\include\os_tick.h)(0x64413CB4)
@@ -852,11 +856,11 @@ I (..\Task\DataReceiveTask.h)(0x64B39C51)
 I (..\Task\ChassisTask.h)(0x6505A180)
 I (..\Task\PowerControlTask.h)(0x64FB14BB)
 I (..\Task\ZeroCheckTask.h)(0x64B52A49)
-I (..\Task\StartTask.h)(0x64451DD6)
+I (..\Task\Start_Task.h)(0x650EF333)
 I (..\FreeRTOS\include\task.h)(0x6437E243)
 I (..\FreeRTOS\include\list.h)(0x6437E243)
 F (..\Hardware\dac.c)(0x62F84D4C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\dac.o --omf_browse .\objects\dac.crf --depend .\objects\dac.d)
-I (..\User\main.h)(0x650463A3)
+I (..\User\main.h)(0x650EF2CF)
 I (..\User\stm32f4xx.h)(0x6437E243)
 I (..\Library\CMSIS\core_cm4.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -881,6 +885,7 @@ I (..\Library\CMSIS\arm_math.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+I (..\Hardware\cap.h)(0x650EE103)
 I (..\Hardware\can1.h)(0x650C4044)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
@@ -892,17 +897,17 @@ I (..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h)(0x6437E243)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x6437E243)
 I (..\FreeRTOS\include\semphr.h)(0x6437E243)
 I (..\FreeRTOS\include\queue.h)(0x6437E243)
-I (..\Hardware\can2.h)(0x650C3B49)
+I (..\Hardware\can2.h)(0x650D0B8B)
 I (..\Hardware\usart2.h)(0x62F84D4C)
 I (..\Hardware\uart4.h)(0x62F84D4C)
 I (..\Hardware\tim2.h)(0x62F84D4C)
-I (..\Hardware\tim4.h)(0x62F84D4C)
+I (..\Mylib\tim.h)(0x6437E243)
 I (..\Hardware\iwdg.h)(0x62F84D4C)
 I (..\Library\inc\stm32f4xx_iwdg.h)(0x6437E243)
-I (..\Hardware\adc.h)(0x649E9EF0)
+I (..\Hardware\adc.h)(0x650EE021)
 I (..\FreeRTOS\include\tools.h)(0x6501D19F)
 I (..\Hardware\dac.h)(0x62F84D4C)
-I (..\Hardware\ina260.h)(0x6501D15F)
+I (..\Hardware\ina260.h)(0x650EEF9E)
 I (..\Hardware\i2c.h)(0x62F84D4C)
 I (..\Hardware\counter.h)(0x64BF93ED)
 I (..\FreeRTOS\include\os_tick.h)(0x64413CB4)
@@ -913,11 +918,11 @@ I (..\Task\DataReceiveTask.h)(0x64B39C51)
 I (..\Task\ChassisTask.h)(0x6505A180)
 I (..\Task\PowerControlTask.h)(0x64FB14BB)
 I (..\Task\ZeroCheckTask.h)(0x64B52A49)
-I (..\Task\StartTask.h)(0x64451DD6)
+I (..\Task\Start_Task.h)(0x650EF333)
 I (..\FreeRTOS\include\task.h)(0x6437E243)
 I (..\FreeRTOS\include\list.h)(0x6437E243)
 F (..\Hardware\i2c.c)(0x62F84D4C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\i2c.o --omf_browse .\objects\i2c.crf --depend .\objects\i2c.d)
-I (..\User\main.h)(0x650463A3)
+I (..\User\main.h)(0x650EF2CF)
 I (..\User\stm32f4xx.h)(0x6437E243)
 I (..\Library\CMSIS\core_cm4.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -942,6 +947,7 @@ I (..\Library\CMSIS\arm_math.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+I (..\Hardware\cap.h)(0x650EE103)
 I (..\Hardware\can1.h)(0x650C4044)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
@@ -953,17 +959,17 @@ I (..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h)(0x6437E243)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x6437E243)
 I (..\FreeRTOS\include\semphr.h)(0x6437E243)
 I (..\FreeRTOS\include\queue.h)(0x6437E243)
-I (..\Hardware\can2.h)(0x650C3B49)
+I (..\Hardware\can2.h)(0x650D0B8B)
 I (..\Hardware\usart2.h)(0x62F84D4C)
 I (..\Hardware\uart4.h)(0x62F84D4C)
 I (..\Hardware\tim2.h)(0x62F84D4C)
-I (..\Hardware\tim4.h)(0x62F84D4C)
+I (..\Mylib\tim.h)(0x6437E243)
 I (..\Hardware\iwdg.h)(0x62F84D4C)
 I (..\Library\inc\stm32f4xx_iwdg.h)(0x6437E243)
-I (..\Hardware\adc.h)(0x649E9EF0)
+I (..\Hardware\adc.h)(0x650EE021)
 I (..\FreeRTOS\include\tools.h)(0x6501D19F)
 I (..\Hardware\dac.h)(0x62F84D4C)
-I (..\Hardware\ina260.h)(0x6501D15F)
+I (..\Hardware\ina260.h)(0x650EEF9E)
 I (..\Hardware\i2c.h)(0x62F84D4C)
 I (..\Hardware\counter.h)(0x64BF93ED)
 I (..\FreeRTOS\include\os_tick.h)(0x64413CB4)
@@ -974,11 +980,11 @@ I (..\Task\DataReceiveTask.h)(0x64B39C51)
 I (..\Task\ChassisTask.h)(0x6505A180)
 I (..\Task\PowerControlTask.h)(0x64FB14BB)
 I (..\Task\ZeroCheckTask.h)(0x64B52A49)
-I (..\Task\StartTask.h)(0x64451DD6)
+I (..\Task\Start_Task.h)(0x650EF333)
 I (..\FreeRTOS\include\task.h)(0x6437E243)
 I (..\FreeRTOS\include\list.h)(0x6437E243)
 F (..\Hardware\ina260.c)(0x64AA19B2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\ina260.o --omf_browse .\objects\ina260.crf --depend .\objects\ina260.d)
-I (..\User\main.h)(0x650463A3)
+I (..\User\main.h)(0x650EF2CF)
 I (..\User\stm32f4xx.h)(0x6437E243)
 I (..\Library\CMSIS\core_cm4.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1003,6 +1009,7 @@ I (..\Library\CMSIS\arm_math.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+I (..\Hardware\cap.h)(0x650EE103)
 I (..\Hardware\can1.h)(0x650C4044)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
@@ -1014,17 +1021,17 @@ I (..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h)(0x6437E243)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x6437E243)
 I (..\FreeRTOS\include\semphr.h)(0x6437E243)
 I (..\FreeRTOS\include\queue.h)(0x6437E243)
-I (..\Hardware\can2.h)(0x650C3B49)
+I (..\Hardware\can2.h)(0x650D0B8B)
 I (..\Hardware\usart2.h)(0x62F84D4C)
 I (..\Hardware\uart4.h)(0x62F84D4C)
 I (..\Hardware\tim2.h)(0x62F84D4C)
-I (..\Hardware\tim4.h)(0x62F84D4C)
+I (..\Mylib\tim.h)(0x6437E243)
 I (..\Hardware\iwdg.h)(0x62F84D4C)
 I (..\Library\inc\stm32f4xx_iwdg.h)(0x6437E243)
-I (..\Hardware\adc.h)(0x649E9EF0)
+I (..\Hardware\adc.h)(0x650EE021)
 I (..\FreeRTOS\include\tools.h)(0x6501D19F)
 I (..\Hardware\dac.h)(0x62F84D4C)
-I (..\Hardware\ina260.h)(0x6501D15F)
+I (..\Hardware\ina260.h)(0x650EEF9E)
 I (..\Hardware\i2c.h)(0x62F84D4C)
 I (..\Hardware\counter.h)(0x64BF93ED)
 I (..\FreeRTOS\include\os_tick.h)(0x64413CB4)
@@ -1035,7 +1042,7 @@ I (..\Task\DataReceiveTask.h)(0x64B39C51)
 I (..\Task\ChassisTask.h)(0x6505A180)
 I (..\Task\PowerControlTask.h)(0x64FB14BB)
 I (..\Task\ZeroCheckTask.h)(0x64B52A49)
-I (..\Task\StartTask.h)(0x64451DD6)
+I (..\Task\Start_Task.h)(0x650EF333)
 I (..\FreeRTOS\include\task.h)(0x6437E243)
 I (..\FreeRTOS\include\list.h)(0x6437E243)
 F (..\Hardware\iwdg.c)(0x62F84D4C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\iwdg.o --omf_browse .\objects\iwdg.crf --depend .\objects\iwdg.d)
@@ -1060,7 +1067,7 @@ I (..\Library\inc\stm32f4xx_usart.h)(0x6437E243)
 I (..\Library\inc\misc.h)(0x6437E243)
 I (..\Library\inc\stm32f4xx_can.h)(0x6437E243)
 F (..\Hardware\tim2.c)(0x62F84D4C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\tim2.o --omf_browse .\objects\tim2.crf --depend .\objects\tim2.d)
-I (..\User\main.h)(0x650463A3)
+I (..\User\main.h)(0x650EF2CF)
 I (..\User\stm32f4xx.h)(0x6437E243)
 I (..\Library\CMSIS\core_cm4.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1085,6 +1092,7 @@ I (..\Library\CMSIS\arm_math.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+I (..\Hardware\cap.h)(0x650EE103)
 I (..\Hardware\can1.h)(0x650C4044)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
@@ -1096,17 +1104,17 @@ I (..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h)(0x6437E243)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x6437E243)
 I (..\FreeRTOS\include\semphr.h)(0x6437E243)
 I (..\FreeRTOS\include\queue.h)(0x6437E243)
-I (..\Hardware\can2.h)(0x650C3B49)
+I (..\Hardware\can2.h)(0x650D0B8B)
 I (..\Hardware\usart2.h)(0x62F84D4C)
 I (..\Hardware\uart4.h)(0x62F84D4C)
 I (..\Hardware\tim2.h)(0x62F84D4C)
-I (..\Hardware\tim4.h)(0x62F84D4C)
+I (..\Mylib\tim.h)(0x6437E243)
 I (..\Hardware\iwdg.h)(0x62F84D4C)
 I (..\Library\inc\stm32f4xx_iwdg.h)(0x6437E243)
-I (..\Hardware\adc.h)(0x649E9EF0)
+I (..\Hardware\adc.h)(0x650EE021)
 I (..\FreeRTOS\include\tools.h)(0x6501D19F)
 I (..\Hardware\dac.h)(0x62F84D4C)
-I (..\Hardware\ina260.h)(0x6501D15F)
+I (..\Hardware\ina260.h)(0x650EEF9E)
 I (..\Hardware\i2c.h)(0x62F84D4C)
 I (..\Hardware\counter.h)(0x64BF93ED)
 I (..\FreeRTOS\include\os_tick.h)(0x64413CB4)
@@ -1117,11 +1125,11 @@ I (..\Task\DataReceiveTask.h)(0x64B39C51)
 I (..\Task\ChassisTask.h)(0x6505A180)
 I (..\Task\PowerControlTask.h)(0x64FB14BB)
 I (..\Task\ZeroCheckTask.h)(0x64B52A49)
-I (..\Task\StartTask.h)(0x64451DD6)
+I (..\Task\Start_Task.h)(0x650EF333)
 I (..\FreeRTOS\include\task.h)(0x6437E243)
 I (..\FreeRTOS\include\list.h)(0x6437E243)
-F (..\Hardware\uart4.c)(0x650C48B7)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\uart4.o --omf_browse .\objects\uart4.crf --depend .\objects\uart4.d)
-I (..\User\main.h)(0x650463A3)
+F (..\Hardware\uart4.c)(0x650ED842)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\uart4.o --omf_browse .\objects\uart4.crf --depend .\objects\uart4.d)
+I (..\User\main.h)(0x650EF2CF)
 I (..\User\stm32f4xx.h)(0x6437E243)
 I (..\Library\CMSIS\core_cm4.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1146,6 +1154,7 @@ I (..\Library\CMSIS\arm_math.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+I (..\Hardware\cap.h)(0x650EE103)
 I (..\Hardware\can1.h)(0x650C4044)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
@@ -1157,17 +1166,17 @@ I (..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h)(0x6437E243)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x6437E243)
 I (..\FreeRTOS\include\semphr.h)(0x6437E243)
 I (..\FreeRTOS\include\queue.h)(0x6437E243)
-I (..\Hardware\can2.h)(0x650C3B49)
+I (..\Hardware\can2.h)(0x650D0B8B)
 I (..\Hardware\usart2.h)(0x62F84D4C)
 I (..\Hardware\uart4.h)(0x62F84D4C)
 I (..\Hardware\tim2.h)(0x62F84D4C)
-I (..\Hardware\tim4.h)(0x62F84D4C)
+I (..\Mylib\tim.h)(0x6437E243)
 I (..\Hardware\iwdg.h)(0x62F84D4C)
 I (..\Library\inc\stm32f4xx_iwdg.h)(0x6437E243)
-I (..\Hardware\adc.h)(0x649E9EF0)
+I (..\Hardware\adc.h)(0x650EE021)
 I (..\FreeRTOS\include\tools.h)(0x6501D19F)
 I (..\Hardware\dac.h)(0x62F84D4C)
-I (..\Hardware\ina260.h)(0x6501D15F)
+I (..\Hardware\ina260.h)(0x650EEF9E)
 I (..\Hardware\i2c.h)(0x62F84D4C)
 I (..\Hardware\counter.h)(0x64BF93ED)
 I (..\FreeRTOS\include\os_tick.h)(0x64413CB4)
@@ -1178,11 +1187,74 @@ I (..\Task\DataReceiveTask.h)(0x64B39C51)
 I (..\Task\ChassisTask.h)(0x6505A180)
 I (..\Task\PowerControlTask.h)(0x64FB14BB)
 I (..\Task\ZeroCheckTask.h)(0x64B52A49)
-I (..\Task\StartTask.h)(0x64451DD6)
+I (..\Task\Start_Task.h)(0x650EF333)
 I (..\FreeRTOS\include\task.h)(0x6437E243)
 I (..\FreeRTOS\include\list.h)(0x6437E243)
-F (..\Hardware\usart2.c)(0x650C412A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\usart2.o --omf_browse .\objects\usart2.crf --depend .\objects\usart2.d)
-I (..\User\main.h)(0x650463A3)
+F (..\Hardware\usart2.c)(0x650EEF2E)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\usart2.o --omf_browse .\objects\usart2.crf --depend .\objects\usart2.d)
+I (..\User\main.h)(0x650EF2CF)
+I (..\User\stm32f4xx.h)(0x6437E243)
+I (..\Library\CMSIS\core_cm4.h)(0x6437E243)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\Library\CMSIS\core_cmInstr.h)(0x6437E243)
+I (..\Library\CMSIS\core_cmFunc.h)(0x6437E243)
+I (..\Library\CMSIS\core_cm4_simd.h)(0x6437E243)
+I (..\User\system_stm32f4xx.h)(0x6437E243)
+I (..\User\stm32f4xx_conf.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_adc.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_dma.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_exti.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_gpio.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_rcc.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_syscfg.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_tim.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_usart.h)(0x6437E243)
+I (..\Library\inc\misc.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_can.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_dac.h)(0x6437E243)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Library\CMSIS\arm_math.h)(0x6437E243)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+I (..\Hardware\cap.h)(0x650EE103)
+I (..\Hardware\can1.h)(0x650C4044)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x6437E243)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
+I (..\User\FreeRTOSConfig.h)(0x6437E243)
+I (..\FreeRTOS\include\projdefs.h)(0x6437E243)
+I (..\FreeRTOS\include\portable.h)(0x6437E243)
+I (..\FreeRTOS\include\deprecated_definitions.h)(0x6437E243)
+I (..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h)(0x6437E243)
+I (..\FreeRTOS\include\mpu_wrappers.h)(0x6437E243)
+I (..\FreeRTOS\include\semphr.h)(0x6437E243)
+I (..\FreeRTOS\include\queue.h)(0x6437E243)
+I (..\Hardware\can2.h)(0x650D0B8B)
+I (..\Hardware\usart2.h)(0x62F84D4C)
+I (..\Hardware\uart4.h)(0x62F84D4C)
+I (..\Hardware\tim2.h)(0x62F84D4C)
+I (..\Mylib\tim.h)(0x6437E243)
+I (..\Hardware\iwdg.h)(0x62F84D4C)
+I (..\Library\inc\stm32f4xx_iwdg.h)(0x6437E243)
+I (..\Hardware\adc.h)(0x650EE021)
+I (..\FreeRTOS\include\tools.h)(0x6501D19F)
+I (..\Hardware\dac.h)(0x62F84D4C)
+I (..\Hardware\ina260.h)(0x650EEF9E)
+I (..\Hardware\i2c.h)(0x62F84D4C)
+I (..\Hardware\counter.h)(0x64BF93ED)
+I (..\FreeRTOS\include\os_tick.h)(0x64413CB4)
+I (..\Algorithm\pid.h)(0x650557D5)
+I (..\Algorithm\DataScope_DP.h)(0x62F84D4C)
+I (..\Mylib\algorithmOfCRC.h)(0x6437E243)
+I (..\Task\DataReceiveTask.h)(0x64B39C51)
+I (..\Task\ChassisTask.h)(0x6505A180)
+I (..\Task\PowerControlTask.h)(0x64FB14BB)
+I (..\Task\ZeroCheckTask.h)(0x64B52A49)
+I (..\Task\Start_Task.h)(0x650EF333)
+I (..\FreeRTOS\include\task.h)(0x6437E243)
+I (..\FreeRTOS\include\list.h)(0x6437E243)
+F (..\Hardware\cap.c)(0x650EE103)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\cap.o --omf_browse .\objects\cap.crf --depend .\objects\cap.d)
+I (..\Hardware\cap.h)(0x650EE103)
+I (..\User\main.h)(0x650EF2CF)
 I (..\User\stm32f4xx.h)(0x6437E243)
 I (..\Library\CMSIS\core_cm4.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1218,17 +1290,17 @@ I (..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h)(0x6437E243)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x6437E243)
 I (..\FreeRTOS\include\semphr.h)(0x6437E243)
 I (..\FreeRTOS\include\queue.h)(0x6437E243)
-I (..\Hardware\can2.h)(0x650C3B49)
+I (..\Hardware\can2.h)(0x650D0B8B)
 I (..\Hardware\usart2.h)(0x62F84D4C)
 I (..\Hardware\uart4.h)(0x62F84D4C)
 I (..\Hardware\tim2.h)(0x62F84D4C)
-I (..\Hardware\tim4.h)(0x62F84D4C)
+I (..\Mylib\tim.h)(0x6437E243)
 I (..\Hardware\iwdg.h)(0x62F84D4C)
 I (..\Library\inc\stm32f4xx_iwdg.h)(0x6437E243)
-I (..\Hardware\adc.h)(0x649E9EF0)
+I (..\Hardware\adc.h)(0x650EE021)
 I (..\FreeRTOS\include\tools.h)(0x6501D19F)
 I (..\Hardware\dac.h)(0x62F84D4C)
-I (..\Hardware\ina260.h)(0x6501D15F)
+I (..\Hardware\ina260.h)(0x650EEF9E)
 I (..\Hardware\i2c.h)(0x62F84D4C)
 I (..\Hardware\counter.h)(0x64BF93ED)
 I (..\FreeRTOS\include\os_tick.h)(0x64413CB4)
@@ -1239,11 +1311,11 @@ I (..\Task\DataReceiveTask.h)(0x64B39C51)
 I (..\Task\ChassisTask.h)(0x6505A180)
 I (..\Task\PowerControlTask.h)(0x64FB14BB)
 I (..\Task\ZeroCheckTask.h)(0x64B52A49)
-I (..\Task\StartTask.h)(0x64451DD6)
+I (..\Task\Start_Task.h)(0x650EF333)
 I (..\FreeRTOS\include\task.h)(0x6437E243)
 I (..\FreeRTOS\include\list.h)(0x6437E243)
 F (..\Mylib\tim.c)(0x6437E243)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\tim.o --omf_browse .\objects\tim.crf --depend .\objects\tim.d)
-I (..\User\main.h)(0x650463A3)
+I (..\User\main.h)(0x650EF2CF)
 I (..\User\stm32f4xx.h)(0x6437E243)
 I (..\Library\CMSIS\core_cm4.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1268,6 +1340,7 @@ I (..\Library\CMSIS\arm_math.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+I (..\Hardware\cap.h)(0x650EE103)
 I (..\Hardware\can1.h)(0x650C4044)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
@@ -1279,17 +1352,17 @@ I (..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h)(0x6437E243)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x6437E243)
 I (..\FreeRTOS\include\semphr.h)(0x6437E243)
 I (..\FreeRTOS\include\queue.h)(0x6437E243)
-I (..\Hardware\can2.h)(0x650C3B49)
+I (..\Hardware\can2.h)(0x650D0B8B)
 I (..\Hardware\usart2.h)(0x62F84D4C)
 I (..\Hardware\uart4.h)(0x62F84D4C)
 I (..\Hardware\tim2.h)(0x62F84D4C)
-I (..\Hardware\tim4.h)(0x62F84D4C)
+I (..\Mylib\tim.h)(0x6437E243)
 I (..\Hardware\iwdg.h)(0x62F84D4C)
 I (..\Library\inc\stm32f4xx_iwdg.h)(0x6437E243)
-I (..\Hardware\adc.h)(0x649E9EF0)
+I (..\Hardware\adc.h)(0x650EE021)
 I (..\FreeRTOS\include\tools.h)(0x6501D19F)
 I (..\Hardware\dac.h)(0x62F84D4C)
-I (..\Hardware\ina260.h)(0x6501D15F)
+I (..\Hardware\ina260.h)(0x650EEF9E)
 I (..\Hardware\i2c.h)(0x62F84D4C)
 I (..\Hardware\counter.h)(0x64BF93ED)
 I (..\FreeRTOS\include\os_tick.h)(0x64413CB4)
@@ -1300,12 +1373,11 @@ I (..\Task\DataReceiveTask.h)(0x64B39C51)
 I (..\Task\ChassisTask.h)(0x6505A180)
 I (..\Task\PowerControlTask.h)(0x64FB14BB)
 I (..\Task\ZeroCheckTask.h)(0x64B52A49)
-I (..\Task\StartTask.h)(0x64451DD6)
+I (..\Task\Start_Task.h)(0x650EF333)
 I (..\FreeRTOS\include\task.h)(0x6437E243)
 I (..\FreeRTOS\include\list.h)(0x6437E243)
-I (..\Mylib\tim.h)(0x6437E243)
-F (..\Algorithm\algorithmOfCRC.c)(0x62F84D4C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\algorithmofcrc_1.o --omf_browse .\objects\algorithmofcrc_1.crf --depend .\objects\algorithmofcrc_1.d)
-I (..\User\main.h)(0x650463A3)
+F (..\Hardware\usart1.c)(0x650EF796)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\usart1.o --omf_browse .\objects\usart1.crf --depend .\objects\usart1.d)
+I (..\User\main.h)(0x650EF2CF)
 I (..\User\stm32f4xx.h)(0x6437E243)
 I (..\Library\CMSIS\core_cm4.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1330,6 +1402,7 @@ I (..\Library\CMSIS\arm_math.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+I (..\Hardware\cap.h)(0x650EE103)
 I (..\Hardware\can1.h)(0x650C4044)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
@@ -1341,17 +1414,17 @@ I (..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h)(0x6437E243)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x6437E243)
 I (..\FreeRTOS\include\semphr.h)(0x6437E243)
 I (..\FreeRTOS\include\queue.h)(0x6437E243)
-I (..\Hardware\can2.h)(0x650C3B49)
+I (..\Hardware\can2.h)(0x650D0B8B)
 I (..\Hardware\usart2.h)(0x62F84D4C)
 I (..\Hardware\uart4.h)(0x62F84D4C)
 I (..\Hardware\tim2.h)(0x62F84D4C)
-I (..\Hardware\tim4.h)(0x62F84D4C)
+I (..\Mylib\tim.h)(0x6437E243)
 I (..\Hardware\iwdg.h)(0x62F84D4C)
 I (..\Library\inc\stm32f4xx_iwdg.h)(0x6437E243)
-I (..\Hardware\adc.h)(0x649E9EF0)
+I (..\Hardware\adc.h)(0x650EE021)
 I (..\FreeRTOS\include\tools.h)(0x6501D19F)
 I (..\Hardware\dac.h)(0x62F84D4C)
-I (..\Hardware\ina260.h)(0x6501D15F)
+I (..\Hardware\ina260.h)(0x650EEF9E)
 I (..\Hardware\i2c.h)(0x62F84D4C)
 I (..\Hardware\counter.h)(0x64BF93ED)
 I (..\FreeRTOS\include\os_tick.h)(0x64413CB4)
@@ -1362,11 +1435,73 @@ I (..\Task\DataReceiveTask.h)(0x64B39C51)
 I (..\Task\ChassisTask.h)(0x6505A180)
 I (..\Task\PowerControlTask.h)(0x64FB14BB)
 I (..\Task\ZeroCheckTask.h)(0x64B52A49)
-I (..\Task\StartTask.h)(0x64451DD6)
+I (..\Task\Start_Task.h)(0x650EF333)
+I (..\FreeRTOS\include\task.h)(0x6437E243)
+I (..\FreeRTOS\include\list.h)(0x6437E243)
+F (..\Algorithm\algorithmOfCRC.c)(0x62F84D4C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\algorithmofcrc_1.o --omf_browse .\objects\algorithmofcrc_1.crf --depend .\objects\algorithmofcrc_1.d)
+I (..\User\main.h)(0x650EF2CF)
+I (..\User\stm32f4xx.h)(0x6437E243)
+I (..\Library\CMSIS\core_cm4.h)(0x6437E243)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\Library\CMSIS\core_cmInstr.h)(0x6437E243)
+I (..\Library\CMSIS\core_cmFunc.h)(0x6437E243)
+I (..\Library\CMSIS\core_cm4_simd.h)(0x6437E243)
+I (..\User\system_stm32f4xx.h)(0x6437E243)
+I (..\User\stm32f4xx_conf.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_adc.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_dma.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_exti.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_gpio.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_rcc.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_syscfg.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_tim.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_usart.h)(0x6437E243)
+I (..\Library\inc\misc.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_can.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_dac.h)(0x6437E243)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Library\CMSIS\arm_math.h)(0x6437E243)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+I (..\Hardware\cap.h)(0x650EE103)
+I (..\Hardware\can1.h)(0x650C4044)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x6437E243)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
+I (..\User\FreeRTOSConfig.h)(0x6437E243)
+I (..\FreeRTOS\include\projdefs.h)(0x6437E243)
+I (..\FreeRTOS\include\portable.h)(0x6437E243)
+I (..\FreeRTOS\include\deprecated_definitions.h)(0x6437E243)
+I (..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h)(0x6437E243)
+I (..\FreeRTOS\include\mpu_wrappers.h)(0x6437E243)
+I (..\FreeRTOS\include\semphr.h)(0x6437E243)
+I (..\FreeRTOS\include\queue.h)(0x6437E243)
+I (..\Hardware\can2.h)(0x650D0B8B)
+I (..\Hardware\usart2.h)(0x62F84D4C)
+I (..\Hardware\uart4.h)(0x62F84D4C)
+I (..\Hardware\tim2.h)(0x62F84D4C)
+I (..\Mylib\tim.h)(0x6437E243)
+I (..\Hardware\iwdg.h)(0x62F84D4C)
+I (..\Library\inc\stm32f4xx_iwdg.h)(0x6437E243)
+I (..\Hardware\adc.h)(0x650EE021)
+I (..\FreeRTOS\include\tools.h)(0x6501D19F)
+I (..\Hardware\dac.h)(0x62F84D4C)
+I (..\Hardware\ina260.h)(0x650EEF9E)
+I (..\Hardware\i2c.h)(0x62F84D4C)
+I (..\Hardware\counter.h)(0x64BF93ED)
+I (..\FreeRTOS\include\os_tick.h)(0x64413CB4)
+I (..\Algorithm\pid.h)(0x650557D5)
+I (..\Algorithm\DataScope_DP.h)(0x62F84D4C)
+I (..\Mylib\algorithmOfCRC.h)(0x6437E243)
+I (..\Task\DataReceiveTask.h)(0x64B39C51)
+I (..\Task\ChassisTask.h)(0x6505A180)
+I (..\Task\PowerControlTask.h)(0x64FB14BB)
+I (..\Task\ZeroCheckTask.h)(0x64B52A49)
+I (..\Task\Start_Task.h)(0x650EF333)
 I (..\FreeRTOS\include\task.h)(0x6437E243)
 I (..\FreeRTOS\include\list.h)(0x6437E243)
 F (..\Algorithm\pid.c)(0x6505A1B0)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\pid.o --omf_browse .\objects\pid.crf --depend .\objects\pid.d)
-I (..\User\main.h)(0x650463A3)
+I (..\User\main.h)(0x650EF2CF)
 I (..\User\stm32f4xx.h)(0x6437E243)
 I (..\Library\CMSIS\core_cm4.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1391,6 +1526,7 @@ I (..\Library\CMSIS\arm_math.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+I (..\Hardware\cap.h)(0x650EE103)
 I (..\Hardware\can1.h)(0x650C4044)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
@@ -1402,17 +1538,17 @@ I (..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h)(0x6437E243)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x6437E243)
 I (..\FreeRTOS\include\semphr.h)(0x6437E243)
 I (..\FreeRTOS\include\queue.h)(0x6437E243)
-I (..\Hardware\can2.h)(0x650C3B49)
+I (..\Hardware\can2.h)(0x650D0B8B)
 I (..\Hardware\usart2.h)(0x62F84D4C)
 I (..\Hardware\uart4.h)(0x62F84D4C)
 I (..\Hardware\tim2.h)(0x62F84D4C)
-I (..\Hardware\tim4.h)(0x62F84D4C)
+I (..\Mylib\tim.h)(0x6437E243)
 I (..\Hardware\iwdg.h)(0x62F84D4C)
 I (..\Library\inc\stm32f4xx_iwdg.h)(0x6437E243)
-I (..\Hardware\adc.h)(0x649E9EF0)
+I (..\Hardware\adc.h)(0x650EE021)
 I (..\FreeRTOS\include\tools.h)(0x6501D19F)
 I (..\Hardware\dac.h)(0x62F84D4C)
-I (..\Hardware\ina260.h)(0x6501D15F)
+I (..\Hardware\ina260.h)(0x650EEF9E)
 I (..\Hardware\i2c.h)(0x62F84D4C)
 I (..\Hardware\counter.h)(0x64BF93ED)
 I (..\FreeRTOS\include\os_tick.h)(0x64413CB4)
@@ -1423,7 +1559,7 @@ I (..\Task\DataReceiveTask.h)(0x64B39C51)
 I (..\Task\ChassisTask.h)(0x6505A180)
 I (..\Task\PowerControlTask.h)(0x64FB14BB)
 I (..\Task\ZeroCheckTask.h)(0x64B52A49)
-I (..\Task\StartTask.h)(0x64451DD6)
+I (..\Task\Start_Task.h)(0x650EF333)
 I (..\FreeRTOS\include\task.h)(0x6437E243)
 I (..\FreeRTOS\include\list.h)(0x6437E243)
 F (..\Algorithm\filters.c)(0x6505A180)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\filters.o --omf_browse .\objects\filters.crf --depend .\objects\filters.d)
@@ -1459,12 +1595,17 @@ I (..\FreeRTOS\include\list.h)(0x6437E243)
 F (..\Algorithm\myMath.c)(0x6505A242)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\mymath.o --omf_browse .\objects\mymath.crf --depend .\objects\mymath.d)
 F (..\Algorithm\tool.c)(0x650C45AB)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\tool.o --omf_browse .\objects\tool.crf --depend .\objects\tool.d)
 I (..\FreeRTOS\include\tools.h)(0x6501D19F)
+F (..\Algorithm\Matrix.c)(0x650EDB08)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\matrix.o --omf_browse .\objects\matrix.crf --depend .\objects\matrix.d)
+I (..\Algorithm\Matrix.h)(0x650EDB31)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 F (..\Software\motor.c)(0x650C3FD6)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\motor.o --omf_browse .\objects\motor.crf --depend .\objects\motor.d)
-I (..\Software\motor.h)(0x650C3FD5)
+I (..\Software\motor.h)(0x650EFEA6)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
-F (..\Software\Chassis.c)(0x650C3A57)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\chassis.o --omf_browse .\objects\chassis.crf --depend .\objects\chassis.d)
-I (..\Software\Chassis.h)(0x650C4CC1)
-I (..\Software\Kinematic.h)(0x650C4CBB)
+F (..\Software\Chassis.c)(0x650D222D)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\chassis.o --omf_browse .\objects\chassis.crf --depend .\objects\chassis.d)
+I (..\Software\Chassis.h)(0x650D2263)
+I (..\Software\Kinematic.h)(0x650F0138)
 I (..\Hardware\can1.h)(0x650C4044)
 I (..\User\stm32f4xx.h)(0x6437E243)
 I (..\Library\CMSIS\core_cm4.h)(0x6437E243)
@@ -1495,9 +1636,14 @@ I (..\FreeRTOS\include\mpu_wrappers.h)(0x6437E243)
 I (..\FreeRTOS\include\semphr.h)(0x6437E243)
 I (..\FreeRTOS\include\queue.h)(0x6437E243)
 I (..\Algorithm\pid.h)(0x650557D5)
-I (..\Software\motor.h)(0x650C3FD5)
-F (..\Software\Kinematic.c)(0x650C5525)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\kinematic.o --omf_browse .\objects\kinematic.crf --depend .\objects\kinematic.d)
-I (..\Software\Kinematic.h)(0x650C4CBB)
+I (..\Software\motor.h)(0x650EFEA6)
+I (..\Algorithm\myMath.h)(0x650EFA01)
+I (..\Library\CMSIS\arm_math.h)(0x6437E243)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
+I (..\Hardware\can2.h)(0x650D0B8B)
+F (..\Software\Kinematic.c)(0x650F02BB)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\kinematic.o --omf_browse .\objects\kinematic.crf --depend .\objects\kinematic.d)
+I (..\Software\Kinematic.h)(0x650F0138)
 I (..\Hardware\can1.h)(0x650C4044)
 I (..\User\stm32f4xx.h)(0x6437E243)
 I (..\Library\CMSIS\core_cm4.h)(0x6437E243)
@@ -1528,11 +1674,15 @@ I (..\FreeRTOS\include\mpu_wrappers.h)(0x6437E243)
 I (..\FreeRTOS\include\semphr.h)(0x6437E243)
 I (..\FreeRTOS\include\queue.h)(0x6437E243)
 I (..\Algorithm\pid.h)(0x650557D5)
-I (..\Software\motor.h)(0x650C3FD5)
+I (..\Software\motor.h)(0x650EFEA6)
+I (..\Algorithm\myMath.h)(0x650EFA01)
+I (..\Library\CMSIS\arm_math.h)(0x6437E243)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 F (..\Software\Power.c)(0x6506AE87)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\power.o --omf_browse .\objects\power.crf --depend .\objects\power.d)
 I (..\Software\Power.h)(0x650C3FAB)
 F (..\Task\DataReceiveTask.c)(0x6501D576)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\datareceivetask.o --omf_browse .\objects\datareceivetask.crf --depend .\objects\datareceivetask.d)
-I (..\User\main.h)(0x650463A3)
+I (..\User\main.h)(0x650EF2CF)
 I (..\User\stm32f4xx.h)(0x6437E243)
 I (..\Library\CMSIS\core_cm4.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1557,6 +1707,7 @@ I (..\Library\CMSIS\arm_math.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+I (..\Hardware\cap.h)(0x650EE103)
 I (..\Hardware\can1.h)(0x650C4044)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6437E243)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
@@ -1568,90 +1719,151 @@ I (..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h)(0x6437E243)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x6437E243)
 I (..\FreeRTOS\include\semphr.h)(0x6437E243)
 I (..\FreeRTOS\include\queue.h)(0x6437E243)
-I (..\Hardware\can2.h)(0x650C3B49)
+I (..\Hardware\can2.h)(0x650D0B8B)
 I (..\Hardware\usart2.h)(0x62F84D4C)
 I (..\Hardware\uart4.h)(0x62F84D4C)
 I (..\Hardware\tim2.h)(0x62F84D4C)
-I (..\Hardware\tim4.h)(0x62F84D4C)
-I (..\Hardware\iwdg.h)(0x62F84D4C)
-I (..\Library\inc\stm32f4xx_iwdg.h)(0x6437E243)
-I (..\Hardware\adc.h)(0x649E9EF0)
-I (..\FreeRTOS\include\tools.h)(0x6501D19F)
-I (..\Hardware\dac.h)(0x62F84D4C)
-I (..\Hardware\ina260.h)(0x6501D15F)
-I (..\Hardware\i2c.h)(0x62F84D4C)
-I (..\Hardware\counter.h)(0x64BF93ED)
-I (..\FreeRTOS\include\os_tick.h)(0x64413CB4)
-I (..\Algorithm\pid.h)(0x650557D5)
-I (..\Algorithm\DataScope_DP.h)(0x62F84D4C)
-I (..\Mylib\algorithmOfCRC.h)(0x6437E243)
-I (..\Task\DataReceiveTask.h)(0x64B39C51)
-I (..\Task\ChassisTask.h)(0x6505A180)
-I (..\Task\PowerControlTask.h)(0x64FB14BB)
-I (..\Task\ZeroCheckTask.h)(0x64B52A49)
-I (..\Task\StartTask.h)(0x64451DD6)
-I (..\FreeRTOS\include\task.h)(0x6437E243)
-I (..\FreeRTOS\include\list.h)(0x6437E243)
-F (..\Task\Start_Task.c)(0x650C3F32)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\start_task.o --omf_browse .\objects\start_task.crf --depend .\objects\start_task.d)
-I (..\Task\Start_Task.h)(0x6437E243)
-I (..\User\main.h)(0x650463A3)
-I (..\User\stm32f4xx.h)(0x6437E243)
-I (..\Library\CMSIS\core_cm4.h)(0x6437E243)
-I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
-I (..\Library\CMSIS\core_cmInstr.h)(0x6437E243)
-I (..\Library\CMSIS\core_cmFunc.h)(0x6437E243)
-I (..\Library\CMSIS\core_cm4_simd.h)(0x6437E243)
-I (..\User\system_stm32f4xx.h)(0x6437E243)
-I (..\User\stm32f4xx_conf.h)(0x6437E243)
-I (..\Library\inc\stm32f4xx_adc.h)(0x6437E243)
-I (..\Library\inc\stm32f4xx_dma.h)(0x6437E243)
-I (..\Library\inc\stm32f4xx_exti.h)(0x6437E243)
-I (..\Library\inc\stm32f4xx_gpio.h)(0x6437E243)
-I (..\Library\inc\stm32f4xx_rcc.h)(0x6437E243)
-I (..\Library\inc\stm32f4xx_syscfg.h)(0x6437E243)
-I (..\Library\inc\stm32f4xx_tim.h)(0x6437E243)
-I (..\Library\inc\stm32f4xx_usart.h)(0x6437E243)
-I (..\Library\inc\misc.h)(0x6437E243)
-I (..\Library\inc\stm32f4xx_can.h)(0x6437E243)
-I (..\Library\inc\stm32f4xx_dac.h)(0x6437E243)
-I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
-I (..\Library\CMSIS\arm_math.h)(0x6437E243)
-I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
-I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
-I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
-I (..\Hardware\can1.h)(0x650C4044)
-I (..\FreeRTOS\include\FreeRTOS.h)(0x6437E243)
-I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
-I (..\User\FreeRTOSConfig.h)(0x6437E243)
-I (..\FreeRTOS\include\projdefs.h)(0x6437E243)
-I (..\FreeRTOS\include\portable.h)(0x6437E243)
-I (..\FreeRTOS\include\deprecated_definitions.h)(0x6437E243)
-I (..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h)(0x6437E243)
-I (..\FreeRTOS\include\mpu_wrappers.h)(0x6437E243)
-I (..\FreeRTOS\include\semphr.h)(0x6437E243)
-I (..\FreeRTOS\include\queue.h)(0x6437E243)
-I (..\Hardware\can2.h)(0x650C3B49)
-I (..\Hardware\usart2.h)(0x62F84D4C)
-I (..\Hardware\uart4.h)(0x62F84D4C)
-I (..\Hardware\tim2.h)(0x62F84D4C)
-I (..\Hardware\tim4.h)(0x62F84D4C)
-I (..\Hardware\iwdg.h)(0x62F84D4C)
-I (..\Library\inc\stm32f4xx_iwdg.h)(0x6437E243)
-I (..\Hardware\adc.h)(0x649E9EF0)
-I (..\FreeRTOS\include\tools.h)(0x6501D19F)
-I (..\Hardware\dac.h)(0x62F84D4C)
-I (..\Hardware\ina260.h)(0x6501D15F)
-I (..\Hardware\i2c.h)(0x62F84D4C)
-I (..\Hardware\counter.h)(0x64BF93ED)
-I (..\FreeRTOS\include\os_tick.h)(0x64413CB4)
-I (..\Algorithm\pid.h)(0x650557D5)
-I (..\Algorithm\DataScope_DP.h)(0x62F84D4C)
-I (..\Mylib\algorithmOfCRC.h)(0x6437E243)
-I (..\Task\DataReceiveTask.h)(0x64B39C51)
-I (..\Task\ChassisTask.h)(0x6505A180)
-I (..\Task\PowerControlTask.h)(0x64FB14BB)
-I (..\Task\ZeroCheckTask.h)(0x64B52A49)
-I (..\Task\StartTask.h)(0x64451DD6)
-I (..\FreeRTOS\include\task.h)(0x6437E243)
-I (..\FreeRTOS\include\list.h)(0x6437E243)
 I (..\Mylib\tim.h)(0x6437E243)
+I (..\Hardware\iwdg.h)(0x62F84D4C)
+I (..\Library\inc\stm32f4xx_iwdg.h)(0x6437E243)
+I (..\Hardware\adc.h)(0x650EE021)
+I (..\FreeRTOS\include\tools.h)(0x6501D19F)
+I (..\Hardware\dac.h)(0x62F84D4C)
+I (..\Hardware\ina260.h)(0x650EEF9E)
+I (..\Hardware\i2c.h)(0x62F84D4C)
+I (..\Hardware\counter.h)(0x64BF93ED)
+I (..\FreeRTOS\include\os_tick.h)(0x64413CB4)
+I (..\Algorithm\pid.h)(0x650557D5)
+I (..\Algorithm\DataScope_DP.h)(0x62F84D4C)
+I (..\Mylib\algorithmOfCRC.h)(0x6437E243)
+I (..\Task\DataReceiveTask.h)(0x64B39C51)
+I (..\Task\ChassisTask.h)(0x6505A180)
+I (..\Task\PowerControlTask.h)(0x64FB14BB)
+I (..\Task\ZeroCheckTask.h)(0x64B52A49)
+I (..\Task\Start_Task.h)(0x650EF333)
+I (..\FreeRTOS\include\task.h)(0x6437E243)
+I (..\FreeRTOS\include\list.h)(0x6437E243)
+F (..\Task\Start_Task.c)(0x650EF861)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\start_task.o --omf_browse .\objects\start_task.crf --depend .\objects\start_task.d)
+I (..\Task\Start_Task.h)(0x650EF333)
+I (..\User\main.h)(0x650EF2CF)
+I (..\User\stm32f4xx.h)(0x6437E243)
+I (..\Library\CMSIS\core_cm4.h)(0x6437E243)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\Library\CMSIS\core_cmInstr.h)(0x6437E243)
+I (..\Library\CMSIS\core_cmFunc.h)(0x6437E243)
+I (..\Library\CMSIS\core_cm4_simd.h)(0x6437E243)
+I (..\User\system_stm32f4xx.h)(0x6437E243)
+I (..\User\stm32f4xx_conf.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_adc.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_dma.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_exti.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_gpio.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_rcc.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_syscfg.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_tim.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_usart.h)(0x6437E243)
+I (..\Library\inc\misc.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_can.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_dac.h)(0x6437E243)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Library\CMSIS\arm_math.h)(0x6437E243)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+I (..\Hardware\cap.h)(0x650EE103)
+I (..\Hardware\can1.h)(0x650C4044)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x6437E243)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
+I (..\User\FreeRTOSConfig.h)(0x6437E243)
+I (..\FreeRTOS\include\projdefs.h)(0x6437E243)
+I (..\FreeRTOS\include\portable.h)(0x6437E243)
+I (..\FreeRTOS\include\deprecated_definitions.h)(0x6437E243)
+I (..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h)(0x6437E243)
+I (..\FreeRTOS\include\mpu_wrappers.h)(0x6437E243)
+I (..\FreeRTOS\include\semphr.h)(0x6437E243)
+I (..\FreeRTOS\include\queue.h)(0x6437E243)
+I (..\Hardware\can2.h)(0x650D0B8B)
+I (..\Hardware\usart2.h)(0x62F84D4C)
+I (..\Hardware\uart4.h)(0x62F84D4C)
+I (..\Hardware\tim2.h)(0x62F84D4C)
+I (..\Mylib\tim.h)(0x6437E243)
+I (..\Hardware\iwdg.h)(0x62F84D4C)
+I (..\Library\inc\stm32f4xx_iwdg.h)(0x6437E243)
+I (..\Hardware\adc.h)(0x650EE021)
+I (..\FreeRTOS\include\tools.h)(0x6501D19F)
+I (..\Hardware\dac.h)(0x62F84D4C)
+I (..\Hardware\ina260.h)(0x650EEF9E)
+I (..\Hardware\i2c.h)(0x62F84D4C)
+I (..\Hardware\counter.h)(0x64BF93ED)
+I (..\FreeRTOS\include\os_tick.h)(0x64413CB4)
+I (..\Algorithm\pid.h)(0x650557D5)
+I (..\Algorithm\DataScope_DP.h)(0x62F84D4C)
+I (..\Mylib\algorithmOfCRC.h)(0x6437E243)
+I (..\Task\DataReceiveTask.h)(0x64B39C51)
+I (..\Task\ChassisTask.h)(0x6505A180)
+I (..\Task\PowerControlTask.h)(0x64FB14BB)
+I (..\Task\ZeroCheckTask.h)(0x64B52A49)
+I (..\FreeRTOS\include\task.h)(0x6437E243)
+I (..\FreeRTOS\include\list.h)(0x6437E243)
+F (..\Task\ChassisTask.c)(0x650EFCC3)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\主力考核\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\chassistask.o --omf_browse .\objects\chassistask.crf --depend .\objects\chassistask.d)
+I (..\User\main.h)(0x650EF2CF)
+I (..\User\stm32f4xx.h)(0x6437E243)
+I (..\Library\CMSIS\core_cm4.h)(0x6437E243)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\Library\CMSIS\core_cmInstr.h)(0x6437E243)
+I (..\Library\CMSIS\core_cmFunc.h)(0x6437E243)
+I (..\Library\CMSIS\core_cm4_simd.h)(0x6437E243)
+I (..\User\system_stm32f4xx.h)(0x6437E243)
+I (..\User\stm32f4xx_conf.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_adc.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_dma.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_exti.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_gpio.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_rcc.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_syscfg.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_tim.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_usart.h)(0x6437E243)
+I (..\Library\inc\misc.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_can.h)(0x6437E243)
+I (..\Library\inc\stm32f4xx_dac.h)(0x6437E243)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Library\CMSIS\arm_math.h)(0x6437E243)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+I (..\Hardware\cap.h)(0x650EE103)
+I (..\Hardware\can1.h)(0x650C4044)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x6437E243)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
+I (..\User\FreeRTOSConfig.h)(0x6437E243)
+I (..\FreeRTOS\include\projdefs.h)(0x6437E243)
+I (..\FreeRTOS\include\portable.h)(0x6437E243)
+I (..\FreeRTOS\include\deprecated_definitions.h)(0x6437E243)
+I (..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h)(0x6437E243)
+I (..\FreeRTOS\include\mpu_wrappers.h)(0x6437E243)
+I (..\FreeRTOS\include\semphr.h)(0x6437E243)
+I (..\FreeRTOS\include\queue.h)(0x6437E243)
+I (..\Hardware\can2.h)(0x650D0B8B)
+I (..\Hardware\usart2.h)(0x62F84D4C)
+I (..\Hardware\uart4.h)(0x62F84D4C)
+I (..\Hardware\tim2.h)(0x62F84D4C)
+I (..\Mylib\tim.h)(0x6437E243)
+I (..\Hardware\iwdg.h)(0x62F84D4C)
+I (..\Library\inc\stm32f4xx_iwdg.h)(0x6437E243)
+I (..\Hardware\adc.h)(0x650EE021)
+I (..\FreeRTOS\include\tools.h)(0x6501D19F)
+I (..\Hardware\dac.h)(0x62F84D4C)
+I (..\Hardware\ina260.h)(0x650EEF9E)
+I (..\Hardware\i2c.h)(0x62F84D4C)
+I (..\Hardware\counter.h)(0x64BF93ED)
+I (..\FreeRTOS\include\os_tick.h)(0x64413CB4)
+I (..\Algorithm\pid.h)(0x650557D5)
+I (..\Algorithm\DataScope_DP.h)(0x62F84D4C)
+I (..\Mylib\algorithmOfCRC.h)(0x6437E243)
+I (..\Task\DataReceiveTask.h)(0x64B39C51)
+I (..\Task\ChassisTask.h)(0x6505A180)
+I (..\Task\PowerControlTask.h)(0x64FB14BB)
+I (..\Task\ZeroCheckTask.h)(0x64B52A49)
+I (..\Task\Start_Task.h)(0x650EF333)
+I (..\FreeRTOS\include\task.h)(0x6437E243)
+I (..\FreeRTOS\include\list.h)(0x6437E243)

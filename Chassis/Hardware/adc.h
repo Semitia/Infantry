@@ -11,8 +11,8 @@
 
 #include "tools.h"
 
-#define ADC_NUM 3         //²É¼¯Í¨µÀÊýÄ¿2+ÎÂ¶ÈÍ¨µÀ1
-#define ADC_SAMPLE_NUM 30 //²ÉÑùÊýÁ¿
+#define ADC_NUM 3         //ï¿½É¼ï¿½Í¨ï¿½ï¿½ï¿½ï¿½Ä¿2+ï¿½Â¶ï¿½Í¨ï¿½ï¿½1
+#define ADC_SAMPLE_NUM 30 //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 #define ADC1_DR_Address (((u32)ADC1 + 0x4c))
 #define ADC2_DR_Address (((u32)ADC2 + 0x4c))
 
@@ -30,14 +30,14 @@
 #define POWER_ADC_RCC_AHBxPeriph_DMAx RCC_AHB1Periph_DMA2
 #define POWER_ADC_DMAx_Streamx DMA2_Stream0
 #define POWER_ADC_ADCx_DR_Address ADC1_DR_Address
-// ADCÖÐÍ¨ÓÃADCÉèÖÃµ½ÌØ¶¨Î»ÖÃÉèÖÃ
-// ÌØ¶¨ADCÅäÖÃ
+// ADCï¿½ï¿½Í¨ï¿½ï¿½ADCï¿½ï¿½ï¿½Ãµï¿½ï¿½Ø¶ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+// ï¿½Ø¶ï¿½ADCï¿½ï¿½ï¿½ï¿½
 #define POWER_ADC_ADCx ADC1
 #define POWER_ADC_ADC_RCC_APBxPeriphClockCmd RCC_APB2PeriphClockCmd
 #define POWER_ADC_RCC_APBxPeriph_ADCx RCC_APB2Periph_ADC1
-//Ò»Ð©Í¨µÀµÄÉèÖÃÐèÒªµ½ÌØ¶¨Î»ÖÃÐÞ¸Ä
+//Ò»Ð©Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½Ø¶ï¿½Î»ï¿½ï¿½ï¿½Þ¸ï¿½
 
-// DAC GPIO¿Ú
+// DAC GPIOï¿½ï¿½
 #define POWER_DAC_RCC_AHBxPeriphClockCmd RCC_AHB1PeriphClockCmd
 #define POWER_DAC_RCC_AHBxPeriph_GPIOx RCC_AHB1Periph_GPIOA
 #define POWER_DAC_GPIO_Pin_x1 GPIO_Pin_4 // ADC12_IN4
@@ -50,9 +50,9 @@
 #define POWER_DAC_SetChannelx1Data DAC_SetChannel1Data
 #define POWER_DAC_Channel_x2 DAC_Channel_2
 #define POWER_DAC_SetChannelx2Data DAC_SetChannel2Data
-//ÆäËüDACÉèÖÃµ½ÌØ¶¨Î»ÖÃÐÞ¸Ä
+//ï¿½ï¿½ï¿½ï¿½DACï¿½ï¿½ï¿½Ãµï¿½ï¿½Ø¶ï¿½Î»ï¿½ï¿½ï¿½Þ¸ï¿½
 
-//³ä·ÅµçIO¿ÚÅäÖÃ
+//ï¿½ï¿½Åµï¿½IOï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 #define POWER_CHARGE_RCC_AHBxPeriphClockCmd RCC_AHB1PeriphClockCmd
 #define POWER_CHARGE_RCC_AHBxPeriph_GPIOx RCC_AHB1Periph_GPIOA
 #define POWER_UNCHARGE_RCC_AHBxPeriph_GPIOx RCC_AHB1Periph_GPIOC
@@ -62,13 +62,6 @@
 #define POWER_UNCHARGE_GPIO_Pin_x1 GPIO_Pin_4 // CAP_ON
 #define POWER_UNCHARGE_GPIO_Pin_x2 GPIO_Pin_5 // BAT_ON
 #define POWER_UNCHARGE_GPIOx GPIOC
-
-#define Bat_on GPIO_SetBits(POWER_UNCHARGE_GPIOx, POWER_UNCHARGE_GPIO_Pin_x2)
-#define Bat_off GPIO_ResetBits(POWER_UNCHARGE_GPIOx, POWER_UNCHARGE_GPIO_Pin_x2)
-#define CAP_on GPIO_SetBits(POWER_UNCHARGE_GPIOx, POWER_UNCHARGE_GPIO_Pin_x1)
-#define CAP_off GPIO_ResetBits(POWER_UNCHARGE_GPIOx, POWER_UNCHARGE_GPIO_Pin_x1)
-#define Charge_On GPIO_SetBits(POWER_CHARGE_GPIOx, POWER_CHARGE_GPIO_Pin_x1)
-#define Charge_Off GPIO_ResetBits(POWER_CHARGE_GPIOx, POWER_CHARGE_GPIO_Pin_x1)
 
 void SuperPower_Configuration(void);
 

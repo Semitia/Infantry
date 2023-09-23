@@ -26,6 +26,8 @@
 .\objects\ina260.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\ina260.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\ina260.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\ina260.o: ..\Hardware\cap.h
+.\objects\ina260.o: ..\User\main.h
 .\objects\ina260.o: ..\Hardware\can1.h
 .\objects\ina260.o: ..\FreeRTOS\include\FreeRTOS.h
 .\objects\ina260.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
@@ -41,8 +43,7 @@
 .\objects\ina260.o: ..\Hardware\usart2.h
 .\objects\ina260.o: ..\Hardware\uart4.h
 .\objects\ina260.o: ..\Hardware\tim2.h
-.\objects\ina260.o: ..\Hardware\tim4.h
-.\objects\ina260.o: ..\User\main.h
+.\objects\ina260.o: ..\Mylib\tim.h
 .\objects\ina260.o: ..\Hardware\iwdg.h
 .\objects\ina260.o: ..\Library\inc\stm32f4xx_iwdg.h
 .\objects\ina260.o: ..\Hardware\adc.h
@@ -59,6 +60,6 @@
 .\objects\ina260.o: ..\Task\ChassisTask.h
 .\objects\ina260.o: ..\Task\PowerControlTask.h
 .\objects\ina260.o: ..\Task\ZeroCheckTask.h
-.\objects\ina260.o: ..\Task\StartTask.h
+.\objects\ina260.o: ..\Task\Start_Task.h
 .\objects\ina260.o: ..\FreeRTOS\include\task.h
 .\objects\ina260.o: ..\FreeRTOS\include\list.h

@@ -33,3 +33,9 @@
 .\objects\chassis.o: ..\FreeRTOS\include\queue.h
 .\objects\chassis.o: ..\Algorithm\pid.h
 .\objects\chassis.o: ..\Software\motor.h
+.\objects\chassis.o: ..\Algorithm\myMath.h
+.\objects\chassis.o: ..\Library\CMSIS\arm_math.h
+.\objects\chassis.o: ..\Library\CMSIS\core_cm4.h
+.\objects\chassis.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\chassis.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\chassis.o: ..\Hardware\can2.h

@@ -26,6 +26,8 @@
 .\objects\can2.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\can2.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\can2.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\can2.o: ..\Hardware\cap.h
+.\objects\can2.o: ..\User\main.h
 .\objects\can2.o: ..\Hardware\can1.h
 .\objects\can2.o: ..\FreeRTOS\include\FreeRTOS.h
 .\objects\can2.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
@@ -41,8 +43,7 @@
 .\objects\can2.o: ..\Hardware\usart2.h
 .\objects\can2.o: ..\Hardware\uart4.h
 .\objects\can2.o: ..\Hardware\tim2.h
-.\objects\can2.o: ..\Hardware\tim4.h
-.\objects\can2.o: ..\User\main.h
+.\objects\can2.o: ..\Mylib\tim.h
 .\objects\can2.o: ..\Hardware\iwdg.h
 .\objects\can2.o: ..\Library\inc\stm32f4xx_iwdg.h
 .\objects\can2.o: ..\Hardware\adc.h
@@ -59,6 +60,6 @@
 .\objects\can2.o: ..\Task\ChassisTask.h
 .\objects\can2.o: ..\Task\PowerControlTask.h
 .\objects\can2.o: ..\Task\ZeroCheckTask.h
-.\objects\can2.o: ..\Task\StartTask.h
+.\objects\can2.o: ..\Task\Start_Task.h
 .\objects\can2.o: ..\FreeRTOS\include\task.h
 .\objects\can2.o: ..\FreeRTOS\include\list.h
