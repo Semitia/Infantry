@@ -2,9 +2,12 @@
 #define __JUDGEMSG_H
 
 #include "main.h"
+#include "usart.h"
 
-typedef struct
-{
+#define JUDGE_RXBUF_LEN 45
+#define JUDGE_TXBUF_LEN 128
+
+typedef struct __JudgeRecv_t {
     char HeatUpdate_NoUpdate;
     char SpeedUpdate_NoUpdate;
 
@@ -50,8 +53,21 @@ typedef struct
     uint16_t enemy_5_hp;
 
     uint16_t remain_time;
-}JudgeReceive_t;
+}JudgeRecv_t;
+
+typedef struct __JudegSend_t {
+
+}JudgeSend_t;
 
 
+typedef struct __Judge_t {
+    JudgeRecv_t recv;
+    UsartIF_t *usart_if;
+
+}Judge_t;
+
+void judgeInit(Judge_t *judge, UsartIF_t *usart_if);
+void recvJudgeMsg(Judge_t *judge);
 
 #endif
+

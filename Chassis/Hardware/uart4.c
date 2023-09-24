@@ -5,11 +5,10 @@
  * @作者     郭嘉豪
  * @日期     2022.3
 **********************************************************************************************************/
-#include "main.h"
 
-unsigned char JudgeReceiveBuffer[JudgeBufBiggestSize];
-uint8_t Transmit_Pack[128];//裁判系统数据帧////////////////////////////////////////////////////////
-unsigned char JudgeSend[128];//SEND_MAX_SIZE];
+#include "uart4.h"
+UsartIF_t usart4_if;
+
 /**********************************************************************************************************
 *形    参: 无
 *返 回 值: 无
@@ -62,13 +61,13 @@ void UART4_Configuration(void)
 		{
 			DMA_InitTypeDef   dma;
 			/* 配置DMA1 Stream2，UART4接受 */
- 			RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_DMA1,ENABLE);
+			RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_DMA1,ENABLE);
 			DMA_DeInit(DMA1_Stream2);
 			dma.DMA_Channel= DMA_Channel_4;
 			dma.DMA_PeripheralBaseAddr = (uint32_t)&(UART4->DR);
-			dma.DMA_Memory0BaseAddr = (uint32_t)JudgeReceiveBuffer;
+			dma.DMA_Memory0BaseAddr = (uint32_t)usart4_if.rx_buf;
 			dma.DMA_DIR = DMA_DIR_PeripheralToMemory;
-			dma.DMA_BufferSize = JudgeBufBiggestSize;
+			dma.DMA_BufferSize = RX_MAX_SIZE;
 			dma.DMA_PeripheralInc = DMA_PeripheralInc_Disable;
 			dma.DMA_MemoryInc = DMA_MemoryInc_Enable;
 			dma.DMA_PeripheralDataSize = DMA_PeripheralDataSize_Byte;
@@ -92,32 +91,32 @@ void UART4_Configuration(void)
     nvic.NVIC_IRQChannelCmd = ENABLE;
     NVIC_Init(&nvic);
 		
-		{
-			DMA_InitTypeDef   DMA_InitStructure;
-			DMA_DeInit(DMA1_Stream4);
-			while (DMA_GetCmdStatus(DMA1_Stream4) != DISABLE);//等待DMA可配置 
-			/* 配置DMA1 Stream4，UART4发送 */
-			DMA_InitStructure.DMA_Channel            = DMA_Channel_4;               //通道选择
-			DMA_InitStructure.DMA_PeripheralBaseAddr = (u32)&(UART4->DR);      //DMA外设地址
-			DMA_InitStructure.DMA_Memory0BaseAddr    = (u32)Transmit_Pack;      //DMA 存储器0地址
-			DMA_InitStructure.DMA_DIR                = DMA_DIR_MemoryToPeripheral;  //存储器到外设模式
-			DMA_InitStructure.DMA_BufferSize         = 128;//SEND_MAX_SIZE;       //数据传输量 
-			DMA_InitStructure.DMA_PeripheralInc      = DMA_PeripheralInc_Disable;   //外设非增量模式
-			DMA_InitStructure.DMA_MemoryInc          = DMA_MemoryInc_Enable;        //存储器增量模式
-			DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_Byte; //外设数据长度:8位
-			DMA_InitStructure.DMA_MemoryDataSize     = DMA_MemoryDataSize_Byte;     //存储器数据长度:8位
-			DMA_InitStructure.DMA_Mode               = DMA_Mode_Normal;             //使用普通模式 
-			DMA_InitStructure.DMA_Priority           = DMA_Priority_High;         //中等优先级
-			DMA_InitStructure.DMA_FIFOMode           = DMA_FIFOMode_Disable;         
-			DMA_InitStructure.DMA_FIFOThreshold      = DMA_FIFOThreshold_1QuarterFull;
-			DMA_InitStructure.DMA_MemoryBurst        = DMA_MemoryBurst_Single;      //存储器突发单次传输
-			DMA_InitStructure.DMA_PeripheralBurst    = DMA_PeripheralBurst_Single;  //外设突发单次传输
-			DMA_Init(DMA1_Stream4, &DMA_InitStructure);                             //初始化DMA Stream4
+	{
+		DMA_InitTypeDef   DMA_InitStructure;
+		DMA_DeInit(DMA1_Stream4);
+		while (DMA_GetCmdStatus(DMA1_Stream4) != DISABLE);//等待DMA可配置 
+		/* 配置DMA1 Stream4，UART4发送 */
+		DMA_InitStructure.DMA_Channel            = DMA_Channel_4;               //通道选择
+		DMA_InitStructure.DMA_PeripheralBaseAddr = (u32)&(UART4->DR);      //DMA外设地址
+		DMA_InitStructure.DMA_Memory0BaseAddr    = (u32)usart4_if.tx_buf;      //DMA 存储器0地址
+		DMA_InitStructure.DMA_DIR                = DMA_DIR_MemoryToPeripheral;  //存储器到外设模式
+		DMA_InitStructure.DMA_BufferSize         = TX_MAX_SIZE;       //数据传输量 
+		DMA_InitStructure.DMA_PeripheralInc      = DMA_PeripheralInc_Disable;   //外设非增量模式
+		DMA_InitStructure.DMA_MemoryInc          = DMA_MemoryInc_Enable;        //存储器增量模式
+		DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_Byte; //外设数据长度:8位
+		DMA_InitStructure.DMA_MemoryDataSize     = DMA_MemoryDataSize_Byte;     //存储器数据长度:8位
+		DMA_InitStructure.DMA_Mode               = DMA_Mode_Normal;             //使用普通模式 
+		DMA_InitStructure.DMA_Priority           = DMA_Priority_High;         //中等优先级
+		DMA_InitStructure.DMA_FIFOMode           = DMA_FIFOMode_Disable;         
+		DMA_InitStructure.DMA_FIFOThreshold      = DMA_FIFOThreshold_1QuarterFull;
+		DMA_InitStructure.DMA_MemoryBurst        = DMA_MemoryBurst_Single;      //存储器突发单次传输
+		DMA_InitStructure.DMA_PeripheralBurst    = DMA_PeripheralBurst_Single;  //外设突发单次传输
+		DMA_Init(DMA1_Stream4, &DMA_InitStructure);                             //初始化DMA Stream4
 
-			DMA_ITConfig(DMA1_Stream4,DMA_IT_TC,ENABLE);				//DMA2传输完成中断
-			DMA_Cmd(DMA1_Stream4, DISABLE);											//不使能
-		
-		}
+		DMA_ITConfig(DMA1_Stream4,DMA_IT_TC,ENABLE);				//DMA2传输完成中断
+		DMA_Cmd(DMA1_Stream4, DISABLE);											//不使能
+	
+	}
 }
 ///**********************************************************************************************************
 //*函 数 名: DMA1_Stream_IRQHandler
@@ -125,15 +124,15 @@ void UART4_Configuration(void)
 //*形    参: 无
 //*返 回 值: 无
 //**********************************************************************************************************/
-uint8_t JudgeReveice_Flag;
 void DMA1_Stream2_IRQHandler(void)
 {	
 	if(DMA_GetITStatus(DMA1_Stream2, DMA_IT_TCIF2))
 	{ 
-		JudgeReveice_Flag = 1;
+		usart4_if.rx_flag = 1;
 		DMA_ClearITPendingBit(DMA1_Stream2, DMA_IT_TCIF2);
 	}
 }
+
 ///**********************************************************************************************************
 //*函 数 名: DMA1_Stream4_IRQHandler
 //*功能说明: usart2 DMA发送中断
@@ -148,7 +147,7 @@ void DMA1_Stream4_IRQHandler(void)
 		DMA_ClearFlag(DMA1_Stream4, DMA_FLAG_TCIF4);
 		DMA_ClearITPendingBit(DMA1_Stream4, DMA_IT_TCIF4);
 		DMA_Cmd(DMA1_Stream4, DISABLE);			
-    DMAsendflag = 0;
+		usart4_if.tx_flag = 0;
 	}
 }
 

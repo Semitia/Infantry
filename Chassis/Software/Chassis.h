@@ -2,9 +2,16 @@
 #define CHASSIS_H
 
 #include "Kinematic.h"
+#include "JudgeMsg.h"
 #include "can2.h"
+#include "uart4.h"
 
 #define CAP_C (55/9)  //超级电容组的容值
+#define CHASSIS_CTRL_INTERVAL 1
+/* 接口分配 */
+#define GIMBAL_CAN_RX  &can2_rx0
+#define GIMBAL_CAN_TX  CAN2
+#define JUDGE_USART_IF &usart4_if
 
 /**
  * 底盘类型枚举
@@ -32,21 +39,22 @@ typedef struct __StateFlag_t {
 
 
 /**
- * 底盘运动控制结构体
- * 可以配置为麦克纳母轮、全向轮、舵轮，对应不同的运动解算控制结构体
+ * 底盘结构体
 */
 typedef struct __Chassis_t {
     ChassisTypeEnum type_enum;                      //底盘类型
-    StateFlag_t state;                              //状态
-    Kinematic_t kinematic;                          //运动控制结构体
+    StateFlag_t state;                              //状态标记
+    Kinematic_t kinematic;                          //底盘运动控制结构体
+    Judge_t judge;                                  //裁判系统结构体
 
     CanMsgList_t *gimbal_canRx;                     //云台接收数据链表
-    
+    CAN_TypeDef  *gimbal_canTx;                     //云台发送接口
     short pitch_100;                                //云台pitch角度*100
     short yaw_100;                                  //云台yaw角度*100
 }Chassis_t;
 
 void chassisInit(Chassis_t *chassis, ChassisTypeEnum type_enum);
 void recvGimData(Chassis_t *chassis);
+void sendGimData(Chassis_t *chassis);
 #endif
 

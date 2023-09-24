@@ -21,6 +21,9 @@
         "judgemsg.h": "c",
         "uart4.h": "c",
         "usart.h": "c",
-        "can.h": "c"
+        "can.h": "c",
+        "stm32f4xx_dac.h": "c",
+        "stm32f4xx_conf.h": "c",
+        "charsendtask.h": "c"
     }
 }

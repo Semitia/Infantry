@@ -27,8 +27,6 @@
 
 /*Hardware*/
 #include "cap.h"
-#include "can1.h"
-#include "can2.h"
 #include "usart2.h"
 #include "uart4.h"
 #include "tim2.h"

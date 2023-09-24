@@ -3,6 +3,11 @@
 
 #include "main.h"
 
+#include "stm32f4xx.h"
+#include "FreeRTOS.h"
+#include "semphr.h"
+
+
 /**
  * can消息节点
 */
@@ -10,7 +15,7 @@ typedef struct __CanMsgNode_t {
     CanRxMsg msg;
     struct __CanMsgNode_t *next;
     struct __CanMsgNode_t *prev;
-} CanMsgNode_t;
+}CanMsgNode_t;
 
 /**
  * can消息 双向链表
@@ -20,7 +25,7 @@ typedef struct __CanMsgList_t {
     CanMsgNode_t *head;
     CanMsgNode_t *tail;
     SemaphoreHandle_t mutex;    // 互斥信号量
-} CanMsgList_t;
+}CanMsgList_t;
 
 void addCanMsg(CanMsgList_t* list, CanRxMsg new_msg);
 void clearList(CanMsgList_t *list);
