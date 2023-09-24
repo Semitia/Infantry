@@ -8,6 +8,7 @@
 #include "ChassisTask.h"
 
 Chassis_t chassis;
+uint32_t Chassis_high_water = 0;
 void Chassis_task(void *pvParameters)
 {
 	portTickType xLastWakeTime;   //config=0. 32v bits
@@ -18,19 +19,17 @@ void Chassis_task(void *pvParameters)
 	while (1) {
 		xLastWakeTime = xTaskGetTickCount();
 		
-		if(JudgeReveice_Flag)//将它分为两个任务是因为这个数据接收太过耗时？
-		{
-		 xTaskNotifyGive(User_Tasks[JUDGERECEIVE_TASK]);
-		}
+		// if(chassis.judge.recv_flag)//将它分为两个任务是因为这个数据接收太过耗时？
+		// {
+		// 	xTaskNotifyGive(User_Tasks[JUDGERECEIVE_TASK]);
+		// }
+		recvGimData(&chassis);
+		moveCtrl(&chassis);
+		sendGimData(&chassis);
 		
-		Chassis_Loop_Cal();
-		BuildF105();
-		Can2Send0(&F105);
-		
-		VOFA_Send();
-	
+		//VOFA_Send();
 		vTaskDelayUntil(&xLastWakeTime,xFrequency); 
-		 
+
 	#if INCLUDE_uxTaskGetStackHighWaterMark
 		Chassis_high_water = uxTaskGetStackHighWaterMark(NULL);
 	#endif

@@ -24,6 +24,7 @@
         "can.h": "c",
         "stm32f4xx_dac.h": "c",
         "stm32f4xx_conf.h": "c",
-        "charsendtask.h": "c"
+        "charsendtask.h": "c",
+        "arm_math.h": "c"
     }
 }

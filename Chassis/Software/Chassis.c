@@ -63,6 +63,25 @@ void recvGimData(Chassis_t *chassis) {
     return;
 }
 
+/**
+ * @brief  底盘运动控制
+ * @param  Chassis_t *chassis 底盘结构体指针
+ * @retval None
+*/
+void moveCtrl(Chassis_t *chassis) {
+    uint8_t i;
+    Kinematic_t k = chassis->kinematic;
+    updateWheels(&(chassis->kinematic));
+    invKinematic(&(chassis->kinematic));
+    for(i=0; i<4; i++) {
+        k.motor[i].target_current = 
+            PID_Calc(&(k.pid_speed[i]), k.motor[i].target_speed, k.motor[i].speed);
+        k.motor[i].target_current = 
+            LIMIT_MAX_MIN(k.motor[i].target_current, 2000, -2000);
+    }
+    setMotorCurrent(&k);
+}
+
 // /**********************************************************************************************************
 // *函 数 名: BuildF105
 // *功能说明: 构建要传给上层板的F105结构体

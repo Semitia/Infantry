@@ -54,6 +54,7 @@ typedef struct __Chassis_t {
 }Chassis_t;
 
 void chassisInit(Chassis_t *chassis, ChassisTypeEnum type_enum);
+void moveCtrl(Chassis_t *chassis);
 void recvGimData(Chassis_t *chassis);
 void sendGimData(Chassis_t *chassis);
 #endif

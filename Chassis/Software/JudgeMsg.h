@@ -61,8 +61,10 @@ typedef struct __JudegSend_t {
 
 
 typedef struct __Judge_t {
-    JudgeRecv_t recv;
-    UsartIF_t *usart_if;
+    JudgeRecv_t recv_msg;           //接收消息
+    UsartIF_t *usart_if;            //串口接口
+    uint8_t *recv_flag;             //接收标志位，有新消息时为1
+    uint8_t *send_flag;             //发送标志位，正在发送时为1
 
 }Judge_t;
 

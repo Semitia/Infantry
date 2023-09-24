@@ -1,6 +1,7 @@
 #ifndef __CHASSISTASK_H__
 #define __CHASSISTASK_H__
 
+#include "main.h"
 #include "chassis.h"
 
 #define Vol2Current(x,y) (((x) - (y)*76.0)/1.35f) //输入（电压，转速），输出对应的电流
