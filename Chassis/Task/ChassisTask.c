@@ -8,25 +8,6 @@
 
 
 
-
-/**********************************************************************************************************
-*函 数 名: Chassis_Current_send()
-*功能说明: 底盘电流发送函数
-*形    参: 无
-*返 回 值: 无
-**********************************************************************************************************/
-
-#if Mecanum == 2  //舵轮
-void Chassis_Current_send(){
-	ChassisCan1Send(chassis.WheelCurrentSend[0],chassis.WheelCurrentSend[1],chassis.WheelCurrentSend[2],chassis.WheelCurrentSend[3]);
-	SteerCan1Send(chassis.SteeringVolSend[0],chassis.SteeringVolSend[1],chassis.SteeringVolSend[2],chassis.SteeringVolSend[3]);
-}
-#else
-void Chassis_Current_send(void){
-	ChassisCan1Send(chassis.WheelCurrentSend[0],chassis.WheelCurrentSend[1],chassis.WheelCurrentSend[2],chassis.WheelCurrentSend[3]);
-}
-#endif
-
 /**********************************************************************************************************
 *函 数 名: Chassis_CurrentPid_Cal
 *功能说明: 底盘操作

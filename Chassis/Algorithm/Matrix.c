@@ -1,3 +1,11 @@
+/**
+ * @file Matrix.c
+ * @brief 矩阵基本运算库
+ * @author Semitia
+ * @version 0.1
+ * @date 2022-12-28
+*/
+
 #include "Matrix.h"
 
 /**

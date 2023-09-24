@@ -41,6 +41,7 @@ typedef struct __Chassis_t {
     Kinematic_t kinematic;                          //运动控制结构体
 
     CanMsgList_t *gimbal_canRx;                     //云台接收数据链表
+    
     short pitch_100;                                //云台pitch角度*100
     short yaw_100;                                  //云台yaw角度*100
 }Chassis_t;

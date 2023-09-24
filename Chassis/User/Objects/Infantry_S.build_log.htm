@@ -22,102 +22,164 @@ Dialog DLL:      TCM.DLL V1.14.14.0
  
 <h2>Project:</h2>
 D:\WORK\RM\主力考核\Infantry\Chassis\User\Infantry_S.uvprojx
-Project File Date:  09/23/2023
+Project File Date:  09/24/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 3 (build 300)', folder: 'D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin'
-Build target 'Target 1'
+Rebuild target 'Target 1'
+compiling misc.c...
+compiling stm32f4xx_syscfg.c...
+compiling stm32f4xx_exti.c...
+compiling stm32f4xx_dma.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_it.c...
+compiling stm32f4xx_adc.c...
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_flash.c...
+compiling stm32f4xx_can.c...
+compiling main.c...
+assembling startup_stm32f40_41xxx.s...
+compiling stm32f4xx_usart.c...
+compiling stm32f4xx_tim.c...
+compiling stm32f4xx_dac.c...
+compiling stm32f4xx_dbgmcu.c...
+compiling stm32f4xx_iwdg.c...
+compiling list.c...
+compiling croutine.c...
+compiling stm32f4xx_spi.c...
+compiling event_groups.c...
+compiling stm32f4xx_rcc.c...
+compiling queue.c...
+compiling tasks.c...
+compiling timers.c...
+compiling heap_4.c...
+compiling port.c...
+compiling can1.c...
+compiling adc.c...
+compiling can2.c...
+compiling iwdg.c...
+compiling ina260.c...
+compiling counter.c...
+compiling dac.c...
+compiling i2c.c...
+compiling tim2.c...
+compiling uart4.c...
+compiling usart2.c...
+compiling myMath.c...
+compiling cap.c...
+compiling tool.c...
+compiling RLS.c...
+..\Algorithm\RLS.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Algorithm\RLS.c(9): error:  #130: expected a "{"
+  void rlsInit(RLS_t *rls, int dim, double theta[], double P[][INV], double lambda){
+..\Algorithm\RLS.c(10): error:  #20: identifier "lambda" is undefined
+      rls->lambda = lambda;
+..\Algorithm\RLS.c(11): error:  #20: identifier "dim" is undefined
+      rls->dim = dim;
+..\Algorithm\RLS.c(12): error:  #20: identifier "theta" is undefined
+      rls->theta = matrix_init(dim, 1, theta);
+..\Algorithm\RLS.c(13): error:  #20: identifier "P" is undefined
+      rls->P = matrix_init(dim, dim, P);
+..\Algorithm\RLS.c(54): error:  #247: function "rlsUpdate" has already been defined
+  void rlsUpdate(RLS_t *rls, double *x_in, double y) {
+..\Algorithm\RLS.c(57): warning:  #1-D: last line of file ends without a newline
+  }
+..\Algorithm\RLS.c: 2 warnings, 6 errors
+compiling tim.c...
+compiling Matrix.c...
+compiling usart1.c...
 compiling motor.c...
+compiling algorithmOfCRC.c...
+compiling Power.c...
+compiling filters.c...
+compiling pid.c...
 compiling Kinematic.c...
 ..\Algorithm\myMath.h(7): warning:  #1-D: last line of file ends without a newline
   #endif
-..\Software\Kinematic.c(229): error:  #167: argument of type "short *" is incompatible with parameter of type "float32_t *"
+..\Software\Kinematic.c(225): error:  #167: argument of type "short *" is incompatible with parameter of type "float32_t *"
       arm_sqrt_f32(x * x + y * y,&(temp.x));
 ..\Software\Kinematic.c: 1 warning, 1 error
-compiling ChassisTask.c...
-..\Task\ChassisTask.c(21): warning:  #223-D: function "ChassisCan1Send" declared implicitly
-  	ChassisCan1Send(chassis.WheelCurrentSend[0],chassis.WheelCurrentSend[1],chassis.WheelCurrentSend[2],chassis.WheelCurrentSend[3]);
-..\Task\ChassisTask.c(21): error:  #20: identifier "chassis" is undefined
-  	ChassisCan1Send(chassis.WheelCurrentSend[0],chassis.WheelCurrentSend[1],chassis.WheelCurrentSend[2],chassis.WheelCurrentSend[3]);
-..\Task\ChassisTask.c(22): warning:  #223-D: function "SteerCan1Send" declared implicitly
-  	SteerCan1Send(chassis.SteeringVolSend[0],chassis.SteeringVolSend[1],chassis.SteeringVolSend[2],chassis.SteeringVolSend[3]);
-..\Task\ChassisTask.c(39): warning:  #223-D: function "Chassis_Speed_Cal" declared implicitly
-  	Chassis_Speed_Cal();//????xyw?????俣?
-..\Task\ChassisTask.c(40): warning:  #223-D: function "motion_decomposition" declared implicitly
-  	motion_decomposition(chassis.Velocity_vectors);//?硕纸猓?????每?????拥?setpoint
-..\Task\ChassisTask.c(40): error:  #20: identifier "chassis" is undefined
-  	motion_decomposition(chassis.Velocity_vectors);//?硕纸猓?????每?????拥?setpoint
-..\Task\ChassisTask.c(43): error:  #20: identifier "F405" is undefined
-  	if(F405.Chassis_Flag == Chassis_Powerdown_Mode)
-..\Task\ChassisTask.c(51): error:  #20: identifier "powerlimit" is undefined
-  		powerlimit.set_superpower = JudgeReceive.MaxPower;//全部?涞?
-..\Task\ChassisTask.c(51): error:  #20: identifier "JudgeReceive" is undefined
-  		powerlimit.set_superpower = JudgeReceive.MaxPower;//全部?涞?
-..\Task\ChassisTask.c(58): error:  #20: identifier "powerlimit" is undefined
-  			if((chassis.ChassisMotorCanReceive[i].Current != powerlimit.Current_Last[i]))//?獯蔚???值???洗尾?一??
-..\Task\ChassisTask.c(67): error:  #20: identifier "powerlimit" is undefined
-  			powerlimit.Current_Last[i] = chassis.ChassisMotorCanReceive[i].Current;
-..\Task\ChassisTask.c(72): error:  #20: identifier "powerlimit" is undefined
-  		powerlimit.actual_ina260_power = INA260_1.Power/1000;
-..\Task\ChassisTask.c(72): error:  #20: identifier "INA260_1" is undefined
-  		powerlimit.actual_ina260_power = INA260_1.Power/1000;
-..\Task\ChassisTask.c(73): error:  #20: identifier "JudgeReceive" is undefined
-  		if(JudgeReceive.MaxPower<150 && JudgeReceive.MaxPower>0){
-..\Task\ChassisTask.c(78): error:  #20: identifier "JudgeReceive" is undefined
-  		powerlimit.remainEnergy = JudgeReceive.remainEnergy;
-..\Task\ChassisTask.c(79): error:  #20: identifier "superpower" is undefined
-  		powerlimit.capEnergy = 0.5*
-AP_C*(superpower.actual_vol*superpower.actual_vol);
-..\Task\ChassisTask.c(88): warning:  #223-D: function "PowerLimit" declared implicitly
-  		PowerLimit(&powerlimit,superpower.PowerState);//??????????值 并确定????????量系统目??
-..\Task\ChassisTask.c(90): warning:  #223-D: function "set_powersate" declared implicitly
-  		set_powersate(&powerlimit,&superpower,powerlimit.PowerState_control);//?????????菘????藕?superpower.PowerState_Set
-..\Task\ChassisTask.c(112): error:  #20: identifier "JudgeReceive" is undefined
-  	if(JudgeReceive.robot_id < 10)
-..\Task\ChassisTask.c(113): error:  #20: identifier "F105" is undefined
-  		F105.Sendmessage.RobotRed = 1;
-..\Task\ChassisTask.c(115): error:  #20: identifier "F105" is undefined
-  		F105.Sendmessage.RobotRed = 0;			//0为蓝色，1为??色
-..\Task\ChassisTask.c(116): error:  #20: identifier "JudgeReceive" is undefined
-  	switch(JudgeReceive.BulletSpeedMax17)
-..\Task\ChassisTask.c(120): error:  #20: identifier "F105" is undefined
-  			F105.Sendmessage.BulletSpeedLevel = 0;
-..\Task\ChassisTask.c(125): error:  #20: identifier "F105" is undefined
-  			F105.Sendmessage.BulletSpeedLevel = 1;
-..\Task\ChassisTask.c(130): error:  #20: identifier "F105" is undefined
-  			F105.Sendmessage.BulletSpeedLevel = 2;
-..\Task\ChassisTask.c(135): error:  #20: identifier "F105" is undefined
-  			F105.Sendmessage.BulletSpeedLevel = 0;
-..\Task\ChassisTask.c(139): error:  #20: identifier "F105" is undefined
-  	F105.Sendmessage.shooterHeat17 = JudgeReceive.shooterHeat17;
-..\Task\ChassisTask.c(139): error:  #20: identifier "JudgeReceive" is undefined
-  	F105.Sendmessage.shooterHeat17 = JudgeReceive.shooterHeat17;
-..\Task\ChassisTask.c(144): error:  #20: identifier "chassis" is undefined
-  	F105.ChassisSpeedw=0.026f*(chassis.ChassisMotorCanReceive[0].RealSpeed+chassis.ChassisMotorCanReceive[1].RealSpeed+chassis.ChassisMotorCanReceive[2].RealSpeed+chassis.ChassisMotorCanReceive[3].RealSpeed);
-..\Task\ChassisTask.c(158): error:  #20: identifier "powerlimit" is undefined
-  	powerlimit.k_dynamic = RM3508_K;
-..\Task\ChassisTask.c(195): error:  #20: identifier "chassis" is undefined
-  		chassis.PIDSteeringAnglePosition[i].deadband=2.5;
-..\Task\ChassisTask.c(218): error:  #20: identifier "chassis" is undefined
-  	chassis.k_xy = 3.0f;
-..\Task\ChassisTask.c(261): error:  #20: identifier "JudgeReceive" is undefined
-  		if(JudgeReceive.remainEnergy<20)//省????量不???耍桓??莩涞???
-..\Task\ChassisTask.c(264): error:  #20: identifier "ChargeState" is undefined
-  		ChargeState = ChargeOff ;
-..\Task\ChassisTask.c(269): error:  #20: identifier "ChargeState" is undefined
-  			ChargeState = ChargeOn;
-..\Task\ChassisTask.c(274): warning:  #223-D: function "Can2Send0" declared implicitly
-  		Can2Send0(&F105);
-..\Task\ChassisTask.c(274): error:  #20: identifier "F105" is undefined
-  		Can2Send0(&F105);
-..\Task\ChassisTask.c: 7 warnings, 30 errors
 compiling Chassis.c...
 ..\Algorithm\myMath.h(7): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\Software\Chassis.c: 1 warning, 0 errors
+compiling ChassisTask.c...
+..\Task\ChassisTask.c(20): warning:  #223-D: function "Chassis_Speed_Cal" declared implicitly
+  	Chassis_Speed_Cal();//????xyw?????俣?
+..\Task\ChassisTask.c(21): warning:  #223-D: function "motion_decomposition" declared implicitly
+  	motion_decomposition(chassis.Velocity_vectors);//?硕纸猓?????每?????拥?setpoint
+..\Task\ChassisTask.c(21): error:  #20: identifier "chassis" is undefined
+  	motion_decomposition(chassis.Velocity_vectors);//?硕纸猓?????每?????拥?setpoint
+..\Task\ChassisTask.c(24): error:  #20: identifier "F405" is undefined
+  	if(F405.Chassis_Flag == Chassis_Powerdown_Mode)
+..\Task\ChassisTask.c(32): error:  #20: identifier "powerlimit" is undefined
+  		powerlimit.set_superpower = JudgeReceive.MaxPower;//全部?涞?
+..\Task\ChassisTask.c(32): error:  #20: identifier "JudgeReceive" is undefined
+  		powerlimit.set_superpower = JudgeReceive.MaxPower;//全部?涞?
+..\Task\ChassisTask.c(39): error:  #20: identifier "powerlimit" is undefined
+  			if((chassis.ChassisMotorCanReceive[i].Current != powerlimit.Current_Last[i]))//?獯蔚???值???洗尾?一??
+..\Task\ChassisTask.c(48): error:  #20: identifier "powerlimit" is undefined
+  			powerlimit.Current_Last[i] = chassis.ChassisMotorCanReceive[i].Current;
+..\Task\ChassisTask.c(53): error:  #20: identifier "powerlimit" is undefined
+  		powerlimit.actual_ina260_power = INA260_1.Power/1000;
+..\Task\ChassisTask.c(53): error:  #20: identifier "INA260_1" is undefined
+  		powerlimit.actual_ina260_power = INA260_1.Power/1000;
+..\Task\ChassisTask.c(54): error:  #20: identifier "JudgeReceive" is undefined
+  		if(JudgeReceive.MaxPower<150 && JudgeReceive.MaxPower>0){
+..\Task\ChassisTask.c(59): error:  #20: identifier "JudgeReceive" is undefined
+  		powerlimit.remainEnergy = JudgeReceive.remainEnergy;
+..\Task\ChassisTask.c(60): error:  #20: identifier "superpower" is undefined
+  		powerlimit.capEnergy = 0.5*
+AP_C*(superpower.actual_vol*superpower.actual_vol);
+..\Task\ChassisTask.c(69): warning:  #223-D: function "PowerLimit" declared implicitly
+  		PowerLimit(&powerlimit,superpower.PowerState);//??????????值 并确定????????量系统目??
+..\Task\ChassisTask.c(71): warning:  #223-D: function "set_powersate" declared implicitly
+  		set_powersate(&powerlimit,&superpower,powerlimit.PowerState_control);//?????????菘????藕?superpower.PowerState_Set
+..\Task\ChassisTask.c(80): warning:  #223-D: function "Chassis_Current_send" declared implicitly
+  	Chassis_Current_send();
+..\Task\ChassisTask.c(93): error:  #20: identifier "JudgeReceive" is undefined
+  	if(JudgeReceive.robot_id < 10)
+..\Task\ChassisTask.c(94): error:  #20: identifier "F105" is undefined
+  		F105.Sendmessage.RobotRed = 1;
+..\Task\ChassisTask.c(96): error:  #20: identifier "F105" is undefined
+  		F105.Sendmessage.RobotRed = 0;			//0为蓝色，1为??色
+..\Task\ChassisTask.c(97): error:  #20: identifier "JudgeReceive" is undefined
+  	switch(JudgeReceive.BulletSpeedMax17)
+..\Task\ChassisTask.c(101): error:  #20: identifier "F105" is undefined
+  			F105.Sendmessage.BulletSpeedLevel = 0;
+..\Task\ChassisTask.c(106): error:  #20: identifier "F105" is undefined
+  			F105.Sendmessage.BulletSpeedLevel = 1;
+..\Task\ChassisTask.c(111): error:  #20: identifier "F105" is undefined
+  			F105.Sendmessage.BulletSpeedLevel = 2;
+..\Task\ChassisTask.c(116): error:  #20: identifier "F105" is undefined
+  			F105.Sendmessage.BulletSpeedLevel = 0;
+..\Task\ChassisTask.c(120): error:  #20: identifier "F105" is undefined
+  	F105.Sendmessage.shooterHeat17 = JudgeReceive.shooterHeat17;
+..\Task\ChassisTask.c(120): error:  #20: identifier "JudgeReceive" is undefined
+  	F105.Sendmessage.shooterHeat17 = JudgeReceive.shooterHeat17;
+..\Task\ChassisTask.c(125): error:  #20: identifier "chassis" is undefined
+  	F105.ChassisSpeedw=0.026f*(chassis.ChassisMotorCanReceive[0].RealSpeed+chassis.ChassisMotorCanReceive[1].RealSpeed+chassis.ChassisMotorCanReceive[2].RealSpeed+chassis.ChassisMotorCanReceive[3].RealSpeed);
+..\Task\ChassisTask.c(139): error:  #20: identifier "powerlimit" is undefined
+  	powerlimit.k_dynamic = RM3508_K;
+..\Task\ChassisTask.c(176): error:  #20: identifier "chassis" is undefined
+  		chassis.PIDSteeringAnglePosition[i].deadband=2.5;
+..\Task\ChassisTask.c(199): error:  #20: identifier "chassis" is undefined
+  	chassis.k_xy = 3.0f;
+..\Task\ChassisTask.c(242): error:  #20: identifier "JudgeReceive" is undefined
+  		if(JudgeReceive.remainEnergy<20)//省????量不???耍桓??莩涞???
+..\Task\ChassisTask.c(245): error:  #20: identifier "ChargeState" is undefined
+  		ChargeState = ChargeOff ;
+..\Task\ChassisTask.c(250): error:  #20: identifier "ChargeState" is undefined
+  			ChargeState = ChargeOn;
+..\Task\ChassisTask.c(255): warning:  #223-D: function "Can2Send0" declared implicitly
+  		Can2Send0(&F105);
+..\Task\ChassisTask.c(255): error:  #20: identifier "F105" is undefined
+  		Can2Send0(&F105);
+..\Task\ChassisTask.c: 6 warnings, 29 errors
 compiling Start_Task.c...
-compiling usart1.c...
-".\Objects\Infantry_S.axf" - 31 Error(s), 9 Warning(s).
+compiling DataReceiveTask.c...
+".\Objects\Infantry_S.axf" - 36 Error(s), 10 Warning(s).
 
 <h2>Collection of Component include folders:</h2>
   D:\WORK\RM\主力考核\Infantry\Chassis\User\RTE
@@ -125,7 +187,7 @@ compiling usart1.c...
 
 <h2>Collection of Component Files used:</h2>
 Target not created.
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:09
 </pre>
 </body>
 </html>

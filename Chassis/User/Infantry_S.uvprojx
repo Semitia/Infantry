@@ -644,6 +644,11 @@
               <FileType>1</FileType>
               <FilePath>..\Algorithm\Matrix.c</FilePath>
             </File>
+            <File>
+              <FileName>RLS.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Algorithm\RLS.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -668,6 +673,21 @@
               <FileName>Power.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Software\Power.c</FilePath>
+            </File>
+            <File>
+              <FileName>JudgeMsg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\JudgeMsg.c</FilePath>
+            </File>
+            <File>
+              <FileName>Usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\Usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>Can.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\Can.c</FilePath>
             </File>
           </Files>
         </Group>

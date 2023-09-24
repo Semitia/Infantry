@@ -188,27 +188,23 @@ float calculateShortestDistance(float yaw_now_360, float yaw_set_360,float* reve
 /**
  * @brief 使用can通信发送舵轮电机角度
 */
-void SteerCan1Send(short a,short b,short c,short d)
+void SteerCan1Send(Kinematic_t *kinematic)
 {
-	CanTxMsg tx_message;
-	tx_message.IDE = CAN_ID_STD;    
-	tx_message.RTR = CAN_RTR_DATA; 
-	tx_message.DLC = 0x08;    
-	tx_message.StdId = 0x1FF;
-	a=LIMIT_MAX_MIN(a,30000,-30000);
-	b=LIMIT_MAX_MIN(b,30000,-30000);
-	c=LIMIT_MAX_MIN(c,30000,-30000);
-	d=LIMIT_MAX_MIN(d,30000,-30000);
-	tx_message.Data[0] = (unsigned char)((a>>8)&0xff);
-	tx_message.Data[1] = (unsigned char)(a&0xff);  
-	tx_message.Data[2] = (unsigned char)((b>>8)&0xff);
-	tx_message.Data[3] = (unsigned char)(b&0xff);
-	tx_message.Data[4] = (unsigned char)((c>>8)&0xff);
-	tx_message.Data[5] = (unsigned char)(c&0xff);
-	tx_message.Data[6] = (unsigned char)((d>>8)&0xff);
-	tx_message.Data[7] = (unsigned char)(d&0xff);
-	CAN_Transmit(CAN1,&tx_message);
-	
+    CanTxMsg tx_msg;
+    tx_msg.IDE = CAN_ID_STD;
+    tx_msg.RTR = CAN_RTR_DATA;
+    tx_msg.DLC = 0x08;
+    tx_msg.StdId = 0x1FF;
+    tx.msg.Data[0] = (uint8_t)((kinematic->steering_motor[0].target_current >> 8)&0xff);
+    tx.msg.Data[1] = (uint8_t)(kinematic->steering_motor[0].target_current&0xff);
+    tx.msg.Data[2] = (uint8_t)((kinematic->steering_motor[1].target_current >> 8)&0xff);
+    tx.msg.Data[3] = (uint8_t)(kinematic->steering_motor[1].target_current&0xff);
+    tx.msg.Data[4] = (uint8_t)((kinematic->steering_motor[2].target_current >> 8)&0xff);
+    tx.msg.Data[5] = (uint8_t)(kinematic->steering_motor[2].target_current&0xff);
+    tx.msg.Data[6] = (uint8_t)((kinematic->steering_motor[3].target_current >> 8)&0xff);
+    tx.msg.Data[7] = (uint8_t)(kinematic->steering_motor[3].target_current&0xff);
+    Can_Transmit(kinematic->can_tx, &tx_msg);
+	return;
 }
 
 #endif

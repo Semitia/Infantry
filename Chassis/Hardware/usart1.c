@@ -7,7 +7,8 @@
 **********************************************************************************************************/
 #include "main.h"
 
-unsigned char sbus_rx_buffer[18];
+uint8_t sbus_rx_buffer[18];
+uint8_t usart1_txbuf[50];
 /**********************************************************************************************************
 *函 数 名: USART1_Configuration
 *功能说明: 遥控器串口初始化
@@ -51,12 +52,12 @@ void USART1_Configuration(void)
 		
 		{
 			DMA_InitTypeDef   dma;
- 			RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_DMA2,ENABLE);
-			DMA_DeInit(DMA2_Stream5);
+			RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_DMA2,ENABLE);
+			DMA_DeInit(DMA2_Stream7);
 			dma.DMA_Channel= DMA_Channel_4;
 			dma.DMA_PeripheralBaseAddr = (uint32_t)&(USART1->DR);
-			dma.DMA_Memory0BaseAddr = (uint32_t)sbus_rx_buffer;
-			dma.DMA_DIR = DMA_DIR_PeripheralToMemory;
+			dma.DMA_Memory0BaseAddr = (uint32_t)usart1_txbuf;
+			dma.DMA_DIR = DMA_DIR_MemoryToPeripheral;
 			dma.DMA_BufferSize = 50;
 			dma.DMA_PeripheralInc = DMA_PeripheralInc_Disable;
 			dma.DMA_MemoryInc = DMA_MemoryInc_Enable;
@@ -68,9 +69,9 @@ void USART1_Configuration(void)
 			dma.DMA_FIFOThreshold = DMA_FIFOThreshold_1QuarterFull;
 			dma.DMA_MemoryBurst = DMA_Mode_Normal;
 			dma.DMA_PeripheralBurst = DMA_PeripheralBurst_Single;
-			DMA_Init(DMA2_Stream5,&dma);
-			DMA_ITConfig(DMA2_Stream5,DMA_IT_TC,ENABLE);
-			DMA_Cmd(DMA2_Stream5,ENABLE);
+			DMA_Init(DMA2_Stream7,&dma);
+			DMA_ITConfig(DMA2_Stream7,DMA_IT_TC,ENABLE);
+			DMA_Cmd(DMA2_Stream7,DISABLE);
 		}
 }
 
@@ -85,15 +86,15 @@ void USART1_IRQHandler(void)
 	static int DATA_LENGTH=0;
 	if (USART_GetITStatus(USART1, USART_IT_IDLE) != RESET)
 	{
-    (void)USART1->SR;
+		(void)USART1->SR;
 		(void)USART1->DR;	
-	  DMA_Cmd(DMA2_Stream5,DISABLE);
-	  DATA_LENGTH=RX_USART1_BUFFER-DMA_GetCurrDataCounter(DMA2_Stream5);
-		 if(DATA_LENGTH==18)
-		 {
-				RemoteReceive(sbus_rx_buffer);//解码函数
-		 }
+		DMA_Cmd(DMA2_Stream5,DISABLE);
+		DATA_LENGTH=RX_USART1_BUFFER-DMA_GetCurrDataCounter(DMA2_Stream5);
+		if(DATA_LENGTH==18)
+		{
+			RemoteReceive(sbus_rx_buffer);//解码函数
+		}
 		DMA_SetCurrDataCounter(DMA2_Stream5,RX_USART1_BUFFER);	
 		DMA_Cmd(DMA2_Stream5,ENABLE);
-  }
+	}
 }*/

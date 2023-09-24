@@ -16,6 +16,11 @@
         "stdio.h": "c",
         "freertos.h": "c",
         "cap.h": "c",
-        "mymath.h": "c"
+        "mymath.h": "c",
+        "rls.h": "c",
+        "judgemsg.h": "c",
+        "uart4.h": "c",
+        "usart.h": "c",
+        "can.h": "c"
     }
 }
