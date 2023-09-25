@@ -1,6 +1,4 @@
-#include "main.h"
 #include "tim.h"
-
 
 void TIM4_Init(void)
 {

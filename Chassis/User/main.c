@@ -1,9 +1,5 @@
 #include "main.h"
 
-#include "FreeRTOSConfig.h"
-#include "FreeRTOS.h"
-#include "task.h"
-
 void System_Init(void);
 void System_Configration(void);
 /**

@@ -1,4 +1,4 @@
-#include "main.h"
+#include "pid.h"
 /**
   * @brief  PID反馈算法
   * @param  PID_Struct *P  PID参数结构体

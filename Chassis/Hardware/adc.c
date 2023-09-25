@@ -1,4 +1,4 @@
-#include "main.h"
+#include "adc.h"
 
 uint16_t ADC_ConvertedValue[ADC_NUM * ADC_SAMPLE_NUM];
 

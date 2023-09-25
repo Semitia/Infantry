@@ -1,15 +1,7 @@
 #ifndef _BSP_SUPER_POWER_H
 #define _BSP_SUPER_POWER_H
 
-#include <stm32f4xx.h>
-#include <stm32f4xx_conf.h>
-#include <string.h>
-#include <stdint.h>
-#include <math.h>
-#include <stdio.h>
-#include <stdlib.h>
-
-#include "tools.h"
+#include "sys.h"
 
 #define ADC_NUM 3         //�ɼ�ͨ����Ŀ2+�¶�ͨ��1
 #define ADC_SAMPLE_NUM 30 //��������
@@ -62,6 +54,13 @@
 #define POWER_UNCHARGE_GPIO_Pin_x1 GPIO_Pin_4 // CAP_ON
 #define POWER_UNCHARGE_GPIO_Pin_x2 GPIO_Pin_5 // BAT_ON
 #define POWER_UNCHARGE_GPIOx GPIOC
+
+#define Bat_on GPIO_SetBits(POWER_UNCHARGE_GPIOx, POWER_UNCHARGE_GPIO_Pin_x2)
+#define Bat_off GPIO_ResetBits(POWER_UNCHARGE_GPIOx, POWER_UNCHARGE_GPIO_Pin_x2)
+#define CAP_on GPIO_SetBits(POWER_UNCHARGE_GPIOx, POWER_UNCHARGE_GPIO_Pin_x1)
+#define CAP_off GPIO_ResetBits(POWER_UNCHARGE_GPIOx, POWER_UNCHARGE_GPIO_Pin_x1)
+#define Charge_On GPIO_SetBits(POWER_CHARGE_GPIOx, POWER_CHARGE_GPIO_Pin_x1)
+#define Charge_Off GPIO_ResetBits(POWER_CHARGE_GPIOx, POWER_CHARGE_GPIO_Pin_x1)
 
 void SuperPower_Configuration(void);
 

@@ -1,6 +1,8 @@
 #ifndef __PID_H
 #define __PID_H
 
+#include "sys.h"
+
 /**
  * @brief  PID½á¹¹Ìå
 */

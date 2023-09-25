@@ -6,7 +6,7 @@
  * @param theta 参数向量
  * @param P 协方差矩阵
 */
-void rlsInit(RLS_t *rls, int dim, double theta[][1], double P[][INV], double lambda){
+void rlsInit(RLS_t *rls, int dim, double theta[][INV], double P[][INV], double lambda){
     rls->lambda = lambda;
     rls->dim = dim;
     rls->theta = matrix_init(dim, 1, theta);

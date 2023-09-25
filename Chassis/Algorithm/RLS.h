@@ -13,7 +13,7 @@ typedef struct __RLS_t{
     float lambda;       //遗忘因子
 }RLS_t;
 
-void rlsInit(RLS_t *rls, int dim, double theta[][1], double P[][INV], double lambda);
+void rlsInit(RLS_t *rls, int dim, double theta[][INV], double P[][INV], double lambda);
 void rlsUpdate(RLS_t *rls, double *x_in, double y);
 
 #endif

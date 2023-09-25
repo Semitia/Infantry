@@ -1,6 +1,8 @@
 #ifndef __INA260_H
 #define __INA260_H
-#include "stm32f4xx.h"
+
+#include "sys.h"
+#include "i2c.h"
 
 #define INA260_1_ID 	0x45		//1000101
 #define INA260_2_ID 	0x44		//1000100

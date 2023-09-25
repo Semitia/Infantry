@@ -1,6 +1,8 @@
 #ifndef START_TASK_H
 #define START_TASK_H
-#include "main.h"
+
+#include "sys.h"
+#include "ChassisTask.h"
 
 enum TASK_LIST
 {

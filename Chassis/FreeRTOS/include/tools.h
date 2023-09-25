@@ -7,7 +7,7 @@
 #ifndef FALSE
 #define FALSE 0
 #endif // !
-//#define LIMIT_MAX_MIN(x, max, min) (((x) <= (min)) ? (min) : (((x) >= (max)) ? (max) : (x)))
+
 #ifndef PI
 #define PI 3.14159265358979f
 #endif
@@ -17,7 +17,6 @@
 
 /* 普通延时 */
 //void delay_ms(unsigned long t);
-void delay_us(unsigned long t);
-void delay_us_f(float us);
+
 
 #endif // !_TOOLS_H

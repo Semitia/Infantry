@@ -25,6 +25,16 @@
         "stm32f4xx_dac.h": "c",
         "stm32f4xx_conf.h": "c",
         "charsendtask.h": "c",
-        "arm_math.h": "c"
+        "arm_math.h": "c",
+        "os_tick.h": "c",
+        "ina260.h": "c",
+        "sys.h": "c",
+        "freertosconfig.h": "c",
+        "counter.h": "c",
+        "DataScope_DP.C": "cpp",
+        "datareceivetask.h": "c",
+        "stm32f4xx.h": "c",
+        "start_task.h": "c",
+        "tim.h": "c"
     }
 }

@@ -14,7 +14,7 @@
 void judgeInit(Judge_t *judge, UsartIF_t *usart_if) {
     usartIfInit(usart_if, JUDGE_RXBUF_LEN, JUDGE_TXBUF_LEN);
     judge->usart_if = usart_if;
-    judge->recv_flag = usart_if->rx_flag;
+    judge->recv_flag = &(usart_if->rx_flag);
     return;
 }
 
@@ -25,7 +25,6 @@ void judgeInit(Judge_t *judge, UsartIF_t *usart_if) {
 void recvJudgeMsg(Judge_t *judge) {
     uint8_t *p = judge->usart_if->rx_buf;
     
-    
     return;
 }
 
@@ -34,8 +33,6 @@ void recvJudgeMsg(Judge_t *judge) {
 // uint16_t receivePower;
 // u8 jdugetemp;
 // u8 is_game_start;
-// extern F105_Typedef F105;
-// extern Power_Limit_type powerlimit;
 // void JudgeBuffReceive(unsigned char ReceiveBuffer[],uint16_t DataLen)
 // {
 // 	uint16_t cmd_id;

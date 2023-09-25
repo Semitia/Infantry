@@ -158,3 +158,4 @@ void sendGimData(Chassis_t *chassis) {
     CAN_Transmit(CAN2, &tx_msg);
     return;
 }
+

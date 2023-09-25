@@ -1,8 +1,4 @@
 #include "Start_Task.h"
-#include "FreeRTOSConfig.h"
-#include "FreeRTOS.h"
-#include "task.h"
-#include "tim.h"
 
 uint32_t CPU_high_water;
 TaskHandle_t User_Tasks[TASK_NUM];
@@ -35,17 +31,18 @@ void start_task(void *pvParameters)
                 (TaskHandle_t *)&User_Tasks[CHASSIS_TASK]);   //任务句柄
                 
 
-	vTaskDelete(StartTask_Handler); //删除开始任务
-  taskEXIT_CRITICAL();            //退出临界区
+	vTaskDelete(StartTask_Handler);                       //删除开始任务
+  taskEXIT_CRITICAL();                                  //退出临界区
 }
 
 
 
 void CPU_task(void *pvParameters)
 {
-	
-	uint8_t CPU_RunInfo1[200]; //保存任务运行时间信息 分别是：任务名 任务状态 优先级 剩余栈 任务序号
-  uint8_t CPU_RunInfo2[200]; //保存任务运行时间信息 分别是：任务名 运行计数  使用率
+	//保存任务运行时间信息：任务名 任务状态 优先级 剩余栈 任务序号
+	uint8_t CPU_RunInfo1[200];
+  //保存任务运行时间信息：任务名 运行计数  使用率
+  uint8_t CPU_RunInfo2[200];
 	
   while (1) {
     memset(CPU_RunInfo1,0,200); //信息缓冲区清零

@@ -1,7 +1,7 @@
 #ifndef __JUDGEMSG_H
 #define __JUDGEMSG_H
 
-#include "main.h"
+#include "sys.h"
 #include "usart.h"
 
 #define JUDGE_RXBUF_LEN 45
@@ -56,7 +56,7 @@ typedef struct __JudgeRecv_t {
 }JudgeRecv_t;
 
 typedef struct __JudegSend_t {
-
+		uint8_t data;
 }JudgeSend_t;
 
 

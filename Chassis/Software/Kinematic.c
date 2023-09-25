@@ -210,22 +210,22 @@ void SteerCan1Send(Kinematic_t *kinematic)
 #endif
 
 
-/**
- * @brief 速度向量相加
- * @param a 向量a
- * @param b 向量b
- * @retval 相加后的向量
-*/
-Velocity_t addVector(Velocity_t *a, Velocity_t *b) {
-    Velocity_t temp;
-    float a_yaw = DEG2R(a->w);
-    float b_yaw = DEG2R(b->w);
-    float x = a->x * arm_cos_f32(a_yaw) + b->x * arm_cos_f32(b_yaw);
-    float y = a->y * arm_sin_f32(a_yaw) + b->y * arm_sin_f32(b_yaw);
-    arm_sqrt_f32(x * x + y * y,&(temp.x));
-    temp.w = R2DEG(atan2(y, x));
-    return temp;
-}
+// /**
+//  * @brief 速度向量相加
+//  * @param a 向量a
+//  * @param b 向量b
+//  * @retval 相加后的向量
+// */
+// Velocity_t addVector(Velocity_t *a, Velocity_t *b) {
+//     Velocity_t temp;
+//     float a_yaw = DEG2R(a->w);
+//     float b_yaw = DEG2R(b->w);
+//     float x = a->x * arm_cos_f32(a_yaw) + b->x * arm_cos_f32(b_yaw);
+//     float y = a->y * arm_sin_f32(a_yaw) + b->y * arm_sin_f32(b_yaw);
+//     arm_sqrt_f32(x * x + y * y,&(temp.x));
+//     temp.w = R2DEG(atan2(y, x));
+//     return temp;
+// }
 
 /**
  * @brief 使用Can通信发送电机期望电流

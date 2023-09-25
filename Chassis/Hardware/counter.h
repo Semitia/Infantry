@@ -1,13 +1,7 @@
 #ifndef _COUNTER_H
 #define _COUNTER_H
 
-#include <stm32f4xx.h>
-#include <stm32f4xx_conf.h>
-#include <string.h>
-#include <stdint.h>
-#include <math.h>
-#include <stdio.h>
-#include <stdlib.h>
+#include "sys.h"
 
 /* Params START */
 #define UINT_MAX UINT16_MAX  //定时器位数 tim2 4是32位，其他16位

@@ -1,11 +1,7 @@
 #ifndef __CAN_H__
 #define __CAN_H__
 
-#include "main.h"
-
-#include "stm32f4xx.h"
-#include "FreeRTOS.h"
-#include "semphr.h"
+#include "sys.h"
 
 
 /**
