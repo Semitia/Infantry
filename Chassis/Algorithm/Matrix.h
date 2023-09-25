@@ -29,6 +29,8 @@ void fprintf_matrix(Matrix_t *mat, FILE *fp);
 Matrix_t add_matrix(Matrix_t m1, Matrix_t m2);
 Matrix_t sub_matrix(Matrix_t m1, Matrix_t m2);
 Matrix_t mul_matrix(Matrix_t m1, Matrix_t m2);
+Matrix_t numul_matrix(Matrix_t m1, double num);
+Matrix_t numdiv_matrix(Matrix_t m1, double num);
 void add_row(int i, int j, double k, Matrix_t *M);
 void add_col(int i, int j, double k, Matrix_t *M);
 Matrix_t matrix_init(int m, int n, double matrix[][INV]);

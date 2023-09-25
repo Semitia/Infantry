@@ -27,7 +27,6 @@ void printf_matrix(Matrix_t *Mat)
 
 /**
  * @brief printf the matrix data to a file
- * 
  * @param mat 
  * @param fp 
  */
@@ -44,8 +43,7 @@ void fprintf_matrix(Matrix_t *mat, FILE *fp)
 }
 
 /**
- * @brief 
- * 
+ * @brief Matrix Addition
  * @param m1 
  * @param m2 
  * @return Matrix_t 
@@ -61,6 +59,12 @@ Matrix_t add_matrix(Matrix_t m1, Matrix_t m2)
     return m1;
 }
 
+/**
+ * @brief Matrix Subtraction
+ * @param m1 
+ * @param m2 
+ * @return Matrix_t 
+ */
 Matrix_t sub_matrix(Matrix_t m1, Matrix_t m2)
 {
     int i,j;
@@ -96,6 +100,40 @@ Matrix_t mul_matrix(Matrix_t m1, Matrix_t m2)
         }
     }
     return ans;
+}
+
+/**
+ * @brief Matrix Number Multiplication
+ * @param m1 
+ * @param num 
+ * @return Matrix_t 
+ */
+Matrix_t numul_matrix(Matrix_t m1, double num)
+{
+    int i,j;
+    for(i=0; i<m1.m; i++)
+    {
+        for(j=0; j<m1.n; j++)
+        { m1.matrix[i][j] *= num; }
+    }
+    return m1;
+}
+
+/**
+ * @brief Matrix Number Division
+ * @param m1
+ * @param num
+ * @return Matrix_t
+ */
+Matrix_t numdiv_matrix(Matrix_t m1, double num)
+{
+    int i,j;
+    for(i=0; i<m1.m; i++)
+    {
+        for(j=0; j<m1.n; j++)
+        { m1.matrix[i][j] /= num; }
+    }
+    return m1;
 }
 
 /**
