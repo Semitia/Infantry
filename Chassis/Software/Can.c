@@ -1,8 +1,6 @@
 #include "Can.h"
 
 void addCanMsg(CanMsgList_t* list, CanRxMsg new_msg) {
-	//获取互斥信号量
-	xSemaphoreTake(list->mutex, portMAX_DELAY);
     // 创建一个新的链表节点
     CanMsgNode_t* new_node = (CanMsgNode_t*)pvPortMalloc(sizeof(CanMsgNode_t));
     if (new_node == NULL) {
@@ -29,8 +27,6 @@ void addCanMsg(CanMsgList_t* list, CanRxMsg new_msg) {
     }
     // 更新消息数量
     list->num++;
-	//释放互斥信号量
-	xSemaphoreGive(list->mutex);
 }
 
 /**
