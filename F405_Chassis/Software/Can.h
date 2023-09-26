@@ -4,7 +4,7 @@
 #include "sys.h"
 //#include "ChassisTask.h"
 
-#define CAN_MSG_LIST_MAX_NUM 12
+#define CAN_MSG_LIST_MAX_NUM 8
 /**
  * can消息节点
 */

@@ -67,6 +67,10 @@
 .\objects\graphicssendtask.o: ..\Task\ChassisTask.h
 .\objects\graphicssendtask.o: ..\Task\PowerControlTask.h
 .\objects\graphicssendtask.o: ..\Task\ZeroCheckTask.h
+.\objects\graphicssendtask.o: ..\Software\chassis.h
+.\objects\graphicssendtask.o: ..\Software\Kinematic.h
+.\objects\graphicssendtask.o: ..\Software\motor.h
+.\objects\graphicssendtask.o: ..\Software\JudgeMsg.h
 .\objects\graphicssendtask.o: ..\Task\GraphicsSendTask.h
 .\objects\graphicssendtask.o: ..\Task\CharSendTask.h
 .\objects\graphicssendtask.o: ..\Task\StartTask.h

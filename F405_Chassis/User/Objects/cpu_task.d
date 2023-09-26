@@ -69,6 +69,10 @@
 .\objects\cpu_task.o: ..\Task\ChassisTask.h
 .\objects\cpu_task.o: ..\Task\PowerControlTask.h
 .\objects\cpu_task.o: ..\Task\ZeroCheckTask.h
+.\objects\cpu_task.o: ..\Software\chassis.h
+.\objects\cpu_task.o: ..\Software\Kinematic.h
+.\objects\cpu_task.o: ..\Software\motor.h
+.\objects\cpu_task.o: ..\Software\JudgeMsg.h
 .\objects\cpu_task.o: ..\Task\GraphicsSendTask.h
 .\objects\cpu_task.o: ..\Task\CharSendTask.h
 .\objects\cpu_task.o: ..\Task\StartTask.h

@@ -67,6 +67,10 @@
 .\objects\datareceivetask.o: ..\Task\ChassisTask.h
 .\objects\datareceivetask.o: ..\Task\PowerControlTask.h
 .\objects\datareceivetask.o: ..\Task\ZeroCheckTask.h
+.\objects\datareceivetask.o: ..\Software\chassis.h
+.\objects\datareceivetask.o: ..\Software\Kinematic.h
+.\objects\datareceivetask.o: ..\Software\motor.h
+.\objects\datareceivetask.o: ..\Software\JudgeMsg.h
 .\objects\datareceivetask.o: ..\Task\GraphicsSendTask.h
 .\objects\datareceivetask.o: ..\Task\CharSendTask.h
 .\objects\datareceivetask.o: ..\Task\StartTask.h

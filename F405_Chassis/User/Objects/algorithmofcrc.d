@@ -67,6 +67,10 @@
 .\objects\algorithmofcrc.o: ..\Task\ChassisTask.h
 .\objects\algorithmofcrc.o: ..\Task\PowerControlTask.h
 .\objects\algorithmofcrc.o: ..\Task\ZeroCheckTask.h
+.\objects\algorithmofcrc.o: ..\Software\chassis.h
+.\objects\algorithmofcrc.o: ..\Software\Kinematic.h
+.\objects\algorithmofcrc.o: ..\Software\motor.h
+.\objects\algorithmofcrc.o: ..\Software\JudgeMsg.h
 .\objects\algorithmofcrc.o: ..\Task\GraphicsSendTask.h
 .\objects\algorithmofcrc.o: ..\Task\CharSendTask.h
 .\objects\algorithmofcrc.o: ..\Task\StartTask.h

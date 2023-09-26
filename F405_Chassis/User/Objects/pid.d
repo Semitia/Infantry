@@ -67,6 +67,10 @@
 .\objects\pid.o: ..\Task\ChassisTask.h
 .\objects\pid.o: ..\Task\PowerControlTask.h
 .\objects\pid.o: ..\Task\ZeroCheckTask.h
+.\objects\pid.o: ..\Software\chassis.h
+.\objects\pid.o: ..\Software\Kinematic.h
+.\objects\pid.o: ..\Software\motor.h
+.\objects\pid.o: ..\Software\JudgeMsg.h
 .\objects\pid.o: ..\Task\GraphicsSendTask.h
 .\objects\pid.o: ..\Task\CharSendTask.h
 .\objects\pid.o: ..\Task\StartTask.h

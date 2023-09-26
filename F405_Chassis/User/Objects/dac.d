@@ -67,6 +67,10 @@
 .\objects\dac.o: ..\Task\ChassisTask.h
 .\objects\dac.o: ..\Task\PowerControlTask.h
 .\objects\dac.o: ..\Task\ZeroCheckTask.h
+.\objects\dac.o: ..\Software\chassis.h
+.\objects\dac.o: ..\Software\Kinematic.h
+.\objects\dac.o: ..\Software\motor.h
+.\objects\dac.o: ..\Software\JudgeMsg.h
 .\objects\dac.o: ..\Task\GraphicsSendTask.h
 .\objects\dac.o: ..\Task\CharSendTask.h
 .\objects\dac.o: ..\Task\StartTask.h

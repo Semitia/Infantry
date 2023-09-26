@@ -1053,6 +1053,7 @@ uint32_t testtask=0;
 // 	#endif
 // 	}
 // }
+Kinematic_t Kinematic;
 void Chassis_task(void *pvParameters)
 {
 	portTickType xLastWakeTime;
@@ -1061,12 +1062,12 @@ void Chassis_task(void *pvParameters)
 #else
 	const portTickType xFrequency = 1;
 #endif
-
+	kinematicInit(&Kinematic);
 	
 	vTaskDelay(100);
 	while (1) {
 		xLastWakeTime = xTaskGetTickCount();
-		
+		updateWheels(&Kinematic);
 		
 
 		VOFA_Send();

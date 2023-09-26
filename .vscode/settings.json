@@ -36,6 +36,7 @@
         "stm32f4xx.h": "c",
         "start_task.h": "c",
         "tim.h": "c",
-        "datasendtask.h": "c"
+        "datasendtask.h": "c",
+        "powercontroltask.h": "c"
     }
 }

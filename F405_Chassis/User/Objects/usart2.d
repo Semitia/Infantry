@@ -67,6 +67,10 @@
 .\objects\usart2.o: ..\Task\ChassisTask.h
 .\objects\usart2.o: ..\Task\PowerControlTask.h
 .\objects\usart2.o: ..\Task\ZeroCheckTask.h
+.\objects\usart2.o: ..\Software\chassis.h
+.\objects\usart2.o: ..\Software\Kinematic.h
+.\objects\usart2.o: ..\Software\motor.h
+.\objects\usart2.o: ..\Software\JudgeMsg.h
 .\objects\usart2.o: ..\Task\GraphicsSendTask.h
 .\objects\usart2.o: ..\Task\CharSendTask.h
 .\objects\usart2.o: ..\Task\StartTask.h

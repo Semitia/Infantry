@@ -79,27 +79,27 @@ void updateWheels(Kinematic_t *kinematic) {
     CanMsgNode_t *node,*prev_node;
     CanMsgList_t *list = kinematic->can_datalist;              //指向can消息链表的指针
     xSemaphoreTake(list->mutex, portMAX_DELAY);                //获取互斥信号量
-    // //开始从后向前遍历
-    // node = list->tail;
-    // while(node != NULL) {
-    //     uint32_t id = node->msg.StdId;
-    //     if(!received_flag[id-0x201]) {                      //还没有接收到这个序号的电机数据
-    //         received_flag[id-0x201] = 1;
-    //         motorUpdate(&(kinematic->motor[id-0x201]), node->msg.Data);
-    //     }
-    //     prev_node = node->prev;                             //保存上一个节点的指针,释放当前节点的内存
-    //     vPortFree(node);
-    //     list->num--;
-    //     node = prev_node;
-    // }
-    for(i=0; i<list->num; i++) {
-        motorUpdate(&(kinematic->motor[list->msg[list->p].StdId-0x201]), list->msg[list->p].Data);
-        list->p--;
-        if(list->p>200){
-            list->p += CAN_MAX_NUM;
+    //开始从后向前遍历
+    node = list->tail;
+    while(node != NULL) {
+        uint32_t id = node->msg.StdId;
+        if(!received_flag[id-0x201]) {                      //还没有接收到这个序号的电机数据
+            received_flag[id-0x201] = 1;
+            motorUpdate(&(kinematic->motor[id-0x201]), node->msg.Data);
         }
+        prev_node = node->prev;                             //保存上一个节点的指针,释放当前节点的内存
+        vPortFree(node);
+        list->num--;
+        node = prev_node;
     }
-		list->num = 0;
+    // for(i=0; i<list->num; i++) {
+    //     motorUpdate(&(kinematic->motor[list->msg[list->p].StdId-0x201]), list->msg[list->p].Data);
+    //     list->p--;
+    //     if(list->p>200){
+    //         list->p += CAN_MAX_NUM;
+    //     }
+    // }
+	// list->num = 0;
     xSemaphoreGive(list->mutex);                               //释放互斥信号量
 }
 

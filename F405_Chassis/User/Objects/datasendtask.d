@@ -67,6 +67,10 @@
 .\objects\datasendtask.o: ..\Task\ChassisTask.h
 .\objects\datasendtask.o: ..\Task\PowerControlTask.h
 .\objects\datasendtask.o: ..\Task\ZeroCheckTask.h
+.\objects\datasendtask.o: ..\Software\chassis.h
+.\objects\datasendtask.o: ..\Software\Kinematic.h
+.\objects\datasendtask.o: ..\Software\motor.h
+.\objects\datasendtask.o: ..\Software\JudgeMsg.h
 .\objects\datasendtask.o: ..\Task\GraphicsSendTask.h
 .\objects\datasendtask.o: ..\Task\CharSendTask.h
 .\objects\datasendtask.o: ..\Task\StartTask.h

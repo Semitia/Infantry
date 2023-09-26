@@ -67,6 +67,10 @@
 .\objects\main.o: ..\Task\ChassisTask.h
 .\objects\main.o: ..\Task\PowerControlTask.h
 .\objects\main.o: ..\Task\ZeroCheckTask.h
+.\objects\main.o: ..\Software\chassis.h
+.\objects\main.o: ..\Software\Kinematic.h
+.\objects\main.o: ..\Software\motor.h
+.\objects\main.o: ..\Software\JudgeMsg.h
 .\objects\main.o: ..\Task\GraphicsSendTask.h
 .\objects\main.o: ..\Task\CharSendTask.h
 .\objects\main.o: ..\Task\StartTask.h

@@ -67,6 +67,10 @@
 .\objects\i2c.o: ..\Task\ChassisTask.h
 .\objects\i2c.o: ..\Task\PowerControlTask.h
 .\objects\i2c.o: ..\Task\ZeroCheckTask.h
+.\objects\i2c.o: ..\Software\chassis.h
+.\objects\i2c.o: ..\Software\Kinematic.h
+.\objects\i2c.o: ..\Software\motor.h
+.\objects\i2c.o: ..\Software\JudgeMsg.h
 .\objects\i2c.o: ..\Task\GraphicsSendTask.h
 .\objects\i2c.o: ..\Task\CharSendTask.h
 .\objects\i2c.o: ..\Task\StartTask.h

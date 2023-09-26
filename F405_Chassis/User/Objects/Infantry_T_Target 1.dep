@@ -1,7 +1,7 @@
 Dependencies for Project 'Infantry_T', Target 'Target 1': (DO NOT MODIFY !)
-F (.\FreeRTOSConfig.h)(0x6502D1FE)()
+F (.\FreeRTOSConfig.h)(0x6512F425)()
 F (.\main.c)(0x6502D1FE)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (main.h)(0x6512E037)
+I (main.h)(0x6512F62D)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -27,9 +27,9 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -48,7 +48,7 @@ I (..\Hardware\uart4.h)(0x6512E570)
 I (..\Software\usart.h)(0x651173F9)
 I (..\Hardware\tim2.h)(0x6502D1FE)
 I (..\Hardware\tim4.h)(0x6502D1FE)
-I (..\User\main.h)(0x6512E037)
+I (..\User\main.h)(0x6512F62D)
 I (..\Hardware\iwdg.h)(0x6502D1FE)
 I (..\Library\inc\stm32f4xx_iwdg.h)(0x6502D1FE)
 I (..\Hardware\adc.h)(0x6502D1FE)
@@ -64,9 +64,13 @@ I (..\Algorithm\DataScope_DP.h)(0x6502D1FE)
 I (..\Algorithm\algorithmOfCRC.h)(0x6502D1FE)
 I (..\Task\DataReceiveTask.h)(0x650D1EEA)
 I (..\Task\DataSendTask.h)(0x6502D1FE)
-I (..\Task\ChassisTask.h)(0x6512E07E)
+I (..\Task\ChassisTask.h)(0x6512F98C)
 I (..\Task\PowerControlTask.h)(0x6512DE1F)
 I (..\Task\ZeroCheckTask.h)(0x6502D1FE)
+I (..\Software\chassis.h)(0x65103A94)
+I (..\Software\Kinematic.h)(0x6512E480)
+I (..\Software\motor.h)(0x6510125C)
+I (..\Software\JudgeMsg.h)(0x651173D7)
 I (..\Task\GraphicsSendTask.h)(0x6502D1FE)
 I (..\Task\CharSendTask.h)(0x6502D1FE)
 I (..\Task\StartTask.h)(0x6502D1FE)
@@ -139,7 +143,7 @@ I (..\Library\inc\stm32f4xx_usart.h)(0x6502D1FE)
 I (..\Library\inc\misc.h)(0x6502D1FE)
 I (..\Library\inc\stm32f4xx_can.h)(0x6502D1FE)
 I (..\Library\inc\stm32f4xx_dac.h)(0x6502D1FE)
-I (FreeRTOSConfig.h)(0x6502D1FE)
+I (FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -158,7 +162,7 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 F (..\Algorithm\algorithmOfCRC.c)(0x6502D1FE)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\algorithmofcrc.o --omf_browse .\objects\algorithmofcrc.crf --depend .\objects\algorithmofcrc.d)
-I (..\User\main.h)(0x6512E037)
+I (..\User\main.h)(0x6512F62D)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -184,9 +188,9 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -220,9 +224,13 @@ I (..\Algorithm\DataScope_DP.h)(0x6502D1FE)
 I (..\Algorithm\algorithmOfCRC.h)(0x6502D1FE)
 I (..\Task\DataReceiveTask.h)(0x650D1EEA)
 I (..\Task\DataSendTask.h)(0x6502D1FE)
-I (..\Task\ChassisTask.h)(0x6512E07E)
+I (..\Task\ChassisTask.h)(0x6512F98C)
 I (..\Task\PowerControlTask.h)(0x6512DE1F)
 I (..\Task\ZeroCheckTask.h)(0x6502D1FE)
+I (..\Software\chassis.h)(0x65103A94)
+I (..\Software\Kinematic.h)(0x6512E480)
+I (..\Software\motor.h)(0x6510125C)
+I (..\Software\JudgeMsg.h)(0x651173D7)
 I (..\Task\GraphicsSendTask.h)(0x6502D1FE)
 I (..\Task\CharSendTask.h)(0x6502D1FE)
 I (..\Task\StartTask.h)(0x6502D1FE)
@@ -233,7 +241,7 @@ I (..\SD\integer.h)(0x6502D1FE)
 I (..\SD\ffconf.h)(0x6502D1FE)
 I (..\SD\bsp_spi_sdcard.h)(0x6502D1FE)
 F (..\Algorithm\DataScope_DP.C)(0x6502D1FE)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\datascope_dp.o --omf_browse .\objects\datascope_dp.crf --depend .\objects\datascope_dp.d)
-I (..\User\main.h)(0x6512E037)
+I (..\User\main.h)(0x6512F62D)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -259,9 +267,9 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -295,9 +303,13 @@ I (..\Algorithm\DataScope_DP.h)(0x6502D1FE)
 I (..\Algorithm\algorithmOfCRC.h)(0x6502D1FE)
 I (..\Task\DataReceiveTask.h)(0x650D1EEA)
 I (..\Task\DataSendTask.h)(0x6502D1FE)
-I (..\Task\ChassisTask.h)(0x6512E07E)
+I (..\Task\ChassisTask.h)(0x6512F98C)
 I (..\Task\PowerControlTask.h)(0x6512DE1F)
 I (..\Task\ZeroCheckTask.h)(0x6502D1FE)
+I (..\Software\chassis.h)(0x65103A94)
+I (..\Software\Kinematic.h)(0x6512E480)
+I (..\Software\motor.h)(0x6510125C)
+I (..\Software\JudgeMsg.h)(0x651173D7)
 I (..\Task\GraphicsSendTask.h)(0x6502D1FE)
 I (..\Task\CharSendTask.h)(0x6502D1FE)
 I (..\Task\StartTask.h)(0x6502D1FE)
@@ -308,7 +320,7 @@ I (..\SD\integer.h)(0x6502D1FE)
 I (..\SD\ffconf.h)(0x6502D1FE)
 I (..\SD\bsp_spi_sdcard.h)(0x6502D1FE)
 F (..\Algorithm\FIR.c)(0x6502D1FE)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\fir.o --omf_browse .\objects\fir.crf --depend .\objects\fir.d)
-I (..\User\main.h)(0x6512E037)
+I (..\User\main.h)(0x6512F62D)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -334,9 +346,9 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -370,9 +382,13 @@ I (..\Algorithm\DataScope_DP.h)(0x6502D1FE)
 I (..\Algorithm\algorithmOfCRC.h)(0x6502D1FE)
 I (..\Task\DataReceiveTask.h)(0x650D1EEA)
 I (..\Task\DataSendTask.h)(0x6502D1FE)
-I (..\Task\ChassisTask.h)(0x6512E07E)
+I (..\Task\ChassisTask.h)(0x6512F98C)
 I (..\Task\PowerControlTask.h)(0x6512DE1F)
 I (..\Task\ZeroCheckTask.h)(0x6502D1FE)
+I (..\Software\chassis.h)(0x65103A94)
+I (..\Software\Kinematic.h)(0x6512E480)
+I (..\Software\motor.h)(0x6510125C)
+I (..\Software\JudgeMsg.h)(0x651173D7)
 I (..\Task\GraphicsSendTask.h)(0x6502D1FE)
 I (..\Task\CharSendTask.h)(0x6502D1FE)
 I (..\Task\StartTask.h)(0x6502D1FE)
@@ -383,7 +399,7 @@ I (..\SD\integer.h)(0x6502D1FE)
 I (..\SD\ffconf.h)(0x6502D1FE)
 I (..\SD\bsp_spi_sdcard.h)(0x6502D1FE)
 F (..\Algorithm\pid.c)(0x6502D1FE)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\pid.o --omf_browse .\objects\pid.crf --depend .\objects\pid.d)
-I (..\User\main.h)(0x6512E037)
+I (..\User\main.h)(0x6512F62D)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -409,9 +425,9 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -445,9 +461,13 @@ I (..\Algorithm\DataScope_DP.h)(0x6502D1FE)
 I (..\Algorithm\algorithmOfCRC.h)(0x6502D1FE)
 I (..\Task\DataReceiveTask.h)(0x650D1EEA)
 I (..\Task\DataSendTask.h)(0x6502D1FE)
-I (..\Task\ChassisTask.h)(0x6512E07E)
+I (..\Task\ChassisTask.h)(0x6512F98C)
 I (..\Task\PowerControlTask.h)(0x6512DE1F)
 I (..\Task\ZeroCheckTask.h)(0x6502D1FE)
+I (..\Software\chassis.h)(0x65103A94)
+I (..\Software\Kinematic.h)(0x6512E480)
+I (..\Software\motor.h)(0x6510125C)
+I (..\Software\JudgeMsg.h)(0x651173D7)
 I (..\Task\GraphicsSendTask.h)(0x6502D1FE)
 I (..\Task\CharSendTask.h)(0x6502D1FE)
 I (..\Task\StartTask.h)(0x6502D1FE)
@@ -462,7 +482,7 @@ I (..\Algorithm\filters.h)(0x6505A1AF)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cmInstr.h)(0x6502D1FE)
@@ -799,8 +819,8 @@ I (..\Library\inc\stm32f4xx_tim.h)(0x6502D1FE)
 I (..\Library\inc\stm32f4xx_usart.h)(0x6502D1FE)
 I (..\Library\inc\misc.h)(0x6502D1FE)
 I (..\Library\inc\stm32f4xx_can.h)(0x6502D1FE)
-F (..\Task\ChassisTask.c)(0x6512E4E5)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\chassistask.o --omf_browse .\objects\chassistask.crf --depend .\objects\chassistask.d)
-I (..\User\main.h)(0x6512E037)
+F (..\Task\ChassisTask.c)(0x6512FB4F)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\chassistask.o --omf_browse .\objects\chassistask.crf --depend .\objects\chassistask.d)
+I (..\User\main.h)(0x6512F62D)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -826,9 +846,9 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -862,9 +882,13 @@ I (..\Algorithm\DataScope_DP.h)(0x6502D1FE)
 I (..\Algorithm\algorithmOfCRC.h)(0x6502D1FE)
 I (..\Task\DataReceiveTask.h)(0x650D1EEA)
 I (..\Task\DataSendTask.h)(0x6502D1FE)
-I (..\Task\ChassisTask.h)(0x6512E07E)
+I (..\Task\ChassisTask.h)(0x6512F98C)
 I (..\Task\PowerControlTask.h)(0x6512DE1F)
 I (..\Task\ZeroCheckTask.h)(0x6502D1FE)
+I (..\Software\chassis.h)(0x65103A94)
+I (..\Software\Kinematic.h)(0x6512E480)
+I (..\Software\motor.h)(0x6510125C)
+I (..\Software\JudgeMsg.h)(0x651173D7)
 I (..\Task\GraphicsSendTask.h)(0x6502D1FE)
 I (..\Task\CharSendTask.h)(0x6502D1FE)
 I (..\Task\StartTask.h)(0x6502D1FE)
@@ -875,7 +899,7 @@ I (..\SD\integer.h)(0x6502D1FE)
 I (..\SD\ffconf.h)(0x6502D1FE)
 I (..\SD\bsp_spi_sdcard.h)(0x6502D1FE)
 F (..\Task\DataReceiveTask.c)(0x650D0360)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\datareceivetask.o --omf_browse .\objects\datareceivetask.crf --depend .\objects\datareceivetask.d)
-I (..\User\main.h)(0x6512E037)
+I (..\User\main.h)(0x6512F62D)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -901,9 +925,9 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -937,9 +961,13 @@ I (..\Algorithm\DataScope_DP.h)(0x6502D1FE)
 I (..\Algorithm\algorithmOfCRC.h)(0x6502D1FE)
 I (..\Task\DataReceiveTask.h)(0x650D1EEA)
 I (..\Task\DataSendTask.h)(0x6502D1FE)
-I (..\Task\ChassisTask.h)(0x6512E07E)
+I (..\Task\ChassisTask.h)(0x6512F98C)
 I (..\Task\PowerControlTask.h)(0x6512DE1F)
 I (..\Task\ZeroCheckTask.h)(0x6502D1FE)
+I (..\Software\chassis.h)(0x65103A94)
+I (..\Software\Kinematic.h)(0x6512E480)
+I (..\Software\motor.h)(0x6510125C)
+I (..\Software\JudgeMsg.h)(0x651173D7)
 I (..\Task\GraphicsSendTask.h)(0x6502D1FE)
 I (..\Task\CharSendTask.h)(0x6502D1FE)
 I (..\Task\StartTask.h)(0x6502D1FE)
@@ -950,7 +978,7 @@ I (..\SD\integer.h)(0x6502D1FE)
 I (..\SD\ffconf.h)(0x6502D1FE)
 I (..\SD\bsp_spi_sdcard.h)(0x6502D1FE)
 F (..\Task\DataSendTask.c)(0x6502D1FE)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\datasendtask.o --omf_browse .\objects\datasendtask.crf --depend .\objects\datasendtask.d)
-I (..\User\main.h)(0x6512E037)
+I (..\User\main.h)(0x6512F62D)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -976,9 +1004,9 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -1012,9 +1040,13 @@ I (..\Algorithm\DataScope_DP.h)(0x6502D1FE)
 I (..\Algorithm\algorithmOfCRC.h)(0x6502D1FE)
 I (..\Task\DataReceiveTask.h)(0x650D1EEA)
 I (..\Task\DataSendTask.h)(0x6502D1FE)
-I (..\Task\ChassisTask.h)(0x6512E07E)
+I (..\Task\ChassisTask.h)(0x6512F98C)
 I (..\Task\PowerControlTask.h)(0x6512DE1F)
 I (..\Task\ZeroCheckTask.h)(0x6502D1FE)
+I (..\Software\chassis.h)(0x65103A94)
+I (..\Software\Kinematic.h)(0x6512E480)
+I (..\Software\motor.h)(0x6510125C)
+I (..\Software\JudgeMsg.h)(0x651173D7)
 I (..\Task\GraphicsSendTask.h)(0x6502D1FE)
 I (..\Task\CharSendTask.h)(0x6502D1FE)
 I (..\Task\StartTask.h)(0x6502D1FE)
@@ -1025,7 +1057,7 @@ I (..\SD\integer.h)(0x6502D1FE)
 I (..\SD\ffconf.h)(0x6502D1FE)
 I (..\SD\bsp_spi_sdcard.h)(0x6502D1FE)
 F (..\Task\GraphicsSendTask.c)(0x6512E0B3)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\graphicssendtask.o --omf_browse .\objects\graphicssendtask.crf --depend .\objects\graphicssendtask.d)
-I (..\User\main.h)(0x6512E037)
+I (..\User\main.h)(0x6512F62D)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1051,9 +1083,9 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -1087,9 +1119,13 @@ I (..\Algorithm\DataScope_DP.h)(0x6502D1FE)
 I (..\Algorithm\algorithmOfCRC.h)(0x6502D1FE)
 I (..\Task\DataReceiveTask.h)(0x650D1EEA)
 I (..\Task\DataSendTask.h)(0x6502D1FE)
-I (..\Task\ChassisTask.h)(0x6512E07E)
+I (..\Task\ChassisTask.h)(0x6512F98C)
 I (..\Task\PowerControlTask.h)(0x6512DE1F)
 I (..\Task\ZeroCheckTask.h)(0x6502D1FE)
+I (..\Software\chassis.h)(0x65103A94)
+I (..\Software\Kinematic.h)(0x6512E480)
+I (..\Software\motor.h)(0x6510125C)
+I (..\Software\JudgeMsg.h)(0x651173D7)
 I (..\Task\GraphicsSendTask.h)(0x6502D1FE)
 I (..\Task\CharSendTask.h)(0x6502D1FE)
 I (..\Task\StartTask.h)(0x6502D1FE)
@@ -1100,7 +1136,7 @@ I (..\SD\integer.h)(0x6502D1FE)
 I (..\SD\ffconf.h)(0x6502D1FE)
 I (..\SD\bsp_spi_sdcard.h)(0x6502D1FE)
 F (..\Task\PowerControlTask.c)(0x6502D1FE)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\powercontroltask.o --omf_browse .\objects\powercontroltask.crf --depend .\objects\powercontroltask.d)
-I (..\User\main.h)(0x6512E037)
+I (..\User\main.h)(0x6512F62D)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1126,9 +1162,9 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -1162,9 +1198,13 @@ I (..\Algorithm\DataScope_DP.h)(0x6502D1FE)
 I (..\Algorithm\algorithmOfCRC.h)(0x6502D1FE)
 I (..\Task\DataReceiveTask.h)(0x650D1EEA)
 I (..\Task\DataSendTask.h)(0x6502D1FE)
-I (..\Task\ChassisTask.h)(0x6512E07E)
+I (..\Task\ChassisTask.h)(0x6512F98C)
 I (..\Task\PowerControlTask.h)(0x6512DE1F)
 I (..\Task\ZeroCheckTask.h)(0x6502D1FE)
+I (..\Software\chassis.h)(0x65103A94)
+I (..\Software\Kinematic.h)(0x6512E480)
+I (..\Software\motor.h)(0x6510125C)
+I (..\Software\JudgeMsg.h)(0x651173D7)
 I (..\Task\GraphicsSendTask.h)(0x6502D1FE)
 I (..\Task\CharSendTask.h)(0x6502D1FE)
 I (..\Task\StartTask.h)(0x6502D1FE)
@@ -1174,8 +1214,8 @@ I (..\SD\ff.h)(0x6502D1FE)
 I (..\SD\integer.h)(0x6502D1FE)
 I (..\SD\ffconf.h)(0x6502D1FE)
 I (..\SD\bsp_spi_sdcard.h)(0x6502D1FE)
-F (..\Task\StartTask.c)(0x6512DF83)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\starttask.o --omf_browse .\objects\starttask.crf --depend .\objects\starttask.d)
-I (..\User\main.h)(0x6512E037)
+F (..\Task\StartTask.c)(0x6512F62D)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\starttask.o --omf_browse .\objects\starttask.crf --depend .\objects\starttask.d)
+I (..\User\main.h)(0x6512F62D)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1201,9 +1241,9 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -1237,9 +1277,13 @@ I (..\Algorithm\DataScope_DP.h)(0x6502D1FE)
 I (..\Algorithm\algorithmOfCRC.h)(0x6502D1FE)
 I (..\Task\DataReceiveTask.h)(0x650D1EEA)
 I (..\Task\DataSendTask.h)(0x6502D1FE)
-I (..\Task\ChassisTask.h)(0x6512E07E)
+I (..\Task\ChassisTask.h)(0x6512F98C)
 I (..\Task\PowerControlTask.h)(0x6512DE1F)
 I (..\Task\ZeroCheckTask.h)(0x6502D1FE)
+I (..\Software\chassis.h)(0x65103A94)
+I (..\Software\Kinematic.h)(0x6512E480)
+I (..\Software\motor.h)(0x6510125C)
+I (..\Software\JudgeMsg.h)(0x651173D7)
 I (..\Task\GraphicsSendTask.h)(0x6502D1FE)
 I (..\Task\CharSendTask.h)(0x6502D1FE)
 I (..\Task\StartTask.h)(0x6502D1FE)
@@ -1250,7 +1294,7 @@ I (..\SD\integer.h)(0x6502D1FE)
 I (..\SD\ffconf.h)(0x6502D1FE)
 I (..\SD\bsp_spi_sdcard.h)(0x6502D1FE)
 F (..\SD\SDCardTask.c)(0x6512DE89)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\sdcardtask.o --omf_browse .\objects\sdcardtask.crf --depend .\objects\sdcardtask.d)
-I (..\User\main.h)(0x6512E037)
+I (..\User\main.h)(0x6512F62D)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1276,9 +1320,9 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -1312,9 +1356,13 @@ I (..\Algorithm\DataScope_DP.h)(0x6502D1FE)
 I (..\Algorithm\algorithmOfCRC.h)(0x6502D1FE)
 I (..\Task\DataReceiveTask.h)(0x650D1EEA)
 I (..\Task\DataSendTask.h)(0x6502D1FE)
-I (..\Task\ChassisTask.h)(0x6512E07E)
+I (..\Task\ChassisTask.h)(0x6512F98C)
 I (..\Task\PowerControlTask.h)(0x6512DE1F)
 I (..\Task\ZeroCheckTask.h)(0x6502D1FE)
+I (..\Software\chassis.h)(0x65103A94)
+I (..\Software\Kinematic.h)(0x6512E480)
+I (..\Software\motor.h)(0x6510125C)
+I (..\Software\JudgeMsg.h)(0x651173D7)
 I (..\Task\GraphicsSendTask.h)(0x6502D1FE)
 I (..\Task\CharSendTask.h)(0x6502D1FE)
 I (..\Task\StartTask.h)(0x6502D1FE)
@@ -1326,7 +1374,7 @@ I (..\SD\ffconf.h)(0x6502D1FE)
 I (..\SD\bsp_spi_sdcard.h)(0x6502D1FE)
 F (..\RTOS_Test\CPU_Task.c)(0x6502D1FE)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\cpu_task.o --omf_browse .\objects\cpu_task.crf --depend .\objects\cpu_task.d)
 I (..\RTOS_Test\CPU_Task.h)(0x6502D1FE)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1353,7 +1401,7 @@ I (..\FreeRTOS\include\deprecated_definitions.h)(0x6502D1FE)
 I (..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h)(0x6502D1FE)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x6502D1FE)
 I (..\Task\StartTask.h)(0x6502D1FE)
-I (..\User\main.h)(0x6512E037)
+I (..\User\main.h)(0x6512F62D)
 I (..\Library\inc\stm32f4xx_dac.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6502D1FE)
@@ -1361,7 +1409,7 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
 I (..\FreeRTOS\include\task.h)(0x6502D1FE)
 I (..\FreeRTOS\include\list.h)(0x6502D1FE)
@@ -1389,9 +1437,13 @@ I (..\Algorithm\DataScope_DP.h)(0x6502D1FE)
 I (..\Algorithm\algorithmOfCRC.h)(0x6502D1FE)
 I (..\Task\DataReceiveTask.h)(0x650D1EEA)
 I (..\Task\DataSendTask.h)(0x6502D1FE)
-I (..\Task\ChassisTask.h)(0x6512E07E)
+I (..\Task\ChassisTask.h)(0x6512F98C)
 I (..\Task\PowerControlTask.h)(0x6512DE1F)
 I (..\Task\ZeroCheckTask.h)(0x6502D1FE)
+I (..\Software\chassis.h)(0x65103A94)
+I (..\Software\Kinematic.h)(0x6512E480)
+I (..\Software\motor.h)(0x6510125C)
+I (..\Software\JudgeMsg.h)(0x651173D7)
 I (..\Task\GraphicsSendTask.h)(0x6502D1FE)
 I (..\Task\CharSendTask.h)(0x6502D1FE)
 I (..\Task\JumpCal_Task.h)(0x6502D1FE)
@@ -1405,7 +1457,7 @@ I (..\SEGGER_RTT_V784\RTT\SEGGER_RTT.h)(0x6502D1FE)
 I (..\SEGGER_RTT_V784\RTT\../Config/SEGGER_RTT_Conf.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdarg.h)(0x574E3E26)
 F (..\Task\ZeroCheckTask.c)(0x6502D1FE)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\zerochecktask.o --omf_browse .\objects\zerochecktask.crf --depend .\objects\zerochecktask.d)
-I (..\User\main.h)(0x6512E037)
+I (..\User\main.h)(0x6512F62D)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1431,9 +1483,9 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -1467,9 +1519,13 @@ I (..\Algorithm\DataScope_DP.h)(0x6502D1FE)
 I (..\Algorithm\algorithmOfCRC.h)(0x6502D1FE)
 I (..\Task\DataReceiveTask.h)(0x650D1EEA)
 I (..\Task\DataSendTask.h)(0x6502D1FE)
-I (..\Task\ChassisTask.h)(0x6512E07E)
+I (..\Task\ChassisTask.h)(0x6512F98C)
 I (..\Task\PowerControlTask.h)(0x6512DE1F)
 I (..\Task\ZeroCheckTask.h)(0x6502D1FE)
+I (..\Software\chassis.h)(0x65103A94)
+I (..\Software\Kinematic.h)(0x6512E480)
+I (..\Software\motor.h)(0x6510125C)
+I (..\Software\JudgeMsg.h)(0x651173D7)
 I (..\Task\GraphicsSendTask.h)(0x6502D1FE)
 I (..\Task\CharSendTask.h)(0x6502D1FE)
 I (..\Task\StartTask.h)(0x6502D1FE)
@@ -1483,7 +1539,7 @@ F (..\FreeRTOS\src\croutine.c)(0x6502D1FE)(--c99 -c --cpu Cortex-M4.fp -D__MICRO
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cmInstr.h)(0x6502D1FE)
@@ -1514,7 +1570,7 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cmInstr.h)(0x6502D1FE)
@@ -1546,7 +1602,7 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cmInstr.h)(0x6502D1FE)
@@ -1576,7 +1632,7 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cmInstr.h)(0x6502D1FE)
@@ -1608,7 +1664,7 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cmInstr.h)(0x6502D1FE)
@@ -1641,7 +1697,7 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cmInstr.h)(0x6502D1FE)
@@ -1673,7 +1729,7 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cmInstr.h)(0x6502D1FE)
@@ -1702,7 +1758,7 @@ F (..\FreeRTOS\port\RVDS\ARM_CM4F\port.c)(0x6502D1FE)(--c99 -c --cpu Cortex-M4.f
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cmInstr.h)(0x6502D1FE)
@@ -1727,8 +1783,8 @@ I (..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h)(0x6502D1FE)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x6502D1FE)
 I (..\FreeRTOS\include\task.h)(0x6502D1FE)
 I (..\FreeRTOS\include\list.h)(0x6502D1FE)
-F (..\Hardware\can1.c)(0x6512E616)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\can1.o --omf_browse .\objects\can1.crf --depend .\objects\can1.d)
-I (..\User\main.h)(0x6512E037)
+F (..\Hardware\can1.c)(0x6512F83E)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\can1.o --omf_browse .\objects\can1.crf --depend .\objects\can1.d)
+I (..\User\main.h)(0x6512F62D)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1754,9 +1810,9 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -1790,9 +1846,13 @@ I (..\Algorithm\DataScope_DP.h)(0x6502D1FE)
 I (..\Algorithm\algorithmOfCRC.h)(0x6502D1FE)
 I (..\Task\DataReceiveTask.h)(0x650D1EEA)
 I (..\Task\DataSendTask.h)(0x6502D1FE)
-I (..\Task\ChassisTask.h)(0x6512E07E)
+I (..\Task\ChassisTask.h)(0x6512F98C)
 I (..\Task\PowerControlTask.h)(0x6512DE1F)
 I (..\Task\ZeroCheckTask.h)(0x6502D1FE)
+I (..\Software\chassis.h)(0x65103A94)
+I (..\Software\Kinematic.h)(0x6512E480)
+I (..\Software\motor.h)(0x6510125C)
+I (..\Software\JudgeMsg.h)(0x651173D7)
 I (..\Task\GraphicsSendTask.h)(0x6502D1FE)
 I (..\Task\CharSendTask.h)(0x6502D1FE)
 I (..\Task\StartTask.h)(0x6502D1FE)
@@ -1803,7 +1863,7 @@ I (..\SD\integer.h)(0x6502D1FE)
 I (..\SD\ffconf.h)(0x6502D1FE)
 I (..\SD\bsp_spi_sdcard.h)(0x6502D1FE)
 F (..\Hardware\can2.c)(0x6512E65A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\can2.o --omf_browse .\objects\can2.crf --depend .\objects\can2.d)
-I (..\User\main.h)(0x6512E037)
+I (..\User\main.h)(0x6512F62D)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1829,9 +1889,9 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -1865,9 +1925,13 @@ I (..\Algorithm\DataScope_DP.h)(0x6502D1FE)
 I (..\Algorithm\algorithmOfCRC.h)(0x6502D1FE)
 I (..\Task\DataReceiveTask.h)(0x650D1EEA)
 I (..\Task\DataSendTask.h)(0x6502D1FE)
-I (..\Task\ChassisTask.h)(0x6512E07E)
+I (..\Task\ChassisTask.h)(0x6512F98C)
 I (..\Task\PowerControlTask.h)(0x6512DE1F)
 I (..\Task\ZeroCheckTask.h)(0x6502D1FE)
+I (..\Software\chassis.h)(0x65103A94)
+I (..\Software\Kinematic.h)(0x6512E480)
+I (..\Software\motor.h)(0x6510125C)
+I (..\Software\JudgeMsg.h)(0x651173D7)
 I (..\Task\GraphicsSendTask.h)(0x6502D1FE)
 I (..\Task\CharSendTask.h)(0x6502D1FE)
 I (..\Task\StartTask.h)(0x6502D1FE)
@@ -1899,7 +1963,7 @@ I (..\Library\inc\stm32f4xx_usart.h)(0x6502D1FE)
 I (..\Library\inc\misc.h)(0x6502D1FE)
 I (..\Library\inc\stm32f4xx_can.h)(0x6502D1FE)
 F (..\Hardware\tim2.c)(0x6502D1FE)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\tim2.o --omf_browse .\objects\tim2.crf --depend .\objects\tim2.d)
-I (..\User\main.h)(0x6512E037)
+I (..\User\main.h)(0x6512F62D)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1925,9 +1989,9 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -1961,9 +2025,13 @@ I (..\Algorithm\DataScope_DP.h)(0x6502D1FE)
 I (..\Algorithm\algorithmOfCRC.h)(0x6502D1FE)
 I (..\Task\DataReceiveTask.h)(0x650D1EEA)
 I (..\Task\DataSendTask.h)(0x6502D1FE)
-I (..\Task\ChassisTask.h)(0x6512E07E)
+I (..\Task\ChassisTask.h)(0x6512F98C)
 I (..\Task\PowerControlTask.h)(0x6512DE1F)
 I (..\Task\ZeroCheckTask.h)(0x6502D1FE)
+I (..\Software\chassis.h)(0x65103A94)
+I (..\Software\Kinematic.h)(0x6512E480)
+I (..\Software\motor.h)(0x6510125C)
+I (..\Software\JudgeMsg.h)(0x651173D7)
 I (..\Task\GraphicsSendTask.h)(0x6502D1FE)
 I (..\Task\CharSendTask.h)(0x6502D1FE)
 I (..\Task\StartTask.h)(0x6502D1FE)
@@ -1975,7 +2043,7 @@ I (..\SD\ffconf.h)(0x6502D1FE)
 I (..\SD\bsp_spi_sdcard.h)(0x6502D1FE)
 F (..\Hardware\tim4.c)(0x6502D1FE)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\tim4.o --omf_browse .\objects\tim4.crf --depend .\objects\tim4.d)
 I (..\Hardware\tim4.h)(0x6502D1FE)
-I (..\User\main.h)(0x6512E037)
+I (..\User\main.h)(0x6512F62D)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -2001,9 +2069,9 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -2036,9 +2104,13 @@ I (..\Algorithm\DataScope_DP.h)(0x6502D1FE)
 I (..\Algorithm\algorithmOfCRC.h)(0x6502D1FE)
 I (..\Task\DataReceiveTask.h)(0x650D1EEA)
 I (..\Task\DataSendTask.h)(0x6502D1FE)
-I (..\Task\ChassisTask.h)(0x6512E07E)
+I (..\Task\ChassisTask.h)(0x6512F98C)
 I (..\Task\PowerControlTask.h)(0x6512DE1F)
 I (..\Task\ZeroCheckTask.h)(0x6502D1FE)
+I (..\Software\chassis.h)(0x65103A94)
+I (..\Software\Kinematic.h)(0x6512E480)
+I (..\Software\motor.h)(0x6510125C)
+I (..\Software\JudgeMsg.h)(0x651173D7)
 I (..\Task\GraphicsSendTask.h)(0x6502D1FE)
 I (..\Task\CharSendTask.h)(0x6502D1FE)
 I (..\Task\StartTask.h)(0x6502D1FE)
@@ -2049,7 +2121,7 @@ I (..\SD\integer.h)(0x6502D1FE)
 I (..\SD\ffconf.h)(0x6502D1FE)
 I (..\SD\bsp_spi_sdcard.h)(0x6502D1FE)
 F (..\Hardware\adc.c)(0x6502D1FE)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
-I (..\User\main.h)(0x6512E037)
+I (..\User\main.h)(0x6512F62D)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -2075,9 +2147,9 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -2111,9 +2183,13 @@ I (..\Algorithm\DataScope_DP.h)(0x6502D1FE)
 I (..\Algorithm\algorithmOfCRC.h)(0x6502D1FE)
 I (..\Task\DataReceiveTask.h)(0x650D1EEA)
 I (..\Task\DataSendTask.h)(0x6502D1FE)
-I (..\Task\ChassisTask.h)(0x6512E07E)
+I (..\Task\ChassisTask.h)(0x6512F98C)
 I (..\Task\PowerControlTask.h)(0x6512DE1F)
 I (..\Task\ZeroCheckTask.h)(0x6502D1FE)
+I (..\Software\chassis.h)(0x65103A94)
+I (..\Software\Kinematic.h)(0x6512E480)
+I (..\Software\motor.h)(0x6510125C)
+I (..\Software\JudgeMsg.h)(0x651173D7)
 I (..\Task\GraphicsSendTask.h)(0x6502D1FE)
 I (..\Task\CharSendTask.h)(0x6502D1FE)
 I (..\Task\StartTask.h)(0x6502D1FE)
@@ -2124,7 +2200,7 @@ I (..\SD\integer.h)(0x6502D1FE)
 I (..\SD\ffconf.h)(0x6502D1FE)
 I (..\SD\bsp_spi_sdcard.h)(0x6502D1FE)
 F (..\Hardware\i2c.c)(0x6502D1FE)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\i2c.o --omf_browse .\objects\i2c.crf --depend .\objects\i2c.d)
-I (..\User\main.h)(0x6512E037)
+I (..\User\main.h)(0x6512F62D)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -2150,9 +2226,9 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -2186,9 +2262,13 @@ I (..\Algorithm\DataScope_DP.h)(0x6502D1FE)
 I (..\Algorithm\algorithmOfCRC.h)(0x6502D1FE)
 I (..\Task\DataReceiveTask.h)(0x650D1EEA)
 I (..\Task\DataSendTask.h)(0x6502D1FE)
-I (..\Task\ChassisTask.h)(0x6512E07E)
+I (..\Task\ChassisTask.h)(0x6512F98C)
 I (..\Task\PowerControlTask.h)(0x6512DE1F)
 I (..\Task\ZeroCheckTask.h)(0x6502D1FE)
+I (..\Software\chassis.h)(0x65103A94)
+I (..\Software\Kinematic.h)(0x6512E480)
+I (..\Software\motor.h)(0x6510125C)
+I (..\Software\JudgeMsg.h)(0x651173D7)
 I (..\Task\GraphicsSendTask.h)(0x6502D1FE)
 I (..\Task\CharSendTask.h)(0x6502D1FE)
 I (..\Task\StartTask.h)(0x6502D1FE)
@@ -2199,7 +2279,7 @@ I (..\SD\integer.h)(0x6502D1FE)
 I (..\SD\ffconf.h)(0x6502D1FE)
 I (..\SD\bsp_spi_sdcard.h)(0x6502D1FE)
 F (..\Hardware\ina260.c)(0x6502D1FE)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\ina260.o --omf_browse .\objects\ina260.crf --depend .\objects\ina260.d)
-I (..\User\main.h)(0x6512E037)
+I (..\User\main.h)(0x6512F62D)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -2225,9 +2305,9 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -2261,9 +2341,13 @@ I (..\Algorithm\DataScope_DP.h)(0x6502D1FE)
 I (..\Algorithm\algorithmOfCRC.h)(0x6502D1FE)
 I (..\Task\DataReceiveTask.h)(0x650D1EEA)
 I (..\Task\DataSendTask.h)(0x6502D1FE)
-I (..\Task\ChassisTask.h)(0x6512E07E)
+I (..\Task\ChassisTask.h)(0x6512F98C)
 I (..\Task\PowerControlTask.h)(0x6512DE1F)
 I (..\Task\ZeroCheckTask.h)(0x6502D1FE)
+I (..\Software\chassis.h)(0x65103A94)
+I (..\Software\Kinematic.h)(0x6512E480)
+I (..\Software\motor.h)(0x6510125C)
+I (..\Software\JudgeMsg.h)(0x651173D7)
 I (..\Task\GraphicsSendTask.h)(0x6502D1FE)
 I (..\Task\CharSendTask.h)(0x6502D1FE)
 I (..\Task\StartTask.h)(0x6502D1FE)
@@ -2274,7 +2358,7 @@ I (..\SD\integer.h)(0x6502D1FE)
 I (..\SD\ffconf.h)(0x6502D1FE)
 I (..\SD\bsp_spi_sdcard.h)(0x6502D1FE)
 F (..\Hardware\dac.c)(0x6502D1FE)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\dac.o --omf_browse .\objects\dac.crf --depend .\objects\dac.d)
-I (..\User\main.h)(0x6512E037)
+I (..\User\main.h)(0x6512F62D)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -2300,9 +2384,9 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -2336,9 +2420,13 @@ I (..\Algorithm\DataScope_DP.h)(0x6502D1FE)
 I (..\Algorithm\algorithmOfCRC.h)(0x6502D1FE)
 I (..\Task\DataReceiveTask.h)(0x650D1EEA)
 I (..\Task\DataSendTask.h)(0x6502D1FE)
-I (..\Task\ChassisTask.h)(0x6512E07E)
+I (..\Task\ChassisTask.h)(0x6512F98C)
 I (..\Task\PowerControlTask.h)(0x6512DE1F)
 I (..\Task\ZeroCheckTask.h)(0x6502D1FE)
+I (..\Software\chassis.h)(0x65103A94)
+I (..\Software\Kinematic.h)(0x6512E480)
+I (..\Software\motor.h)(0x6510125C)
+I (..\Software\JudgeMsg.h)(0x651173D7)
 I (..\Task\GraphicsSendTask.h)(0x6502D1FE)
 I (..\Task\CharSendTask.h)(0x6502D1FE)
 I (..\Task\StartTask.h)(0x6502D1FE)
@@ -2349,7 +2437,7 @@ I (..\SD\integer.h)(0x6502D1FE)
 I (..\SD\ffconf.h)(0x6502D1FE)
 I (..\SD\bsp_spi_sdcard.h)(0x6502D1FE)
 F (..\Hardware\usart2.c)(0x6502D1FE)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\usart2.o --omf_browse .\objects\usart2.crf --depend .\objects\usart2.d)
-I (..\User\main.h)(0x6512E037)
+I (..\User\main.h)(0x6512F62D)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -2375,9 +2463,9 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -2411,9 +2499,13 @@ I (..\Algorithm\DataScope_DP.h)(0x6502D1FE)
 I (..\Algorithm\algorithmOfCRC.h)(0x6502D1FE)
 I (..\Task\DataReceiveTask.h)(0x650D1EEA)
 I (..\Task\DataSendTask.h)(0x6502D1FE)
-I (..\Task\ChassisTask.h)(0x6512E07E)
+I (..\Task\ChassisTask.h)(0x6512F98C)
 I (..\Task\PowerControlTask.h)(0x6512DE1F)
 I (..\Task\ZeroCheckTask.h)(0x6502D1FE)
+I (..\Software\chassis.h)(0x65103A94)
+I (..\Software\Kinematic.h)(0x6512E480)
+I (..\Software\motor.h)(0x6510125C)
+I (..\Software\JudgeMsg.h)(0x651173D7)
 I (..\Task\GraphicsSendTask.h)(0x6502D1FE)
 I (..\Task\CharSendTask.h)(0x6502D1FE)
 I (..\Task\StartTask.h)(0x6502D1FE)
@@ -2424,7 +2516,7 @@ I (..\SD\integer.h)(0x6502D1FE)
 I (..\SD\ffconf.h)(0x6502D1FE)
 I (..\SD\bsp_spi_sdcard.h)(0x6502D1FE)
 F (..\Hardware\uart4.c)(0x6512E546)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\uart4.o --omf_browse .\objects\uart4.crf --depend .\objects\uart4.d)
-I (..\User\main.h)(0x6512E037)
+I (..\User\main.h)(0x6512F62D)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -2450,9 +2542,9 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -2486,9 +2578,13 @@ I (..\Algorithm\DataScope_DP.h)(0x6502D1FE)
 I (..\Algorithm\algorithmOfCRC.h)(0x6502D1FE)
 I (..\Task\DataReceiveTask.h)(0x650D1EEA)
 I (..\Task\DataSendTask.h)(0x6502D1FE)
-I (..\Task\ChassisTask.h)(0x6512E07E)
+I (..\Task\ChassisTask.h)(0x6512F98C)
 I (..\Task\PowerControlTask.h)(0x6512DE1F)
 I (..\Task\ZeroCheckTask.h)(0x6502D1FE)
+I (..\Software\chassis.h)(0x65103A94)
+I (..\Software\Kinematic.h)(0x6512E480)
+I (..\Software\motor.h)(0x6510125C)
+I (..\Software\JudgeMsg.h)(0x651173D7)
 I (..\Task\GraphicsSendTask.h)(0x6502D1FE)
 I (..\Task\CharSendTask.h)(0x6502D1FE)
 I (..\Task\StartTask.h)(0x6502D1FE)
@@ -2499,7 +2595,7 @@ I (..\SD\integer.h)(0x6502D1FE)
 I (..\SD\ffconf.h)(0x6502D1FE)
 I (..\SD\bsp_spi_sdcard.h)(0x6502D1FE)
 F (..\Hardware\counter.c)(0x6502D1FE)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\counter.o --omf_browse .\objects\counter.crf --depend .\objects\counter.d)
-I (..\User\main.h)(0x6512E037)
+I (..\User\main.h)(0x6512F62D)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -2525,9 +2621,9 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -2561,9 +2657,13 @@ I (..\Algorithm\DataScope_DP.h)(0x6502D1FE)
 I (..\Algorithm\algorithmOfCRC.h)(0x6502D1FE)
 I (..\Task\DataReceiveTask.h)(0x650D1EEA)
 I (..\Task\DataSendTask.h)(0x6502D1FE)
-I (..\Task\ChassisTask.h)(0x6512E07E)
+I (..\Task\ChassisTask.h)(0x6512F98C)
 I (..\Task\PowerControlTask.h)(0x6512DE1F)
 I (..\Task\ZeroCheckTask.h)(0x6502D1FE)
+I (..\Software\chassis.h)(0x65103A94)
+I (..\Software\Kinematic.h)(0x6512E480)
+I (..\Software\motor.h)(0x6510125C)
+I (..\Software\JudgeMsg.h)(0x651173D7)
 I (..\Task\GraphicsSendTask.h)(0x6502D1FE)
 I (..\Task\CharSendTask.h)(0x6502D1FE)
 I (..\Task\StartTask.h)(0x6502D1FE)
@@ -2619,7 +2719,7 @@ I (..\Library\CMSIS\core_cm4_simd.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 F (..\SD\bsp_spi_sdcard.c)(0x6502D1FE)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\bsp_spi_sdcard.o --omf_browse .\objects\bsp_spi_sdcard.crf --depend .\objects\bsp_spi_sdcard.d)
-I (..\User\main.h)(0x6512E037)
+I (..\User\main.h)(0x6512F62D)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -2645,9 +2745,9 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -2681,9 +2781,13 @@ I (..\Algorithm\DataScope_DP.h)(0x6502D1FE)
 I (..\Algorithm\algorithmOfCRC.h)(0x6502D1FE)
 I (..\Task\DataReceiveTask.h)(0x650D1EEA)
 I (..\Task\DataSendTask.h)(0x6502D1FE)
-I (..\Task\ChassisTask.h)(0x6512E07E)
+I (..\Task\ChassisTask.h)(0x6512F98C)
 I (..\Task\PowerControlTask.h)(0x6512DE1F)
 I (..\Task\ZeroCheckTask.h)(0x6502D1FE)
+I (..\Software\chassis.h)(0x65103A94)
+I (..\Software\Kinematic.h)(0x6512E480)
+I (..\Software\motor.h)(0x6510125C)
+I (..\Software\JudgeMsg.h)(0x651173D7)
 I (..\Task\GraphicsSendTask.h)(0x6502D1FE)
 I (..\Task\CharSendTask.h)(0x6502D1FE)
 I (..\Task\StartTask.h)(0x6502D1FE)
@@ -2789,8 +2893,8 @@ I (..\SEGGER_RTT_V784\RTT\SEGGER_RTT.h)(0x6502D1FE)
 I (..\SEGGER_RTT_V784\RTT\../Config/SEGGER_RTT_Conf.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdarg.h)(0x574E3E26)
-F (..\Software\Can.c)(0x6512D3FD)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\can.o --omf_browse .\objects\can.crf --depend .\objects\can.d)
-I (..\Software\Can.h)(0x6512E348)
+F (..\Software\Can.c)(0x6512F826)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\can.o --omf_browse .\objects\can.crf --depend .\objects\can.d)
+I (..\Software\Can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
@@ -2811,7 +2915,7 @@ I (..\Library\inc\stm32f4xx_usart.h)(0x6502D1FE)
 I (..\Library\inc\misc.h)(0x6502D1FE)
 I (..\Library\inc\stm32f4xx_can.h)(0x6502D1FE)
 I (..\Library\inc\stm32f4xx_dac.h)(0x6502D1FE)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -2833,7 +2937,7 @@ F (..\Software\Chassis.c)(0x6512E4B5)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -
 I (..\Software\Chassis.h)(0x65103A94)
 I (..\Software\Kinematic.h)(0x6512E480)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
@@ -2854,7 +2958,7 @@ I (..\Library\inc\stm32f4xx_usart.h)(0x6502D1FE)
 I (..\Library\inc\misc.h)(0x6502D1FE)
 I (..\Library\inc\stm32f4xx_can.h)(0x6502D1FE)
 I (..\Library\inc\stm32f4xx_dac.h)(0x6502D1FE)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -2900,7 +3004,7 @@ I (..\Library\inc\stm32f4xx_usart.h)(0x6502D1FE)
 I (..\Library\inc\misc.h)(0x6502D1FE)
 I (..\Library\inc\stm32f4xx_can.h)(0x6502D1FE)
 I (..\Library\inc\stm32f4xx_dac.h)(0x6502D1FE)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -2919,10 +3023,10 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Software\usart.h)(0x651173F9)
-F (..\Software\Kinematic.c)(0x6512DAF3)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\kinematic.o --omf_browse .\objects\kinematic.crf --depend .\objects\kinematic.d)
+F (..\Software\Kinematic.c)(0x6512FA08)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\SD -I ..\SEGGER_RTT_V784\RTT -I ..\RTOS_Test -I ..\SEGGER_RTT_V784\Config -I ..\Software-ID:\WORK\RM\主力考核\Infantry\F405_Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\DSP\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -D_RTE_ -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM -D__TARGET_FPU_VFP-o .\objects\kinematic.o --omf_browse .\objects\kinematic.crf --depend .\objects\kinematic.d)
 I (..\Software\Kinematic.h)(0x6512E480)
 I (..\Hardware\can1.h)(0x6512E6CE)
-I (..\Software\can.h)(0x6512E348)
+I (..\Software\can.h)(0x6512F834)
 I (..\User\sys.h)(0x6512E3B3)
 I (..\User\stm32f4xx.h)(0x6502D1FE)
 I (..\Library\CMSIS\core_cm4.h)(0x6502D1FE)
@@ -2943,7 +3047,7 @@ I (..\Library\inc\stm32f4xx_usart.h)(0x6502D1FE)
 I (..\Library\inc\misc.h)(0x6502D1FE)
 I (..\Library\inc\stm32f4xx_can.h)(0x6502D1FE)
 I (..\Library\inc\stm32f4xx_dac.h)(0x6502D1FE)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)
@@ -2998,7 +3102,7 @@ I (..\Library\inc\stm32f4xx_usart.h)(0x6502D1FE)
 I (..\Library\inc\misc.h)(0x6502D1FE)
 I (..\Library\inc\stm32f4xx_can.h)(0x6502D1FE)
 I (..\Library\inc\stm32f4xx_dac.h)(0x6502D1FE)
-I (..\User\FreeRTOSConfig.h)(0x6502D1FE)
+I (..\User\FreeRTOSConfig.h)(0x6512F425)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6502D1FE)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\FreeRTOS\include\projdefs.h)(0x6502D1FE)

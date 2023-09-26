@@ -67,6 +67,10 @@
 .\objects\zerochecktask.o: ..\Task\ChassisTask.h
 .\objects\zerochecktask.o: ..\Task\PowerControlTask.h
 .\objects\zerochecktask.o: ..\Task\ZeroCheckTask.h
+.\objects\zerochecktask.o: ..\Software\chassis.h
+.\objects\zerochecktask.o: ..\Software\Kinematic.h
+.\objects\zerochecktask.o: ..\Software\motor.h
+.\objects\zerochecktask.o: ..\Software\JudgeMsg.h
 .\objects\zerochecktask.o: ..\Task\GraphicsSendTask.h
 .\objects\zerochecktask.o: ..\Task\CharSendTask.h
 .\objects\zerochecktask.o: ..\Task\StartTask.h

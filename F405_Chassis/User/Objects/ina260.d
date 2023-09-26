@@ -67,6 +67,10 @@
 .\objects\ina260.o: ..\Task\ChassisTask.h
 .\objects\ina260.o: ..\Task\PowerControlTask.h
 .\objects\ina260.o: ..\Task\ZeroCheckTask.h
+.\objects\ina260.o: ..\Software\chassis.h
+.\objects\ina260.o: ..\Software\Kinematic.h
+.\objects\ina260.o: ..\Software\motor.h
+.\objects\ina260.o: ..\Software\JudgeMsg.h
 .\objects\ina260.o: ..\Task\GraphicsSendTask.h
 .\objects\ina260.o: ..\Task\CharSendTask.h
 .\objects\ina260.o: ..\Task\StartTask.h

@@ -67,6 +67,10 @@
 .\objects\uart4.o: ..\Task\ChassisTask.h
 .\objects\uart4.o: ..\Task\PowerControlTask.h
 .\objects\uart4.o: ..\Task\ZeroCheckTask.h
+.\objects\uart4.o: ..\Software\chassis.h
+.\objects\uart4.o: ..\Software\Kinematic.h
+.\objects\uart4.o: ..\Software\motor.h
+.\objects\uart4.o: ..\Software\JudgeMsg.h
 .\objects\uart4.o: ..\Task\GraphicsSendTask.h
 .\objects\uart4.o: ..\Task\CharSendTask.h
 .\objects\uart4.o: ..\Task\StartTask.h

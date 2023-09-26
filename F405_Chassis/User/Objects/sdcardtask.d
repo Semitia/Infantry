@@ -67,6 +67,10 @@
 .\objects\sdcardtask.o: ..\Task\ChassisTask.h
 .\objects\sdcardtask.o: ..\Task\PowerControlTask.h
 .\objects\sdcardtask.o: ..\Task\ZeroCheckTask.h
+.\objects\sdcardtask.o: ..\Software\chassis.h
+.\objects\sdcardtask.o: ..\Software\Kinematic.h
+.\objects\sdcardtask.o: ..\Software\motor.h
+.\objects\sdcardtask.o: ..\Software\JudgeMsg.h
 .\objects\sdcardtask.o: ..\Task\GraphicsSendTask.h
 .\objects\sdcardtask.o: ..\Task\CharSendTask.h
 .\objects\sdcardtask.o: ..\Task\StartTask.h

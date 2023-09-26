@@ -67,6 +67,10 @@
 .\objects\bsp_spi_sdcard.o: ..\Task\ChassisTask.h
 .\objects\bsp_spi_sdcard.o: ..\Task\PowerControlTask.h
 .\objects\bsp_spi_sdcard.o: ..\Task\ZeroCheckTask.h
+.\objects\bsp_spi_sdcard.o: ..\Software\chassis.h
+.\objects\bsp_spi_sdcard.o: ..\Software\Kinematic.h
+.\objects\bsp_spi_sdcard.o: ..\Software\motor.h
+.\objects\bsp_spi_sdcard.o: ..\Software\JudgeMsg.h
 .\objects\bsp_spi_sdcard.o: ..\Task\GraphicsSendTask.h
 .\objects\bsp_spi_sdcard.o: ..\Task\CharSendTask.h
 .\objects\bsp_spi_sdcard.o: ..\Task\StartTask.h

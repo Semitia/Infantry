@@ -67,6 +67,10 @@
 .\objects\tim2.o: ..\Task\ChassisTask.h
 .\objects\tim2.o: ..\Task\PowerControlTask.h
 .\objects\tim2.o: ..\Task\ZeroCheckTask.h
+.\objects\tim2.o: ..\Software\chassis.h
+.\objects\tim2.o: ..\Software\Kinematic.h
+.\objects\tim2.o: ..\Software\motor.h
+.\objects\tim2.o: ..\Software\JudgeMsg.h
 .\objects\tim2.o: ..\Task\GraphicsSendTask.h
 .\objects\tim2.o: ..\Task\CharSendTask.h
 .\objects\tim2.o: ..\Task\StartTask.h

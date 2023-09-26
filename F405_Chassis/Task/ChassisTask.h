@@ -3,7 +3,7 @@
 #include "main.h"
 #include "PowerControlTask.h"
 #include "ZeroCheckTask.h"
-
+#include "chassis.h"
 
 #define YES 1
 #define NO  0

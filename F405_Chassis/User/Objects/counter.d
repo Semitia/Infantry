@@ -67,6 +67,10 @@
 .\objects\counter.o: ..\Task\ChassisTask.h
 .\objects\counter.o: ..\Task\PowerControlTask.h
 .\objects\counter.o: ..\Task\ZeroCheckTask.h
+.\objects\counter.o: ..\Software\chassis.h
+.\objects\counter.o: ..\Software\Kinematic.h
+.\objects\counter.o: ..\Software\motor.h
+.\objects\counter.o: ..\Software\JudgeMsg.h
 .\objects\counter.o: ..\Task\GraphicsSendTask.h
 .\objects\counter.o: ..\Task\CharSendTask.h
 .\objects\counter.o: ..\Task\StartTask.h

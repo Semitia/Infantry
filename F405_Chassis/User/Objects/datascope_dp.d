@@ -67,6 +67,10 @@
 .\objects\datascope_dp.o: ..\Task\ChassisTask.h
 .\objects\datascope_dp.o: ..\Task\PowerControlTask.h
 .\objects\datascope_dp.o: ..\Task\ZeroCheckTask.h
+.\objects\datascope_dp.o: ..\Software\chassis.h
+.\objects\datascope_dp.o: ..\Software\Kinematic.h
+.\objects\datascope_dp.o: ..\Software\motor.h
+.\objects\datascope_dp.o: ..\Software\JudgeMsg.h
 .\objects\datascope_dp.o: ..\Task\GraphicsSendTask.h
 .\objects\datascope_dp.o: ..\Task\CharSendTask.h
 .\objects\datascope_dp.o: ..\Task\StartTask.h

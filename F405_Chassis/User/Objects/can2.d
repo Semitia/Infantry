@@ -67,6 +67,10 @@
 .\objects\can2.o: ..\Task\ChassisTask.h
 .\objects\can2.o: ..\Task\PowerControlTask.h
 .\objects\can2.o: ..\Task\ZeroCheckTask.h
+.\objects\can2.o: ..\Software\chassis.h
+.\objects\can2.o: ..\Software\Kinematic.h
+.\objects\can2.o: ..\Software\motor.h
+.\objects\can2.o: ..\Software\JudgeMsg.h
 .\objects\can2.o: ..\Task\GraphicsSendTask.h
 .\objects\can2.o: ..\Task\CharSendTask.h
 .\objects\can2.o: ..\Task\StartTask.h
