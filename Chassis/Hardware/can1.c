@@ -42,8 +42,12 @@ CanMsgList_t can1_rx1 = {0};
 void CAN1_Configuration()
 {
 	can1_rx0.mutex = xSemaphoreCreateBinary();
+	can1_rx0.p = 0;
+	can1_rx0.num = 0;
 	can1_rx1.mutex = xSemaphoreCreateBinary();					//创建互斥信号量
-
+	can1_rx1.p = 0;
+	can1_rx1.num = 0;
+	
 	GPIO_InitTypeDef GPIO_InitStructure;
 	CAN_InitTypeDef        CAN_InitStructure;
 	CAN_FilterInitTypeDef  CAN_FilterInitStructure;
@@ -134,19 +138,20 @@ void CAN1_Configuration()
 void CAN1_RX0_IRQHandler()
 {
 	CanRxMsg rx_message;
-	BaseType_t xHigherPriorityTaskWoken = pdFALSE;	//定义上下文切换标志
+	// BaseType_t xHigherPriorityTaskWoken = pdFALSE;	//定义上下文切换标志
 
 	if (CAN_GetITStatus(CAN1,CAN_IT_FMP0)!= RESET) 
 	{
 		CAN_Receive(CAN1, CAN_FIFO0, &rx_message);
-		xSemaphoreTakeFromISR(can1_rx0.mutex, &xHigherPriorityTaskWoken);
-		addCanMsg(&can1_rx0, rx_message);
-		xSemaphoreGiveFromISR(can1_rx0.mutex, &xHigherPriorityTaskWoken);
 		CAN_ClearITPendingBit(CAN1, CAN_IT_FMP0);
+		//updateWheelsFromISR(&chassis.kinematic, rx_message);
+		// xSemaphoreTakeFromISR(can1_rx0.mutex, &xHigherPriorityTaskWoken);
+		// addCanMsg(&can1_rx0, rx_message);
+		// xSemaphoreGiveFromISR(can1_rx0.mutex, &xHigherPriorityTaskWoken);
 	}
-	if(xHigherPriorityTaskWoken) {
-		portYIELD_FROM_ISR(xHigherPriorityTaskWoken);  // 如果需要，请求上下文切换
-	}
+	// if(xHigherPriorityTaskWoken) {
+	// 	portYIELD_FROM_ISR(xHigherPriorityTaskWoken);  // 如果需要，请求上下文切换
+	// }
 }
 
 /**********************************************************************************************************
@@ -163,16 +168,16 @@ void CAN1_RX1_IRQHandler()
 	if (CAN_GetITStatus(CAN1,CAN_IT_FMP1)!= RESET) 
 	{
 		CAN_Receive(CAN1, CAN_FIFO1, &rx_message);
-		//获取互斥信号量
-		xSemaphoreTakeFromISR(can1_rx1.mutex, &xHigherPriorityTaskWoken);
-		addCanMsg(&can1_rx1, rx_message);
-		//释放互斥信号量
-		xSemaphoreGiveFromISR(can1_rx1.mutex, &xHigherPriorityTaskWoken);
 		CAN_ClearITPendingBit(CAN1, CAN_IT_FMP1);
+		// //获取互斥信号量
+		// xSemaphoreTakeFromISR(can1_rx1.mutex, &xHigherPriorityTaskWoken);
+		// addCanMsg(&can1_rx1, rx_message);
+		// //释放互斥信号量
+		// xSemaphoreGiveFromISR(can1_rx1.mutex, &xHigherPriorityTaskWoken);
 	}
-	//似乎没啥必要
-	if(xHigherPriorityTaskWoken) {
-        portYIELD_FROM_ISR(xHigherPriorityTaskWoken);  // 如果需要，请求上下文切换
-	}
+	// //似乎没啥必要
+	// if(xHigherPriorityTaskWoken) {
+    //     portYIELD_FROM_ISR(xHigherPriorityTaskWoken);  // 如果需要，请求上下文切换
+	// }
 }
 

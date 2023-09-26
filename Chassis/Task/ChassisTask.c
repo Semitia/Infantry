@@ -23,9 +23,9 @@ void Chassis_task(void *pvParameters)
 		// {
 		// 	xTaskNotifyGive(User_Tasks[JUDGERECEIVE_TASK]);
 		// }
-		recvGimData(&chassis);
-		moveCtrl(&chassis);
-		sendGimData(&chassis);
+		//recvGimData(&chassis);
+		//moveCtrl(&chassis);
+		//sendGimData(&chassis);
 		
 		//VOFA_Send();
 		vTaskDelayUntil(&xLastWakeTime,xFrequency); 

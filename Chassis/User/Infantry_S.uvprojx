@@ -399,6 +399,11 @@
               <FileType>5</FileType>
               <FilePath>.\FreeRTOSConfig.h</FilePath>
             </File>
+            <File>
+              <FileName>sys.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\sys.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -633,11 +638,6 @@
               <FileName>myMath.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Algorithm\myMath.c</FilePath>
-            </File>
-            <File>
-              <FileName>tool.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Algorithm\tool.c</FilePath>
             </File>
             <File>
               <FileName>Matrix.c</FileName>

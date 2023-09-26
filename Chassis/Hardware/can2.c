@@ -6,6 +6,8 @@
  * @日期     2019.10
 **********************************************************************************************************/
 #include "main.h"
+CanMsgList_t can2_rx0 = {0};
+
 /**********************************************************************************************************
 *函 数 名: CAN2_Configuration
 *功能说明: can2配置函数
@@ -14,6 +16,10 @@
 **********************************************************************************************************/
 void CAN2_Configuration(void)
 {
+	can2_rx0.mutex = xSemaphoreCreateBinary();
+	can2_rx0.p = 0;
+	can2_rx0.num = 0;
+
 	CAN_InitTypeDef can;
 	CAN_FilterInitTypeDef can_filter;
 	GPIO_InitTypeDef gpio;
@@ -93,14 +99,20 @@ void CAN2_Configuration(void)
 *形    参: 无
 *返 回 值: 无
 **********************************************************************************************************/
-CanMsgList_t can2_rx0 = {0};
+
 void CAN2_RX0_IRQHandler(void)
 {
 	CanRxMsg rx_message0;
+	//portBASE_TYPE xHigherPriorityTaskWoken = pdFALSE;
 	if (CAN_GetITStatus(CAN2,CAN_IT_FMP0)!= RESET)
 	{
 		CAN_ClearITPendingBit(CAN2, CAN_IT_FMP0);
 		CAN_Receive(CAN2, CAN_FIFO0, &rx_message0);
-		addCanMsg(&can2_rx0, rx_message0);
+		//xSemaphoreTakeFromISR(can1_rx1.mutex, &xHigherPriorityTaskWoken);
+		//addCanMsg(&can2_rx0, rx_message0);
+		//xSemaphoreGiveFromISR(can1_rx1.mutex, &xHigherPriorityTaskWoken);
 	}
+	//if(xHigherPriorityTaskWoken) {
+  //      portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
+	//}
 }

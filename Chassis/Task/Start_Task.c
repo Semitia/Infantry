@@ -16,12 +16,12 @@ static TaskHandle_t StartTask_Handler;                        //任务句柄
 void start_task(void *pvParameters)
 {
   taskENTER_CRITICAL();
-	xTaskCreate((TaskFunction_t)CPU_task,                       //任务函数
-                (const char *)"CPU_task",                     //任务名称
-                (uint16_t)CPU_STK_SIZE,                       //任务堆栈大小
-                (void *)NULL,                                 //传递给任务函数的参数
-                (UBaseType_t)CPU_TASK_PRIO,                   //任务优先级
-                (TaskHandle_t *)&User_Tasks[CPU_TASK]);       //任务句柄
+	// xTaskCreate((TaskFunction_t)CPU_task,                       //任务函数
+  //               (const char *)"CPU_task",                     //任务名称
+  //               (uint16_t)CPU_STK_SIZE,                       //任务堆栈大小
+  //               (void *)NULL,                                 //传递给任务函数的参数
+  //               (UBaseType_t)CPU_TASK_PRIO,                   //任务优先级
+  //               (TaskHandle_t *)&User_Tasks[CPU_TASK]);       //任务句柄
 	
   xTaskCreate((TaskFunction_t)Chassis_task,                   //任务函数
                 (const char *)"Chassis_task",                 //任务名称
