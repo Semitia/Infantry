@@ -6,6 +6,7 @@
  * @日期     2022.3
 **********************************************************************************************************/
 #include "main.h"
+UsartIF_t usart4_if;
 
 unsigned char JudgeReceiveBuffer[JudgeBufBiggestSize];
 extern uint8_t Transmit_Pack[128];//裁判系统数据帧

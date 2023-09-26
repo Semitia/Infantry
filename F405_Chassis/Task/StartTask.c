@@ -64,12 +64,12 @@ void start_task(void *pvParameters)
                 (UBaseType_t)CPU_TASK_PRIO,        //任务优先级
                 (TaskHandle_t *)&User_Tasks[CPU_TASK]); //任务句柄
 							
-	xTaskCreate((TaskFunction_t)GraphicSendtask,          //任务函数
-                (const char *)"Graphic_task",          //任务名称
-                (uint16_t)GRAPHIC_STK_SIZE,            //任务堆栈大小
-                (void *)NULL,                        //传递给任务函数的参数
-                (UBaseType_t)GRAPHIC_TASK_PRIO,        //任务优先级
-                (TaskHandle_t *)&User_Tasks[GRAPHIC_TASK]); //任务句柄
+	// xTaskCreate((TaskFunction_t)GraphicSendtask,          //任务函数
+  //               (const char *)"Graphic_task",          //任务名称
+  //               (uint16_t)GRAPHIC_STK_SIZE,            //任务堆栈大小
+  //               (void *)NULL,                        //传递给任务函数的参数
+  //               (UBaseType_t)GRAPHIC_TASK_PRIO,        //任务优先级
+  //               (TaskHandle_t *)&User_Tasks[GRAPHIC_TASK]); //任务句柄
 	
 	xTaskCreate((TaskFunction_t)Chassis_task,          //任务函数
                 (const char *)"Chassis_task",          //任务名称
@@ -78,26 +78,26 @@ void start_task(void *pvParameters)
                 (UBaseType_t)CHASSIS_TASK_PRIO,        //任务优先级
                 (TaskHandle_t *)&User_Tasks[CHASSIS_TASK]); //任务句柄
 								
-	xTaskCreate((TaskFunction_t)Offline_Check_task,          //任务函数
-                (const char *)"Offline_Check_task",          //任务名称
-                (uint16_t)OFFLINE_CHECK_STK_SIZE,            //任务堆栈大小
-                (void *)NULL,                        //传递给任务函数的参数
-                (UBaseType_t)OFFLINE_CHECK_TASK_PRIO,        //任务优先级
-                (TaskHandle_t *)&User_Tasks[OFFLINE_TASK]); //任务句柄
+	// xTaskCreate((TaskFunction_t)Offline_Check_task,          //任务函数
+  //               (const char *)"Offline_Check_task",          //任务名称
+  //               (uint16_t)OFFLINE_CHECK_STK_SIZE,            //任务堆栈大小
+  //               (void *)NULL,                        //传递给任务函数的参数
+  //               (UBaseType_t)OFFLINE_CHECK_TASK_PRIO,        //任务优先级
+  //               (TaskHandle_t *)&User_Tasks[OFFLINE_TASK]); //任务句柄
 								
-	xTaskCreate((TaskFunction_t)PowerControl_task,          //任务函数
-                (const char *)"PowerControl_task",          //任务名称
-                (uint16_t)POWERCONTROL_STK_SIZE,            //任务堆栈大小
-                (void *)NULL,                        //传递给任务函数的参数
-                (UBaseType_t)POWERCONTROL_TASK_PRIO,        //任务优先级
-                (TaskHandle_t *)&User_Tasks[POWERCONTROL_TASK]); //任务句柄
+	// xTaskCreate((TaskFunction_t)PowerControl_task,          //任务函数
+  //               (const char *)"PowerControl_task",          //任务名称
+  //               (uint16_t)POWERCONTROL_STK_SIZE,            //任务堆栈大小
+  //               (void *)NULL,                        //传递给任务函数的参数
+  //               (UBaseType_t)POWERCONTROL_TASK_PRIO,        //任务优先级
+  //               (TaskHandle_t *)&User_Tasks[POWERCONTROL_TASK]); //任务句柄
 								
-	xTaskCreate((TaskFunction_t)JudgeReceive_task,          //任务函数
-                (const char *)"JudgeReceive_task",          //任务名称
-                (uint16_t)JUDGERECEIVE_STK_SIZE,            //任务堆栈大小
-                (void *)NULL,                        //传递给任务函数的参数
-                (UBaseType_t)JUDGERECEIVE_TASK_PRIO,        //任务优先级
-                (TaskHandle_t *)&User_Tasks[JUDGERECEIVE_TASK]); //任务句柄
+	// xTaskCreate((TaskFunction_t)JudgeReceive_task,          //任务函数
+  //               (const char *)"JudgeReceive_task",          //任务名称
+  //               (uint16_t)JUDGERECEIVE_STK_SIZE,            //任务堆栈大小
+  //               (void *)NULL,                        //传递给任务函数的参数
+  //               (UBaseType_t)JUDGERECEIVE_TASK_PRIO,        //任务优先级
+  //               (TaskHandle_t *)&User_Tasks[JUDGERECEIVE_TASK]); //任务句柄
 #endif
 				
 //	xTaskCreate((TaskFunction_t)SDCard_task,               //任务函数

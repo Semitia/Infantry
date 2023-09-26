@@ -35,12 +35,12 @@ typedef struct __Kinematic_t {
     Velocity_t target_vel;                          //目标速度
 
     Motor_t motor[4];                               //电机
-    Pid_t pid_speed[4];                             //速度环pid
-    Pid_t pid_angle[4];                             //角度环pid
+    Pid_Typedef pid_speed[4];                             //速度环pid
+    Pid_Typedef pid_angle[4];                             //角度环pid
 
     Motor_t steering_motor[4];                      //舵轮转向电机
-    Pid_t steering_pid_angle[4];                    //舵轮转向角度环pid
-    Pid_t steering_pid_speed[4];                    //舵轮转向速度环pid
+    Pid_Typedef steering_pid_angle[4];                    //舵轮转向角度环pid
+    Pid_Typedef steering_pid_speed[4];                    //舵轮转向速度环pid
 
     CanMsgList_t *can_datalist;                     //can数据接收链表,用于更新电机数据
     CanMsgList_t *can_datalist_steering;            //舵轮额外需要4个电机数据

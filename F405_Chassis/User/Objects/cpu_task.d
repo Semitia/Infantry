@@ -37,9 +37,17 @@
 .\objects\cpu_task.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\cpu_task.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\cpu_task.o: ..\Hardware\can1.h
+.\objects\cpu_task.o: ..\Software\can.h
+.\objects\cpu_task.o: ..\User\sys.h
+.\objects\cpu_task.o: ..\FreeRTOS\include\task.h
+.\objects\cpu_task.o: ..\FreeRTOS\include\list.h
+.\objects\cpu_task.o: ..\FreeRTOS\include\semphr.h
+.\objects\cpu_task.o: ..\FreeRTOS\include\queue.h
+.\objects\cpu_task.o: ..\Algorithm\myMath.h
 .\objects\cpu_task.o: ..\Hardware\can2.h
 .\objects\cpu_task.o: ..\Hardware\usart2.h
 .\objects\cpu_task.o: ..\Hardware\uart4.h
+.\objects\cpu_task.o: ..\Software\usart.h
 .\objects\cpu_task.o: ..\Hardware\tim2.h
 .\objects\cpu_task.o: ..\Hardware\tim4.h
 .\objects\cpu_task.o: ..\User\main.h
@@ -66,8 +74,6 @@
 .\objects\cpu_task.o: ..\Task\StartTask.h
 .\objects\cpu_task.o: ..\Task\JumpCal_Task.h
 .\objects\cpu_task.o: ..\SD\SDCardTask.h
-.\objects\cpu_task.o: ..\FreeRTOS\include\task.h
-.\objects\cpu_task.o: ..\FreeRTOS\include\list.h
 .\objects\cpu_task.o: ..\SD\ff.h
 .\objects\cpu_task.o: ..\SD\integer.h
 .\objects\cpu_task.o: ..\SD\ffconf.h

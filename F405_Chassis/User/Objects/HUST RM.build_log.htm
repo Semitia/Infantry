@@ -22,15 +22,128 @@ Dialog DLL:      TCM.DLL V1.14.14.0
  
 <h2>Project:</h2>
 D:\WORK\RM\主力考核\Infantry\F405_Chassis\User\Infantry_T.uvprojx
-Project File Date:  09/21/2023
+Project File Date:  09/26/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 3 (build 300)', folder: 'D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin'
 Build target 'Target 1'
+compiling algorithmOfCRC.c...
+compiling StartTask.c...
+compiling ChassisTask.c...
+..\Task\ChassisTask.c(534): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			if (power_limit->capEnergy < power_limit->Min_capEnergy*1.2){	//??小??值之前都?呛愎???		
+..\Task\ChassisTask.c(554): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			if (power_limit->remainEnergy < power_limit->Min_remainEnergy*1.3){	//??小??值之前都?呛愎???		
+..\Task\ChassisTask.c(573): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          if(super_power->CAP_AD_H+0.5 < super_power->actual_vol && power_limit->Min_capVol-0.5 < super_power->actual_vol)//当前??压???诜?????????小?牡??莸?压???芸???
+..\Task\ChassisTask.c(573): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          if(super_power->CAP_AD_H+0.5 < super_power->actual_vol && power_limit->Min_capVol-0.5 < super_power->actual_vol)//当前??压???诜?????????小?牡??莸?压???芸???
+..\Task\ChassisTask.c(610): warning:  #940-D: missing return statement at end of non-void function "set_powersate"
+  }
+..\Task\ChassisTask.c(642): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			power_limit->M[i] = (-P.P*speed_now + P.I*(SumError_last+0.5*(-speed_now+P.LastError)))*RM3508_CURRENT_RATIO;
+..\Task\ChassisTask.c(666): warning:  #177-D: variable "c" was declared but never referenced
+  	double i_2=0, w_i=0, a, b, c;
+..\Task\ChassisTask.c(716): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  											(power_limit->actual_ina260_power - 
+M3508_P0 - RM3508_R * (i_2+i_2_6020))/(w_i+w_i_6020));
+..\Task\ChassisTask.c: 8 warnings, 0 errors
+compiling GraphicsSendTask.c...
+..\Task\GraphicsSendTask.c(313): warning:  #177-D: variable "ShootLineName2" was declared but never referenced
+  	static uint8_t ShootLineName2[] = "SL2";
+..\Task\GraphicsSendTask.c(734): warning:  #177-D: variable "Op_Type" was declared but never referenced
+  	static int Op_Type = Op_None;
+..\Task\GraphicsSendTask.c: 2 warnings, 0 errors
+compiling FIR.c...
+..\Algorithm\FIR.c(52): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      return (1-
+_Low_setchassis)*(old)+
+_Low_setchassis*In;   
+..\Algorithm\FIR.c(62): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      return (1-
+_Low_setSteer)*(old)+
+_Low_setSteer*In;   
+..\Algorithm\FIR.c(72): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+    past=(1-
+_Low_setwheel)*past+
+_Low_setwheel*In;
+..\Algorithm\FIR.c(98): warning:  #1-D: last line of file ends without a newline
+  }
+..\Algorithm\FIR.c: 4 warnings, 0 errors
+compiling DataScope_DP.C...
+..\Algorithm\DataScope_DP.C(61): warning:  #111-D: statement is unreachable
+  		 case 1:   DataScope_OutPut_Buffer[5]  =  5; return  6; break;   
+..\Algorithm\DataScope_DP.C(62): warning:  #111-D: statement is unreachable
+  		 case 2:   DataScope_OutPut_Buffer[9]  =  9; return 10; break;
+..\Algorithm\DataScope_DP.C(63): warning:  #111-D: statement is unreachable
+  		 case 3:   DataScope_OutPut_Buffer[13] = 13; return 14; break;
+..\Algorithm\DataScope_DP.C(64): warning:  #111-D: statement is unreachable
+  		 case 4:   DataScope_OutPut_Buffer[17] = 17; return 18; break;
+..\Algorithm\DataScope_DP.C(65): warning:  #111-D: statement is unreachable
+  		 case 5:   DataScope_OutPut_Buffer[21] = 21; return 22; break; 
+..\Algorithm\DataScope_DP.C(66): warning:  #111-D: statement is unreachable
+  		 case 6:   DataScope_OutPut_Buffer[25] = 25; return 26; break;
+..\Algorithm\DataScope_DP.C(67): warning:  #111-D: statement is unreachable
+  		 case 7:   DataScope_OutPut_Buffer[29] = 29; return 30; break;
+..\Algorithm\DataScope_DP.C(68): warning:  #111-D: statement is unreachable
+  		 case 8:   DataScope_OutPut_Buffer[33] = 33; return 34; break;
+..\Algorithm\DataScope_DP.C(69): warning:  #111-D: statement is unreachable
+  		 case 9:   DataScope_OutPut_Buffer[37] = 37; return 38; break;
+..\Algorithm\DataScope_DP.C(70): warning:  #111-D: statement is unreachable
+       case 10:  DataScope_OutPut_Buffer[41] = 41; return 42; break;
+..\Algorithm\DataScope_DP.C: 10 warnings, 0 errors
+compiling PowerControlTask.c...
+..\Task\PowerControlTask.c(179): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	if(superpower.actual_vol<22.5 && powerlimit.set_superpower>10){
+..\Task\PowerControlTask.c(180): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		superpower.i_set = 
+IMIT_MAX_MIN(powerlimit.set_superpower/superpower.actual_vol,superpower.max_charge_i, 0.0);
+..\Task\PowerControlTask.c(180): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		superpower.i_set = 
+IMIT_MAX_MIN(powerlimit.set_superpower/superpower.actual_vol,superpower.max_charge_i, 0.0);
+..\Task\PowerControlTask.c: 3 warnings, 0 errors
+compiling main.c...
+compiling pid.c...
+compiling DataSendTask.c...
+compiling DataReceiveTask.c...
 compiling SDCardTask.c...
+compiling tim2.c...
+compiling tim4.c...
+..\Hardware\tim4.c(59): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			if(start_time_SD > 5.0){
+..\Hardware\tim4.c: 1 warning, 0 errors
+compiling CPU_Task.c...
+compiling can1.c...
+compiling can2.c...
+compiling ina260.c...
+compiling ZeroCheckTask.c...
+compiling i2c.c...
+compiling dac.c...
+compiling adc.c...
+compiling usart2.c...
+compiling uart4.c...
+compiling Chassis.c...
+..\Software\Chassis.c(26): warning:  #177-D: variable "recv_flag" was declared but never referenced
+      uint8_t recv_flag[2] = {0};
+..\Software\Chassis.c(27): warning:  #177-D: variable "node" was declared but never referenced
+      CanMsgNode_t *node, *prev_node;
+..\Software\Chassis.c(27): warning:  #177-D: variable "prev_node" was declared but never referenced
+      CanMsgNode_t *node, *prev_node;
+..\Software\Chassis.c: 3 warnings, 0 errors
+compiling Kinematic.c...
+..\Software\Kinematic.c(78): warning:  #177-D: variable "received_flag" was declared but never referenced
+      uint8_t received_flag[4] = {0};                          //鐢?浜?鍒?鏂?鏌?搴?鍙?鐨?鐢?鏈?鏄?鍚?宸?缁?鎺?鏀?鍒?浜?鏁?鎹?
+..\Software\Kinematic.c(79): warning:  #177-D: variable "node" was declared but never referenced
+      CanMsgNode_t *node,*prev_node;
+..\Software\Kinematic.c(79): warning:  #177-D: variable "prev_node" was declared but never referenced
+      CanMsgNode_t *node,*prev_node;
+..\Software\Kinematic.c: 3 warnings, 0 errors
+compiling counter.c...
+compiling bsp_spi_sdcard.c...
 linking...
-Program Size: Code=43180 RO-data=3440 RW-data=604 ZI-data=33116  
-".\Objects\HUST RM.axf" - 0 Error(s), 0 Warning(s).
+Program Size: Code=19676 RO-data=460 RW-data=496 ZI-data=24432  
+FromELF: creating hex file...
+".\Objects\HUST RM.axf" - 0 Error(s), 34 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -50,7 +163,7 @@ Package Vendor: ARM
    * Component: ARM::CMSIS:DSP:Library:1.7.0
       Include file:  CMSIS\DSP\Include\arm_math.h
       Library file:  CMSIS\DSP\Lib\ARM\arm_cortexM4lf_math.lib
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:06
 </pre>
 </body>
 </html>

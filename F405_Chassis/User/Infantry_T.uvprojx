@@ -51,7 +51,7 @@
           <OutputName>HUST RM</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
-          <CreateHexFile>0</CreateHexFile>
+          <CreateHexFile>1</CreateHexFile>
           <DebugInformation>1</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
           <ListingPath>.\</ListingPath>
@@ -335,7 +335,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,STM32F40_41xxx, ARM_MATH_CM4, __FPU_PRESENT=1, __FPU_USED =1, __CC_ARM,__TARGET_FPU_VFP</Define>
               <Undefine></Undefine>
-              <IncludePath>..\User;..\Mylib;..\Library\CMSIS;..\Library\inc;..\Library\src;..\Task;..\Mylib;..\FreeRTOS\src;..\FreeRTOS\port\MemMang;..\FreeRTOS\port\RVDS\ARM_CM4F;..\FreeRTOS\include;..\Algorithm;..\Hardware;..\SD;..\SEGGER_RTT_V784\RTT;..\RTOS_Test;..\SEGGER_RTT_V784\Config</IncludePath>
+              <IncludePath>..\User;..\Mylib;..\Library\CMSIS;..\Library\inc;..\Library\src;..\Task;..\Mylib;..\FreeRTOS\src;..\FreeRTOS\port\MemMang;..\FreeRTOS\port\RVDS\ARM_CM4F;..\FreeRTOS\include;..\Algorithm;..\Hardware;..\SD;..\SEGGER_RTT_V784\RTT;..\RTOS_Test;..\SEGGER_RTT_V784\Config;..\Software</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -399,6 +399,11 @@
               <FileType>1</FileType>
               <FilePath>.\system_stm32f4xx.c</FilePath>
             </File>
+            <File>
+              <FileName>sys.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\sys.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -423,6 +428,26 @@
               <FileName>pid.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Algorithm\pid.c</FilePath>
+            </File>
+            <File>
+              <FileName>filters.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Algorithm\filters.c</FilePath>
+            </File>
+            <File>
+              <FileName>Matrix.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Algorithm\Matrix.c</FilePath>
+            </File>
+            <File>
+              <FileName>myMath.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Algorithm\myMath.c</FilePath>
+            </File>
+            <File>
+              <FileName>RLS.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Algorithm\RLS.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -753,6 +778,46 @@
               <FileName>SEGGER_RTT_printf.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\SEGGER_RTT_V784\RTT\SEGGER_RTT_printf.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Software</GroupName>
+          <Files>
+            <File>
+              <FileName>Can.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\Can.c</FilePath>
+            </File>
+            <File>
+              <FileName>Chassis.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\Chassis.c</FilePath>
+            </File>
+            <File>
+              <FileName>JudgeMsg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\JudgeMsg.c</FilePath>
+            </File>
+            <File>
+              <FileName>Kinematic.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\Kinematic.c</FilePath>
+            </File>
+            <File>
+              <FileName>Power.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\Power.c</FilePath>
+            </File>
+            <File>
+              <FileName>motor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\motor.c</FilePath>
+            </File>
+            <File>
+              <FileName>Usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Software\Usart.c</FilePath>
             </File>
           </Files>
         </Group>

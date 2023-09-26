@@ -107,8 +107,9 @@ void moveCtrl(Chassis_t *chassis) {
     
     invKinematic(&(chassis->kinematic));
     for(i=0; i<4; i++) {
+				k.pid_speed[i].SetPoint = k.motor[i].target_speed;
         k.motor[i].target_current = 
-            PID_Calc(&(k.pid_speed[i]), k.motor[i].target_speed, k.motor[i].speed);
+            PID_Calc(&(k.pid_speed[i]), k.motor[i].speed);
         k.motor[i].target_current = 
             LIMIT_MAX_MIN(k.motor[i].target_current, 2000, -2000);
     }

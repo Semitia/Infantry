@@ -414,13 +414,13 @@ float angle;
 float angle1;
 void CarPosture_Change(short Yaw_100 ,uint8_t Init_Cnt)
 {
-	static uint8_t LaneLineName1[] = "po1";
+	//static uint8_t LaneLineName1[] = "po1";
 	static uint8_t LaneLineName2[] = "po2";
-	static uint8_t LaneLineName3[] = "po3";
-	static uint8_t LaneLineName4[] = "po4";
-	static uint8_t LaneLineName5[] = "po5";
+	//static uint8_t LaneLineName3[] = "po3";
+	//static uint8_t LaneLineName4[] = "po4";
+	//static uint8_t LaneLineName5[] = "po5";
 	static uint8_t LaneLineName6[] = "po6";
-	static uint8_t LaneLineName7[] = "po7";
+	//static uint8_t LaneLineName7[] = "po7";
 	graphic_data_struct_t * P_graphic_data;
 
 	static uint16_t len = 50;

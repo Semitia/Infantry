@@ -36,7 +36,7 @@
 #define CAP_C (60/9)  //超级电容组的容值
 
 #elif Robot_ID == 44
-#define RM3508_R 0.1231
+#define RM3508_R 0.1231f
 #define RM3508_K 0.001685
 #define RM3508_P0 12.75
 #define RM3508_K_MAX 0.0017

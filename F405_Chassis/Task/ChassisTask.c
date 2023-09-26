@@ -361,7 +361,6 @@ void Chassis_Speed_Cal(void)
 //全向轮和麦克纳姆轮
 void Chassis_Speed_Cal(void)
 {
-	static short Angular_Velocity;
 	float rotation_lim=1.0f;	
 	
 	//xy向速度与w向速度配比
@@ -522,7 +521,7 @@ void cal_powerSet(Power_Limit_type *power_limit,int powerstate_cur){
 				power_limit->set_power = power_limit->No_limited_Power;
             else//实际电池
             {
-                if (power_limit->remainEnergy < power_limit->Min_remainEnergy*1.3){	//最小阈值之前都是恒功率		
+                if (power_limit->remainEnergy < power_limit->Min_remainEnergy*1.3f){	//最小阈值之前都是恒功率		
                 power_limit->set_power = power_limit->referee_max_power + 
                                          power_limit->P_remainEngry*(power_limit->remainEnergy - power_limit->Min_remainEnergy);	
                 }else{
@@ -540,7 +539,7 @@ void cal_powerSet(Power_Limit_type *power_limit,int powerstate_cur){
 				power_limit->set_power = power_limit->HalfCAP_Power;
 			}
 		}else{
-			if (power_limit->remainEnergy < power_limit->Min_remainEnergy*1.2){	//最小阈值之前都是恒功率		
+			if (power_limit->remainEnergy < power_limit->Min_remainEnergy*1.2f){	//最小阈值之前都是恒功率		
 				power_limit->set_power = power_limit->referee_max_power + 
 										 power_limit->P_remainEngry*(power_limit->remainEnergy - power_limit->Min_remainEnergy);	
 				power_limit->PowerState_Set = CAP;
@@ -645,7 +644,6 @@ void calfromPID(Power_Limit_type *power_limit){
 		}
 		
 		
-		double k_s = 1.0;
 		double K_W = power_limit->K[i] * P.SetPoint;
 		double current = K_W + power_limit->M[i];
 		if(ABS(current) > power_limit->pidChassisWheelSpeed[i].OutMax*RM3508_CURRENT_RATIO){
@@ -1010,6 +1008,51 @@ extern uint8_t JudgeReveice_Flag;
 //extern TaskHandle_t JudgeReceiveTask_Handler; //任务句柄
 extern TaskHandle_t User_Tasks[TASK_NUM];
 uint32_t testtask=0;
+// void Chassis_task(void *pvParameters)
+// {
+// 	portTickType xLastWakeTime;
+// #if Mecanum == 2
+// 	const portTickType xFrequency = 2;
+// #else
+// 	const portTickType xFrequency = 1;
+// #endif
+// 	Chassis_Init();
+	
+// 	vTaskDelay(100);
+// 	while (1) {
+// 		xLastWakeTime = xTaskGetTickCount();
+		
+// 		if(JudgeReveice_Flag)
+// 		{
+// 		 xTaskNotifyGive(User_Tasks[JUDGERECEIVE_TASK]);
+// 		}
+		
+// 		//电容充放电控制
+// 		if(JudgeReceive.remainEnergy<20)
+// 		{
+// 		Charge_Off;
+// 		ChargeState = ChargeOff ;
+// 		}
+// 		else
+// 		{
+// 			Charge_On;
+// 			ChargeState = ChargeOn;
+// 		}	
+// 		//功率限制
+// 		Chassis_Loop_Cal();
+// 		BuildF105();
+// 		Can2Send0(&F105);
+		
+// 		VOFA_Send();
+
+// 		IWDG_Feed();//喂狗		
+// 		vTaskDelayUntil(&xLastWakeTime,xFrequency); 
+		 
+// 	#if INCLUDE_uxTaskGetStackHighWaterMark
+// 		Chassis_high_water = uxTaskGetStackHighWaterMark(NULL);
+// 	#endif
+// 	}
+// }
 void Chassis_task(void *pvParameters)
 {
 	portTickType xLastWakeTime;
@@ -1018,35 +1061,15 @@ void Chassis_task(void *pvParameters)
 #else
 	const portTickType xFrequency = 1;
 #endif
-	Chassis_Init();
+
 	
 	vTaskDelay(100);
 	while (1) {
 		xLastWakeTime = xTaskGetTickCount();
 		
-		if(JudgeReveice_Flag)
-		{
-		 xTaskNotifyGive(User_Tasks[JUDGERECEIVE_TASK]);
-		}
 		
-		//电容充放电控制
-		if(JudgeReceive.remainEnergy<20)
-		{
-		Charge_Off;
-		ChargeState = ChargeOff ;
-		}
-		else
-		{
-			Charge_On;
-			ChargeState = ChargeOn;
-		}	
-		//功率限制
-		Chassis_Loop_Cal();
-		BuildF105();
-		Can2Send0(&F105);
-		
-		VOFA_Send();
 
+		VOFA_Send();
 		IWDG_Feed();//喂狗		
 		vTaskDelayUntil(&xLastWakeTime,xFrequency); 
 		 
