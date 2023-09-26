@@ -1053,7 +1053,7 @@ uint32_t testtask=0;
 // 	#endif
 // 	}
 // }
-Kinematic_t Kinematic;
+Kinematic_t k;
 void Chassis_task(void *pvParameters)
 {
 	portTickType xLastWakeTime;
@@ -1062,18 +1062,28 @@ void Chassis_task(void *pvParameters)
 #else
 	const portTickType xFrequency = 1;
 #endif
-	kinematicInit(&Kinematic);
+	kinematicInit(&k);
 	
 	vTaskDelay(100);
 	while (1) {
+		uint8_t i;
 		xLastWakeTime = xTaskGetTickCount();
-		updateWheels(&Kinematic);
-		
+
+		updateWheels(&k);
+		invKinematic(&k);
+		for(i=0; i<4; i++) {
+			k.pid_speed[i].SetPoint = k.motor[i].target_speed;
+			k.motor[i].target_current = 
+				PID_Calc(&(k.pid_speed[i]), k.motor[i].speed);
+			k.motor[i].target_current = 
+				LIMIT_MAX_MIN(k.motor[i].target_current, 2000, -2000);
+		}
+		setMotorCurrent(&k);
 
 		VOFA_Send();
 		IWDG_Feed();//Î¹¹·		
 		vTaskDelayUntil(&xLastWakeTime,xFrequency); 
-		 
+		
 	#if INCLUDE_uxTaskGetStackHighWaterMark
 		Chassis_high_water = uxTaskGetStackHighWaterMark(NULL);
 	#endif

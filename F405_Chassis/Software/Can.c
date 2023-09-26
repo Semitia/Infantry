@@ -28,13 +28,17 @@ void addCanMsg(CanMsgList_t* list, CanRxMsg new_msg) {
     // 更新消息数量
     list->num++;
 
-    // 如果消息数量超过了最大值，就删除头节点
+    // 如果消息数量超过了最大值，就一直删除头节点，直到数量小于最大值
     if (list->num > CAN_MSG_LIST_MAX_NUM) {
-        CanMsgNode_t *node = list->head;
-        list->head = node->next;
-        list->head->prev = NULL;
-        vPortFree(node);
-        list->num--;
+        CanMsgNode_t* temp_node;
+
+        while (list->num > CAN_MSG_LIST_MAX_NUM) {
+            temp_node = list->head;
+            list->head = list->head->next;
+            list->head->prev = NULL;
+            vPortFree(temp_node);
+            list->num--;
+        }
     }
 }
 // void addCanMsg(CanMsgList_t* list, CanRxMsg new_msg) {

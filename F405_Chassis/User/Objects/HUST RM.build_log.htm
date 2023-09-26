@@ -27,31 +27,15 @@ Project File Date:  09/26/2023
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 3 (build 300)', folder: 'D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin'
 Build target 'Target 1'
-compiling ChassisTask.c...
+compiling Can.c...
+compiling can1.c...
 ..\Task\ChassisTask.h(39): warning:  #47-D: incompatible redefinition of macro "RM3508_R" (declared at line 10 of "..\Software\motor.h")
   #define RM3508_R 0.1231f
-..\Task\ChassisTask.c(534): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-  			if (power_limit->capEnergy < power_limit->Min_capEnergy*1.2){	//??小??值之前都?呛愎???		
-..\Task\ChassisTask.c(554): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-  			if (power_limit->remainEnergy < power_limit->Min_remainEnergy*1.3){	//??小??值之前都?呛愎???		
-..\Task\ChassisTask.c(573): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-          if(super_power->CAP_AD_H+0.5 < super_power->actual_vol && power_limit->Min_capVol-0.5 < super_power->actual_vol)//当前??压???诜?????????小?牡??莸?压???芸???
-..\Task\ChassisTask.c(573): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-          if(super_power->CAP_AD_H+0.5 < super_power->actual_vol && power_limit->Min_capVol-0.5 < super_power->actual_vol)//当前??压???诜?????????小?牡??莸?压???芸???
-..\Task\ChassisTask.c(610): warning:  #940-D: missing return statement at end of non-void function "set_powersate"
-  }
-..\Task\ChassisTask.c(642): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-  			power_limit->M[i] = (-P.P*speed_now + P.I*(SumError_last+0.5*(-speed_now+P.LastError)))*RM3508_CURRENT_RATIO;
-..\Task\ChassisTask.c(666): warning:  #177-D: variable "c" was declared but never referenced
-  	double i_2=0, w_i=0, a, b, c;
-..\Task\ChassisTask.c(716): warning:  #1035-D: single-precision operand implicitly converted to double-precision
-  											(power_limit->actual_ina260_power - 
-M3508_P0 - RM3508_R * (i_2+i_2_6020))/(w_i+w_i_6020));
-..\Task\ChassisTask.c: 9 warnings, 0 errors
+..\Hardware\can1.c: 1 warning, 0 errors
 linking...
-Program Size: Code=21772 RO-data=460 RW-data=496 ZI-data=25832  
+Program Size: Code=22888 RO-data=460 RW-data=496 ZI-data=25832  
 FromELF: creating hex file...
-".\Objects\HUST RM.axf" - 0 Error(s), 9 Warning(s).
+".\Objects\HUST RM.axf" - 0 Error(s), 1 Warning(s).
 
 <h2>Software Packages used:</h2>
 
