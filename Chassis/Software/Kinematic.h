@@ -11,15 +11,17 @@
 #define CHASSIS_TYPE 1 //0 全向轮，1 麦克纳母轮，2 舵轮
 
 //车盘尺寸宏定义
+#define WHEEL_RADIUS 0.1f               //轮子半径
+#define CHASSIS_RADIUS 0.28f            //车盘半径
 
 
 /**
  * 速度结构体
 */
 typedef struct __Velocity_t {
-    short x;  // x方向速度
-    short y;  // y方向速度
-    short w;    // 角速度
+    short x;    // x方向速度 m/s
+    short y;    // y方向速度 m/s
+    short w;    // 角速度   rad/s
 }Velocity_t;
 
 /**
@@ -27,10 +29,7 @@ typedef struct __Velocity_t {
  * 理论上来说，电机控制接口应该是与电机封装在一起的，但是我们用的都是Can通信电机，
  * 发送一次信息可以控制多个电机，所以这里就和can绑定了
 */
-typedef struct __Kinematic_t {
-    //车盘机械尺寸参数
-
-    
+typedef struct __Kinematic_t {    
     Velocity_t real_vel;                            //实际速度
     Velocity_t target_vel;                          //目标速度
 

@@ -36,7 +36,7 @@ void kinematicInit(Kinematic_t *kinematic, CAN_TypeDef *can_tx, CanRing_t *can_r
     int i=0;
     kinematic->can_ring = can_ring;                   //分配一个can接口
     kinematic->can_tx = can_tx;
-		kinematic->target_vel.w = 10;
+		//kinematic->target_vel.w = 0;
     kinematic->real_vel.x = 0;
     kinematic->real_vel.y = 0;
     kinematic->real_vel.w = 0;
@@ -55,17 +55,17 @@ void kinematicInit(Kinematic_t *kinematic, CAN_TypeDef *can_tx, CanRing_t *can_r
 }
 
 void forKinematic(Kinematic_t *kinematic) {
-    kinematic->real_vel.x = kinematic->motor[0].speed + kinematic->motor[1].speed + kinematic->motor[2].speed + kinematic->motor[3].speed;
-    kinematic->real_vel.y = -kinematic->motor[0].speed + kinematic->motor[1].speed + kinematic->motor[2].speed - kinematic->motor[3].speed;
-    kinematic->real_vel.w = (kinematic->motor[0].speed - kinematic->motor[1].speed + kinematic->motor[2].speed - kinematic->motor[3].speed) * 0.25f;
+    kinematic->real_vel.x = ( kinematic->motor[0].speed + kinematic->motor[1].speed + kinematic->motor[2].speed + kinematic->motor[3].speed)*WHEEL_RADIUS;
+    kinematic->real_vel.y = (-kinematic->motor[0].speed + kinematic->motor[1].speed + kinematic->motor[2].speed - kinematic->motor[3].speed)*WHEEL_RADIUS;
+    kinematic->real_vel.w = ( kinematic->motor[0].speed - kinematic->motor[1].speed + kinematic->motor[2].speed - kinematic->motor[3].speed)*WHEEL_RADIUS/CHASSIS_RADIUS;
     return;
 }
 
 void invKinematic(Kinematic_t *kinematic) {
-    kinematic->motor[0].target_speed = + kinematic->target_vel.x + kinematic->target_vel.y - kinematic->target_vel.w;
-    kinematic->motor[1].target_speed = - kinematic->target_vel.x + kinematic->target_vel.y - kinematic->target_vel.w;
-    kinematic->motor[2].target_speed = + kinematic->target_vel.x - kinematic->target_vel.y - kinematic->target_vel.w;
-    kinematic->motor[3].target_speed = - kinematic->target_vel.x - kinematic->target_vel.y - kinematic->target_vel.w;
+    kinematic->motor[0].target_speed = (+ kinematic->target_vel.x + kinematic->target_vel.y - (kinematic->target_vel.w*CHASSIS_RADIUS))/WHEEL_RADIUS;
+    kinematic->motor[1].target_speed = (- kinematic->target_vel.x + kinematic->target_vel.y - (kinematic->target_vel.w*CHASSIS_RADIUS))/WHEEL_RADIUS;
+    kinematic->motor[2].target_speed = (+ kinematic->target_vel.x - kinematic->target_vel.y - (kinematic->target_vel.w*CHASSIS_RADIUS))/WHEEL_RADIUS;
+    kinematic->motor[3].target_speed = (- kinematic->target_vel.x - kinematic->target_vel.y - (kinematic->target_vel.w*CHASSIS_RADIUS))/WHEEL_RADIUS;
     return;
 }
 

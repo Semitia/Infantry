@@ -100,15 +100,12 @@ void recvGimData(Chassis_t *chassis) {          //环形缓存器版本
 */
 void moveCtrl(Chassis_t *chassis) {
     uint8_t i;
-    Kinematic_t *k = &(chassis->kinematic);//
+    Kinematic_t *k = &(chassis->kinematic);//这里别忘了用指针，一开始给忘了
     updateWheels(&(chassis->kinematic));
-		//invKinematic(&(chassis->kinematic));
+		invKinematic(&(chassis->kinematic));
     for(i=0; i<4; i++) {
-				//temp_cur = PID_Calc(&(k->pid_speed[i]), k->motor[i].target_speed, k->motor[i].speed);
         k->motor[i].target_current = 
             PID_Calc(&(k->pid_speed[i]), k->motor[i].target_speed, k->motor[i].speed);
-        //k->motor[i].target_current = 
-        //    LIMIT_MAX_MIN(k->motor[i].target_current, 2000, -2000);
     }
     setMotorCurrent(k);
 }

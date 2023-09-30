@@ -57,7 +57,7 @@ I (..\Task\Start_Task.h)(0x6511ACF2)
 I (..\Task\ChassisTask.h)(0x6511ACF2)
 I (..\User\main.h)(0x6511ACF2)
 I (..\Software\chassis.h)(0x651813F8)
-I (..\Software\Kinematic.h)(0x65181819)
+I (..\Software\Kinematic.h)(0x651841C9)
 I (..\Hardware\can1.h)(0x65144B38)
 I (..\Software\Can.h)(0x65144707)
 I (..\Software\CanRing.h)(0x65145113)
@@ -907,7 +907,7 @@ I (..\Hardware\counter.h)(0x6511ACF2)
 I (..\Task\Start_Task.h)(0x6511ACF2)
 I (..\Task\ChassisTask.h)(0x6511ACF2)
 I (..\Software\chassis.h)(0x651813F8)
-I (..\Software\Kinematic.h)(0x65181819)
+I (..\Software\Kinematic.h)(0x651841C9)
 I (..\Hardware\can1.h)(0x65144B38)
 I (..\Software\Can.h)(0x65144707)
 I (..\Software\CanRing.h)(0x65145113)
@@ -972,7 +972,7 @@ I (..\Hardware\counter.h)(0x6511ACF2)
 I (..\Task\Start_Task.h)(0x6511ACF2)
 I (..\Task\ChassisTask.h)(0x6511ACF2)
 I (..\Software\chassis.h)(0x651813F8)
-I (..\Software\Kinematic.h)(0x65181819)
+I (..\Software\Kinematic.h)(0x651841C9)
 I (..\Hardware\can1.h)(0x65144B38)
 I (..\Software\Can.h)(0x65144707)
 I (..\Software\CanRing.h)(0x65145113)
@@ -1099,7 +1099,7 @@ I (..\Hardware\counter.h)(0x6511ACF2)
 I (..\Task\Start_Task.h)(0x6511ACF2)
 I (..\Task\ChassisTask.h)(0x6511ACF2)
 I (..\Software\chassis.h)(0x651813F8)
-I (..\Software\Kinematic.h)(0x65181819)
+I (..\Software\Kinematic.h)(0x651841C9)
 I (..\Hardware\can1.h)(0x65144B38)
 I (..\Software\Can.h)(0x65144707)
 I (..\Software\CanRing.h)(0x65145113)
@@ -1205,7 +1205,7 @@ I (..\Hardware\counter.h)(0x6511ACF2)
 I (..\Task\Start_Task.h)(0x6511ACF2)
 I (..\Task\ChassisTask.h)(0x6511ACF2)
 I (..\Software\chassis.h)(0x651813F8)
-I (..\Software\Kinematic.h)(0x65181819)
+I (..\Software\Kinematic.h)(0x651841C9)
 I (..\Hardware\can1.h)(0x65144B38)
 I (..\Software\Can.h)(0x65144707)
 I (..\Software\CanRing.h)(0x65145113)
@@ -1351,7 +1351,7 @@ I (..\Hardware\counter.h)(0x6511ACF2)
 I (..\Task\Start_Task.h)(0x6511ACF2)
 I (..\Task\ChassisTask.h)(0x6511ACF2)
 I (..\Software\chassis.h)(0x651813F8)
-I (..\Software\Kinematic.h)(0x65181819)
+I (..\Software\Kinematic.h)(0x651841C9)
 I (..\Hardware\can1.h)(0x65144B38)
 I (..\Software\Can.h)(0x65144707)
 I (..\Software\CanRing.h)(0x65145113)
@@ -1416,7 +1416,7 @@ I (..\Hardware\counter.h)(0x6511ACF2)
 I (..\Task\Start_Task.h)(0x6511ACF2)
 I (..\Task\ChassisTask.h)(0x6511ACF2)
 I (..\Software\chassis.h)(0x651813F8)
-I (..\Software\Kinematic.h)(0x65181819)
+I (..\Software\Kinematic.h)(0x651841C9)
 I (..\Hardware\can1.h)(0x65144B38)
 I (..\Software\Can.h)(0x65144707)
 I (..\Software\CanRing.h)(0x65145113)
@@ -1553,9 +1553,9 @@ I (..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h)(0x6511ACF2)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x6511ACF2)
 I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
-F (..\Software\Chassis.c)(0x65183D37)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\chassis.o --omf_browse .\objects\chassis.crf --depend .\objects\chassis.d)
+F (..\Software\Chassis.c)(0x65184003)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\chassis.o --omf_browse .\objects\chassis.crf --depend .\objects\chassis.d)
 I (..\Software\Chassis.h)(0x651813F8)
-I (..\Software\Kinematic.h)(0x65181819)
+I (..\Software\Kinematic.h)(0x651841C9)
 I (..\Hardware\can1.h)(0x65144B38)
 I (..\Software\Can.h)(0x65144707)
 I (..\User\sys.h)(0x6511ACF2)
@@ -1604,8 +1604,8 @@ I (..\Software\JudgeMsg.h)(0x6511ACF2)
 I (..\Software\usart.h)(0x6511ACF2)
 I (..\Hardware\can2.h)(0x65144E75)
 I (..\Hardware\uart4.h)(0x6511ACF2)
-F (..\Software\Kinematic.c)(0x65183F71)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\kinematic.o --omf_browse .\objects\kinematic.crf --depend .\objects\kinematic.d)
-I (..\Software\Kinematic.h)(0x65181819)
+F (..\Software\Kinematic.c)(0x65184379)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\kinematic.o --omf_browse .\objects\kinematic.crf --depend .\objects\kinematic.d)
+I (..\Software\Kinematic.h)(0x651841C9)
 I (..\Hardware\can1.h)(0x65144B38)
 I (..\Software\Can.h)(0x65144707)
 I (..\User\sys.h)(0x6511ACF2)
@@ -1869,7 +1869,7 @@ I (..\Hardware\counter.h)(0x6511ACF2)
 I (..\Task\Start_Task.h)(0x6511ACF2)
 I (..\Task\ChassisTask.h)(0x6511ACF2)
 I (..\Software\chassis.h)(0x651813F8)
-I (..\Software\Kinematic.h)(0x65181819)
+I (..\Software\Kinematic.h)(0x651841C9)
 I (..\Hardware\can1.h)(0x65144B38)
 I (..\Software\Can.h)(0x65144707)
 I (..\Software\CanRing.h)(0x65145113)
@@ -1934,7 +1934,7 @@ I (..\Hardware\ina260.h)(0x6511ACF2)
 I (..\Hardware\i2c.h)(0x6511ACF2)
 I (..\Hardware\counter.h)(0x6511ACF2)
 I (..\Software\chassis.h)(0x651813F8)
-I (..\Software\Kinematic.h)(0x65181819)
+I (..\Software\Kinematic.h)(0x651841C9)
 I (..\Hardware\can1.h)(0x65144B38)
 I (..\Software\Can.h)(0x65144707)
 I (..\Software\CanRing.h)(0x65145113)
@@ -1999,7 +1999,7 @@ I (..\Hardware\i2c.h)(0x6511ACF2)
 I (..\Hardware\counter.h)(0x6511ACF2)
 I (..\Task\Start_Task.h)(0x6511ACF2)
 I (..\Software\chassis.h)(0x651813F8)
-I (..\Software\Kinematic.h)(0x65181819)
+I (..\Software\Kinematic.h)(0x651841C9)
 I (..\Hardware\can1.h)(0x65144B38)
 I (..\Software\Can.h)(0x65144707)
 I (..\Software\CanRing.h)(0x65145113)
