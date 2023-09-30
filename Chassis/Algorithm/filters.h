@@ -13,6 +13,7 @@
 #define K_CHASSIS 0.01f             // 底盘速度滤波系数
 #define K_CHASSIS_STEERING 0.03f    // 舵轮底盘速度滤波系数
 #define K_WHEEL 0.1f                // 电机速度滤波系数
+#define K_CURRENT 0.1f              // 电机电流滤波系数
 
 typedef struct __LowPass_t {
     float tf;           // 时间常数

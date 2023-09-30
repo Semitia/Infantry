@@ -32,22 +32,24 @@ void invKinematic(Kinematic_t *kinematic) {
  * @param kinematic 运动学结构体
  * @retval None
 */
-void kinematicInit(Kinematic_t *kinematic) {
+void kinematicInit(Kinematic_t *kinematic, CAN_TypeDef *can_tx, CanRing_t *can_ring) {
     int i=0;
-    kinematic->can_ring = &can1_rx0;                    //分配一个can接口
+    kinematic->can_ring = can_ring;                   //分配一个can接口
+    kinematic->can_tx = can_tx;
+		kinematic->target_vel.w = 10;
     kinematic->real_vel.x = 0;
     kinematic->real_vel.y = 0;
     kinematic->real_vel.w = 0;
     for(i=0; i<4; i++) {
         motorInit(&(kinematic->motor[i]), RM3508, i);
         kinematic->pid_speed[i].deadband = 0;
-        kinematic->pid_speed[i].P        = 20.0f;
+        kinematic->pid_speed[i].P        = 900.0f;
         kinematic->pid_speed[i].I        = 1.0f;
         kinematic->pid_speed[i].D        = 0.0f;
         kinematic->pid_speed[i].ErrorMax = 1000.0f;
         kinematic->pid_speed[i].IMax     = 2500.0f;
         kinematic->pid_speed[i].SetPoint = 0.0f;
-        kinematic->pid_speed[i].OutMax   = 16000.0f;
+        kinematic->pid_speed[i].OutMax   = 12000.0f;
     }
     return;
 }
@@ -131,13 +133,13 @@ void kinematicInit(Kinematic_t *kinematic) {
     for(i=0; i<4; i++) {
         motorInit(&(kinematic->motor[i]), RM3508, i);
         kinematic->pid_speed[i].deadband = 0;
-        kinematic->pid_speed[i].P        = 20.0f;
-        kinematic->pid_speed[i].I        = 1.0f;
+        kinematic->pid_speed[i].P        = 200.0f;
+        kinematic->pid_speed[i].I        = 0.0f;
         kinematic->pid_speed[i].D        = 0.0f;
         kinematic->pid_speed[i].ErrorMax = 1000.0f;
         kinematic->pid_speed[i].IMax     = 2500.0f;
         kinematic->pid_speed[i].SetPoint = 0.0f;
-        kinematic->pid_speed[i].OutMax   = 16000.0f;
+        kinematic->pid_speed[i].OutMax   = 12000.0f;
 
         motorInit(&(kinematic->steering_motor[i]), RM3508, i+4);
         kinematic->steering_pid_speed[i].deadband = 0;
@@ -274,3 +276,23 @@ void setMotorCurrent(Kinematic_t *kinematic) {
     CAN_Transmit(kinematic->can_tx, &tx_msg);
     return;
 }
+
+void setMotorCurTest(short a, short b, short c, short d, CAN_TypeDef *can_tx) {
+    CanTxMsg tx_msg;
+    tx_msg.IDE = CAN_ID_STD;
+    tx_msg.RTR = CAN_RTR_DATA;
+    tx_msg.DLC = 0x08;
+    tx_msg.StdId = 0x200;
+
+    tx_msg.Data[0] = (uint8_t)((a >> 8)&0xff);
+    tx_msg.Data[1] = (uint8_t)(a&0xff);
+    tx_msg.Data[2] = (uint8_t)((b >> 8)&0xff);
+    tx_msg.Data[3] = (uint8_t)(b&0xff);
+    tx_msg.Data[4] = (uint8_t)((c >> 8)&0xff);
+    tx_msg.Data[5] = (uint8_t)(c&0xff);
+    tx_msg.Data[6] = (uint8_t)((d >> 8)&0xff);
+    tx_msg.Data[7] = (uint8_t)(d&0xff);
+    CAN_Transmit(CAN1, &tx_msg);
+    return;
+}
+

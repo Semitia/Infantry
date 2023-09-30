@@ -63,5 +63,6 @@
 .\objects\i2c.o: ..\Software\CanRing.h
 .\objects\i2c.o: ..\Algorithm\pid.h
 .\objects\i2c.o: ..\Software\motor.h
+.\objects\i2c.o: ..\Algorithm\filters.h
 .\objects\i2c.o: ..\Software\JudgeMsg.h
 .\objects\i2c.o: ..\Hardware\can2.h

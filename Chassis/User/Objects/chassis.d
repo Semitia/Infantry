@@ -46,6 +46,7 @@
 .\objects\chassis.o: ..\Software\CanRing.h
 .\objects\chassis.o: ..\Algorithm\pid.h
 .\objects\chassis.o: ..\Software\motor.h
+.\objects\chassis.o: ..\Algorithm\filters.h
 .\objects\chassis.o: ..\Software\JudgeMsg.h
 .\objects\chassis.o: ..\Software\usart.h
 .\objects\chassis.o: ..\Hardware\can2.h

@@ -63,5 +63,6 @@
 .\objects\chassistask.o: ..\Software\CanRing.h
 .\objects\chassistask.o: ..\Algorithm\pid.h
 .\objects\chassistask.o: ..\Software\motor.h
+.\objects\chassistask.o: ..\Algorithm\filters.h
 .\objects\chassistask.o: ..\Software\JudgeMsg.h
 .\objects\chassistask.o: ..\Hardware\can2.h

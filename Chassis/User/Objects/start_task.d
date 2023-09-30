@@ -63,5 +63,6 @@
 .\objects\start_task.o: ..\Software\CanRing.h
 .\objects\start_task.o: ..\Algorithm\pid.h
 .\objects\start_task.o: ..\Software\motor.h
+.\objects\start_task.o: ..\Algorithm\filters.h
 .\objects\start_task.o: ..\Software\JudgeMsg.h
 .\objects\start_task.o: ..\Hardware\can2.h

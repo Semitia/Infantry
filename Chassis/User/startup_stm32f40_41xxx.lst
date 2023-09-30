@@ -858,13 +858,12 @@ ARM Macro Assembler    Page 14
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
 erwork --depend=.\objects\startup_stm32f40_41xxx.d -o.\objects\startup_stm32f40
-_41xxx.o -ID:\WORK\RM\主力考核\备份\Infantry-4c7f8706a8e986ad8061d5343dfe0975ed
-7c53d2\Chassis\User\RTE -ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.
-17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include -ID:\WORK\SOFTWARES\MDK5\ARM\CMS
-IS\Include -ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\I
-nclude --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 521"
- --predefine="STM32F405xx SETA 1" --list=.\startup_stm32f40_41xxx.lst ..\Librar
-y\CMSIS\startup_stm32f40_41xxx.s
+_41xxx.o -ID:\WORK\RM\Task\Infantry\Chassis\User\RTE -ID:\WORK\SOFTWARES\MDK5\A
+RM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include -ID
+:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include -ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\
+STM32F4xx_DFP\2.17.1\Device\Include --predefine="__MICROLIB SETA 1" --predefine
+="__UVISION_VERSION SETA 521" --predefine="STM32F405xx SETA 1" --list=.\startup
+_stm32f40_41xxx.lst ..\Library\CMSIS\startup_stm32f40_41xxx.s
 
 
 

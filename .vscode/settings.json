@@ -37,6 +37,7 @@
         "start_task.h": "c",
         "tim.h": "c",
         "datasendtask.h": "c",
-        "powercontroltask.h": "c"
+        "powercontroltask.h": "c",
+        "filter.h": "c"
     }
 }

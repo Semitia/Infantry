@@ -63,5 +63,6 @@
 .\objects\dac.o: ..\Software\CanRing.h
 .\objects\dac.o: ..\Algorithm\pid.h
 .\objects\dac.o: ..\Software\motor.h
+.\objects\dac.o: ..\Algorithm\filters.h
 .\objects\dac.o: ..\Software\JudgeMsg.h
 .\objects\dac.o: ..\Hardware\can2.h

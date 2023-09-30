@@ -9,6 +9,9 @@
 #include "motor.h"
 
 void motorInit(Motor_t *m, MotorTypeEnum type, uint8_t id) {
+    lowPassInit(&(m->lp_spd), K_WHEEL);
+    lowPassInit(&(m->lp_cut), K_CURRENT);
+
     m->type_enum = type;
     m->id = id;
     m->temperature = 0;
@@ -27,7 +30,7 @@ void motorInit(Motor_t *m, MotorTypeEnum type, uint8_t id) {
             break;
         case RM3508:
             m->current_ratio = RM3508_CURRENT_RATIO;
-            m->rpm_rad = RM3508_RPM_RAD;
+            m->rpm_rad = RM3508_RPM_RAD/RM3508_REDUC_RATIO;
             // m->max_voltage = RM3508_MAX_VOLTAGE;
             // m->min_voltage = RM3508_MIN_VOLTAGE;
             break;
@@ -44,15 +47,18 @@ void motorInit(Motor_t *m, MotorTypeEnum type, uint8_t id) {
 }
 
 void motorUpdate(Motor_t *m, uint8_t *data) {
-    m->speed = (data[2] << 8) | data[3];
-    m->current = (data[4] << 8) | data[5];
+    //注意使用int16_t来转换数据类型
+    float raw_speed = ((int16_t)(data[2] << 8) | data[3]) * m->rpm_rad;                 //转子rpm转换到轮子rad/s
+    float raw_current = ((int16_t)(data[4] << 8) | data[5]) * m->current_ratio;         //电流转换到A
+    m->speed = lowPass(&(m->lp_spd), raw_speed);
+    m->current = lowPass(&(m->lp_cut), raw_current);
     return;
 }
 
+
 void motorUpdateAll(Motor_t *m, uint8_t *data) {
     uint16_t raw_angle = (data[0] << 8) | data[1];							
-    m->speed = (data[2] << 8) | data[3];
-    m->current = (data[4] << 8) | data[5];
+    motorUpdate(m, data);
     m->temperature = data[6];
     m->angle = raw_angle / 8191.0f * 360.0f;
     return;

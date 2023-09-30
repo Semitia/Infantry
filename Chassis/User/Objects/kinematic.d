@@ -45,3 +45,4 @@
 .\objects\kinematic.o: ..\Software\CanRing.h
 .\objects\kinematic.o: ..\Algorithm\pid.h
 .\objects\kinematic.o: ..\Software\motor.h
+.\objects\kinematic.o: ..\Algorithm\filters.h

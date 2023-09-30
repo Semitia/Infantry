@@ -63,5 +63,6 @@
 .\objects\datareceivetask.o: ..\Software\CanRing.h
 .\objects\datareceivetask.o: ..\Algorithm\pid.h
 .\objects\datareceivetask.o: ..\Software\motor.h
+.\objects\datareceivetask.o: ..\Algorithm\filters.h
 .\objects\datareceivetask.o: ..\Software\JudgeMsg.h
 .\objects\datareceivetask.o: ..\Hardware\can2.h

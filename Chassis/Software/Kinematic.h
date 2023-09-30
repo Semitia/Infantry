@@ -50,12 +50,12 @@ typedef struct __Kinematic_t {
 
 } Kinematic_t;
 
-void kinematicInit(Kinematic_t *kinematic);
+void kinematicInit(Kinematic_t *kinematic, CAN_TypeDef *can_tx, CanRing_t *can_ring);
 void forKinematic(Kinematic_t *kinematic);
 void invKinematic(Kinematic_t *kinematic);
 void updateWheels(Kinematic_t *kinematic);
 void setMotorCurrent(Kinematic_t *kinematic);
-
+void setMotorCurTest(short a, short b, short c, short d, CAN_TypeDef *can_tx);
 
 #endif
 

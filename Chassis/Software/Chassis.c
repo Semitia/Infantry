@@ -11,7 +11,7 @@ void chassisInit(Chassis_t *chassis, ChassisTypeEnum type_enum) {
     chassis->gimbal_canRx = GIMBAL_CAN_RX;
     chassis->gimbal_canTx = GIMBAL_CAN_TX;
     judgeInit(&(chassis->judge), JUDGE_USART_IF);
-    kinematicInit(&(chassis->kinematic));
+    kinematicInit(&(chassis->kinematic), KINE_CAN_TX, KINE_CAN_RX);
     return;
 }
 
@@ -100,16 +100,17 @@ void recvGimData(Chassis_t *chassis) {          //环形缓存器版本
 */
 void moveCtrl(Chassis_t *chassis) {
     uint8_t i;
-    Kinematic_t k = chassis->kinematic;
+    Kinematic_t *k = &(chassis->kinematic);//
     updateWheels(&(chassis->kinematic));
-    invKinematic(&(chassis->kinematic));
+		//invKinematic(&(chassis->kinematic));
     for(i=0; i<4; i++) {
-        k.motor[i].target_current = 
-            PID_Calc(&(k.pid_speed[i]), k.motor[i].target_speed, k.motor[i].speed);
-        k.motor[i].target_current = 
-            LIMIT_MAX_MIN(k.motor[i].target_current, 2000, -2000);
+				//temp_cur = PID_Calc(&(k->pid_speed[i]), k->motor[i].target_speed, k->motor[i].speed);
+        k->motor[i].target_current = 
+            PID_Calc(&(k->pid_speed[i]), k->motor[i].target_speed, k->motor[i].speed);
+        //k->motor[i].target_current = 
+        //    LIMIT_MAX_MIN(k->motor[i].target_current, 2000, -2000);
     }
-    setMotorCurrent(&k);
+    setMotorCurrent(k);
 }
 
 // /**********************************************************************************************************

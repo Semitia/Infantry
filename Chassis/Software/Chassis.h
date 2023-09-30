@@ -8,9 +8,12 @@
 
 #define CAP_C (55/9)  //超级电容组的容值
 #define CHASSIS_CTRL_INTERVAL 1
+
 /* 接口分配 */
-#define GIMBAL_CAN_RX  &can2_rx0
 #define GIMBAL_CAN_TX  CAN2
+#define GIMBAL_CAN_RX  &can2_rx0
+#define KINE_CAN_TX    CAN1
+#define KINE_CAN_RX    &can1_rx0
 #define JUDGE_USART_IF &usart4_if
 
 /**
