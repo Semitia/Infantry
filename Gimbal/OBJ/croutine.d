@@ -1,7 +1,7 @@
 ..\obj\croutine.o: ..\FreeRTOS\src\croutine.c
 ..\obj\croutine.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\croutine.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
-..\obj\croutine.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\croutine.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\croutine.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\croutine.o: ..\User\FreeRTOSConfig.h
 ..\obj\croutine.o: ..\User\stm32f4xx.h
 ..\obj\croutine.o: ..\Library\CMSIS\core_cm4.h

@@ -3,7 +3,7 @@
 ..\obj\cpu_task.o: ..\User\FreeRTOSConfig.h
 ..\obj\cpu_task.o: ..\User\stm32f4xx.h
 ..\obj\cpu_task.o: ..\Library\CMSIS\core_cm4.h
-..\obj\cpu_task.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\cpu_task.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\cpu_task.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\cpu_task.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\cpu_task.o: ..\Library\CMSIS\core_cm4_simd.h
@@ -21,7 +21,7 @@
 ..\obj\cpu_task.o: ..\Library\inc\misc.h
 ..\obj\cpu_task.o: ..\Library\inc\stm32f4xx_can.h
 ..\obj\cpu_task.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\cpu_task.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\cpu_task.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\cpu_task.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\cpu_task.o: ..\FreeRTOS\include\portable.h
 ..\obj\cpu_task.o: ..\FreeRTOS\include\deprecated_definitions.h
@@ -29,10 +29,10 @@
 ..\obj\cpu_task.o: ..\FreeRTOS\include\mpu_wrappers.h
 ..\obj\cpu_task.o: ..\Task\Start_Task.h
 ..\obj\cpu_task.o: ..\User\main.h
-..\obj\cpu_task.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\cpu_task.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\cpu_task.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\cpu_task.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\cpu_task.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\cpu_task.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\cpu_task.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\cpu_task.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\cpu_task.o: ..\Library\CMSIS\arm_math.h
 ..\obj\cpu_task.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\cpu_task.o: ..\Mylib\gpio.h

@@ -2,7 +2,7 @@
 ..\obj\debug.o: ..\INS\debug.h
 ..\obj\debug.o: ..\User\stm32f4xx.h
 ..\obj\debug.o: ..\Library\CMSIS\core_cm4.h
-..\obj\debug.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\debug.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\debug.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\debug.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\debug.o: ..\Library\CMSIS\core_cm4_simd.h
@@ -19,10 +19,10 @@
 ..\obj\debug.o: ..\Library\inc\stm32f4xx_usart.h
 ..\obj\debug.o: ..\Library\inc\misc.h
 ..\obj\debug.o: ..\Library\inc\stm32f4xx_can.h
-..\obj\debug.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\debug.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\debug.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\debug.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\debug.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\debug.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\debug.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\debug.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\debug.o: ..\RTOS_Test\tools.h
 ..\obj\debug.o: ..\Mylib\counter.h
 ..\obj\debug.o: ..\Task\GimbalTask.h
@@ -62,7 +62,7 @@
 ..\obj\debug.o: ..\INS\GimbalEstimateTask.h
 ..\obj\debug.o: ..\User\FreeRTOSConfig.h
 ..\obj\debug.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\debug.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\debug.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\debug.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\debug.o: ..\FreeRTOS\include\portable.h
 ..\obj\debug.o: ..\FreeRTOS\include\deprecated_definitions.h

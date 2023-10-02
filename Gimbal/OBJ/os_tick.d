@@ -2,7 +2,7 @@
 ..\obj\os_tick.o: ..\RTOS_Test\os_tick.h
 ..\obj\os_tick.o: ..\User\stm32f4xx.h
 ..\obj\os_tick.o: ..\Library\CMSIS\core_cm4.h
-..\obj\os_tick.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\os_tick.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\os_tick.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\os_tick.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\os_tick.o: ..\Library\CMSIS\core_cm4_simd.h
@@ -19,8 +19,8 @@
 ..\obj\os_tick.o: ..\Library\inc\stm32f4xx_usart.h
 ..\obj\os_tick.o: ..\Library\inc\misc.h
 ..\obj\os_tick.o: ..\Library\inc\stm32f4xx_can.h
-..\obj\os_tick.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\os_tick.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\os_tick.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\os_tick.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\os_tick.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\os_tick.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\os_tick.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\os_tick.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\os_tick.o: ..\Library\inc\stm32f4xx_dbgmcu.h

@@ -2,7 +2,7 @@
 ..\obj\usart4_gryo.o: ..\User\main.h
 ..\obj\usart4_gryo.o: ..\User\stm32f4xx.h
 ..\obj\usart4_gryo.o: ..\Library\CMSIS\core_cm4.h
-..\obj\usart4_gryo.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\usart4_gryo.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\usart4_gryo.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\usart4_gryo.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\usart4_gryo.o: ..\Library\CMSIS\core_cm4_simd.h
@@ -19,10 +19,10 @@
 ..\obj\usart4_gryo.o: ..\Library\inc\stm32f4xx_usart.h
 ..\obj\usart4_gryo.o: ..\Library\inc\misc.h
 ..\obj\usart4_gryo.o: ..\Library\inc\stm32f4xx_can.h
-..\obj\usart4_gryo.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\usart4_gryo.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\usart4_gryo.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\usart4_gryo.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\usart4_gryo.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\usart4_gryo.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\usart4_gryo.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\usart4_gryo.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\usart4_gryo.o: ..\Library\CMSIS\arm_math.h
 ..\obj\usart4_gryo.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\usart4_gryo.o: ..\Mylib\gpio.h
@@ -59,7 +59,7 @@
 ..\obj\usart4_gryo.o: ..\INS\GimbalEstimateTask.h
 ..\obj\usart4_gryo.o: ..\User\FreeRTOSConfig.h
 ..\obj\usart4_gryo.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\usart4_gryo.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\usart4_gryo.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\usart4_gryo.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\usart4_gryo.o: ..\FreeRTOS\include\portable.h
 ..\obj\usart4_gryo.o: ..\FreeRTOS\include\deprecated_definitions.h

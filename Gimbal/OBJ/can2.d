@@ -2,7 +2,7 @@
 ..\obj\can2.o: ..\User\main.h
 ..\obj\can2.o: ..\User\stm32f4xx.h
 ..\obj\can2.o: ..\Library\CMSIS\core_cm4.h
-..\obj\can2.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\can2.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\can2.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\can2.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\can2.o: ..\Library\CMSIS\core_cm4_simd.h
@@ -19,10 +19,10 @@
 ..\obj\can2.o: ..\Library\inc\stm32f4xx_usart.h
 ..\obj\can2.o: ..\Library\inc\misc.h
 ..\obj\can2.o: ..\Library\inc\stm32f4xx_can.h
-..\obj\can2.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\can2.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\can2.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\can2.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\can2.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\can2.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\can2.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\can2.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\can2.o: ..\Library\CMSIS\arm_math.h
 ..\obj\can2.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\can2.o: ..\Mylib\gpio.h
@@ -59,7 +59,7 @@
 ..\obj\can2.o: ..\INS\GimbalEstimateTask.h
 ..\obj\can2.o: ..\User\FreeRTOSConfig.h
 ..\obj\can2.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\can2.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\can2.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\can2.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\can2.o: ..\FreeRTOS\include\portable.h
 ..\obj\can2.o: ..\FreeRTOS\include\deprecated_definitions.h

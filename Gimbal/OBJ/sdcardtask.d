@@ -2,7 +2,7 @@
 ..\obj\sdcardtask.o: ..\User\main.h
 ..\obj\sdcardtask.o: ..\User\stm32f4xx.h
 ..\obj\sdcardtask.o: ..\Library\CMSIS\core_cm4.h
-..\obj\sdcardtask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\sdcardtask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\sdcardtask.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\sdcardtask.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\sdcardtask.o: ..\Library\CMSIS\core_cm4_simd.h
@@ -19,10 +19,10 @@
 ..\obj\sdcardtask.o: ..\Library\inc\stm32f4xx_usart.h
 ..\obj\sdcardtask.o: ..\Library\inc\misc.h
 ..\obj\sdcardtask.o: ..\Library\inc\stm32f4xx_can.h
-..\obj\sdcardtask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\sdcardtask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\sdcardtask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\sdcardtask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\sdcardtask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\sdcardtask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\sdcardtask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\sdcardtask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\sdcardtask.o: ..\Library\CMSIS\arm_math.h
 ..\obj\sdcardtask.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\sdcardtask.o: ..\Mylib\gpio.h
@@ -59,7 +59,7 @@
 ..\obj\sdcardtask.o: ..\INS\GimbalEstimateTask.h
 ..\obj\sdcardtask.o: ..\User\FreeRTOSConfig.h
 ..\obj\sdcardtask.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\sdcardtask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\sdcardtask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\sdcardtask.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\sdcardtask.o: ..\FreeRTOS\include\portable.h
 ..\obj\sdcardtask.o: ..\FreeRTOS\include\deprecated_definitions.h

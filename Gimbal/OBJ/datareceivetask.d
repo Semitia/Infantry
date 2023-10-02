@@ -2,7 +2,7 @@
 ..\obj\datareceivetask.o: ..\User\main.h
 ..\obj\datareceivetask.o: ..\User\stm32f4xx.h
 ..\obj\datareceivetask.o: ..\Library\CMSIS\core_cm4.h
-..\obj\datareceivetask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\datareceivetask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\datareceivetask.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\datareceivetask.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\datareceivetask.o: ..\Library\CMSIS\core_cm4_simd.h
@@ -19,10 +19,10 @@
 ..\obj\datareceivetask.o: ..\Library\inc\stm32f4xx_usart.h
 ..\obj\datareceivetask.o: ..\Library\inc\misc.h
 ..\obj\datareceivetask.o: ..\Library\inc\stm32f4xx_can.h
-..\obj\datareceivetask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\datareceivetask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\datareceivetask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\datareceivetask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\datareceivetask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\datareceivetask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\datareceivetask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\datareceivetask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\datareceivetask.o: ..\Library\CMSIS\arm_math.h
 ..\obj\datareceivetask.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\datareceivetask.o: ..\Mylib\gpio.h
@@ -59,7 +59,7 @@
 ..\obj\datareceivetask.o: ..\INS\GimbalEstimateTask.h
 ..\obj\datareceivetask.o: ..\User\FreeRTOSConfig.h
 ..\obj\datareceivetask.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\datareceivetask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\datareceivetask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\datareceivetask.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\datareceivetask.o: ..\FreeRTOS\include\portable.h
 ..\obj\datareceivetask.o: ..\FreeRTOS\include\deprecated_definitions.h

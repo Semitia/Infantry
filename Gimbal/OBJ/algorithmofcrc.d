@@ -2,7 +2,7 @@
 ..\obj\algorithmofcrc.o: ..\User\main.h
 ..\obj\algorithmofcrc.o: ..\User\stm32f4xx.h
 ..\obj\algorithmofcrc.o: ..\Library\CMSIS\core_cm4.h
-..\obj\algorithmofcrc.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\algorithmofcrc.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\algorithmofcrc.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\algorithmofcrc.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\algorithmofcrc.o: ..\Library\CMSIS\core_cm4_simd.h
@@ -19,10 +19,10 @@
 ..\obj\algorithmofcrc.o: ..\Library\inc\stm32f4xx_usart.h
 ..\obj\algorithmofcrc.o: ..\Library\inc\misc.h
 ..\obj\algorithmofcrc.o: ..\Library\inc\stm32f4xx_can.h
-..\obj\algorithmofcrc.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\algorithmofcrc.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\algorithmofcrc.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\algorithmofcrc.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\algorithmofcrc.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\algorithmofcrc.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\algorithmofcrc.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\algorithmofcrc.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\algorithmofcrc.o: ..\Library\CMSIS\arm_math.h
 ..\obj\algorithmofcrc.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\algorithmofcrc.o: ..\Mylib\gpio.h
@@ -59,7 +59,7 @@
 ..\obj\algorithmofcrc.o: ..\INS\GimbalEstimateTask.h
 ..\obj\algorithmofcrc.o: ..\User\FreeRTOSConfig.h
 ..\obj\algorithmofcrc.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\algorithmofcrc.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\algorithmofcrc.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\algorithmofcrc.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\algorithmofcrc.o: ..\FreeRTOS\include\portable.h
 ..\obj\algorithmofcrc.o: ..\FreeRTOS\include\deprecated_definitions.h

@@ -3,7 +3,7 @@
 ..\obj\gimbalestimatetask.o: ..\User\FreeRTOSConfig.h
 ..\obj\gimbalestimatetask.o: ..\User\stm32f4xx.h
 ..\obj\gimbalestimatetask.o: ..\Library\CMSIS\core_cm4.h
-..\obj\gimbalestimatetask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\gimbalestimatetask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\gimbalestimatetask.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\gimbalestimatetask.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\gimbalestimatetask.o: ..\Library\CMSIS\core_cm4_simd.h
@@ -21,7 +21,7 @@
 ..\obj\gimbalestimatetask.o: ..\Library\inc\misc.h
 ..\obj\gimbalestimatetask.o: ..\Library\inc\stm32f4xx_can.h
 ..\obj\gimbalestimatetask.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\gimbalestimatetask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\gimbalestimatetask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\gimbalestimatetask.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\gimbalestimatetask.o: ..\FreeRTOS\include\portable.h
 ..\obj\gimbalestimatetask.o: ..\FreeRTOS\include\deprecated_definitions.h
@@ -30,10 +30,10 @@
 ..\obj\gimbalestimatetask.o: ..\FreeRTOS\include\task.h
 ..\obj\gimbalestimatetask.o: ..\FreeRTOS\include\list.h
 ..\obj\gimbalestimatetask.o: ..\INS\icm20602.h
-..\obj\gimbalestimatetask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\gimbalestimatetask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\gimbalestimatetask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\gimbalestimatetask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\gimbalestimatetask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\gimbalestimatetask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\gimbalestimatetask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\gimbalestimatetask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\gimbalestimatetask.o: ..\Mylib\counter.h
 ..\obj\gimbalestimatetask.o: ..\INS\ins.h
 ..\obj\gimbalestimatetask.o: ..\INS\QuaternionEKF.h

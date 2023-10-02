@@ -1,6 +1,6 @@
 ..\obj\ins.o: ..\INS\ins.c
 ..\obj\ins.o: ..\INS\ins.h
-..\obj\ins.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\ins.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\ins.o: ..\INS\QuaternionEKF.h
 ..\obj\ins.o: ..\INS\kalman_filter.h
 ..\obj\ins.o: ..\User\stm32f4xx.h
@@ -21,10 +21,10 @@
 ..\obj\ins.o: ..\Library\inc\stm32f4xx_usart.h
 ..\obj\ins.o: ..\Library\inc\misc.h
 ..\obj\ins.o: ..\Library\inc\stm32f4xx_can.h
-..\obj\ins.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\ins.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\ins.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\ins.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\ins.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\ins.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\ins.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\ins.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\ins.o: ..\Library\CMSIS\arm_math.h
 ..\obj\ins.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\ins.o: ..\INS\icm20602.h
@@ -63,7 +63,7 @@
 ..\obj\ins.o: ..\INS\GimbalEstimateTask.h
 ..\obj\ins.o: ..\User\FreeRTOSConfig.h
 ..\obj\ins.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\ins.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\ins.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\ins.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\ins.o: ..\FreeRTOS\include\portable.h
 ..\obj\ins.o: ..\FreeRTOS\include\deprecated_definitions.h

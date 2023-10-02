@@ -2,7 +2,7 @@
 ..\obj\controltask.o: ..\User\main.h
 ..\obj\controltask.o: ..\User\stm32f4xx.h
 ..\obj\controltask.o: ..\Library\CMSIS\core_cm4.h
-..\obj\controltask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\controltask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\controltask.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\controltask.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\controltask.o: ..\Library\CMSIS\core_cm4_simd.h
@@ -19,10 +19,10 @@
 ..\obj\controltask.o: ..\Library\inc\stm32f4xx_usart.h
 ..\obj\controltask.o: ..\Library\inc\misc.h
 ..\obj\controltask.o: ..\Library\inc\stm32f4xx_can.h
-..\obj\controltask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\controltask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\controltask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\controltask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\controltask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\controltask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\controltask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\controltask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\controltask.o: ..\Library\CMSIS\arm_math.h
 ..\obj\controltask.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\controltask.o: ..\Mylib\gpio.h
@@ -59,7 +59,7 @@
 ..\obj\controltask.o: ..\INS\GimbalEstimateTask.h
 ..\obj\controltask.o: ..\User\FreeRTOSConfig.h
 ..\obj\controltask.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\controltask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\controltask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\controltask.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\controltask.o: ..\FreeRTOS\include\portable.h
 ..\obj\controltask.o: ..\FreeRTOS\include\deprecated_definitions.h

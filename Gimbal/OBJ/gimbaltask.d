@@ -2,7 +2,7 @@
 ..\obj\gimbaltask.o: ..\User\main.h
 ..\obj\gimbaltask.o: ..\User\stm32f4xx.h
 ..\obj\gimbaltask.o: ..\Library\CMSIS\core_cm4.h
-..\obj\gimbaltask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\gimbaltask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\gimbaltask.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\gimbaltask.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\gimbaltask.o: ..\Library\CMSIS\core_cm4_simd.h
@@ -19,10 +19,10 @@
 ..\obj\gimbaltask.o: ..\Library\inc\stm32f4xx_usart.h
 ..\obj\gimbaltask.o: ..\Library\inc\misc.h
 ..\obj\gimbaltask.o: ..\Library\inc\stm32f4xx_can.h
-..\obj\gimbaltask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\gimbaltask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\gimbaltask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\gimbaltask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\gimbaltask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\gimbaltask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\gimbaltask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\gimbaltask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\gimbaltask.o: ..\Library\CMSIS\arm_math.h
 ..\obj\gimbaltask.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\gimbaltask.o: ..\Mylib\gpio.h
@@ -59,7 +59,7 @@
 ..\obj\gimbaltask.o: ..\INS\GimbalEstimateTask.h
 ..\obj\gimbaltask.o: ..\User\FreeRTOSConfig.h
 ..\obj\gimbaltask.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\gimbaltask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\gimbaltask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\gimbaltask.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\gimbaltask.o: ..\FreeRTOS\include\portable.h
 ..\obj\gimbaltask.o: ..\FreeRTOS\include\deprecated_definitions.h

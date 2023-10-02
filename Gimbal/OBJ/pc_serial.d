@@ -3,7 +3,7 @@
 ..\obj\pc_serial.o: ..\Mylib\pc_uart.h
 ..\obj\pc_serial.o: ..\User\stm32f4xx.h
 ..\obj\pc_serial.o: ..\Library\CMSIS\core_cm4.h
-..\obj\pc_serial.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\pc_serial.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\pc_serial.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\pc_serial.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\pc_serial.o: ..\Library\CMSIS\core_cm4_simd.h
@@ -20,10 +20,10 @@
 ..\obj\pc_serial.o: ..\Library\inc\stm32f4xx_usart.h
 ..\obj\pc_serial.o: ..\Library\inc\misc.h
 ..\obj\pc_serial.o: ..\Library\inc\stm32f4xx_can.h
-..\obj\pc_serial.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\pc_serial.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\pc_serial.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\pc_serial.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\pc_serial.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\pc_serial.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\pc_serial.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\pc_serial.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\pc_serial.o: ..\Algorithm\algorithmOfCRC.h
 ..\obj\pc_serial.o: ..\INS\ins.h
 ..\obj\pc_serial.o: ..\INS\QuaternionEKF.h
@@ -33,7 +33,7 @@
 ..\obj\pc_serial.o: ..\INS\icm20602.h
 ..\obj\pc_serial.o: ..\Mylib\counter.h
 ..\obj\pc_serial.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\pc_serial.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\pc_serial.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\pc_serial.o: ..\User\FreeRTOSConfig.h
 ..\obj\pc_serial.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\pc_serial.o: ..\FreeRTOS\include\portable.h

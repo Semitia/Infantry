@@ -3,7 +3,7 @@
 ..\obj\start_task.o: ..\User\main.h
 ..\obj\start_task.o: ..\User\stm32f4xx.h
 ..\obj\start_task.o: ..\Library\CMSIS\core_cm4.h
-..\obj\start_task.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\start_task.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\start_task.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\start_task.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\start_task.o: ..\Library\CMSIS\core_cm4_simd.h
@@ -20,10 +20,10 @@
 ..\obj\start_task.o: ..\Library\inc\stm32f4xx_usart.h
 ..\obj\start_task.o: ..\Library\inc\misc.h
 ..\obj\start_task.o: ..\Library\inc\stm32f4xx_can.h
-..\obj\start_task.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\start_task.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\start_task.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\start_task.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\start_task.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\start_task.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\start_task.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\start_task.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\start_task.o: ..\Library\CMSIS\arm_math.h
 ..\obj\start_task.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\start_task.o: ..\Mylib\gpio.h
@@ -61,7 +61,7 @@
 ..\obj\start_task.o: ..\SD\SDCardTask.h
 ..\obj\start_task.o: ..\User\FreeRTOSConfig.h
 ..\obj\start_task.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\start_task.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\start_task.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\start_task.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\start_task.o: ..\FreeRTOS\include\portable.h
 ..\obj\start_task.o: ..\FreeRTOS\include\deprecated_definitions.h

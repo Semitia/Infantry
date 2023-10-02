@@ -2,7 +2,7 @@
 ..\obj\datasendtask.o: ..\User\main.h
 ..\obj\datasendtask.o: ..\User\stm32f4xx.h
 ..\obj\datasendtask.o: ..\Library\CMSIS\core_cm4.h
-..\obj\datasendtask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\datasendtask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\datasendtask.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\datasendtask.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\datasendtask.o: ..\Library\CMSIS\core_cm4_simd.h
@@ -19,10 +19,10 @@
 ..\obj\datasendtask.o: ..\Library\inc\stm32f4xx_usart.h
 ..\obj\datasendtask.o: ..\Library\inc\misc.h
 ..\obj\datasendtask.o: ..\Library\inc\stm32f4xx_can.h
-..\obj\datasendtask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\datasendtask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\datasendtask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\datasendtask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\datasendtask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\datasendtask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\datasendtask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\datasendtask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\datasendtask.o: ..\Library\CMSIS\arm_math.h
 ..\obj\datasendtask.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\datasendtask.o: ..\Mylib\gpio.h
@@ -59,7 +59,7 @@
 ..\obj\datasendtask.o: ..\INS\GimbalEstimateTask.h
 ..\obj\datasendtask.o: ..\User\FreeRTOSConfig.h
 ..\obj\datasendtask.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\datasendtask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\datasendtask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\datasendtask.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\datasendtask.o: ..\FreeRTOS\include\portable.h
 ..\obj\datasendtask.o: ..\FreeRTOS\include\deprecated_definitions.h

@@ -1,10 +1,10 @@
 ..\obj\icm20602.o: ..\INS\icm20602.c
 ..\obj\icm20602.o: ..\INS\icm20602.h
-..\obj\icm20602.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\icm20602.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
-..\obj\icm20602.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\icm20602.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\icm20602.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\icm20602.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\icm20602.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\icm20602.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\icm20602.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\icm20602.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\icm20602.o: ..\Mylib\counter.h
 ..\obj\icm20602.o: ..\User\stm32f4xx.h
 ..\obj\icm20602.o: ..\Library\CMSIS\core_cm4.h

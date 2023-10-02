@@ -2,7 +2,7 @@
 ..\obj\counter.o: ..\User\main.h
 ..\obj\counter.o: ..\User\stm32f4xx.h
 ..\obj\counter.o: ..\Library\CMSIS\core_cm4.h
-..\obj\counter.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\counter.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\counter.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\counter.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\counter.o: ..\Library\CMSIS\core_cm4_simd.h
@@ -19,10 +19,10 @@
 ..\obj\counter.o: ..\Library\inc\stm32f4xx_usart.h
 ..\obj\counter.o: ..\Library\inc\misc.h
 ..\obj\counter.o: ..\Library\inc\stm32f4xx_can.h
-..\obj\counter.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\counter.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\counter.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\counter.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\counter.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\counter.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\counter.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\counter.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\counter.o: ..\Library\CMSIS\arm_math.h
 ..\obj\counter.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\counter.o: ..\Mylib\gpio.h
@@ -59,7 +59,7 @@
 ..\obj\counter.o: ..\INS\GimbalEstimateTask.h
 ..\obj\counter.o: ..\User\FreeRTOSConfig.h
 ..\obj\counter.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\counter.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\counter.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\counter.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\counter.o: ..\FreeRTOS\include\portable.h
 ..\obj\counter.o: ..\FreeRTOS\include\deprecated_definitions.h

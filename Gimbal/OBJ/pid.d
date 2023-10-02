@@ -2,7 +2,7 @@
 ..\obj\pid.o: ..\User\main.h
 ..\obj\pid.o: ..\User\stm32f4xx.h
 ..\obj\pid.o: ..\Library\CMSIS\core_cm4.h
-..\obj\pid.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\pid.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\pid.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\pid.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\pid.o: ..\Library\CMSIS\core_cm4_simd.h
@@ -19,10 +19,10 @@
 ..\obj\pid.o: ..\Library\inc\stm32f4xx_usart.h
 ..\obj\pid.o: ..\Library\inc\misc.h
 ..\obj\pid.o: ..\Library\inc\stm32f4xx_can.h
-..\obj\pid.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\pid.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\pid.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\pid.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\pid.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\pid.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\pid.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\pid.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\pid.o: ..\Library\CMSIS\arm_math.h
 ..\obj\pid.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\pid.o: ..\Mylib\gpio.h
@@ -59,7 +59,7 @@
 ..\obj\pid.o: ..\INS\GimbalEstimateTask.h
 ..\obj\pid.o: ..\User\FreeRTOSConfig.h
 ..\obj\pid.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\pid.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\pid.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\pid.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\pid.o: ..\FreeRTOS\include\portable.h
 ..\obj\pid.o: ..\FreeRTOS\include\deprecated_definitions.h

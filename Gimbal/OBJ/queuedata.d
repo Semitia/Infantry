@@ -2,7 +2,7 @@
 ..\obj\queuedata.o: ..\User\main.h
 ..\obj\queuedata.o: ..\User\stm32f4xx.h
 ..\obj\queuedata.o: ..\Library\CMSIS\core_cm4.h
-..\obj\queuedata.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\queuedata.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\queuedata.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\queuedata.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\queuedata.o: ..\Library\CMSIS\core_cm4_simd.h
@@ -19,10 +19,10 @@
 ..\obj\queuedata.o: ..\Library\inc\stm32f4xx_usart.h
 ..\obj\queuedata.o: ..\Library\inc\misc.h
 ..\obj\queuedata.o: ..\Library\inc\stm32f4xx_can.h
-..\obj\queuedata.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\queuedata.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\queuedata.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\queuedata.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\queuedata.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\queuedata.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\queuedata.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\queuedata.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\queuedata.o: ..\Library\CMSIS\arm_math.h
 ..\obj\queuedata.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\queuedata.o: ..\Mylib\gpio.h
@@ -59,7 +59,7 @@
 ..\obj\queuedata.o: ..\INS\GimbalEstimateTask.h
 ..\obj\queuedata.o: ..\User\FreeRTOSConfig.h
 ..\obj\queuedata.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\queuedata.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\queuedata.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\queuedata.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\queuedata.o: ..\FreeRTOS\include\portable.h
 ..\obj\queuedata.o: ..\FreeRTOS\include\deprecated_definitions.h

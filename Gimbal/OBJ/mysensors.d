@@ -2,7 +2,7 @@
 ..\obj\mysensors.o: ..\User\main.h
 ..\obj\mysensors.o: ..\User\stm32f4xx.h
 ..\obj\mysensors.o: ..\Library\CMSIS\core_cm4.h
-..\obj\mysensors.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\mysensors.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\mysensors.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\mysensors.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\mysensors.o: ..\Library\CMSIS\core_cm4_simd.h
@@ -19,10 +19,10 @@
 ..\obj\mysensors.o: ..\Library\inc\stm32f4xx_usart.h
 ..\obj\mysensors.o: ..\Library\inc\misc.h
 ..\obj\mysensors.o: ..\Library\inc\stm32f4xx_can.h
-..\obj\mysensors.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\mysensors.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\mysensors.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\mysensors.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\mysensors.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\mysensors.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\mysensors.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\mysensors.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\mysensors.o: ..\Library\CMSIS\arm_math.h
 ..\obj\mysensors.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\mysensors.o: ..\Mylib\gpio.h
@@ -59,7 +59,7 @@
 ..\obj\mysensors.o: ..\INS\GimbalEstimateTask.h
 ..\obj\mysensors.o: ..\User\FreeRTOSConfig.h
 ..\obj\mysensors.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\mysensors.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\mysensors.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\mysensors.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\mysensors.o: ..\FreeRTOS\include\portable.h
 ..\obj\mysensors.o: ..\FreeRTOS\include\deprecated_definitions.h

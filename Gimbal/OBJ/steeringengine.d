@@ -2,7 +2,7 @@
 ..\obj\steeringengine.o: ..\User\main.h
 ..\obj\steeringengine.o: ..\User\stm32f4xx.h
 ..\obj\steeringengine.o: ..\Library\CMSIS\core_cm4.h
-..\obj\steeringengine.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\steeringengine.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\steeringengine.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\steeringengine.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\steeringengine.o: ..\Library\CMSIS\core_cm4_simd.h
@@ -19,10 +19,10 @@
 ..\obj\steeringengine.o: ..\Library\inc\stm32f4xx_usart.h
 ..\obj\steeringengine.o: ..\Library\inc\misc.h
 ..\obj\steeringengine.o: ..\Library\inc\stm32f4xx_can.h
-..\obj\steeringengine.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\steeringengine.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\steeringengine.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\steeringengine.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\steeringengine.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\steeringengine.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\steeringengine.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\steeringengine.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\steeringengine.o: ..\Library\CMSIS\arm_math.h
 ..\obj\steeringengine.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\steeringengine.o: ..\Mylib\gpio.h
@@ -59,7 +59,7 @@
 ..\obj\steeringengine.o: ..\INS\GimbalEstimateTask.h
 ..\obj\steeringengine.o: ..\User\FreeRTOSConfig.h
 ..\obj\steeringengine.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\steeringengine.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\steeringengine.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\steeringengine.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\steeringengine.o: ..\FreeRTOS\include\portable.h
 ..\obj\steeringengine.o: ..\FreeRTOS\include\deprecated_definitions.h

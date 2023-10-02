@@ -1,7 +1,7 @@
 ..\obj\port.o: ..\FreeRTOS\port\RVDS\ARM_CM4F\port.c
 ..\obj\port.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\port.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
-..\obj\port.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\port.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\port.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\port.o: ..\User\FreeRTOSConfig.h
 ..\obj\port.o: ..\User\stm32f4xx.h
 ..\obj\port.o: ..\Library\CMSIS\core_cm4.h

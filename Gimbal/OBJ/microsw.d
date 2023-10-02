@@ -2,7 +2,7 @@
 ..\obj\microsw.o: ..\User\main.h
 ..\obj\microsw.o: ..\User\stm32f4xx.h
 ..\obj\microsw.o: ..\Library\CMSIS\core_cm4.h
-..\obj\microsw.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\microsw.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\microsw.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\microsw.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\microsw.o: ..\Library\CMSIS\core_cm4_simd.h
@@ -19,10 +19,10 @@
 ..\obj\microsw.o: ..\Library\inc\stm32f4xx_usart.h
 ..\obj\microsw.o: ..\Library\inc\misc.h
 ..\obj\microsw.o: ..\Library\inc\stm32f4xx_can.h
-..\obj\microsw.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\microsw.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\microsw.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\microsw.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\microsw.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\microsw.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\microsw.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\microsw.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\microsw.o: ..\Library\CMSIS\arm_math.h
 ..\obj\microsw.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\microsw.o: ..\Mylib\gpio.h
@@ -59,7 +59,7 @@
 ..\obj\microsw.o: ..\INS\GimbalEstimateTask.h
 ..\obj\microsw.o: ..\User\FreeRTOSConfig.h
 ..\obj\microsw.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\microsw.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\microsw.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\microsw.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\microsw.o: ..\FreeRTOS\include\portable.h
 ..\obj\microsw.o: ..\FreeRTOS\include\deprecated_definitions.h

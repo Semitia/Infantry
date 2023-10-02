@@ -1,11 +1,11 @@
 ..\obj\diskio.o: ..\SD\diskio.c
-..\obj\diskio.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\diskio.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\diskio.o: ..\SD\diskio.h
 ..\obj\diskio.o: ..\SD\integer.h
 ..\obj\diskio.o: ..\SD\bsp_spi_sdcard.h
 ..\obj\diskio.o: ..\User\stm32f4xx.h
 ..\obj\diskio.o: ..\Library\CMSIS\core_cm4.h
-..\obj\diskio.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\diskio.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\diskio.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\diskio.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\diskio.o: ..\Library\CMSIS\core_cm4_simd.h

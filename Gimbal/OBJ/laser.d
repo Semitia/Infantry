@@ -2,7 +2,7 @@
 ..\obj\laser.o: ..\User\main.h
 ..\obj\laser.o: ..\User\stm32f4xx.h
 ..\obj\laser.o: ..\Library\CMSIS\core_cm4.h
-..\obj\laser.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\laser.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\laser.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\laser.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\laser.o: ..\Library\CMSIS\core_cm4_simd.h
@@ -19,10 +19,10 @@
 ..\obj\laser.o: ..\Library\inc\stm32f4xx_usart.h
 ..\obj\laser.o: ..\Library\inc\misc.h
 ..\obj\laser.o: ..\Library\inc\stm32f4xx_can.h
-..\obj\laser.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\laser.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\laser.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\laser.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\laser.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\laser.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\laser.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\laser.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\laser.o: ..\Library\CMSIS\arm_math.h
 ..\obj\laser.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\laser.o: ..\Mylib\gpio.h
@@ -59,7 +59,7 @@
 ..\obj\laser.o: ..\INS\GimbalEstimateTask.h
 ..\obj\laser.o: ..\User\FreeRTOSConfig.h
 ..\obj\laser.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\laser.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\laser.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\laser.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\laser.o: ..\FreeRTOS\include\portable.h
 ..\obj\laser.o: ..\FreeRTOS\include\deprecated_definitions.h

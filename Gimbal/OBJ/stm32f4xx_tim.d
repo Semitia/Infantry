@@ -2,7 +2,7 @@
 ..\obj\stm32f4xx_tim.o: ..\Library\inc\stm32f4xx_tim.h
 ..\obj\stm32f4xx_tim.o: ..\User\stm32f4xx.h
 ..\obj\stm32f4xx_tim.o: ..\Library\CMSIS\core_cm4.h
-..\obj\stm32f4xx_tim.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\stm32f4xx_tim.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\stm32f4xx_tim.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\stm32f4xx_tim.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\stm32f4xx_tim.o: ..\Library\CMSIS\core_cm4_simd.h

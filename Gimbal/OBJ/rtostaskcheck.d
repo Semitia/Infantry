@@ -2,7 +2,7 @@
 ..\obj\rtostaskcheck.o: ..\INS\RtosTaskCheck.h
 ..\obj\rtostaskcheck.o: ..\User\stm32f4xx.h
 ..\obj\rtostaskcheck.o: ..\Library\CMSIS\core_cm4.h
-..\obj\rtostaskcheck.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\rtostaskcheck.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\rtostaskcheck.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\rtostaskcheck.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\rtostaskcheck.o: ..\Library\CMSIS\core_cm4_simd.h

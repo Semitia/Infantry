@@ -2,7 +2,7 @@
 ..\obj\chassistask.o: ..\User\main.h
 ..\obj\chassistask.o: ..\User\stm32f4xx.h
 ..\obj\chassistask.o: ..\Library\CMSIS\core_cm4.h
-..\obj\chassistask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\chassistask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\chassistask.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\chassistask.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\chassistask.o: ..\Library\CMSIS\core_cm4_simd.h
@@ -19,10 +19,10 @@
 ..\obj\chassistask.o: ..\Library\inc\stm32f4xx_usart.h
 ..\obj\chassistask.o: ..\Library\inc\misc.h
 ..\obj\chassistask.o: ..\Library\inc\stm32f4xx_can.h
-..\obj\chassistask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\chassistask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\chassistask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\chassistask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\chassistask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\chassistask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\chassistask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\chassistask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\chassistask.o: ..\Library\CMSIS\arm_math.h
 ..\obj\chassistask.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\chassistask.o: ..\Mylib\gpio.h
@@ -59,7 +59,7 @@
 ..\obj\chassistask.o: ..\INS\GimbalEstimateTask.h
 ..\obj\chassistask.o: ..\User\FreeRTOSConfig.h
 ..\obj\chassistask.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\chassistask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\chassistask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\chassistask.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\chassistask.o: ..\FreeRTOS\include\portable.h
 ..\obj\chassistask.o: ..\FreeRTOS\include\deprecated_definitions.h

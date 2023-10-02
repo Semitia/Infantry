@@ -2,7 +2,7 @@
 ..\obj\misc.o: ..\Library\inc\misc.h
 ..\obj\misc.o: ..\User\stm32f4xx.h
 ..\obj\misc.o: ..\Library\CMSIS\core_cm4.h
-..\obj\misc.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\misc.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\misc.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\misc.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\misc.o: ..\Library\CMSIS\core_cm4_simd.h

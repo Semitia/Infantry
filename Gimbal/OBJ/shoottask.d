@@ -2,7 +2,7 @@
 ..\obj\shoottask.o: ..\User\main.h
 ..\obj\shoottask.o: ..\User\stm32f4xx.h
 ..\obj\shoottask.o: ..\Library\CMSIS\core_cm4.h
-..\obj\shoottask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\shoottask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\shoottask.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\shoottask.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\shoottask.o: ..\Library\CMSIS\core_cm4_simd.h
@@ -19,10 +19,10 @@
 ..\obj\shoottask.o: ..\Library\inc\stm32f4xx_usart.h
 ..\obj\shoottask.o: ..\Library\inc\misc.h
 ..\obj\shoottask.o: ..\Library\inc\stm32f4xx_can.h
-..\obj\shoottask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\shoottask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\shoottask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\shoottask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\shoottask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\shoottask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\shoottask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\shoottask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\shoottask.o: ..\Library\CMSIS\arm_math.h
 ..\obj\shoottask.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\shoottask.o: ..\Mylib\gpio.h
@@ -59,7 +59,7 @@
 ..\obj\shoottask.o: ..\INS\GimbalEstimateTask.h
 ..\obj\shoottask.o: ..\User\FreeRTOSConfig.h
 ..\obj\shoottask.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\shoottask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\shoottask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\shoottask.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\shoottask.o: ..\FreeRTOS\include\portable.h
 ..\obj\shoottask.o: ..\FreeRTOS\include\deprecated_definitions.h

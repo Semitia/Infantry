@@ -1,8 +1,8 @@
 ..\obj\event_groups.o: ..\FreeRTOS\src\event_groups.c
-..\obj\event_groups.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\event_groups.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\event_groups.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\event_groups.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
-..\obj\event_groups.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\event_groups.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\event_groups.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\event_groups.o: ..\User\FreeRTOSConfig.h
 ..\obj\event_groups.o: ..\User\stm32f4xx.h
 ..\obj\event_groups.o: ..\Library\CMSIS\core_cm4.h

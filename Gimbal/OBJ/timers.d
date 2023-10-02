@@ -1,8 +1,8 @@
 ..\obj\timers.o: ..\FreeRTOS\src\timers.c
-..\obj\timers.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\timers.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\timers.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\timers.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
-..\obj\timers.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\timers.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\timers.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\timers.o: ..\User\FreeRTOSConfig.h
 ..\obj\timers.o: ..\User\stm32f4xx.h
 ..\obj\timers.o: ..\Library\CMSIS\core_cm4.h

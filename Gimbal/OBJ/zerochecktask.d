@@ -2,7 +2,7 @@
 ..\obj\zerochecktask.o: ..\User\main.h
 ..\obj\zerochecktask.o: ..\User\stm32f4xx.h
 ..\obj\zerochecktask.o: ..\Library\CMSIS\core_cm4.h
-..\obj\zerochecktask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\zerochecktask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\zerochecktask.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\zerochecktask.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\zerochecktask.o: ..\Library\CMSIS\core_cm4_simd.h
@@ -19,10 +19,10 @@
 ..\obj\zerochecktask.o: ..\Library\inc\stm32f4xx_usart.h
 ..\obj\zerochecktask.o: ..\Library\inc\misc.h
 ..\obj\zerochecktask.o: ..\Library\inc\stm32f4xx_can.h
-..\obj\zerochecktask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\zerochecktask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\zerochecktask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\zerochecktask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\zerochecktask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\zerochecktask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\zerochecktask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\zerochecktask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\zerochecktask.o: ..\Library\CMSIS\arm_math.h
 ..\obj\zerochecktask.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\zerochecktask.o: ..\Mylib\gpio.h
@@ -59,7 +59,7 @@
 ..\obj\zerochecktask.o: ..\INS\GimbalEstimateTask.h
 ..\obj\zerochecktask.o: ..\User\FreeRTOSConfig.h
 ..\obj\zerochecktask.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\zerochecktask.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\zerochecktask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\zerochecktask.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\zerochecktask.o: ..\FreeRTOS\include\portable.h
 ..\obj\zerochecktask.o: ..\FreeRTOS\include\deprecated_definitions.h

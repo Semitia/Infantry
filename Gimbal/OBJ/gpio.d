@@ -2,7 +2,7 @@
 ..\obj\gpio.o: ..\User\main.h
 ..\obj\gpio.o: ..\User\stm32f4xx.h
 ..\obj\gpio.o: ..\Library\CMSIS\core_cm4.h
-..\obj\gpio.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\gpio.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\gpio.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\gpio.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\gpio.o: ..\Library\CMSIS\core_cm4_simd.h
@@ -19,10 +19,10 @@
 ..\obj\gpio.o: ..\Library\inc\stm32f4xx_usart.h
 ..\obj\gpio.o: ..\Library\inc\misc.h
 ..\obj\gpio.o: ..\Library\inc\stm32f4xx_can.h
-..\obj\gpio.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\gpio.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\gpio.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\gpio.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\gpio.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\gpio.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\gpio.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\gpio.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\gpio.o: ..\Library\CMSIS\arm_math.h
 ..\obj\gpio.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\gpio.o: ..\Mylib\gpio.h
@@ -59,7 +59,7 @@
 ..\obj\gpio.o: ..\INS\GimbalEstimateTask.h
 ..\obj\gpio.o: ..\User\FreeRTOSConfig.h
 ..\obj\gpio.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\gpio.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\gpio.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\gpio.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\gpio.o: ..\FreeRTOS\include\portable.h
 ..\obj\gpio.o: ..\FreeRTOS\include\deprecated_definitions.h

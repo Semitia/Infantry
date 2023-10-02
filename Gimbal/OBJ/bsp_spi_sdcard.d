@@ -2,7 +2,7 @@
 ..\obj\bsp_spi_sdcard.o: ..\User\main.h
 ..\obj\bsp_spi_sdcard.o: ..\User\stm32f4xx.h
 ..\obj\bsp_spi_sdcard.o: ..\Library\CMSIS\core_cm4.h
-..\obj\bsp_spi_sdcard.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\bsp_spi_sdcard.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\bsp_spi_sdcard.o: ..\Library\CMSIS\core_cmInstr.h
 ..\obj\bsp_spi_sdcard.o: ..\Library\CMSIS\core_cmFunc.h
 ..\obj\bsp_spi_sdcard.o: ..\Library\CMSIS\core_cm4_simd.h
@@ -19,10 +19,10 @@
 ..\obj\bsp_spi_sdcard.o: ..\Library\inc\stm32f4xx_usart.h
 ..\obj\bsp_spi_sdcard.o: ..\Library\inc\misc.h
 ..\obj\bsp_spi_sdcard.o: ..\Library\inc\stm32f4xx_can.h
-..\obj\bsp_spi_sdcard.o: E:\Keil5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\bsp_spi_sdcard.o: E:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\bsp_spi_sdcard.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\bsp_spi_sdcard.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\bsp_spi_sdcard.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\bsp_spi_sdcard.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\bsp_spi_sdcard.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\bsp_spi_sdcard.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\bsp_spi_sdcard.o: ..\Library\CMSIS\arm_math.h
 ..\obj\bsp_spi_sdcard.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\bsp_spi_sdcard.o: ..\Mylib\gpio.h
@@ -59,7 +59,7 @@
 ..\obj\bsp_spi_sdcard.o: ..\INS\GimbalEstimateTask.h
 ..\obj\bsp_spi_sdcard.o: ..\User\FreeRTOSConfig.h
 ..\obj\bsp_spi_sdcard.o: ..\FreeRTOS\include\FreeRTOS.h
-..\obj\bsp_spi_sdcard.o: E:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\bsp_spi_sdcard.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\bsp_spi_sdcard.o: ..\FreeRTOS\include\projdefs.h
 ..\obj\bsp_spi_sdcard.o: ..\FreeRTOS\include\portable.h
 ..\obj\bsp_spi_sdcard.o: ..\FreeRTOS\include\deprecated_definitions.h
