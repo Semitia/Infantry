@@ -12,14 +12,16 @@
  * @作者     戴军
  * @日期     2022.2
 **********************************************************************************************************/
-#include "main.h"
+#include "can2.h"
+CanRing_t can2_rx0 = {0};
+CanRing_t can2_rx1 = {0};
+
 /**********************************************************************************************************
 *函 数 名: CAN2_Configuration
 *功能说明: can2配置函数
 *形    参: 无
 *返 回 值: 无
 **********************************************************************************************************/
-extern RobotInit_Struct Infantry;
 void CAN2_Configuration(void)
 {
 	CAN_InitTypeDef can;
@@ -47,11 +49,7 @@ void CAN2_Configuration(void)
 	nvic.NVIC_IRQChannelSubPriority = 2;
 	nvic.NVIC_IRQChannelCmd = ENABLE;
 	NVIC_Init(&nvic);
-	nvic.NVIC_IRQChannel = CAN2_TX_IRQn;
-	nvic.NVIC_IRQChannelPreemptionPriority = 0;
-	nvic.NVIC_IRQChannelSubPriority = 1;
-	nvic.NVIC_IRQChannelCmd = ENABLE;
-	NVIC_Init(&nvic); 
+
 	CAN_DeInit(CAN2);
 	CAN_StructInit(&can);
 	can.CAN_TTCM = DISABLE;
@@ -71,9 +69,9 @@ void CAN2_Configuration(void)
 	can_filter.CAN_FilterMode = CAN_FilterMode_IdList;
 	can_filter.CAN_FilterScale = CAN_FilterScale_16bit;
 	can_filter.CAN_FilterIdHigh = 0 << 5;
-	can_filter.CAN_FilterIdLow = Infantry.FricMotorID[0] << 5;
-	can_filter.CAN_FilterMaskIdHigh = Infantry.FricMotorID[1]  << 5;//0x7f0 << 5;
-	can_filter.CAN_FilterMaskIdLow = Infantry.PitchMotorID << 5;
+	can_filter.CAN_FilterIdLow = 0<< 5;
+	can_filter.CAN_FilterMaskIdHigh = 0 << 5;//0x7f0 << 5;
+	can_filter.CAN_FilterMaskIdLow = 0 << 5;
 	can_filter.CAN_FilterFIFOAssignment = 0;//fifo0
 	can_filter.CAN_FilterActivation = ENABLE;
 	CAN_FilterInit(&can_filter);
@@ -92,27 +90,12 @@ void CAN2_Configuration(void)
 	//CAN中断配置
 	CAN_ITConfig(CAN2,CAN_IT_FMP0,ENABLE);
 	CAN_ITConfig(CAN2,CAN_IT_FMP1,ENABLE);
-	CAN_ITConfig(CAN2,CAN_IT_TME,ENABLE);
 }
-/**********************************************************************************************************
-*函 数 名: CAN2_TX_IRQHandler
-*功能说明: can2发送中断
-*形    参: 无
-*返 回 值: 无
-**********************************************************************************************************/
-void CAN2_TX_IRQHandler(void)
-{
-	if (CAN_GetITStatus(CAN2,CAN_IT_TME)!= RESET) 
-	{
-		CAN_ClearITPendingBit(CAN2,CAN_IT_TME);
-	}
-}
-/**********************************************************************************************************
-*函 数 名: CAN2_RX0_IRQHandler
-*功能说明: can2接收中断(Pitch,Yaw电机角度接收)
-*形    参: 无
-*返 回 值: 无
-**********************************************************************************************************/
+
+/**
+ * @brief  Can2Rx0中断服务函数
+ * @note   Pitch电机 和 摩擦轮电机信息
+*/
 void CAN2_RX0_IRQHandler(void)
 {
 	CanRxMsg rx_message0;
@@ -120,22 +103,21 @@ void CAN2_RX0_IRQHandler(void)
 	{
 		CAN_ClearITPendingBit(CAN2, CAN_IT_FMP0);
 		CAN_Receive(CAN2, CAN_FIFO0, &rx_message0);
-		Can2Receive0(rx_message0);
+		pushCanMsg(&can2_rx0, rx_message0);
 	}
 }
-/**********************************************************************************************************
-*函 数 名: CAN2_RX1_IRQHandler
-*功能说明: can2接收中断(陀螺仪数据接收)
-*形    参: 无
-*返 回 值: 无
-**********************************************************************************************************/
+
+/**
+ * @brief  Can2Rx1中断服务函数
+ * @note   陀螺仪信息
+*/
 void CAN2_RX1_IRQHandler(void)
 {
 	CanRxMsg rx_message1;
 	if (CAN_GetITStatus(CAN2,CAN_IT_FMP1)!= RESET)
 	{
 		CAN_ClearITPendingBit(CAN2, CAN_IT_FMP1);
- 		CAN_Receive(CAN2, CAN_FIFO1, &rx_message1);
-		Can2Receive1(&rx_message1);
+		CAN_Receive(CAN2, CAN_FIFO1, &rx_message1);
+		pushCanMsg(&can2_rx1, rx_message1);
 	}
 }

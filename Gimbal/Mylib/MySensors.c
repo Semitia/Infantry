@@ -39,9 +39,9 @@ void decode_gyro(uint8_t *buf)
 							gyro.w_t = (float)((buf[9] << 8) | buf[8]) * 0.01f;
 					    
 					if(ABS(gyro.w_z)<30){
-							GyroReceive.GZ = gyro.w_z;
-							GyroReceive.GY = gyro.w_y;
-							GyroReceive.GY*= Infantry.gyro_pn;
+							//GyroReceive.GZ = gyro.w_z;
+							//GyroReceive.GY = gyro.w_y;
+							//GyroReceive.GY*= Infantry.gyro_pn;
 					}
 							break;
 					case 0x53:
@@ -51,23 +51,23 @@ void decode_gyro(uint8_t *buf)
 							gyro.x_yaw = temp + round((gyro.x_yaw - temp) / 360.0f) * 360.0f;
 							gyro.x_t = (float)((buf[9] << 8) | buf[8]) * 0.01f;
 					
-							pitch_gyro_temp = gyro.x_pitch;
+							//pitch_gyro_temp = gyro.x_pitch;
 							 //程序安全
-							 if(ABS(pitch_gyro_temp)<50.0f)
+							 if(ABS(gyro.x_pitch)<50.0f)
 							 {
-							 GyroReceive.PITCH = pitch_gyro_temp*Infantry.gyro_pn;
+							 //GyroReceive.PITCH = pitch_gyro_temp*Infantry.gyro_pn;
 							 }
 							 else
 							 {
-							 GyroReceive.PITCH = Gimbal.Pitch.MotorTransAngle;
+							 //GyroReceive.PITCH = Gimbal.Pitch.MotorTransAngle;
 							 }
 							 
 							 //程序安全
-							 yaw_gyro_temp = gyro.x_yaw;
-							 if(yaw_gyro_temp < 180.0f && yaw_gyro_temp > -180.0f)
+			
+							 if(gyro.x_yaw < 180.0f && gyro.x_yaw > -180.0f)
 							 {
-								GyroReceive.YAW = yaw_gyro_temp;
-								Robot_Disconnect.Gyro_DisConnect=0;
+								//GyroReceive.YAW = yaw_gyro_temp;
+								//Robot_Disconnect.Gyro_DisConnect=0;
 								}
 							break;
 					default:

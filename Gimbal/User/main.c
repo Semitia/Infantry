@@ -77,7 +77,7 @@ void BSP_Init(void)
     USART1_Configuration();
     delay_ms(100);
     #endif
-	PC_UART_Configuration();
+	//PC_UART_Configuration();
 	delay_ms(10);
 	MicroSwConfigration();
 	delay_ms(10);
@@ -106,15 +106,14 @@ void BSP_Init(void)
  **********************************************************************************************************/
 void Robot_Init(void)
 {
-    global_debugger.imu_debugger[0].recv_msgs_num = 0;
-    global_debugger.imu_debugger[1].recv_msgs_num = 0;
-	ZeroCheck_Init();
+
+//	ZeroCheck_Init();
 	Infantry_Init();
 //	Pid_ChassisPosition_Init();
 //	PidGimbalMotor_Init();
 //	Pid_BodanMotor_Init();
-	Pid_Friction_Init();
-    while (!checkIMUOn()); //检查IMU是否开启
+//	Pid_Friction_Init();
+//    while (!checkIMUOn()); //检查IMU是否开启
     INS_Init();
     ICM20602_init(&IMUReceive, &IMUData);
 //    ControlMode = 1;
@@ -328,63 +327,63 @@ void Infantry_Init(void)
  *形    参: 无
  *返 回 值: 无
  **********************************************************************************************************/
-uint32_t Offline_Check_high_water;
-extern Disconnect Robot_Disconnect;
-void Offline_Check_task(void *pvParameters)
-{
-	while (1)
-	{
+// uint32_t Offline_Check_high_water;
+// extern Disconnect Robot_Disconnect;
+// void Offline_Check_task(void *pvParameters)
+// {
+// 	while (1)
+// 	{
 
-		/*电机\IMU掉线检测*/
-		if(Robot_Disconnect.YawMotor_DisConnect>10||Robot_Disconnect.PitchMotor_DisConnect>10)
-		{
-		    Robot_Stop();
-		}
-		else
-		{
-				Robot_Recover();
-		}
+// 		/*电机\IMU掉线检测*/
+// 		if(Robot_Disconnect.YawMotor_DisConnect>10||Robot_Disconnect.PitchMotor_DisConnect>10)
+// 		{
+// 		    Robot_Stop();
+// 		}
+// 		else
+// 		{
+// 				Robot_Recover();
+// 		}
         
-		Robot_Disconnect.Gyro_DisConnect++;
-		Robot_Disconnect.PitchMotor_DisConnect++;
-		Robot_Disconnect.YawMotor_DisConnect++;
+// 		Robot_Disconnect.Gyro_DisConnect++;
+// 		Robot_Disconnect.PitchMotor_DisConnect++;
+// 		Robot_Disconnect.YawMotor_DisConnect++;
 
-		/*发射机构掉线 */
-		if (Robot_Disconnect.Friction_DisConnect[0] > 10 || Robot_Disconnect.Friction_DisConnect[1] > 10 || Robot_Disconnect.Pluck_DisConnect > 10)
-		{
-			Shoot_Stop();
-		}
-		else
-		{
-			Shoot_Recover();
-		}
-		Robot_Disconnect.Friction_DisConnect[0]++;
-		Robot_Disconnect.Friction_DisConnect[1]++;
-		Robot_Disconnect.Pluck_DisConnect++;
+// 		/*发射机构掉线 */
+// 		if (Robot_Disconnect.Friction_DisConnect[0] > 10 || Robot_Disconnect.Friction_DisConnect[1] > 10 || Robot_Disconnect.Pluck_DisConnect > 10)
+// 		{
+// 			Shoot_Stop();
+// 		}
+// 		else
+// 		{
+// 			Shoot_Recover();
+// 		}
+// 		Robot_Disconnect.Friction_DisConnect[0]++;
+// 		Robot_Disconnect.Friction_DisConnect[1]++;
+// 		Robot_Disconnect.Pluck_DisConnect++;
 
-		/*遥控器掉线检测*/
-		if (Robot_Disconnect.RC_DisConnect > 10)
-		{
-			RC_Rst();
-		}
-		Robot_Disconnect.RC_DisConnect++;
+// 		/*遥控器掉线检测*/
+// 		if (Robot_Disconnect.RC_DisConnect > 10)
+// 		{
+// 			RC_Rst();
+// 		}
+// 		Robot_Disconnect.RC_DisConnect++;
 
-		/*底盘板或者裁判系统掉线检测*/
-		if (Robot_Disconnect.F105_DisConect > 15 || Judge_Lost == 1)
-		{
-			F105_Rst();
-		}
-		Robot_Disconnect.F105_DisConect++;
+// 		/*底盘板或者裁判系统掉线检测*/
+// 		if (Robot_Disconnect.F105_DisConect > 15 || Judge_Lost == 1)
+// 		{
+// 			F105_Rst();
+// 		}
+// 		Robot_Disconnect.F105_DisConect++;
 
-		/* PC暂断 */
-		if (Robot_Disconnect.PC_DisConnect > 10)
-		{
-		}
-		Robot_Disconnect.PC_DisConnect++;
-		IWDG_Feed();
-		vTaskDelay(5); // 5
-#if INCLUDE_uxTaskGetStackHighWaterMark
-		Offline_Check_high_water = uxTaskGetStackHighWaterMark(NULL);
-#endif
-	}
-}
+// 		/* PC暂断 */
+// 		if (Robot_Disconnect.PC_DisConnect > 10)
+// 		{
+// 		}
+// 		Robot_Disconnect.PC_DisConnect++;
+// 		IWDG_Feed();
+// 		vTaskDelay(5); // 5
+// #if INCLUDE_uxTaskGetStackHighWaterMark
+// 		Offline_Check_high_water = uxTaskGetStackHighWaterMark(NULL);
+// #endif
+// 	}
+// }

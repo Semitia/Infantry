@@ -27,8 +27,7 @@
 ..\obj\mysensors.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\mysensors.o: ..\Mylib\gpio.h
 ..\obj\mysensors.o: ..\Mylib\can1.h
-..\obj\mysensors.o: ..\Mylib\can2.h
-..\obj\mysensors.o: ..\Mylib\tim4.h
+..\obj\mysensors.o: ..\Software\CanRing.h
 ..\obj\mysensors.o: ..\User\sys.h
 ..\obj\mysensors.o: ..\Library\inc\stm32f4xx_dac.h
 ..\obj\mysensors.o: ..\User\FreeRTOSConfig.h
@@ -44,6 +43,8 @@
 ..\obj\mysensors.o: ..\FreeRTOS\include\semphr.h
 ..\obj\mysensors.o: ..\FreeRTOS\include\queue.h
 ..\obj\mysensors.o: ..\Algorithm\myMath.h
+..\obj\mysensors.o: ..\Mylib\can2.h
+..\obj\mysensors.o: ..\Mylib\tim4.h
 ..\obj\mysensors.o: ..\Mylib\usart3.h
 ..\obj\mysensors.o: ..\Software\usart.h
 ..\obj\mysensors.o: ..\Task\usart4_gryo.h

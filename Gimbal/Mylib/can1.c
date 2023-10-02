@@ -13,8 +13,8 @@
  * @日期     2022.3
 **********************************************************************************************************/
 #include "can1.h"
-CanRing_t can1_rx0;
-CanRing_t can1_rx1;
+CanRing_t can1_rx0 = {0};
+CanRing_t can1_rx1 = {0};
 
 /**********************************************************************************************************
 *函 数 名: CAN1_Configration
@@ -22,9 +22,7 @@ CanRing_t can1_rx1;
 *形    参: 无
 *返 回 值: 无
 **********************************************************************************************************/
-extern RobotInit_Struct Infantry;
 void CAN1_Configuration(void)
-	
 {
 	  CAN_InitTypeDef        can;
     CAN_FilterInitTypeDef  can_filter;
@@ -43,8 +41,6 @@ void CAN1_Configuration(void)
     gpio.GPIO_OType = GPIO_OType_PP;
 	  gpio.GPIO_PuPd = GPIO_PuPd_UP;
     GPIO_Init(GPIOB, &gpio);
-    
-
 
     nvic.NVIC_IRQChannel = CAN1_RX0_IRQn;
     nvic.NVIC_IRQChannelPreemptionPriority = 0;
@@ -58,12 +54,6 @@ void CAN1_Configuration(void)
     nvic.NVIC_IRQChannelCmd = ENABLE;
     NVIC_Init(&nvic);
     
-    nvic.NVIC_IRQChannel = CAN1_TX_IRQn;
-    nvic.NVIC_IRQChannelPreemptionPriority = 0;
-    nvic.NVIC_IRQChannelSubPriority = 2;
-    nvic.NVIC_IRQChannelCmd = ENABLE;
-    NVIC_Init(&nvic);
-    
     CAN_DeInit(CAN1);
     CAN_StructInit(&can);
     
@@ -74,24 +64,11 @@ void CAN1_Configuration(void)
     can.CAN_RFLM = DISABLE;
     can.CAN_TXFP = ENABLE;
     can.CAN_Mode = CAN_Mode_Normal;
-                                      // can.CAN_Mode =CAN_Mode_LoopBack
     can.CAN_SJW  = CAN_SJW_1tq;   //1
     can.CAN_BS1 = CAN_BS1_10tq;    // 9
     can.CAN_BS2 = CAN_BS2_3tq;		// 4
 		can.CAN_Prescaler = 3;   //CAN BaudRate 42/(1+9+4)/3=1Mbps
     CAN_Init(CAN1, &can);
-
-
-//    can_filter.CAN_FilterNumber=1;
-//		can_filter.CAN_FilterMode=CAN_FilterMode_IdMask;
-//		can_filter.CAN_FilterScale=CAN_FilterScale_32bit;
-//		can_filter.CAN_FilterIdHigh=0x0000;
-//		can_filter.CAN_FilterIdLow=0x0000;
-//		can_filter.CAN_FilterMaskIdHigh=0x0000;
-//		can_filter.CAN_FilterMaskIdLow=0x0000;
-//		can_filter.CAN_FilterFIFOAssignment=1;
-//		can_filter.CAN_FilterActivation=ENABLE;
-//		CAN_FilterInit(&can_filter);
 		
 	  can_filter.CAN_FilterNumber = 0; //选择过滤器0
 		can_filter.CAN_FilterMode = CAN_FilterMode_IdList; //列表模式
@@ -108,8 +85,8 @@ void CAN1_Configuration(void)
 		can_filter.CAN_FilterNumber = 1; //选择过滤器1
 		can_filter.CAN_FilterMode = CAN_FilterMode_IdList; //列表模式
 		can_filter.CAN_FilterScale = CAN_FilterScale_16bit;//CAN_FilterScale_32bit;
-		can_filter.CAN_FilterIdHigh = Infantry.YawMotorID<<5;//0x100<<5;
-		can_filter.CAN_FilterIdLow =  Infantry.BodanMotorID<<5;//0 | CAN_ID_STD;
+		can_filter.CAN_FilterIdHigh = 0x100<<5;
+		can_filter.CAN_FilterIdLow =  0x200<<5;
 		can_filter.CAN_FilterMaskIdHigh = 0 <<5;  
 		can_filter.CAN_FilterMaskIdLow = 0 <<5;//0 | CAN_ID_STD;
 		can_filter.CAN_FilterFIFOAssignment = 1;//fifo
@@ -118,28 +95,14 @@ void CAN1_Configuration(void)
     
 		CAN_ITConfig(CAN1,CAN_IT_FMP0,ENABLE);
     CAN_ITConfig(CAN1,CAN_IT_FMP1,ENABLE);
-    CAN_ITConfig(CAN1,CAN_IT_TME,ENABLE); 
 }
 
-/**********************************************************************************************************
-*函 数 名: CAN1_TX_IRQHandler
-*功能说明: can1发送中断
-*形    参: 无
-*返 回 值: 无
-**********************************************************************************************************/
-void CAN1_TX_IRQHandler(void)
-{
-	if (CAN_GetITStatus(CAN1,CAN_IT_TME)!= RESET) 
-	{
-		CAN_ClearITPendingBit(CAN1,CAN_IT_TME);
-	}
-}
-/**********************************************************************************************************
-*函 数 名: CAN1_RX0_IRQHandler
-*功能说明: can1接收中断()
-*形    参: 无
-*返 回 值: 无
-**********************************************************************************************************/
+/**
+ * @brief  Can1Rx0中断服务函数
+ * @note   底盘信息
+ * @param  None
+ * @retval None
+*/
 void CAN1_RX0_IRQHandler(void)
 {
     CanRxMsg rx_message0;
@@ -147,15 +110,16 @@ void CAN1_RX0_IRQHandler(void)
 		{
         CAN_ClearITPendingBit(CAN1, CAN_IT_FMP0);
         CAN_Receive(CAN1, CAN_FIFO0, &rx_message0);
-				Can1Receive0(rx_message0);
+				pushCanMsg(&can1_rx0, rx_message0);
     }
 }
-/**********************************************************************************************************
-*函 数 名: CAN1_RX1_IRQHandler
-*功能说明: can1接收中断(功率板接收)
-*形    参: 无
-*返 回 值: 无
-**********************************************************************************************************/
+
+/**
+ * @brief  Can1Rx1中断服务函数
+ * @note   拨弹电机和Yaw电机
+ * @param  None
+ * @retval None
+*/
 void CAN1_RX1_IRQHandler(void)
 {
 	  CanRxMsg rx_message1;
@@ -163,7 +127,6 @@ void CAN1_RX1_IRQHandler(void)
     {
 			  CAN_ClearITPendingBit(CAN1, CAN_IT_FMP1);
         CAN_Receive(CAN1, CAN_FIFO1, &rx_message1);
-			  Can1Receive1(rx_message1);
-				IWDG_Feed();
+        pushCanMsg(&can1_rx1, rx_message1);
     }
 }

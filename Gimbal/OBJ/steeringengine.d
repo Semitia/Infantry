@@ -27,8 +27,7 @@
 ..\obj\steeringengine.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\steeringengine.o: ..\Mylib\gpio.h
 ..\obj\steeringengine.o: ..\Mylib\can1.h
-..\obj\steeringengine.o: ..\Mylib\can2.h
-..\obj\steeringengine.o: ..\Mylib\tim4.h
+..\obj\steeringengine.o: ..\Software\CanRing.h
 ..\obj\steeringengine.o: ..\User\sys.h
 ..\obj\steeringengine.o: ..\Library\inc\stm32f4xx_dac.h
 ..\obj\steeringengine.o: ..\User\FreeRTOSConfig.h
@@ -44,6 +43,8 @@
 ..\obj\steeringengine.o: ..\FreeRTOS\include\semphr.h
 ..\obj\steeringengine.o: ..\FreeRTOS\include\queue.h
 ..\obj\steeringengine.o: ..\Algorithm\myMath.h
+..\obj\steeringengine.o: ..\Mylib\can2.h
+..\obj\steeringengine.o: ..\Mylib\tim4.h
 ..\obj\steeringengine.o: ..\Mylib\usart3.h
 ..\obj\steeringengine.o: ..\Software\usart.h
 ..\obj\steeringengine.o: ..\Task\usart4_gryo.h

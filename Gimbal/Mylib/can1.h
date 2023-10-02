@@ -3,8 +3,8 @@
 
 #include "CanRing.h"
 
-
-
+extern CanRing_t can1_rx0;
+extern CanRing_t can1_rx1;
 
 void CAN1_Configuration(void);
 

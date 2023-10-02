@@ -28,8 +28,7 @@
 ..\obj\start_task.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\start_task.o: ..\Mylib\gpio.h
 ..\obj\start_task.o: ..\Mylib\can1.h
-..\obj\start_task.o: ..\Mylib\can2.h
-..\obj\start_task.o: ..\Mylib\tim4.h
+..\obj\start_task.o: ..\Software\CanRing.h
 ..\obj\start_task.o: ..\User\sys.h
 ..\obj\start_task.o: ..\Library\inc\stm32f4xx_dac.h
 ..\obj\start_task.o: ..\User\FreeRTOSConfig.h
@@ -45,6 +44,8 @@
 ..\obj\start_task.o: ..\FreeRTOS\include\semphr.h
 ..\obj\start_task.o: ..\FreeRTOS\include\queue.h
 ..\obj\start_task.o: ..\Algorithm\myMath.h
+..\obj\start_task.o: ..\Mylib\can2.h
+..\obj\start_task.o: ..\Mylib\tim4.h
 ..\obj\start_task.o: ..\Mylib\usart3.h
 ..\obj\start_task.o: ..\Software\usart.h
 ..\obj\start_task.o: ..\Task\usart4_gryo.h

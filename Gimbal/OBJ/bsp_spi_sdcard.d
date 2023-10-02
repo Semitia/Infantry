@@ -27,8 +27,7 @@
 ..\obj\bsp_spi_sdcard.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\bsp_spi_sdcard.o: ..\Mylib\gpio.h
 ..\obj\bsp_spi_sdcard.o: ..\Mylib\can1.h
-..\obj\bsp_spi_sdcard.o: ..\Mylib\can2.h
-..\obj\bsp_spi_sdcard.o: ..\Mylib\tim4.h
+..\obj\bsp_spi_sdcard.o: ..\Software\CanRing.h
 ..\obj\bsp_spi_sdcard.o: ..\User\sys.h
 ..\obj\bsp_spi_sdcard.o: ..\Library\inc\stm32f4xx_dac.h
 ..\obj\bsp_spi_sdcard.o: ..\User\FreeRTOSConfig.h
@@ -44,6 +43,8 @@
 ..\obj\bsp_spi_sdcard.o: ..\FreeRTOS\include\semphr.h
 ..\obj\bsp_spi_sdcard.o: ..\FreeRTOS\include\queue.h
 ..\obj\bsp_spi_sdcard.o: ..\Algorithm\myMath.h
+..\obj\bsp_spi_sdcard.o: ..\Mylib\can2.h
+..\obj\bsp_spi_sdcard.o: ..\Mylib\tim4.h
 ..\obj\bsp_spi_sdcard.o: ..\Mylib\usart3.h
 ..\obj\bsp_spi_sdcard.o: ..\Software\usart.h
 ..\obj\bsp_spi_sdcard.o: ..\Task\usart4_gryo.h

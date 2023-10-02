@@ -27,8 +27,7 @@
 ..\obj\frictionwheel.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\frictionwheel.o: ..\Mylib\gpio.h
 ..\obj\frictionwheel.o: ..\Mylib\can1.h
-..\obj\frictionwheel.o: ..\Mylib\can2.h
-..\obj\frictionwheel.o: ..\Mylib\tim4.h
+..\obj\frictionwheel.o: ..\Software\CanRing.h
 ..\obj\frictionwheel.o: ..\User\sys.h
 ..\obj\frictionwheel.o: ..\Library\inc\stm32f4xx_dac.h
 ..\obj\frictionwheel.o: ..\User\FreeRTOSConfig.h
@@ -44,6 +43,8 @@
 ..\obj\frictionwheel.o: ..\FreeRTOS\include\semphr.h
 ..\obj\frictionwheel.o: ..\FreeRTOS\include\queue.h
 ..\obj\frictionwheel.o: ..\Algorithm\myMath.h
+..\obj\frictionwheel.o: ..\Mylib\can2.h
+..\obj\frictionwheel.o: ..\Mylib\tim4.h
 ..\obj\frictionwheel.o: ..\Mylib\usart3.h
 ..\obj\frictionwheel.o: ..\Software\usart.h
 ..\obj\frictionwheel.o: ..\Task\usart4_gryo.h

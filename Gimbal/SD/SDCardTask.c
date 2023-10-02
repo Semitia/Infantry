@@ -87,24 +87,24 @@ void CloseSDCard()
 
 void MissingUpdate(void)
 {
-    if(Robot_Disconnect.F105_DisConect >= 30)           {Missing[Chassis] = OFFLINE;}
-    else                                                {Missing[Chassis] = ONLINE;}
-    if(Robot_Disconnect.Gyro_DisConnect >= 30)          {Missing[GYRO] = OFFLINE;}
-    else                                                {Missing[GYRO] = ONLINE;}
-    if(Robot_Disconnect.PitchMotor_DisConnect >= 30)    {Missing[Pitch] = OFFLINE;}
-    else                                                {Missing[Pitch] = ONLINE;}
-    if(Robot_Disconnect.YawMotor_DisConnect >= 30)      {Missing[Yaw] = OFFLINE;}
-    else                                                {Missing[Yaw] = ONLINE;}
-    if(Robot_Disconnect.Pluck_DisConnect >= 30)         {Missing[Pluck] = OFFLINE;}
-    else                                                {Missing[Pluck] = ONLINE;}
-    if(Robot_Disconnect.Friction_DisConnect[0] >= 30)   {Missing[Friction0] = OFFLINE;}
-    else                                                {Missing[Friction0] = ONLINE;}
-    if(Robot_Disconnect.Friction_DisConnect[1] >= 30)   {Missing[Friction1] = OFFLINE;}
-    else                                                {Missing[Friction1] = ONLINE;}
-    if(Robot_Disconnect.PC_DisConnect >= 30)            {Missing[PC] = OFFLINE;}
-    else                                                {Missing[PC] = ONLINE;}
-    if(Robot_Disconnect.RC_DisConnect >= 30)            {Missing[RC] = OFFLINE;}
-    else                                                {Missing[RC] = ONLINE;}
+    // if(Robot_Disconnect.F105_DisConect >= 30)           {Missing[Chassis] = OFFLINE;}
+    // else                                                {Missing[Chassis] = ONLINE;}
+    // if(Robot_Disconnect.Gyro_DisConnect >= 30)          {Missing[GYRO] = OFFLINE;}
+    // else                                                {Missing[GYRO] = ONLINE;}
+    // if(Robot_Disconnect.PitchMotor_DisConnect >= 30)    {Missing[Pitch] = OFFLINE;}
+    // else                                                {Missing[Pitch] = ONLINE;}
+    // if(Robot_Disconnect.YawMotor_DisConnect >= 30)      {Missing[Yaw] = OFFLINE;}
+    // else                                                {Missing[Yaw] = ONLINE;}
+    // if(Robot_Disconnect.Pluck_DisConnect >= 30)         {Missing[Pluck] = OFFLINE;}
+    // else                                                {Missing[Pluck] = ONLINE;}
+    // if(Robot_Disconnect.Friction_DisConnect[0] >= 30)   {Missing[Friction0] = OFFLINE;}
+    // else                                                {Missing[Friction0] = ONLINE;}
+    // if(Robot_Disconnect.Friction_DisConnect[1] >= 30)   {Missing[Friction1] = OFFLINE;}
+    // else                                                {Missing[Friction1] = ONLINE;}
+    // if(Robot_Disconnect.PC_DisConnect >= 30)            {Missing[PC] = OFFLINE;}
+    // else                                                {Missing[PC] = ONLINE;}
+    // if(Robot_Disconnect.RC_DisConnect >= 30)            {Missing[RC] = OFFLINE;}
+    // else                                                {Missing[RC] = ONLINE;}
 
 }
 

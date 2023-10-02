@@ -50,7 +50,6 @@
 "..\obj\queuedata.o"
 "..\obj\filters.o"
 "..\obj\mymath.o"
-"..\obj\zerochecktask.o"
 "..\obj\start_task.o"
 "..\obj\cpu_task.o"
 "..\obj\gimbalestimatetask.o"

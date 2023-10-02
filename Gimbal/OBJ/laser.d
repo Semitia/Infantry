@@ -27,8 +27,7 @@
 ..\obj\laser.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\laser.o: ..\Mylib\gpio.h
 ..\obj\laser.o: ..\Mylib\can1.h
-..\obj\laser.o: ..\Mylib\can2.h
-..\obj\laser.o: ..\Mylib\tim4.h
+..\obj\laser.o: ..\Software\CanRing.h
 ..\obj\laser.o: ..\User\sys.h
 ..\obj\laser.o: ..\Library\inc\stm32f4xx_dac.h
 ..\obj\laser.o: ..\User\FreeRTOSConfig.h
@@ -44,6 +43,8 @@
 ..\obj\laser.o: ..\FreeRTOS\include\semphr.h
 ..\obj\laser.o: ..\FreeRTOS\include\queue.h
 ..\obj\laser.o: ..\Algorithm\myMath.h
+..\obj\laser.o: ..\Mylib\can2.h
+..\obj\laser.o: ..\Mylib\tim4.h
 ..\obj\laser.o: ..\Mylib\usart3.h
 ..\obj\laser.o: ..\Software\usart.h
 ..\obj\laser.o: ..\Task\usart4_gryo.h

@@ -37,8 +37,7 @@
 ..\obj\cpu_task.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\cpu_task.o: ..\Mylib\gpio.h
 ..\obj\cpu_task.o: ..\Mylib\can1.h
-..\obj\cpu_task.o: ..\Mylib\can2.h
-..\obj\cpu_task.o: ..\Mylib\tim4.h
+..\obj\cpu_task.o: ..\Software\CanRing.h
 ..\obj\cpu_task.o: ..\User\sys.h
 ..\obj\cpu_task.o: ..\Library\inc\stm32f4xx_dac.h
 ..\obj\cpu_task.o: ..\FreeRTOS\include\task.h
@@ -46,6 +45,8 @@
 ..\obj\cpu_task.o: ..\FreeRTOS\include\semphr.h
 ..\obj\cpu_task.o: ..\FreeRTOS\include\queue.h
 ..\obj\cpu_task.o: ..\Algorithm\myMath.h
+..\obj\cpu_task.o: ..\Mylib\can2.h
+..\obj\cpu_task.o: ..\Mylib\tim4.h
 ..\obj\cpu_task.o: ..\Mylib\usart3.h
 ..\obj\cpu_task.o: ..\Software\usart.h
 ..\obj\cpu_task.o: ..\Task\usart4_gryo.h

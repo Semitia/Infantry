@@ -27,8 +27,7 @@
 ..\obj\zerochecktask.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\zerochecktask.o: ..\Mylib\gpio.h
 ..\obj\zerochecktask.o: ..\Mylib\can1.h
-..\obj\zerochecktask.o: ..\Mylib\can2.h
-..\obj\zerochecktask.o: ..\Mylib\tim4.h
+..\obj\zerochecktask.o: ..\Software\CanRing.h
 ..\obj\zerochecktask.o: ..\User\sys.h
 ..\obj\zerochecktask.o: ..\Library\inc\stm32f4xx_dac.h
 ..\obj\zerochecktask.o: ..\User\FreeRTOSConfig.h
@@ -44,6 +43,8 @@
 ..\obj\zerochecktask.o: ..\FreeRTOS\include\semphr.h
 ..\obj\zerochecktask.o: ..\FreeRTOS\include\queue.h
 ..\obj\zerochecktask.o: ..\Algorithm\myMath.h
+..\obj\zerochecktask.o: ..\Mylib\can2.h
+..\obj\zerochecktask.o: ..\Mylib\tim4.h
 ..\obj\zerochecktask.o: ..\Mylib\usart3.h
 ..\obj\zerochecktask.o: ..\Software\usart.h
 ..\obj\zerochecktask.o: ..\Task\usart4_gryo.h

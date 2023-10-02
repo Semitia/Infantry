@@ -27,8 +27,7 @@
 ..\obj\sdcardtask.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\sdcardtask.o: ..\Mylib\gpio.h
 ..\obj\sdcardtask.o: ..\Mylib\can1.h
-..\obj\sdcardtask.o: ..\Mylib\can2.h
-..\obj\sdcardtask.o: ..\Mylib\tim4.h
+..\obj\sdcardtask.o: ..\Software\CanRing.h
 ..\obj\sdcardtask.o: ..\User\sys.h
 ..\obj\sdcardtask.o: ..\Library\inc\stm32f4xx_dac.h
 ..\obj\sdcardtask.o: ..\User\FreeRTOSConfig.h
@@ -44,6 +43,8 @@
 ..\obj\sdcardtask.o: ..\FreeRTOS\include\semphr.h
 ..\obj\sdcardtask.o: ..\FreeRTOS\include\queue.h
 ..\obj\sdcardtask.o: ..\Algorithm\myMath.h
+..\obj\sdcardtask.o: ..\Mylib\can2.h
+..\obj\sdcardtask.o: ..\Mylib\tim4.h
 ..\obj\sdcardtask.o: ..\Mylib\usart3.h
 ..\obj\sdcardtask.o: ..\Software\usart.h
 ..\obj\sdcardtask.o: ..\Task\usart4_gryo.h

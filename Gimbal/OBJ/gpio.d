@@ -27,8 +27,7 @@
 ..\obj\gpio.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\gpio.o: ..\Mylib\gpio.h
 ..\obj\gpio.o: ..\Mylib\can1.h
-..\obj\gpio.o: ..\Mylib\can2.h
-..\obj\gpio.o: ..\Mylib\tim4.h
+..\obj\gpio.o: ..\Software\CanRing.h
 ..\obj\gpio.o: ..\User\sys.h
 ..\obj\gpio.o: ..\Library\inc\stm32f4xx_dac.h
 ..\obj\gpio.o: ..\User\FreeRTOSConfig.h
@@ -44,6 +43,8 @@
 ..\obj\gpio.o: ..\FreeRTOS\include\semphr.h
 ..\obj\gpio.o: ..\FreeRTOS\include\queue.h
 ..\obj\gpio.o: ..\Algorithm\myMath.h
+..\obj\gpio.o: ..\Mylib\can2.h
+..\obj\gpio.o: ..\Mylib\tim4.h
 ..\obj\gpio.o: ..\Mylib\usart3.h
 ..\obj\gpio.o: ..\Software\usart.h
 ..\obj\gpio.o: ..\Task\usart4_gryo.h

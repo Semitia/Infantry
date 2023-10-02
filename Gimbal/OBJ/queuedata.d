@@ -27,8 +27,7 @@
 ..\obj\queuedata.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\queuedata.o: ..\Mylib\gpio.h
 ..\obj\queuedata.o: ..\Mylib\can1.h
-..\obj\queuedata.o: ..\Mylib\can2.h
-..\obj\queuedata.o: ..\Mylib\tim4.h
+..\obj\queuedata.o: ..\Software\CanRing.h
 ..\obj\queuedata.o: ..\User\sys.h
 ..\obj\queuedata.o: ..\Library\inc\stm32f4xx_dac.h
 ..\obj\queuedata.o: ..\User\FreeRTOSConfig.h
@@ -44,6 +43,8 @@
 ..\obj\queuedata.o: ..\FreeRTOS\include\semphr.h
 ..\obj\queuedata.o: ..\FreeRTOS\include\queue.h
 ..\obj\queuedata.o: ..\Algorithm\myMath.h
+..\obj\queuedata.o: ..\Mylib\can2.h
+..\obj\queuedata.o: ..\Mylib\tim4.h
 ..\obj\queuedata.o: ..\Mylib\usart3.h
 ..\obj\queuedata.o: ..\Software\usart.h
 ..\obj\queuedata.o: ..\Task\usart4_gryo.h

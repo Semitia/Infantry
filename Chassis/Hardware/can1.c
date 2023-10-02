@@ -142,10 +142,6 @@ void CAN1_RX0_IRQHandler()
 	{
 		CAN_Receive(CAN1, CAN_FIFO0, &rx_message);
 		//xSemaphoreTakeFromISR(can1_rx0.mutex, &xHigherPriorityTaskWoken);
-		if(rx_message.StdId == 0x200) {
-			CAN_ClearITPendingBit(CAN1, CAN_IT_FMP0);
-			return;
-		}
 		pushCanMsg(&can1_rx0, rx_message);
 		//xSemaphoreGiveFromISR(can1_rx0.mutex, &xHigherPriorityTaskWoken);
 		CAN_ClearITPendingBit(CAN1, CAN_IT_FMP0);
