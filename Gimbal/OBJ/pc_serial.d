@@ -50,6 +50,11 @@
 ..\obj\pc_serial.o: ..\Mylib\can1.h
 ..\obj\pc_serial.o: ..\Mylib\can2.h
 ..\obj\pc_serial.o: ..\Mylib\tim4.h
+..\obj\pc_serial.o: ..\User\sys.h
+..\obj\pc_serial.o: ..\Library\inc\stm32f4xx_dac.h
+..\obj\pc_serial.o: ..\FreeRTOS\include\semphr.h
+..\obj\pc_serial.o: ..\FreeRTOS\include\queue.h
+..\obj\pc_serial.o: ..\Algorithm\myMath.h
 ..\obj\pc_serial.o: ..\Mylib\usart3.h
 ..\obj\pc_serial.o: ..\Task\usart4_gryo.h
 ..\obj\pc_serial.o: ..\Mylib\usart1.h

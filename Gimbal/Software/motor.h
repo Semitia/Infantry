@@ -1,15 +1,13 @@
 #ifndef MOTOR_H
 #define MOTOR_H
 
-#include <stdint.h>
-#include "Mymath.h"
 #include "filters.h"
 
 //电机参数宏定义
 
 #define RM3508_CURRENT_RATIO (20.0/16384.0)         //电流转换比例
 #define RM3508_RPM_RAD (PI/30)                      //rpm转换为rad/s
-#define RM3508_REDUC_RATIO 19.2                     //reduction ratio 减速比
+#define RM3508_REDUC_RATIO 19.2f                     //reduction ratio 减速比
 #define RM3508_R 0.1231
 #define RM3508_K 0.001685
 #define RM3508_P0 12.75

@@ -696,7 +696,7 @@ void TX2_task(void *pvParameters)
 	while (1)
 	{
 		LastWakeTime_PC = xTaskGetTickCount();
-		SendtoPC();
+//		SendtoPC();
 		IWDG_Feed();
 		vTaskDelayUntil(&LastWakeTime_PC, 1);
 

@@ -68,7 +68,7 @@ void ShootCount_Cal(void)
 	if(ShootMode_last!=Status.ShootMode){
 		Shoot.HeatControl.ShootCount_IntervalTime = -200;//切换摩擦轮模式后设置一段时间保护，防止被认为射击
 	}
-	if(ABS(PidFrictionSpeed[0].PreError)>200 && ABS(PidFrictionSpeed[0].PreError) < 1000.0 &&ABS(PidFrictionSpeed[0].ActualValue)>3000)//满足掉速要求
+	if(ABS(PidFrictionSpeed[0].PreError)>200.0f && ABS(PidFrictionSpeed[0].PreError) < 1000.0f &&ABS(PidFrictionSpeed[0].ActualValue)>3000.0f)//满足掉速要求
 	{
 		if(Shoot.HeatControl.ShootCount_IntervalTime>ShootInterval_Min_time){//连射的最小间隔
 			ShootCount_Number++;//总射击子弹数
@@ -218,11 +218,12 @@ void HeatControl(float dt)
 char Reverse_Flag=0;
 void Shoot_Fire_Cal()
 {
+	static int ShootContinue_init_flag=0;
 	if(ShootAct_Init_Flag!=1)
 	{
 		ShootAct_Init_Flag=1;
 	}
-	static int ShootContinue_init_flag=0;
+
 
 	if(Shoot.HeatControl.IsShootAble || HighFreq_flag)
 	{
@@ -383,7 +384,7 @@ void Shoot_Tx2_Cal()
 				if(ABS(PidBodanMotorPos.SetPoint-Bodan_Pos)<5000)
 				{
 //                    if(shoot_dt % 100 == 1)
-					MirocPosition = -k_onegrid * Onegrid * 0.8;         //控制频率很快，需要放慢拨弹速度
+					MirocPosition = -k_onegrid * Onegrid * 0.8f;         //控制频率很快，需要放慢拨弹速度
 //					SendToTx2BullectCnt++;
 				}
 			}
@@ -399,7 +400,7 @@ void Shoot_Tx2_Cal()
 				if(ABS(PidBodanMotorPos.SetPoint-Bodan_Pos)<8000)
 				{
 //                    if(shoot_dt % 200 == 1)
-					MirocPosition = -k_onegrid * Onegrid * 0.1;
+					MirocPosition = -k_onegrid * Onegrid * 0.1f;
 //					SendToTx2BullectCnt++;
 				}
 			}
