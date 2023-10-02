@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "kinematic.h": "c"
+        "kinematic.h": "c",
+        "main.h": "c"
     }
 }

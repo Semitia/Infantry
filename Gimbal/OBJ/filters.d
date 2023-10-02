@@ -34,9 +34,9 @@
 ..\obj\filters.o: ..\FreeRTOS\include\semphr.h
 ..\obj\filters.o: ..\FreeRTOS\include\queue.h
 ..\obj\filters.o: ..\Algorithm\myMath.h
+..\obj\filters.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 ..\obj\filters.o: ..\Library\CMSIS\arm_math.h
 ..\obj\filters.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\filters.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\filters.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 ..\obj\filters.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\filters.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h

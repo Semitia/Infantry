@@ -36,10 +36,10 @@
 ..\obj\gimbal.o: ..\FreeRTOS\include\semphr.h
 ..\obj\gimbal.o: ..\FreeRTOS\include\queue.h
 ..\obj\gimbal.o: ..\Algorithm\myMath.h
+..\obj\gimbal.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 ..\obj\gimbal.o: ..\Library\CMSIS\arm_math.h
 ..\obj\gimbal.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\gimbal.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\gimbal.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 ..\obj\gimbal.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\gimbal.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\gimbal.o: ..\Software\usart.h

@@ -35,10 +35,10 @@
 ..\obj\remotectrl.o: ..\FreeRTOS\include\semphr.h
 ..\obj\remotectrl.o: ..\FreeRTOS\include\queue.h
 ..\obj\remotectrl.o: ..\Algorithm\myMath.h
+..\obj\remotectrl.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 ..\obj\remotectrl.o: ..\Library\CMSIS\arm_math.h
 ..\obj\remotectrl.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\remotectrl.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\remotectrl.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 ..\obj\remotectrl.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\remotectrl.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\remotectrl.o: ..\Software\usart.h

@@ -7,22 +7,14 @@
 //  45     下供弹3号车
 //  46     舵轮
 //  47     备用下供弹
-/*Library*/
-#include <stm32f4xx.h>	 
-#include <stm32f4xx_conf.h>
-#include <string.h>
-#include <stdint.h>
-#include <math.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include "arm_math.h"
 
-/*Mylib*/
+#include "sys.h"
+#include "Start_Task.h"
 #include "gpio.h"
 #include "can1.h"
 #include "can2.h"
 #include "tim4.h"
-#include "sys.h"
+#include "ins.h"
 //#include "usart1.h"
 #include "usart3.h"
 #include "usart4_gryo.h"
@@ -41,24 +33,6 @@
 #include "algorithmOfCRC.h"
 #include "TD.h"
 #include "queueData.h"
-
-/*Task*/
-#include "ZeroCheckTask.h"
-//#include "DataSendTask.h"
-//#include "DataReceivetask.h"
-//#include "ActionTask.h"
-//#include "GimbalTask.h"
-#include "ShootTask.h"
-//#include "ChassisTask.h"
-#include "Start_Task.h"
-#include "ControlTask.h"
-#include "SDCardTask.h"
-
-#include "RtosTaskCheck.h"
-#include "FreeRTOSConfig.h"
-#include "FreeRTOS.h"
-#include "task.h"
-
 
 #include "mySensors.h"
 #include "counter.h"
@@ -80,27 +54,27 @@
 /*步兵初始参数结构体*/
 typedef struct
 {
-	  int8_t gyro_pn;
-	  int8_t motor_pn;
-	  float FricMotor_pn[2];
-	  float BodanMotor_pn;
-		unsigned short MagOpen;
-		unsigned short MagClose;
-	  unsigned short Pitch_init;
-	  unsigned short Yaw_init;
-		unsigned short Solo_Yaw_init;	//左单挑模式的Yaw_init
-		unsigned short Low_FrictionSpeed;
-		unsigned short Medium_FrictionSpeed;
-		unsigned short High_FrictionSpeed;
-	  unsigned short PitchMotorID;
-	  unsigned short YawMotorID;
-	  unsigned short FricMotorID[2];
-	  unsigned short BodanMotorID;
-        short pitch_max_motor;
-		short pitch_min_motor;
-		short pitch_max_gyro;
-		short pitch_min_gyro;
-        short init_delta_pitch; //平地上陀螺仪和电机角差值
+	int8_t gyro_pn;
+	int8_t motor_pn;
+	float FricMotor_pn[2];
+	float BodanMotor_pn;
+	unsigned short MagOpen;
+	unsigned short MagClose;
+	unsigned short Pitch_init;
+	unsigned short Yaw_init;
+	unsigned short Solo_Yaw_init;	//左单挑模式的Yaw_init
+	unsigned short Low_FrictionSpeed;
+	unsigned short Medium_FrictionSpeed;
+	unsigned short High_FrictionSpeed;
+	unsigned short PitchMotorID;
+	unsigned short YawMotorID;
+	unsigned short FricMotorID[2];
+	unsigned short BodanMotorID;
+	short pitch_max_motor;
+	short pitch_min_motor;
+	short pitch_max_gyro;
+	short pitch_min_gyro;
+	short init_delta_pitch; //平地上陀螺仪和电机角差值
 		
 }RobotInit_Struct;
 

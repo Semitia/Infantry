@@ -12,6 +12,9 @@
         "canring.h": "c",
         "sys.h": "c",
         "stm32f4xx.h": "c",
-        "can2.h": "c"
+        "can2.h": "c",
+        "start_task.h": "c",
+        "gimbaltask.h": "c",
+        "mymath.h": "c"
     }
 }

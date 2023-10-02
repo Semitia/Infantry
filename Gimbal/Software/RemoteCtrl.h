@@ -44,14 +44,13 @@ typedef struct __RC_t{
     Stick_t stick;
     Mouse_t mouse;                      
     Key_t key;                          
-    char RCrecvd;                       //数据接收标志位
-    char RCDisconnectCnt;               //遥控器掉线计数
+    char dis_cnt;                         //遥控器掉线计数
 
-    UsartIF_t *usart_if;                //串口接收结构体指针
+    UsartIF_t *usart_if;                  //串口接收结构体指针
 }RC_t;
 
 void remoteCtrlInit(RC_t *rc, UsartIF_t *usart_if);
-void processRemoteData(RC_t *rc);
+void updateRC(RC_t *rc);
 
 #endif
 

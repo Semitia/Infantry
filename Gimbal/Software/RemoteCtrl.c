@@ -7,12 +7,15 @@
 */
 void remoteCtrlInit(RC_t *rc, UsartIF_t *usart_if) {
     rc->usart_if = usart_if;
-    rc->RCrecvd = 0;
-    rc->RCDisconnectCnt = 0;
+    rc->dis_cnt = 0;
     usartIfInit(usart_if, RC_RX_LEN, 0);
 }
 
-void processRemoteData(RC_t *rc) {
+void rstRemoteCtrl(RC_t *rc) {
+    rc->dis_cnt = 0;
+}
+
+void updateRC(RC_t *rc) {
     uint8_t *buf = rc->usart_if->rx_buf;
     rc->stick.ch0 = (buf[0] | (buf[1] << 8)) & 0x07ff;                                 // Channel 0
     rc->stick.ch1 = ((buf[1] >> 3) | (buf[2] << 5)) & 0x07ff;                          // Channel 1
@@ -41,11 +44,12 @@ void processRemoteData(RC_t *rc) {
     rc->key.c = (buf[15] >> 5) & 0x01;
     rc->key.v = (buf[15] >> 6) & 0x01;
     rc->key.b = (buf[15] >> 7) & 0x01;
-    rc->RCrecvd = 1;
-    rc->RCDisconnectCnt = 0;
+    rc->dis_cnt = 0;
     if((rc->stick.ch0 - 1024 < 20) && (rc->stick.ch0 - 1024 > -20)) rc->stick.ch0 = 1024;
     if((rc->stick.ch1 - 1024 < 20) && (rc->stick.ch1 - 1024 > -20)) rc->stick.ch1 = 1024;
     if((rc->stick.ch2 - 1024 < 20) && (rc->stick.ch2 - 1024 > -20)) rc->stick.ch2 = 1024;
     if((rc->stick.ch3 - 1024 < 20) && (rc->stick.ch3 - 1024 > -20)) rc->stick.ch3 = 1024;
+
+    rc->usart_if->rx_flag = 0;          //清除接收标志位
     return;
 }

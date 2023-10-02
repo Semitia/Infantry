@@ -20,7 +20,6 @@
  * @日期     2023.6
  **********************************************************************************************************/
 #include "main.h"
-#include "debug.h"
 
 unsigned volatile long run_time_check = 0; //用于做各种简易计数器计数
 short fric_flag = 0;					   //摩擦轮电机初始化标志
@@ -44,15 +43,15 @@ int main()
 	BSP_Init();
 	Robot_Init();
     
-    #ifdef DEBUG_MODE
-        SEGGER_RTT_Init();
-        LOG_CLEAR();
-    
-    #ifdef JSCOPE_RTT_MODE
-        JscopeRTTInit();
-    #endif
-    
-    #endif
+#ifdef DEBUG_MODE
+		SEGGER_RTT_Init();
+		LOG_CLEAR();
+
+#ifdef JSCOPE_RTT_MODE
+		JscopeRTTInit();
+#endif
+
+#endif
     
 	startTast();
 	vTaskStartScheduler();
@@ -70,15 +69,14 @@ int main()
  **********************************************************************************************************/
 void BSP_Init(void)
 {
-    #if (Robot_ID == 45 || Robot_ID == 44 || Robot_ID == 46 || Robot_ID == 47)
-    USART3_Configuration();
+	#if (Robot_ID == 45 || Robot_ID == 44 || Robot_ID == 46 || Robot_ID == 47)
+	USART3_Configuration();
 	delay_ms(10);
-    #else
-    USART1_Configuration();
-    delay_ms(100);
-    #endif
-	//PC_UART_Configuration();
-	delay_ms(10);
+	#else
+	USART1_Configuration();
+	delay_ms(100);
+	#endif
+
 	MicroSwConfigration();
 	delay_ms(10);
 	SteeringEngine_Configuration();
@@ -108,12 +106,12 @@ void Robot_Init(void)
 {
 
 //	ZeroCheck_Init();
-	Infantry_Init();
+		Infantry_Init();
 //	Pid_ChassisPosition_Init();
 //	PidGimbalMotor_Init();
 //	Pid_BodanMotor_Init();
 //	Pid_Friction_Init();
-//    while (!checkIMUOn()); //检查IMU是否开启
+//  while (!checkIMUOn()); //检查IMU是否开启
     INS_Init();
     ICM20602_init(&IMUReceive, &IMUData);
 //    ControlMode = 1;

@@ -35,9 +35,9 @@
 ..\obj\motor.o: ..\FreeRTOS\include\semphr.h
 ..\obj\motor.o: ..\FreeRTOS\include\queue.h
 ..\obj\motor.o: ..\Algorithm\myMath.h
+..\obj\motor.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 ..\obj\motor.o: ..\Library\CMSIS\arm_math.h
 ..\obj\motor.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\motor.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\motor.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 ..\obj\motor.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\motor.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h

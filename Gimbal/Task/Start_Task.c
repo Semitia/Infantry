@@ -1,9 +1,5 @@
 #include "Start_Task.h"
 
-#include "FreeRTOSConfig.h"
-#include "FreeRTOS.h"
-#include "task.h"
-
 /*任务优先级数值越低，优先级越低*/
 TaskHandle_t User_Tasks[TASK_NUM];
 
@@ -26,8 +22,6 @@ static TaskHandle_t StartTask_Handler; //任务句柄
 #define RCRECEIVE_TASK_PRIO 25      //任务优先级
 #define RCRECEIVE_STK_SIZE 128      //任务堆栈
 
-//#define PCRECEIVE_TASK_PRIO 25      //任务优先级
-//#define PCRECEIVE_STK_SIZE 128      //任务堆栈
 
 #define MODE_CHOOSE_TASK_PRIO 16            //任务优先级
 #define MODE_CHOOSE_STK_SIZE 128            //任务堆栈
@@ -67,12 +61,12 @@ void start_task(void *pvParameters)
   //               (UBaseType_t)CHASSIS_TASK_PRIO,        //任务优先级
   //               (TaskHandle_t *)&User_Tasks[CHASSIS_TASK]); //任务句柄
 
-  // xTaskCreate((TaskFunction_t)Gimbal_task,          //任务函数
-  //             (const char *)"Gimbal_task",          //任务名称
-  //             (uint16_t)GIMBAL_STK_SIZE,            //任务堆栈大小
-  //             (void *)NULL,                         //传递给任务函数的参数
-  //             (UBaseType_t)GIMBAL_TASK_PRIO,        //任务优先级
-  //             (TaskHandle_t *)&User_Tasks[GIMBAL_TASK]); //任务句柄
+  xTaskCreate((TaskFunction_t)gimbalTask,          //任务函数
+              (const char *)"Gimbal_task",          //任务名称
+              (uint16_t)GIMBAL_STK_SIZE,            //任务堆栈大小
+              (void *)NULL,                         //传递给任务函数的参数
+              (UBaseType_t)GIMBAL_TASK_PRIO,        //任务优先级
+              (TaskHandle_t *)&User_Tasks[GIMBAL_TASK]); //任务句柄
 
   	// xTaskCreate((TaskFunction_t)Shoot_task,          //任务函数
     //               (const char *)"Shoot_task",          //任务名称

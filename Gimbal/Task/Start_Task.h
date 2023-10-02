@@ -1,6 +1,7 @@
 #ifndef START_TASK_H
 #define START_TASK_H
-#include "main.h"
+
+#include "GimbalTask.h"
 #include "GimbalEstimateTask.h"
 
 void CPU_task(void *pvParameters);

@@ -5,14 +5,13 @@
  * @作者     段康晟
  * @日期     2022.7
  **********************************************************************************************************/
-#include "main.h"
-#include "stdlib.h"
+#include "SDCardTask.h"
 
 char WriteBuffer[128] = "";              /* 写缓冲区*/
 TCHAR DataFile[] = "0:infantry.csv"; //文件名
 SDStatus sd_status;
 
-extern Disconnect Robot_Disconnect;
+//extern Disconnect Robot_Disconnect;
 uint8_t Missing[MissNum];
 
 void SDLOG(enum SDWRITE write_type, const char *str)

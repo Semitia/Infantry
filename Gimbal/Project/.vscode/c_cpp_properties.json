@@ -16,12 +16,12 @@
                 "d:\\WORK\\RM\\Task\\Infantry\\Gimbal\\SEGGER_RTT_V784\\RTT",
                 "d:\\WORK\\RM\\Task\\Infantry\\Gimbal\\SEGGER_RTT_V784\\Config",
                 "d:\\WORK\\RM\\Task\\Infantry\\Gimbal\\SD",
+                "d:\\WORK\\RM\\Task\\Infantry\\Gimbal\\Software",
                 "D:\\WORK\\SOFTWARES\\MDK5\\ARM\\ARMCC\\include",
                 "D:\\WORK\\SOFTWARES\\MDK5\\ARM\\ARMCC\\include\\rw",
                 "d:\\WORK\\RM\\Task\\Infantry\\Gimbal\\Library\\src",
                 "d:\\WORK\\RM\\Task\\Infantry\\Gimbal\\FreeRTOS\\src",
-                "d:\\WORK\\RM\\Task\\Infantry\\Gimbal\\FreeRTOS\\port\\MemMang",
-                "d:\\WORK\\RM\\Task\\Infantry\\Gimbal\\Software"
+                "d:\\WORK\\RM\\Task\\Infantry\\Gimbal\\FreeRTOS\\port\\MemMang"
             ],
             "defines": [
                 "USE_STDPERIPH_DRIVER",

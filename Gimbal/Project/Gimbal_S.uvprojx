@@ -335,7 +335,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,STM32F40_41xxx, ARM_MATH_CM4, __FPU_PRESENT=1, __FPU_USED =1, __CC_ARM</Define>
               <Undefine></Undefine>
-              <IncludePath>..\User;..\Task;..\Mylib;..\Library\inc;..\Library\CMSIS;..\FreeRTOS\include;..\FreeRTOS\port\RVDS\ARM_CM4F;..\Algorithm;..\Algorithm;..\Task;..\RTOS_Test;..\INS;..\SEGGER_RTT_V784\RTT;..\SEGGER_RTT_V784\Config;..\SD</IncludePath>
+              <IncludePath>..\User;..\Task;..\Mylib;..\Library\inc;..\Library\CMSIS;..\FreeRTOS\include;..\FreeRTOS\port\RVDS\ARM_CM4F;..\Algorithm;..\Algorithm;..\Task;..\RTOS_Test;..\INS;..\SEGGER_RTT_V784\RTT;..\SEGGER_RTT_V784\Config;..\SD;..\Software</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -427,6 +427,11 @@
                 </CommonProperty>
                 <FileArmAds/>
               </FileOption>
+            </File>
+            <File>
+              <FileName>sys.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\sys.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -609,29 +614,14 @@
               <FilePath>..\Mylib\usart3.c</FilePath>
             </File>
             <File>
-              <FileName>usart4_gryo.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Task\usart4_gryo.c</FilePath>
-            </File>
-            <File>
-              <FileName>counter.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Mylib\counter.c</FilePath>
-            </File>
-            <File>
               <FileName>os_tick.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\RTOS_Test\os_tick.c</FilePath>
             </File>
             <File>
-              <FileName>pc_serial.c</FileName>
+              <FileName>counter.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Mylib\pc_serial.c</FilePath>
-            </File>
-            <File>
-              <FileName>pc_uart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Mylib\pc_uart.c</FilePath>
+              <FilePath>..\Mylib\counter.c</FilePath>
             </File>
             <File>
               <FileName>bsp_spi_sdcard.c</FileName>
@@ -654,11 +644,6 @@
               <FilePath>..\Algorithm\algorithmOfCRC.c</FilePath>
             </File>
             <File>
-              <FileName>MySensors.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Mylib\MySensors.c</FilePath>
-            </File>
-            <File>
               <FileName>TD.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Algorithm\TD.c</FilePath>
@@ -673,46 +658,21 @@
               <FileType>1</FileType>
               <FilePath>..\Algorithm\queueData.c</FilePath>
             </File>
+            <File>
+              <FileName>filters.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Algorithm\filters.c</FilePath>
+            </File>
+            <File>
+              <FileName>myMath.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Algorithm\myMath.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>Task</GroupName>
           <Files>
-            <File>
-              <FileName>ChassisTask.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Task\ChassisTask.c</FilePath>
-            </File>
-            <File>
-              <FileName>DataReceiveTask.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Task\DataReceiveTask.c</FilePath>
-            </File>
-            <File>
-              <FileName>DataSendTask.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Task\DataSendTask.c</FilePath>
-            </File>
-            <File>
-              <FileName>ZeroCheckTask.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Task\ZeroCheckTask.c</FilePath>
-            </File>
-            <File>
-              <FileName>ShootTask.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Task\ShootTask.c</FilePath>
-            </File>
-            <File>
-              <FileName>GimbalTask.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Task\GimbalTask.c</FilePath>
-            </File>
-            <File>
-              <FileName>ActionTask.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Task\ActionTask.c</FilePath>
-            </File>
             <File>
               <FileName>Start_Task.c</FileName>
               <FileType>1</FileType>
@@ -729,14 +689,14 @@
               <FilePath>..\INS\GimbalEstimateTask.c</FilePath>
             </File>
             <File>
-              <FileName>ControlTask.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Task\ControlTask.c</FilePath>
-            </File>
-            <File>
               <FileName>SDCardTask.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\SD\SDCardTask.c</FilePath>
+            </File>
+            <File>
+              <FileName>GimbalTask.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Task\GimbalTask.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -793,11 +753,6 @@
         <Group>
           <GroupName>Tool</GroupName>
           <Files>
-            <File>
-              <FileName>debug.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\INS\debug.c</FilePath>
-            </File>
             <File>
               <FileName>RtosTaskCheck.c</FileName>
               <FileType>1</FileType>
