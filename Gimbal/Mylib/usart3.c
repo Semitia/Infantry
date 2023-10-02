@@ -5,10 +5,9 @@
  * @作者     郭嘉豪
  * @日期     2021.11
 **********************************************************************************************************/
-#include "main.h"
-#if (Robot_ID == 44 || Robot_ID == 45 || Robot_ID == 46)
-extern RC_Ctl_t RC_Ctl; 
-volatile unsigned char sbus_rx_buffer[18];
+#include "usart3.h"
+UsartIF_t usart3_if;
+
 /**********************************************************************************************************
 *函 数 名: USART3_Configuration
 *功能说明: 遥控器串口初始化
@@ -56,7 +55,7 @@ void USART3_Configuration(void)
 		DMA_DeInit(DMA1_Stream1);
 		dma.DMA_Channel= DMA_Channel_4;
 		dma.DMA_PeripheralBaseAddr = (uint32_t)&(USART3->DR);
-		dma.DMA_Memory0BaseAddr = (uint32_t)sbus_rx_buffer;
+		dma.DMA_Memory0BaseAddr = (uint32_t)usart3_if.rx_buf;
 		dma.DMA_DIR = DMA_DIR_PeripheralToMemory;
 		dma.DMA_BufferSize = RX_USART3_BUFFER;
 		dma.DMA_PeripheralInc = DMA_PeripheralInc_Disable;
@@ -83,24 +82,20 @@ void USART3_Configuration(void)
 **********************************************************************************************************/
 extern TaskHandle_t DataReceiveTask_Handler; //任务句柄
 uint8_t Remote_Receive_Flag;
-//BaseType_t pxHigherTaskToWoken = pdFALSE;
+
 void USART3_IRQHandler(void)
 {
 	static int DATA_LENGTH=0;
-	if (USART_GetITStatus(USART3, USART_IT_IDLE) != RESET)
-	{
-    (void)USART3->SR;
+	if (USART_GetITStatus(USART3, USART_IT_IDLE) != RESET) {
+		(void)USART3->SR;
 		(void)USART3->DR;	
-	  DMA_Cmd(DMA1_Stream1,DISABLE);
-	  DATA_LENGTH=RX_USART3_BUFFER-DMA1_Stream1->NDTR;
-		if(DATA_LENGTH==18)
-		{
-			Remote_Receive_Flag = 1;//解码函数
+		DMA_Cmd(DMA1_Stream1,DISABLE);
+		DATA_LENGTH = RX_USART3_BUFFER-DMA1_Stream1->NDTR;
+		if(DATA_LENGTH==18) {
+			usart3_if.rx_flag = 1;
 		}
 		DMA1_Stream1->NDTR = RX_USART3_BUFFER;	
 		DMA_Cmd(DMA1_Stream1,ENABLE);
-  }
+	}
 }
-
-#endif
 

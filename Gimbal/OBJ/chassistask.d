@@ -45,6 +45,7 @@
 ..\obj\chassistask.o: ..\FreeRTOS\include\queue.h
 ..\obj\chassistask.o: ..\Algorithm\myMath.h
 ..\obj\chassistask.o: ..\Mylib\usart3.h
+..\obj\chassistask.o: ..\Software\usart.h
 ..\obj\chassistask.o: ..\Task\usart4_gryo.h
 ..\obj\chassistask.o: ..\Mylib\usart1.h
 ..\obj\chassistask.o: ..\Mylib\MicroSw.h
@@ -68,6 +69,8 @@
 ..\obj\chassistask.o: ..\Task\DataReceivetask.h
 ..\obj\chassistask.o: ..\Task\ActionTask.h
 ..\obj\chassistask.o: ..\Task\GimbalTask.h
+..\obj\chassistask.o: ..\Software\Gimbal.h
+..\obj\chassistask.o: ..\Software\RemoteCtrl.h
 ..\obj\chassistask.o: ..\Task\ShootTask.h
 ..\obj\chassistask.o: ..\Task\ChassisTask.h
 ..\obj\chassistask.o: ..\Task\Start_Task.h

@@ -56,6 +56,7 @@
 ..\obj\pc_serial.o: ..\FreeRTOS\include\queue.h
 ..\obj\pc_serial.o: ..\Algorithm\myMath.h
 ..\obj\pc_serial.o: ..\Mylib\usart3.h
+..\obj\pc_serial.o: ..\Software\usart.h
 ..\obj\pc_serial.o: ..\Task\usart4_gryo.h
 ..\obj\pc_serial.o: ..\Mylib\usart1.h
 ..\obj\pc_serial.o: ..\Mylib\MicroSw.h
@@ -72,12 +73,8 @@
 ..\obj\pc_serial.o: ..\Algorithm\user_lib.h
 ..\obj\pc_serial.o: ..\Algorithm\queueData.h
 ..\obj\pc_serial.o: ..\Task\ZeroCheckTask.h
-..\obj\pc_serial.o: ..\Task\DataSendTask.h
-..\obj\pc_serial.o: ..\Task\DataReceivetask.h
-..\obj\pc_serial.o: ..\Task\ActionTask.h
-..\obj\pc_serial.o: ..\Task\GimbalTask.h
 ..\obj\pc_serial.o: ..\Task\ShootTask.h
-..\obj\pc_serial.o: ..\Task\ChassisTask.h
+..\obj\pc_serial.o: ..\Task\DataReceivetask.h
 ..\obj\pc_serial.o: ..\Task\Start_Task.h
 ..\obj\pc_serial.o: ..\INS\GimbalEstimateTask.h
 ..\obj\pc_serial.o: ..\Task\ControlTask.h

@@ -28,7 +28,7 @@ void JscopeWrite(float setPoint, float samplePoint)
 
 float Ozone[8]; //使用Ozone显示的变量
 
-int8_t checkIMUOn()
+int8_t checkIMUOn(void)
 {
     for (int8_t i = 0; i < 2; i++)
     {
@@ -38,7 +38,7 @@ int8_t checkIMUOn()
             overtime+=GetDeltaT(&otcnt);
             if(overtime >= 15)
             {
-                ControlMode = MotorMode;
+                //ControlMode = MotorMode;
                 return TRUE;
             }
             return FALSE;

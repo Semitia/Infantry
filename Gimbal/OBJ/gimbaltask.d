@@ -45,6 +45,7 @@
 ..\obj\gimbaltask.o: ..\FreeRTOS\include\queue.h
 ..\obj\gimbaltask.o: ..\Algorithm\myMath.h
 ..\obj\gimbaltask.o: ..\Mylib\usart3.h
+..\obj\gimbaltask.o: ..\Software\usart.h
 ..\obj\gimbaltask.o: ..\Task\usart4_gryo.h
 ..\obj\gimbaltask.o: ..\Mylib\usart1.h
 ..\obj\gimbaltask.o: ..\Mylib\MicroSw.h
@@ -68,6 +69,8 @@
 ..\obj\gimbaltask.o: ..\Task\DataReceivetask.h
 ..\obj\gimbaltask.o: ..\Task\ActionTask.h
 ..\obj\gimbaltask.o: ..\Task\GimbalTask.h
+..\obj\gimbaltask.o: ..\Software\Gimbal.h
+..\obj\gimbaltask.o: ..\Software\RemoteCtrl.h
 ..\obj\gimbaltask.o: ..\Task\ShootTask.h
 ..\obj\gimbaltask.o: ..\Task\ChassisTask.h
 ..\obj\gimbaltask.o: ..\Task\Start_Task.h

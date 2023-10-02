@@ -46,6 +46,7 @@
 ..\obj\start_task.o: ..\FreeRTOS\include\queue.h
 ..\obj\start_task.o: ..\Algorithm\myMath.h
 ..\obj\start_task.o: ..\Mylib\usart3.h
+..\obj\start_task.o: ..\Software\usart.h
 ..\obj\start_task.o: ..\Task\usart4_gryo.h
 ..\obj\start_task.o: ..\Mylib\usart1.h
 ..\obj\start_task.o: ..\Mylib\MicroSw.h
@@ -65,12 +66,8 @@
 ..\obj\start_task.o: ..\Algorithm\user_lib.h
 ..\obj\start_task.o: ..\Algorithm\queueData.h
 ..\obj\start_task.o: ..\Task\ZeroCheckTask.h
-..\obj\start_task.o: ..\Task\DataSendTask.h
-..\obj\start_task.o: ..\Task\DataReceivetask.h
-..\obj\start_task.o: ..\Task\ActionTask.h
-..\obj\start_task.o: ..\Task\GimbalTask.h
 ..\obj\start_task.o: ..\Task\ShootTask.h
-..\obj\start_task.o: ..\Task\ChassisTask.h
+..\obj\start_task.o: ..\Task\DataReceivetask.h
 ..\obj\start_task.o: ..\Task\Start_Task.h
 ..\obj\start_task.o: ..\Task\ControlTask.h
 ..\obj\start_task.o: ..\SD\SDCardTask.h

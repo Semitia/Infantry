@@ -45,6 +45,7 @@
 ..\obj\tim4.o: ..\FreeRTOS\include\queue.h
 ..\obj\tim4.o: ..\Algorithm\myMath.h
 ..\obj\tim4.o: ..\Mylib\usart3.h
+..\obj\tim4.o: ..\Software\usart.h
 ..\obj\tim4.o: ..\Task\usart4_gryo.h
 ..\obj\tim4.o: ..\Mylib\usart1.h
 ..\obj\tim4.o: ..\Mylib\MicroSw.h
@@ -64,12 +65,8 @@
 ..\obj\tim4.o: ..\Algorithm\user_lib.h
 ..\obj\tim4.o: ..\Algorithm\queueData.h
 ..\obj\tim4.o: ..\Task\ZeroCheckTask.h
-..\obj\tim4.o: ..\Task\DataSendTask.h
-..\obj\tim4.o: ..\Task\DataReceivetask.h
-..\obj\tim4.o: ..\Task\ActionTask.h
-..\obj\tim4.o: ..\Task\GimbalTask.h
 ..\obj\tim4.o: ..\Task\ShootTask.h
-..\obj\tim4.o: ..\Task\ChassisTask.h
+..\obj\tim4.o: ..\Task\DataReceivetask.h
 ..\obj\tim4.o: ..\Task\Start_Task.h
 ..\obj\tim4.o: ..\INS\GimbalEstimateTask.h
 ..\obj\tim4.o: ..\INS\icm20602.h

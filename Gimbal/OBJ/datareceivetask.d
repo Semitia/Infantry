@@ -45,6 +45,7 @@
 ..\obj\datareceivetask.o: ..\FreeRTOS\include\queue.h
 ..\obj\datareceivetask.o: ..\Algorithm\myMath.h
 ..\obj\datareceivetask.o: ..\Mylib\usart3.h
+..\obj\datareceivetask.o: ..\Software\usart.h
 ..\obj\datareceivetask.o: ..\Task\usart4_gryo.h
 ..\obj\datareceivetask.o: ..\Mylib\usart1.h
 ..\obj\datareceivetask.o: ..\Mylib\MicroSw.h
@@ -68,6 +69,8 @@
 ..\obj\datareceivetask.o: ..\Task\DataReceivetask.h
 ..\obj\datareceivetask.o: ..\Task\ActionTask.h
 ..\obj\datareceivetask.o: ..\Task\GimbalTask.h
+..\obj\datareceivetask.o: ..\Software\Gimbal.h
+..\obj\datareceivetask.o: ..\Software\RemoteCtrl.h
 ..\obj\datareceivetask.o: ..\Task\ShootTask.h
 ..\obj\datareceivetask.o: ..\Task\ChassisTask.h
 ..\obj\datareceivetask.o: ..\Task\Start_Task.h

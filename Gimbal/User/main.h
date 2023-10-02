@@ -44,12 +44,12 @@
 
 /*Task*/
 #include "ZeroCheckTask.h"
-#include "DataSendTask.h"
-#include "DataReceivetask.h"
-#include "ActionTask.h"
-#include "GimbalTask.h"
+//#include "DataSendTask.h"
+//#include "DataReceivetask.h"
+//#include "ActionTask.h"
+//#include "GimbalTask.h"
 #include "ShootTask.h"
-#include "ChassisTask.h"
+//#include "ChassisTask.h"
 #include "Start_Task.h"
 #include "ControlTask.h"
 #include "SDCardTask.h"

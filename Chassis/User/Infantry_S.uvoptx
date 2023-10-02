@@ -213,14 +213,14 @@
           <Type>0</Type>
           <LineNumber>10</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134226680</Address>
+          <Address>134227252</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\WORK\RM\涓诲姏鑰冩牳\澶囦唤\Infantry-4c7f8706a8e986ad8061d5343dfe0975ed7c53d2\Chassis\User\main.c</Filename>
+          <Filename>.\main.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression>\\Infantry_S\main.c\10</Expression>
         </Bp>
@@ -236,7 +236,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\WORK\RM\涓诲姏鑰冩牳\澶囦唤\Infantry-4c7f8706a8e986ad8061d5343dfe0975ed7c53d2\Chassis\Hardware\can1.c</Filename>
+          <Filename>..\Hardware\can1.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression>\\Infantry_S\../Hardware/can1.c\146</Expression>
         </Bp>
@@ -287,7 +287,7 @@
         <Ww>
           <count>3</count>
           <WinNumber>2</WinNumber>
-          <ItemText>P</ItemText>
+          <ItemText>P,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>4</count>
@@ -297,7 +297,17 @@
         <Ww>
           <count>5</count>
           <WinNumber>2</WinNumber>
-          <ItemText>k.motor[i].target_current,0x0A</ItemText>
+          <ItemText>temp_cur</ItemText>
+        </Ww>
+        <Ww>
+          <count>6</count>
+          <WinNumber>2</WinNumber>
+          <ItemText>target</ItemText>
+        </Ww>
+        <Ww>
+          <count>7</count>
+          <WinNumber>2</WinNumber>
+          <ItemText>ActualValue</ItemText>
         </Ww>
       </WatchWindow2>
       <Tracepoint>

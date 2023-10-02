@@ -45,6 +45,7 @@
 ..\obj\steeringengine.o: ..\FreeRTOS\include\queue.h
 ..\obj\steeringengine.o: ..\Algorithm\myMath.h
 ..\obj\steeringengine.o: ..\Mylib\usart3.h
+..\obj\steeringengine.o: ..\Software\usart.h
 ..\obj\steeringengine.o: ..\Task\usart4_gryo.h
 ..\obj\steeringengine.o: ..\Mylib\usart1.h
 ..\obj\steeringengine.o: ..\Mylib\MicroSw.h
@@ -64,12 +65,8 @@
 ..\obj\steeringengine.o: ..\Algorithm\user_lib.h
 ..\obj\steeringengine.o: ..\Algorithm\queueData.h
 ..\obj\steeringengine.o: ..\Task\ZeroCheckTask.h
-..\obj\steeringengine.o: ..\Task\DataSendTask.h
-..\obj\steeringengine.o: ..\Task\DataReceivetask.h
-..\obj\steeringengine.o: ..\Task\ActionTask.h
-..\obj\steeringengine.o: ..\Task\GimbalTask.h
 ..\obj\steeringengine.o: ..\Task\ShootTask.h
-..\obj\steeringengine.o: ..\Task\ChassisTask.h
+..\obj\steeringengine.o: ..\Task\DataReceivetask.h
 ..\obj\steeringengine.o: ..\Task\Start_Task.h
 ..\obj\steeringengine.o: ..\INS\GimbalEstimateTask.h
 ..\obj\steeringengine.o: ..\INS\icm20602.h

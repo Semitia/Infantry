@@ -45,6 +45,7 @@
 ..\obj\laser.o: ..\FreeRTOS\include\queue.h
 ..\obj\laser.o: ..\Algorithm\myMath.h
 ..\obj\laser.o: ..\Mylib\usart3.h
+..\obj\laser.o: ..\Software\usart.h
 ..\obj\laser.o: ..\Task\usart4_gryo.h
 ..\obj\laser.o: ..\Mylib\usart1.h
 ..\obj\laser.o: ..\Mylib\MicroSw.h
@@ -64,12 +65,8 @@
 ..\obj\laser.o: ..\Algorithm\user_lib.h
 ..\obj\laser.o: ..\Algorithm\queueData.h
 ..\obj\laser.o: ..\Task\ZeroCheckTask.h
-..\obj\laser.o: ..\Task\DataSendTask.h
-..\obj\laser.o: ..\Task\DataReceivetask.h
-..\obj\laser.o: ..\Task\ActionTask.h
-..\obj\laser.o: ..\Task\GimbalTask.h
 ..\obj\laser.o: ..\Task\ShootTask.h
-..\obj\laser.o: ..\Task\ChassisTask.h
+..\obj\laser.o: ..\Task\DataReceivetask.h
 ..\obj\laser.o: ..\Task\Start_Task.h
 ..\obj\laser.o: ..\INS\GimbalEstimateTask.h
 ..\obj\laser.o: ..\INS\icm20602.h

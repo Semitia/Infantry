@@ -15,10 +15,10 @@ enum POWERSTATE_Typedef
 };
 
 void Chassis_Powerdown_Cal(void);
-void Chassis_Act_Cal(Remote rc,Key key);
-void Chassis_SelfProtect_Cal(Remote rc,Key key);
-void Chassis_Solo_Cal(Remote rc,Key key);
-void Chassis_Jump_Cal(Remote rc,Key key);
+void Chassis_Act_Cal(Stick_t rc,Ket_t key);
+void Chassis_SelfProtect_Cal(Stick_t rc,Ket_t key);
+void Chassis_Solo_Cal(Stick_t rc,Ket_t key);
+void Chassis_Jump_Cal(Stick_t rc,Ket_t key);
 
 float ChassisPostionAngle_TranSform(short InitPos);
 

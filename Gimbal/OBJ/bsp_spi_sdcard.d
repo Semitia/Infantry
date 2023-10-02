@@ -45,6 +45,7 @@
 ..\obj\bsp_spi_sdcard.o: ..\FreeRTOS\include\queue.h
 ..\obj\bsp_spi_sdcard.o: ..\Algorithm\myMath.h
 ..\obj\bsp_spi_sdcard.o: ..\Mylib\usart3.h
+..\obj\bsp_spi_sdcard.o: ..\Software\usart.h
 ..\obj\bsp_spi_sdcard.o: ..\Task\usart4_gryo.h
 ..\obj\bsp_spi_sdcard.o: ..\Mylib\usart1.h
 ..\obj\bsp_spi_sdcard.o: ..\Mylib\MicroSw.h
@@ -64,12 +65,8 @@
 ..\obj\bsp_spi_sdcard.o: ..\Algorithm\user_lib.h
 ..\obj\bsp_spi_sdcard.o: ..\Algorithm\queueData.h
 ..\obj\bsp_spi_sdcard.o: ..\Task\ZeroCheckTask.h
-..\obj\bsp_spi_sdcard.o: ..\Task\DataSendTask.h
-..\obj\bsp_spi_sdcard.o: ..\Task\DataReceivetask.h
-..\obj\bsp_spi_sdcard.o: ..\Task\ActionTask.h
-..\obj\bsp_spi_sdcard.o: ..\Task\GimbalTask.h
 ..\obj\bsp_spi_sdcard.o: ..\Task\ShootTask.h
-..\obj\bsp_spi_sdcard.o: ..\Task\ChassisTask.h
+..\obj\bsp_spi_sdcard.o: ..\Task\DataReceivetask.h
 ..\obj\bsp_spi_sdcard.o: ..\Task\Start_Task.h
 ..\obj\bsp_spi_sdcard.o: ..\INS\GimbalEstimateTask.h
 ..\obj\bsp_spi_sdcard.o: ..\INS\icm20602.h

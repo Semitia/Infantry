@@ -45,6 +45,7 @@
 ..\obj\shoottask.o: ..\FreeRTOS\include\queue.h
 ..\obj\shoottask.o: ..\Algorithm\myMath.h
 ..\obj\shoottask.o: ..\Mylib\usart3.h
+..\obj\shoottask.o: ..\Software\usart.h
 ..\obj\shoottask.o: ..\Task\usart4_gryo.h
 ..\obj\shoottask.o: ..\Mylib\usart1.h
 ..\obj\shoottask.o: ..\Mylib\MicroSw.h
@@ -64,12 +65,8 @@
 ..\obj\shoottask.o: ..\Algorithm\user_lib.h
 ..\obj\shoottask.o: ..\Algorithm\queueData.h
 ..\obj\shoottask.o: ..\Task\ZeroCheckTask.h
-..\obj\shoottask.o: ..\Task\DataSendTask.h
-..\obj\shoottask.o: ..\Task\DataReceivetask.h
-..\obj\shoottask.o: ..\Task\ActionTask.h
-..\obj\shoottask.o: ..\Task\GimbalTask.h
 ..\obj\shoottask.o: ..\Task\ShootTask.h
-..\obj\shoottask.o: ..\Task\ChassisTask.h
+..\obj\shoottask.o: ..\Task\DataReceivetask.h
 ..\obj\shoottask.o: ..\Task\Start_Task.h
 ..\obj\shoottask.o: ..\INS\GimbalEstimateTask.h
 ..\obj\shoottask.o: ..\INS\icm20602.h

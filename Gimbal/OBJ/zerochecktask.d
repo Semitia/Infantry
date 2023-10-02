@@ -45,6 +45,7 @@
 ..\obj\zerochecktask.o: ..\FreeRTOS\include\queue.h
 ..\obj\zerochecktask.o: ..\Algorithm\myMath.h
 ..\obj\zerochecktask.o: ..\Mylib\usart3.h
+..\obj\zerochecktask.o: ..\Software\usart.h
 ..\obj\zerochecktask.o: ..\Task\usart4_gryo.h
 ..\obj\zerochecktask.o: ..\Mylib\usart1.h
 ..\obj\zerochecktask.o: ..\Mylib\MicroSw.h
@@ -64,12 +65,8 @@
 ..\obj\zerochecktask.o: ..\Algorithm\user_lib.h
 ..\obj\zerochecktask.o: ..\Algorithm\queueData.h
 ..\obj\zerochecktask.o: ..\Task\ZeroCheckTask.h
-..\obj\zerochecktask.o: ..\Task\DataSendTask.h
-..\obj\zerochecktask.o: ..\Task\DataReceivetask.h
-..\obj\zerochecktask.o: ..\Task\ActionTask.h
-..\obj\zerochecktask.o: ..\Task\GimbalTask.h
 ..\obj\zerochecktask.o: ..\Task\ShootTask.h
-..\obj\zerochecktask.o: ..\Task\ChassisTask.h
+..\obj\zerochecktask.o: ..\Task\DataReceivetask.h
 ..\obj\zerochecktask.o: ..\Task\Start_Task.h
 ..\obj\zerochecktask.o: ..\INS\GimbalEstimateTask.h
 ..\obj\zerochecktask.o: ..\INS\icm20602.h

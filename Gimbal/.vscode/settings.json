@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "usart3.h": "c",
+        "usart.h": "c",
+        "remotectrl.h": "c",
+        "main.h": "c",
+        "math.h": "c",
+        "stm32f4xx_conf.h": "c",
+        "datareceivetask.h": "c",
+        "gimbal.h": "c",
+        "can1.h": "c",
+        "canring.h": "c",
+        "sys.h": "c",
+        "stm32f4xx.h": "c"
+    }
+}

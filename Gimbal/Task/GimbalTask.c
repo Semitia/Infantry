@@ -164,7 +164,7 @@ void MotorGimbal_Act_Cal(Remote rc, Mouse mouse)
  *返 回 值: 无
  **********************************************************************************************************/
 
-void GyroGimbal_Act_Cal(Remote rc, Mouse mouse)
+void GyroGimbal_Act_Cal(Stick_t rc, Mouse mouse)
 {
 	if (GimbalAct_Init_Flag != Gimbal_Act_Mode)
 	{
@@ -227,7 +227,7 @@ float Inte_z;
 extern float pc_yaw, pc_pitch;
 float last_aim_yaw;
 
-void Gimbal_Armor_Cal(Remote rc, Mouse mouse)
+void Gimbal_Armor_Cal(Stick_t rc, Mouse mouse)
 {
 	if (GimbalAct_Init_Flag != Gimbal_Armor_Mode)
 	{
@@ -298,7 +298,7 @@ void Gimbal_Armor_Cal(Remote rc, Mouse mouse)
  *形    参: rc  mouse  Pc_RecvData
  *返 回 值: 无
  **********************************************************************************************************/
-void Gimbal_Buff_Cal(Remote rc, Mouse mouse)
+void Gimbal_Buff_Cal(Stick_t rc, Mouse mouse)
 {
 	if (GimbalAct_Init_Flag != Gimbal_BigBuf_Mode)
 	{
@@ -363,7 +363,7 @@ void Gimbal_Buff_Cal(Remote rc, Mouse mouse)
 //*返 回 值: 无
 //**********************************************************************************************************/
 
-// void Gimbal_DropShot_Cal(Remote rc,Mouse mouse)
+// void Gimbal_DropShot_Cal(Stick_t rc,Mouse mouse)
 //{
 //	if( GimbalAct_Init_Flag!=Gimbal_DropShot_Mode)
 //	{
@@ -405,7 +405,7 @@ void Gimbal_Buff_Cal(Remote rc, Mouse mouse)
  *形    参: rc  mouse  Pc_RecvData
  *返 回 值: 无
  **********************************************************************************************************/
-void Gimbal_Test_Cal(Remote rc, Mouse mouse)
+void Gimbal_Test_Cal(Stick_t rc, Mouse mouse)
 {
 	if (GimbalAct_Init_Flag != Gimbal_Test_Mode)
 	{

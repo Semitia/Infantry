@@ -45,6 +45,7 @@
 ..\obj\counter.o: ..\FreeRTOS\include\queue.h
 ..\obj\counter.o: ..\Algorithm\myMath.h
 ..\obj\counter.o: ..\Mylib\usart3.h
+..\obj\counter.o: ..\Software\usart.h
 ..\obj\counter.o: ..\Task\usart4_gryo.h
 ..\obj\counter.o: ..\Mylib\usart1.h
 ..\obj\counter.o: ..\Mylib\MicroSw.h
@@ -64,12 +65,8 @@
 ..\obj\counter.o: ..\Algorithm\user_lib.h
 ..\obj\counter.o: ..\Algorithm\queueData.h
 ..\obj\counter.o: ..\Task\ZeroCheckTask.h
-..\obj\counter.o: ..\Task\DataSendTask.h
-..\obj\counter.o: ..\Task\DataReceivetask.h
-..\obj\counter.o: ..\Task\ActionTask.h
-..\obj\counter.o: ..\Task\GimbalTask.h
 ..\obj\counter.o: ..\Task\ShootTask.h
-..\obj\counter.o: ..\Task\ChassisTask.h
+..\obj\counter.o: ..\Task\DataReceivetask.h
 ..\obj\counter.o: ..\Task\Start_Task.h
 ..\obj\counter.o: ..\INS\GimbalEstimateTask.h
 ..\obj\counter.o: ..\INS\icm20602.h

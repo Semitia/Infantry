@@ -43,15 +43,15 @@ typedef struct
 #define Shoot_Check_Mode 346
 #define Shoot_Tx2_Mode 347
 
-void SetInputMode(Remote );
+void SetInputMode(Stick_t );
 void Status_Act(void);
 
 void MouseKey_Act_Cal(RC_Ctl_t RC_Ctl);
 
-void Remote_Process(Remote rc);
+void Remote_Process(Stick_t rc);
 void Mouse_Key_Process(RC_Ctl_t RC_Ctl);
 void Powerdown_Process(void);
-void Tx2_Off_Test(Remote rc);
+void Tx2_Off_Test(Stick_t rc);
 
 
 void ModeChoose_task(void *pvParameters);

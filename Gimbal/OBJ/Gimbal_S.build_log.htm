@@ -27,17 +27,39 @@ Project File Date:  10/02/2023
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 3 (build 300)', folder: 'D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin'
 Build target 'Gimbal_S'
-compiling myMath.c...
-compiling filters.c...
+compiling main.c...
 linking...
-Program Size: Code=68848 RO-data=3848 RW-data=1140 ZI-data=28748  
-"..\OBJ\Gimbal_S.axf" - 0 Error(s), 0 Warning(s).
+..\OBJ\Gimbal_S.axf: Error: L6218E: Undefined symbol F105_Rst (referred from main.o).
+..\OBJ\Gimbal_S.axf: Error: L6218E: Undefined symbol PC_UART_Configuration (referred from main.o).
+..\OBJ\Gimbal_S.axf: Error: L6218E: Undefined symbol Pid_Friction_Init (referred from main.o).
+..\OBJ\Gimbal_S.axf: Error: L6218E: Undefined symbol RC_Rst (referred from main.o).
+..\OBJ\Gimbal_S.axf: Error: L6218E: Undefined symbol Robot_Disconnect (referred from main.o).
+..\OBJ\Gimbal_S.axf: Error: L6218E: Undefined symbol Robot_Recover (referred from main.o).
+..\OBJ\Gimbal_S.axf: Error: L6218E: Undefined symbol Robot_Stop (referred from main.o).
+..\OBJ\Gimbal_S.axf: Error: L6218E: Undefined symbol Shoot_Recover (referred from main.o).
+..\OBJ\Gimbal_S.axf: Error: L6218E: Undefined symbol Shoot_Stop (referred from main.o).
+..\OBJ\Gimbal_S.axf: Error: L6218E: Undefined symbol checkIMUOn (referred from main.o).
+..\OBJ\Gimbal_S.axf: Error: L6218E: Undefined symbol global_debugger (referred from main.o).
+..\OBJ\Gimbal_S.axf: Error: L6218E: Undefined symbol Can1Receive0 (referred from can1.o).
+..\OBJ\Gimbal_S.axf: Error: L6218E: Undefined symbol Can1Receive1 (referred from can1.o).
+..\OBJ\Gimbal_S.axf: Error: L6218E: Undefined symbol Can2Receive0 (referred from can2.o).
+..\OBJ\Gimbal_S.axf: Error: L6218E: Undefined symbol Can2Receive1 (referred from can2.o).
+..\OBJ\Gimbal_S.axf: Error: L6218E: Undefined symbol GyroReceive (referred from mysensors.o).
+..\OBJ\Gimbal_S.axf: Error: L6218E: Undefined symbol pitch_gyro_temp (referred from mysensors.o).
+..\OBJ\Gimbal_S.axf: Error: L6218E: Undefined symbol yaw_gyro_temp (referred from mysensors.o).
+..\OBJ\Gimbal_S.axf: Error: L6218E: Undefined symbol BodanReceive (referred from zerochecktask.o).
+..\OBJ\Gimbal_S.axf: Error: L6218E: Undefined symbol PitchMotorReceive (referred from zerochecktask.o).
+..\OBJ\Gimbal_S.axf: Error: L6218E: Undefined symbol YawMotorReceive (referred from zerochecktask.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 21 error messages.
+"..\OBJ\Gimbal_S.axf" - 21 Error(s), 0 Warning(s).
 
 <h2>Collection of Component include folders:</h2>
   D:\WORK\RM\Task\Infantry\Gimbal\Project\RTE
   D:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
 <h2>Collection of Component Files used:</h2>
+Target not created.
 Build Time Elapsed:  00:00:01
 </pre>
 </body>

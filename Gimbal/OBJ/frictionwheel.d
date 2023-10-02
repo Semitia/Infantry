@@ -45,6 +45,7 @@
 ..\obj\frictionwheel.o: ..\FreeRTOS\include\queue.h
 ..\obj\frictionwheel.o: ..\Algorithm\myMath.h
 ..\obj\frictionwheel.o: ..\Mylib\usart3.h
+..\obj\frictionwheel.o: ..\Software\usart.h
 ..\obj\frictionwheel.o: ..\Task\usart4_gryo.h
 ..\obj\frictionwheel.o: ..\Mylib\usart1.h
 ..\obj\frictionwheel.o: ..\Mylib\MicroSw.h
@@ -64,12 +65,8 @@
 ..\obj\frictionwheel.o: ..\Algorithm\user_lib.h
 ..\obj\frictionwheel.o: ..\Algorithm\queueData.h
 ..\obj\frictionwheel.o: ..\Task\ZeroCheckTask.h
-..\obj\frictionwheel.o: ..\Task\DataSendTask.h
-..\obj\frictionwheel.o: ..\Task\DataReceivetask.h
-..\obj\frictionwheel.o: ..\Task\ActionTask.h
-..\obj\frictionwheel.o: ..\Task\GimbalTask.h
 ..\obj\frictionwheel.o: ..\Task\ShootTask.h
-..\obj\frictionwheel.o: ..\Task\ChassisTask.h
+..\obj\frictionwheel.o: ..\Task\DataReceivetask.h
 ..\obj\frictionwheel.o: ..\Task\Start_Task.h
 ..\obj\frictionwheel.o: ..\INS\GimbalEstimateTask.h
 ..\obj\frictionwheel.o: ..\INS\icm20602.h

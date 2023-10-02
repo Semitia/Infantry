@@ -45,13 +45,13 @@ void PCReceive(unsigned char *PCbuffer)
  */
 extern F105_Typedef F105;
 extern Gimbal_Typedef Gimbal;
-extern Status_t Status;
+//extern Status_t Status;
 void SendtoPCPack(unsigned char *buff)
 {
     pc_send_data.start_flag = '!';
     pc_send_data.robot_color = F105.JudgeReceive_info.RobotRed;
     pc_send_data.shoot_level = F105.JudgeReceive_info.BulletSpeedLevel;
-    pc_send_data.mode = Status.GimbalMode;
+//    pc_send_data.mode = Status.GimbalMode;
     //pc_send_data.which_balance = F105.whichbalance - 2; //只有两位，ID-2再发
     //pc_send_data.change_priority_flag = 0;            //在actiontask中修改
     pc_send_data.frame_id++;

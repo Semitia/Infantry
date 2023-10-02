@@ -45,6 +45,7 @@
 ..\obj\datasendtask.o: ..\FreeRTOS\include\queue.h
 ..\obj\datasendtask.o: ..\Algorithm\myMath.h
 ..\obj\datasendtask.o: ..\Mylib\usart3.h
+..\obj\datasendtask.o: ..\Software\usart.h
 ..\obj\datasendtask.o: ..\Task\usart4_gryo.h
 ..\obj\datasendtask.o: ..\Mylib\usart1.h
 ..\obj\datasendtask.o: ..\Mylib\MicroSw.h
@@ -68,6 +69,8 @@
 ..\obj\datasendtask.o: ..\Task\DataReceivetask.h
 ..\obj\datasendtask.o: ..\Task\ActionTask.h
 ..\obj\datasendtask.o: ..\Task\GimbalTask.h
+..\obj\datasendtask.o: ..\Software\Gimbal.h
+..\obj\datasendtask.o: ..\Software\RemoteCtrl.h
 ..\obj\datasendtask.o: ..\Task\ShootTask.h
 ..\obj\datasendtask.o: ..\Task\ChassisTask.h
 ..\obj\datasendtask.o: ..\Task\Start_Task.h

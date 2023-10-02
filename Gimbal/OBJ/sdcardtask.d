@@ -45,6 +45,7 @@
 ..\obj\sdcardtask.o: ..\FreeRTOS\include\queue.h
 ..\obj\sdcardtask.o: ..\Algorithm\myMath.h
 ..\obj\sdcardtask.o: ..\Mylib\usart3.h
+..\obj\sdcardtask.o: ..\Software\usart.h
 ..\obj\sdcardtask.o: ..\Task\usart4_gryo.h
 ..\obj\sdcardtask.o: ..\Mylib\usart1.h
 ..\obj\sdcardtask.o: ..\Mylib\MicroSw.h
@@ -64,12 +65,8 @@
 ..\obj\sdcardtask.o: ..\Algorithm\user_lib.h
 ..\obj\sdcardtask.o: ..\Algorithm\queueData.h
 ..\obj\sdcardtask.o: ..\Task\ZeroCheckTask.h
-..\obj\sdcardtask.o: ..\Task\DataSendTask.h
-..\obj\sdcardtask.o: ..\Task\DataReceivetask.h
-..\obj\sdcardtask.o: ..\Task\ActionTask.h
-..\obj\sdcardtask.o: ..\Task\GimbalTask.h
 ..\obj\sdcardtask.o: ..\Task\ShootTask.h
-..\obj\sdcardtask.o: ..\Task\ChassisTask.h
+..\obj\sdcardtask.o: ..\Task\DataReceivetask.h
 ..\obj\sdcardtask.o: ..\Task\Start_Task.h
 ..\obj\sdcardtask.o: ..\INS\GimbalEstimateTask.h
 ..\obj\sdcardtask.o: ..\INS\icm20602.h

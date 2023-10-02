@@ -93,21 +93,14 @@ void ZeroCheck_cal(void)
 	
 	Bodan_Pos=ZeroCheck(&ZeroCheck_BodanPos,BodanReceive.Angle,Position);
     
-    //选择数据，使用电机角或陀螺仪
-    if(ControlMode == GyroMode)
-    {
+
+
         Gimbal.Pitch.Pos_Using_Value = Gimbal.Pitch.Gyro;
         Gimbal.Pitch.Speed_Using_Value = Gimbal.Pitch.AngularSpeed;
         Gimbal.Yaw.Pos_Using_Value = Gimbal.Yaw.Gyro;
         Gimbal.Yaw.Speed_Using_Value = Gimbal.Yaw.AngularSpeed;
-    }
-    else if(ControlMode == MotorMode)
-    {
-        Gimbal.Pitch.Pos_Using_Value = Gimbal.Pitch.MotorTransAngle;
-        Gimbal.Pitch.Speed_Using_Value = PitchMotorSpeed;
-        Gimbal.Yaw.Pos_Using_Value = Gimbal.Yaw.MotorTransAngle;
-        Gimbal.Yaw.Speed_Using_Value = YawMotorSpeed;
-    }
+
+
 }
 
 

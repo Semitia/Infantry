@@ -45,6 +45,7 @@
 ..\obj\mysensors.o: ..\FreeRTOS\include\queue.h
 ..\obj\mysensors.o: ..\Algorithm\myMath.h
 ..\obj\mysensors.o: ..\Mylib\usart3.h
+..\obj\mysensors.o: ..\Software\usart.h
 ..\obj\mysensors.o: ..\Task\usart4_gryo.h
 ..\obj\mysensors.o: ..\Mylib\usart1.h
 ..\obj\mysensors.o: ..\Mylib\MicroSw.h
@@ -64,12 +65,8 @@
 ..\obj\mysensors.o: ..\Algorithm\user_lib.h
 ..\obj\mysensors.o: ..\Algorithm\queueData.h
 ..\obj\mysensors.o: ..\Task\ZeroCheckTask.h
-..\obj\mysensors.o: ..\Task\DataSendTask.h
-..\obj\mysensors.o: ..\Task\DataReceivetask.h
-..\obj\mysensors.o: ..\Task\ActionTask.h
-..\obj\mysensors.o: ..\Task\GimbalTask.h
 ..\obj\mysensors.o: ..\Task\ShootTask.h
-..\obj\mysensors.o: ..\Task\ChassisTask.h
+..\obj\mysensors.o: ..\Task\DataReceivetask.h
 ..\obj\mysensors.o: ..\Task\Start_Task.h
 ..\obj\mysensors.o: ..\INS\GimbalEstimateTask.h
 ..\obj\mysensors.o: ..\INS\icm20602.h

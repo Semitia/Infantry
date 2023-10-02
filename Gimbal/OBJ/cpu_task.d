@@ -47,6 +47,7 @@
 ..\obj\cpu_task.o: ..\FreeRTOS\include\queue.h
 ..\obj\cpu_task.o: ..\Algorithm\myMath.h
 ..\obj\cpu_task.o: ..\Mylib\usart3.h
+..\obj\cpu_task.o: ..\Software\usart.h
 ..\obj\cpu_task.o: ..\Task\usart4_gryo.h
 ..\obj\cpu_task.o: ..\Mylib\usart1.h
 ..\obj\cpu_task.o: ..\Mylib\MicroSw.h
@@ -66,12 +67,8 @@
 ..\obj\cpu_task.o: ..\Algorithm\user_lib.h
 ..\obj\cpu_task.o: ..\Algorithm\queueData.h
 ..\obj\cpu_task.o: ..\Task\ZeroCheckTask.h
-..\obj\cpu_task.o: ..\Task\DataSendTask.h
-..\obj\cpu_task.o: ..\Task\DataReceivetask.h
-..\obj\cpu_task.o: ..\Task\ActionTask.h
-..\obj\cpu_task.o: ..\Task\GimbalTask.h
 ..\obj\cpu_task.o: ..\Task\ShootTask.h
-..\obj\cpu_task.o: ..\Task\ChassisTask.h
+..\obj\cpu_task.o: ..\Task\DataReceivetask.h
 ..\obj\cpu_task.o: ..\Task\Start_Task.h
 ..\obj\cpu_task.o: ..\Task\ControlTask.h
 ..\obj\cpu_task.o: ..\SD\SDCardTask.h

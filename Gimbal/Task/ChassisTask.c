@@ -66,7 +66,7 @@ void Chassis_Powerdown_Cal()
 *返 回 值: 无
 **********************************************************************************************************/
 short test_w;
-void Chassis_Act_Cal(Remote rc,Key key) 
+void Chassis_Act_Cal(Stick_t rc,Key key) 
 {	
 	if(ChassisAct_Init_Flag!=Chassis_Act_Mode)
 	{
@@ -373,7 +373,7 @@ void Chassis_Act_Cal(Remote rc,Key key)
 float SP_Theta,CosSP_Theta,SinSP_Theta,TanSP_Theta;
 float bias_SP1 = 28.0f/360.0f*6.28318f;
 float bias_SP2 = -33.0f/360.0f*6.28318f;
-void Chassis_SelfProtect_Cal(Remote rc,Key key)
+void Chassis_SelfProtect_Cal(Stick_t rc,Key key)
 {
 	if(ChassisAct_Init_Flag!=Chassis_SelfProtect_Mode)
 	  ChassisAct_Init_Flag=Chassis_SelfProtect_Mode;
@@ -538,7 +538,7 @@ short H_pid = 100;
 short L_pid = 20;
 float H_P = 0.8f;
 
-void Chassis_Solo_Cal(Remote rc,Key key)
+void Chassis_Solo_Cal(Stick_t rc,Key key)
 {
 	if(ChassisAct_Init_Flag!=Chassis_Solo_Mode)
 	{
@@ -643,7 +643,7 @@ if(Status.ControlMode==Control_RC_Mode)
 *形    参: rc  key
 *返 回 值: 无
 **********************************************************************************************************/
-void Chassis_Jump_Cal(Remote rc,Key key) 
+void Chassis_Jump_Cal(Stick_t rc,Key key) 
 {
 	if(ChassisAct_Init_Flag!=Chassis_Jump_Mode)
 	{

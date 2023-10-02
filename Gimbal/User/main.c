@@ -110,9 +110,9 @@ void Robot_Init(void)
     global_debugger.imu_debugger[1].recv_msgs_num = 0;
 	ZeroCheck_Init();
 	Infantry_Init();
-	Pid_ChassisPosition_Init();
-	PidGimbalMotor_Init();
-	Pid_BodanMotor_Init();
+//	Pid_ChassisPosition_Init();
+//	PidGimbalMotor_Init();
+//	Pid_BodanMotor_Init();
 	Pid_Friction_Init();
     while (!checkIMUOn()); //¼ì²éIMUÊÇ·ñ¿ªÆô
     INS_Init();
@@ -345,14 +345,6 @@ void Offline_Check_task(void *pvParameters)
 				Robot_Recover();
 		}
         
-        if(Robot_Disconnect.Gyro_DisConnect>30)
-        {
-            ControlMode = MotorMode;
-        }
-        else
-        {
-            ControlMode = GyroMode;
-        }
 		Robot_Disconnect.Gyro_DisConnect++;
 		Robot_Disconnect.PitchMotor_DisConnect++;
 		Robot_Disconnect.YawMotor_DisConnect++;
