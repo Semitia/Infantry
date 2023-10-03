@@ -16,7 +16,7 @@ typedef struct __Gimbal_t {
 }Gimbal_t;
 
 void gimbalInit(Gimbal_t *gimbal);
-
+void gimUpdate(Gimbal_t *gimbal);
 
 #endif
 

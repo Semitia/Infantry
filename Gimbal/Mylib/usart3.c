@@ -94,6 +94,7 @@ void USART3_IRQHandler(void)
 		if(DATA_LENGTH==18) {
 			usart3_if.rx_flag = 1;
 		}
+		else {usart3_if.rx_flag = 0;}
 		DMA1_Stream1->NDTR = RX_USART3_BUFFER;	
 		DMA_Cmd(DMA1_Stream1,ENABLE);
 	}

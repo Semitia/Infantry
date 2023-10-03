@@ -1,5 +1,6 @@
 .\objects\mymath.o: ..\Algorithm\myMath.c
 .\objects\mymath.o: ..\Algorithm\Mymath.h
+.\objects\mymath.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\mymath.o: ..\Library\CMSIS\arm_math.h
 .\objects\mymath.o: ..\Library\CMSIS\core_cm4.h
 .\objects\mymath.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -7,4 +8,3 @@
 .\objects\mymath.o: ..\Library\CMSIS\core_cmFunc.h
 .\objects\mymath.o: ..\Library\CMSIS\core_cm4_simd.h
 .\objects\mymath.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\mymath.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h

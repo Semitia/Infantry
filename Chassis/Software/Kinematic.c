@@ -36,7 +36,7 @@ void kinematicInit(Kinematic_t *kinematic, CAN_TypeDef *can_tx, CanRing_t *can_r
     int i=0;
     kinematic->can_ring = can_ring;                   //分配一个can接口
     kinematic->can_tx = can_tx;
-		//kinematic->target_vel.w = 0;
+		kinematic->target_vel.w = 0;
     kinematic->real_vel.x = 0;
     kinematic->real_vel.y = 0;
     kinematic->real_vel.w = 0;

@@ -34,10 +34,10 @@
 .\objects\start_task.o: ..\FreeRTOS\include\semphr.h
 .\objects\start_task.o: ..\FreeRTOS\include\queue.h
 .\objects\start_task.o: ..\Algorithm\myMath.h
+.\objects\start_task.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\start_task.o: ..\Library\CMSIS\arm_math.h
 .\objects\start_task.o: ..\Library\CMSIS\core_cm4.h
 .\objects\start_task.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\start_task.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\start_task.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\start_task.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\start_task.o: ..\Task\ChassisTask.h

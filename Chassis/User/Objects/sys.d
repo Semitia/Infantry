@@ -33,9 +33,9 @@
 .\objects\sys.o: ..\FreeRTOS\include\semphr.h
 .\objects\sys.o: ..\FreeRTOS\include\queue.h
 .\objects\sys.o: ..\Algorithm\myMath.h
+.\objects\sys.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\sys.o: ..\Library\CMSIS\arm_math.h
 .\objects\sys.o: ..\Library\CMSIS\core_cm4.h
 .\objects\sys.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\sys.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\sys.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\sys.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h

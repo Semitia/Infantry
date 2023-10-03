@@ -34,10 +34,10 @@
 .\objects\judgemsg.o: ..\FreeRTOS\include\semphr.h
 .\objects\judgemsg.o: ..\FreeRTOS\include\queue.h
 .\objects\judgemsg.o: ..\Algorithm\myMath.h
+.\objects\judgemsg.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\judgemsg.o: ..\Library\CMSIS\arm_math.h
 .\objects\judgemsg.o: ..\Library\CMSIS\core_cm4.h
 .\objects\judgemsg.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\judgemsg.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\judgemsg.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\judgemsg.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\judgemsg.o: ..\Software\usart.h

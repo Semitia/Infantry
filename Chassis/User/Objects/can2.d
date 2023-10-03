@@ -35,10 +35,10 @@
 .\objects\can2.o: ..\FreeRTOS\include\semphr.h
 .\objects\can2.o: ..\FreeRTOS\include\queue.h
 .\objects\can2.o: ..\Algorithm\myMath.h
+.\objects\can2.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\can2.o: ..\Library\CMSIS\arm_math.h
 .\objects\can2.o: ..\Library\CMSIS\core_cm4.h
 .\objects\can2.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\can2.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\can2.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\can2.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\can2.o: ..\Software\CanRing.h

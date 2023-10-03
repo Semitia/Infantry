@@ -34,10 +34,10 @@
 .\objects\algorithmofcrc_1.o: ..\FreeRTOS\include\semphr.h
 .\objects\algorithmofcrc_1.o: ..\FreeRTOS\include\queue.h
 .\objects\algorithmofcrc_1.o: ..\Algorithm\myMath.h
+.\objects\algorithmofcrc_1.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\algorithmofcrc_1.o: ..\Library\CMSIS\arm_math.h
 .\objects\algorithmofcrc_1.o: ..\Library\CMSIS\core_cm4.h
 .\objects\algorithmofcrc_1.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\algorithmofcrc_1.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\algorithmofcrc_1.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\algorithmofcrc_1.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\algorithmofcrc_1.o: ..\Hardware\cap.h

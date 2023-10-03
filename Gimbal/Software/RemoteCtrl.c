@@ -5,10 +5,10 @@
  * @param rc 遥控器结构体指针
  * @param usart_if 串口接收结构体指针
 */
-void remoteCtrlInit(RC_t *rc, UsartIF_t *usart_if) {
-    rc->usart_if = usart_if;
+void remoteCtrlInit(RC_t *rc) {
+    rc->usart_if = RC_USART_IF;
     rc->dis_cnt = 0;
-    usartIfInit(usart_if, RC_RX_LEN, 0);
+    usartIfInit(RC_USART_IF, RC_RX_LEN, 0, RC_USART_INIT);
 }
 
 void rstRemoteCtrl(RC_t *rc) {

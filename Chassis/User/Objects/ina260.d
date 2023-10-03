@@ -34,10 +34,10 @@
 .\objects\ina260.o: ..\FreeRTOS\include\semphr.h
 .\objects\ina260.o: ..\FreeRTOS\include\queue.h
 .\objects\ina260.o: ..\Algorithm\myMath.h
+.\objects\ina260.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\ina260.o: ..\Library\CMSIS\arm_math.h
 .\objects\ina260.o: ..\Library\CMSIS\core_cm4.h
 .\objects\ina260.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\ina260.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\ina260.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\ina260.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\ina260.o: ..\Hardware\i2c.h

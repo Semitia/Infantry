@@ -34,9 +34,9 @@
 .\objects\canring.o: ..\FreeRTOS\include\semphr.h
 .\objects\canring.o: ..\FreeRTOS\include\queue.h
 .\objects\canring.o: ..\Algorithm\myMath.h
+.\objects\canring.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\canring.o: ..\Library\CMSIS\arm_math.h
 .\objects\canring.o: ..\Library\CMSIS\core_cm4.h
 .\objects\canring.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\canring.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\canring.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\canring.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h

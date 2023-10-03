@@ -15,11 +15,12 @@
  * @param txbuf_len tx buffer length
  * @note dynamic memory allocation for rx_buf and tx_buf
 */
-void usartIfInit(UsartIF_t *usart_if, uint8_t rxbuf_len, uint8_t txbuf_len) {
+void usartIfInit(UsartIF_t *usart_if, uint8_t rxbuf_len, uint8_t txbuf_len, void (*usartInit)(void)) {
     usart_if->rx_flag = 0;
     usart_if->rx_buf = (uint8_t *)pvPortMalloc(rxbuf_len);
     usart_if->tx_flag = 0;
     usart_if->tx_buf = (uint8_t *)pvPortMalloc(txbuf_len);
+    usartInit();
     return;
 }
 

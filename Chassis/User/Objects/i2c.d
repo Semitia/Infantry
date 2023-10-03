@@ -34,10 +34,10 @@
 .\objects\i2c.o: ..\FreeRTOS\include\semphr.h
 .\objects\i2c.o: ..\FreeRTOS\include\queue.h
 .\objects\i2c.o: ..\Algorithm\myMath.h
+.\objects\i2c.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\i2c.o: ..\Library\CMSIS\arm_math.h
 .\objects\i2c.o: ..\Library\CMSIS\core_cm4.h
 .\objects\i2c.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\i2c.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\i2c.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\i2c.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\i2c.o: ..\Hardware\cap.h

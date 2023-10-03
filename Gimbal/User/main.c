@@ -69,13 +69,13 @@ int main()
  **********************************************************************************************************/
 void BSP_Init(void)
 {
-	#if (Robot_ID == 45 || Robot_ID == 44 || Robot_ID == 46 || Robot_ID == 47)
-	USART3_Configuration();
-	delay_ms(10);
-	#else
-	USART1_Configuration();
-	delay_ms(100);
-	#endif
+//	#if (Robot_ID == 45 || Robot_ID == 44 || Robot_ID == 46 || Robot_ID == 47)
+//	USART3_Configuration();
+//	delay_ms(10);
+//	#else
+//	USART1_Configuration();
+//	delay_ms(100);
+//	#endif
 
 	MicroSwConfigration();
 	delay_ms(10);

@@ -14,7 +14,7 @@ typedef struct __UsartIF_t{
     uint8_t *tx_buf;        //发送缓冲区
 }UsartIF_t;
 
-void usartIfInit(UsartIF_t *usart_if, uint8_t rxbuf_len, uint8_t txbuf_len);
+void usartIfInit(UsartIF_t *usart_if, uint8_t rxbuf_len, uint8_t txbuf_len,void (*usart_init)(void));
 void usartIfRelease(UsartIF_t *usart_if);
 
 #endif

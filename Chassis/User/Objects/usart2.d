@@ -34,10 +34,10 @@
 .\objects\usart2.o: ..\FreeRTOS\include\semphr.h
 .\objects\usart2.o: ..\FreeRTOS\include\queue.h
 .\objects\usart2.o: ..\Algorithm\myMath.h
+.\objects\usart2.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\usart2.o: ..\Library\CMSIS\arm_math.h
 .\objects\usart2.o: ..\Library\CMSIS\core_cm4.h
 .\objects\usart2.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\usart2.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\usart2.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\usart2.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\usart2.o: ..\Hardware\cap.h
