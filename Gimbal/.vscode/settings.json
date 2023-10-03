@@ -15,6 +15,7 @@
         "can2.h": "c",
         "start_task.h": "c",
         "gimbaltask.h": "c",
-        "mymath.h": "c"
+        "mymath.h": "c",
+        "imu.h": "c"
     }
 }

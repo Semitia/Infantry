@@ -3,10 +3,12 @@
 
 #include "usart3.h"
 
-#define RC_RX_LEN 18
-#define RC_USART_IF &usart3_if
-#define RC_USART_INIT USART3_Configuration
+#define RC_RX_LEN 18                                //遥控器接收数据长度
+#define RC_USART_IF &usart3_if                      //遥控器串口接收结构体指针
+#define RC_USART_INIT USART3_Configuration          //遥控器串口初始化函数
 
+#define MIN_STK_SIG 364.0                           //摇杆最小信号
+#define MAX_STK_SIG 1684.0                          //摇杆最大信号
 /**
  * @brief 摇杆结构体
 */
