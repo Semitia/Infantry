@@ -2,12 +2,12 @@
 #define __PID_H
 
 typedef struct{
-		float K1;			
-	  float K2;
-	  float Last_DeltIn;
-	  float Now_DeltIn;
-	  float Out;
-	  float OutMax;
+	float K1;			
+	float K2;
+	float Last_DeltIn;
+	float Now_DeltIn;
+	float Out;
+	float OutMax;
 }FeedForward_Typedef;
 
 typedef struct{
@@ -22,10 +22,10 @@ typedef struct{
 }FeedForward_t;
 
 /*   PID调参-----ZN方法：
-		 Td/T = Kd  T/Ti = Ki   
-     PID:   Ti >= 4Td    Kp = 0.6Ku   Td = 0.125Tu
-     PI:    Kp = 0.45Ku  Ti = 0.83Tu
-     P:     Kp = 0.5Ku
+		Td/T = Kd  T/Ti = Ki   
+	PID:   Ti >= 4Td    Kp = 0.6Ku   Td = 0.125Tu
+	PI:    Kp = 0.45Ku  Ti = 0.83Tu
+	P:     Kp = 0.5Ku
 */
 
 

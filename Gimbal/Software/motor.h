@@ -39,7 +39,7 @@ typedef struct __Motor_t {
     float max_voltage;          //最大电压值
     float max_current;          //最大电流值
 
-    uint8_t id;
+    uint16_t id;
     uint8_t temperature;
     float speed;                //速度, 单位为rad/s
     float last_speed;           //上一次的速度
@@ -54,7 +54,7 @@ typedef struct __Motor_t {
     LowPass_t lp_cut;           //电流低通滤波器
 }Motor_t;
 
-void motorInit(Motor_t *m, MotorTypeEnum type, uint8_t id);
+void motorInit(Motor_t *m, MotorTypeEnum type, uint16_t id);
 void motorUpdate(Motor_t *m, uint8_t *data);
 void motorUpdateAll(Motor_t *m, uint8_t *data);
 

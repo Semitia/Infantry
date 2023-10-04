@@ -30,7 +30,7 @@ void initINS(INS_t *ins)
     // IMU_Param.Pitch = 0;
     // IMU_Param.Roll = 0;
     // IMU_Param.flag = 1;
-		imuInit(&ins->imu);
+	imuInit(&ins->imu);
     IMU_QuaternionEKF_Init(10, 0.001, 10000000, 1, 0);
 
     ins->AccelLPF = 0.0085;

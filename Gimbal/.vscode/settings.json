@@ -25,6 +25,9 @@
         "ins.h": "c",
         "icm20602.h": "c",
         "gimbalestimatetask.h": "c",
-        "rtostaskcheck.h": "c"
+        "rtostaskcheck.h": "c",
+        "shoot.h": "c",
+        "pid.h": "c",
+        "motor.h": "c"
     }
 }

@@ -8,7 +8,7 @@
 
 #include "motor.h"
 
-void motorInit(Motor_t *m, MotorTypeEnum type, uint8_t id) {
+void motorInit(Motor_t *m, MotorTypeEnum type, uint16_t id) {
     lowPassInit(&(m->lp_spd), K_WHEEL);
     lowPassInit(&(m->lp_cut), K_CURRENT);
 

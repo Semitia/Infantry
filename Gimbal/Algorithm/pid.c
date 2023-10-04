@@ -5,7 +5,7 @@
  * @作者     黄志雄、江扬新、戴军
  * @日期     2020.1、2021.9、2022.7
 **********************************************************************************************************/
-#include "main.h"
+#include "pid.h"
 
 /**********************************************************************************************************
 *函 数 名: PID_Calc
@@ -29,11 +29,11 @@ float PID_Calc(Pid_Typedef *P)
          //变速积分   (积分分离)
         if(ABS(P->PreError) < P->I_L )			
 		{
-	       
+
 		P->SumError += (P->PreError+P->LastError)/2;    
 		P->SumError = LIMIT_MAX_MIN(P->SumError,P->IMax,- P->IMax);
 		}
-		 else if( ABS(P->PreError) < P->I_U )
+		else if( ABS(P->PreError) < P->I_U )
 		{
 	       //梯形积分
 		P->SumError += (P->PreError+P->LastError)/2*(ABS(P->PreError) - P->I_L)/(P->I_U - P->I_L);    
@@ -45,7 +45,7 @@ float PID_Calc(Pid_Typedef *P)
 		P->POut = P->P * P->PreError;
 		
 		P->IOut = P->I * P->SumError;
-		    
+
 		    //不完全微分
 		P->DOut_last = P->DOut; 
 		P->DOut = DM * P->RC_DF + P->DOut_last * ( 1 - P->RC_DF );    

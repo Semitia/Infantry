@@ -66,6 +66,7 @@ void calibrateIMU(IMU_t *imu) {
  * @param imu IMU结构体
 */
 void imuInit(IMU_t *imu) {
+	imu->can_rx = IMU_CAN_RX;
     if(IF_CALIBRATE) {
         calibrateIMU(imu);
     }
