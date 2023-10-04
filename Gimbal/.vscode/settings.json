@@ -16,6 +16,15 @@
         "start_task.h": "c",
         "gimbaltask.h": "c",
         "mymath.h": "c",
-        "imu.h": "c"
+        "imu.h": "c",
+        "filters.h": "c",
+        "arm_math.h": "c",
+        "matrix.h": "c",
+        "stdio.h": "c",
+        "counter.h": "c",
+        "ins.h": "c",
+        "icm20602.h": "c",
+        "gimbalestimatetask.h": "c",
+        "rtostaskcheck.h": "c"
     }
 }

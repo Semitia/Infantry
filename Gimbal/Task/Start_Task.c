@@ -117,12 +117,12 @@ void start_task(void *pvParameters)
 //                  (UBaseType_t)CPU_TASK_PRIO,        //任务优先级
 //                  (TaskHandle_t *)&User_Tasks[CPU_TASK]); //任务句柄
 									
-		// xTaskCreate((TaskFunction_t)GimbalEstimate_task,          //任务函数
-    //           (const char *)"GimbalEstimate_task",          //任务名称
-    //           (uint16_t)GIMBAL_ESTIMATE_STK_SIZE,            //任务堆栈大小
-    //           (void *)NULL,                            //传递给任务函数的参数
-    //           (UBaseType_t)GIMBAL_ESTIMATE_TASK_PRIO,        //任务优先级
-    //           (TaskHandle_t *)&User_Tasks[GIMBAL_ESTIMATE_TASK]); //任务句柄
+		xTaskCreate((TaskFunction_t)GimbalEstimate_task,          //任务函数
+              (const char *)"GimbalEstimate_task",          //任务名称
+              (uint16_t)GIMBAL_ESTIMATE_STK_SIZE,            //任务堆栈大小
+              (void *)NULL,                            //传递给任务函数的参数
+              (UBaseType_t)GIMBAL_ESTIMATE_TASK_PRIO,        //任务优先级
+              (TaskHandle_t *)&User_Tasks[GIMBAL_ESTIMATE_TASK]); //任务句柄
               
     //     xTaskCreate((TaskFunction_t)SDCard_task,            //任务函数
     //           (const char *)"SDCard_task",          //任务名称

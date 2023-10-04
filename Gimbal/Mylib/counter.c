@@ -42,7 +42,7 @@ void COUNTER_Configuration(void)
 }
 
 /**
- * @brief 计算两次调用之间的时间差
+ * @brief 计算两次调用之间的时间差，并把当前计数值存入cnt_last
  * @param[in] cnt_last 上一次计数值
  */
 float GetDeltaT(uint32_t *cnt_last)

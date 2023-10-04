@@ -37,8 +37,10 @@
 ..\obj\imu.o: ..\FreeRTOS\include\queue.h
 ..\obj\imu.o: ..\Algorithm\myMath.h
 ..\obj\imu.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\imu.o: ..\Algorithm\Matrix.h
+..\obj\imu.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\imu.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\imu.o: ..\Library\CMSIS\arm_math.h
 ..\obj\imu.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\imu.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\imu.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\imu.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\imu.o: ..\Mylib\counter.h

@@ -11,128 +11,95 @@
  ******************************************************************************
  */
 #include "ins.h"
-#include "QuaternionEKF.h"
-#include "main.h"
-
-INS_t INS;
-IMU_Param_t IMU_Param;
 
 const float xb[3] = {1, 0, 0};
 const float yb[3] = {0, 1, 0};
 const float zb[3] = {0, 0, 1};
 
-uint32_t INS_Count = 0;
-float dt = 0, t = 0;
 uint8_t ins_debug_mode = 0;
 float RefTemp = 40;
 
 static void IMU_Param_Correction(IMU_Param_t *param, float gyro[3], float accel[3]);
 
-void INS_Init(void)
+void initINS(INS_t *ins)
 {
-    IMU_Param.scale[X] = 1;
-    IMU_Param.scale[Y] = 1;
-    IMU_Param.scale[Z] = 1;
-    IMU_Param.Yaw = 0;
-    IMU_Param.Pitch = 0;
-    IMU_Param.Roll = 0;
-    IMU_Param.flag = 1;
-
+    // IMU_Param.scale[X] = 1;
+    // IMU_Param.scale[Y] = 1;
+    // IMU_Param.scale[Z] = 1;
+    // IMU_Param.Yaw = 0;
+    // IMU_Param.Pitch = 0;
+    // IMU_Param.Roll = 0;
+    // IMU_Param.flag = 1;
+		imuInit(&ins->imu);
     IMU_QuaternionEKF_Init(10, 0.001, 10000000, 1, 0);
 
-    INS.AccelLPF = 0.0085;
-    INS.PitchSpeedLPF = 1.0;
-    INS.YawSpeedLPF = 1.0;
+    ins->AccelLPF = 0.0085;
+    ins->PitchSpeedLPF = 1.0;
+    ins->YawSpeedLPF = 1.0;
 }
 
-void INS_Task(IMU *IMUReceive, IMU_Data_t *icm_20602)
-{
+void updateINS(INS_t *ins) {
+    static float dt = 0, t = 0;
     static uint32_t count = 0;
     const float gravity[3] = {0, 0, GRAVITY};
-    dt = GetDeltaT(&INS_Count);
+
+    dt = GetDeltaT(&count);
     t += dt;
+    updateIMU(&ins->imu);
 
-    // ins update
-    if ((count % 1) == 0)
+    ins->Accel[X] = ins->imu.acc[X];
+    ins->Accel[Y] = ins->imu.acc[Y];
+    ins->Accel[Z] = ins->imu.acc[Z];
+    ins->Gyro[X] = ins->imu.gyro[X];
+    ins->Gyro[Y] = ins->imu.gyro[Y];
+    ins->Gyro[Z] = ins->imu.gyro[Z];
+
+    // 计算重力加速度矢量和b系的XY两轴的夹角,可用作功能扩展,本demo暂时没用
+    ins->atanxz = -atan2f(ins->Accel[X], ins->Accel[Z]) * 180 / PI;
+    ins->atanyz = atan2f(ins->Accel[Y], ins->Accel[Z]) * 180 / PI;
+
+    // 核心函数,EKF更新四元数
+    IMU_QuaternionEKF_Update(ins->Gyro[X], ins->Gyro[Y], ins->Gyro[Z], ins->Accel[X], ins->Accel[Y], ins->Accel[Z], dt);
+
+    memcpy(ins->q, QEKF_INS.q, sizeof(QEKF_INS.q));
+
+    // 机体系基向量转换到导航坐标系，本例选取惯性系为导航系
+    BodyFrameToEarthFrame(xb, ins->xn, ins->q);
+    BodyFrameToEarthFrame(yb, ins->yn, ins->q);
+    BodyFrameToEarthFrame(zb, ins->zn, ins->q);
+
+    // 将重力从导航坐标系n转换到机体系b,随后根据加速度计数据计算运动加速度
+    float gravity_b[3];
+    EarthFrameToBodyFrame(gravity, gravity_b, ins->q);
+    for (uint8_t i = 0; i < 3; i++) // 同样过一个低通滤波
     {
-        ICM_20602_Decode(IMUReceive, icm_20602);
-
-        for (int16_t index = 0; index < 3; index++)
-        {
-            icm_20602->Accel[index] *= icm_20602->AccelScale;
-            icm_20602->Gyro[index] -= icm_20602->GyroOffset[index];
-        }
-
-        INS.Accel[X] = icm_20602->Accel[X];
-        INS.Accel[Y] = icm_20602->Accel[Y];
-        INS.Accel[Z] = icm_20602->Accel[Z];
-        INS.Gyro[X] = icm_20602->Gyro[X];
-        INS.Gyro[Y] = icm_20602->Gyro[Y];
-        INS.Gyro[Z] = icm_20602->Gyro[Z];
-
-        // demo function,用于修正安装误差,可以不管,本demo暂时没用
-        IMU_Param_Correction(&IMU_Param, INS.Gyro, INS.Accel);
-
-        // 计算重力加速度矢量和b系的XY两轴的夹角,可用作功能扩展,本demo暂时没用
-        INS.atanxz = -atan2f(INS.Accel[X], INS.Accel[Z]) * 180 / PI;
-        INS.atanyz = atan2f(INS.Accel[Y], INS.Accel[Z]) * 180 / PI;
-
-        // 核心函数,EKF更新四元数
-        IMU_QuaternionEKF_Update(INS.Gyro[X], INS.Gyro[Y], INS.Gyro[Z], INS.Accel[X], INS.Accel[Y], INS.Accel[Z], dt);
-
-        memcpy(INS.q, QEKF_INS.q, sizeof(QEKF_INS.q));
-
-        // 机体系基向量转换到导航坐标系，本例选取惯性系为导航系
-        BodyFrameToEarthFrame(xb, INS.xn, INS.q);
-        BodyFrameToEarthFrame(yb, INS.yn, INS.q);
-        BodyFrameToEarthFrame(zb, INS.zn, INS.q);
-
-        // 将重力从导航坐标系n转换到机体系b,随后根据加速度计数据计算运动加速度
-        float gravity_b[3];
-        EarthFrameToBodyFrame(gravity, gravity_b, INS.q);
-        for (uint8_t i = 0; i < 3; i++) // 同样过一个低通滤波
-        {
-            INS.MotionAccel_b[i] = (INS.Accel[i] - gravity_b[i]) * dt / (INS.AccelLPF + dt) + INS.MotionAccel_b[i] * INS.AccelLPF / (INS.AccelLPF + dt);
-        }
-        BodyFrameToEarthFrame(INS.MotionAccel_b, INS.MotionAccel_n, INS.q); // 转换回导航系n
-
-        INS.PitchSpeed = (INS.Pitch - INS.LastPitch)/dt; //角速度采样
-        INS.YawSpeed = (INS.YawTotalAngle - INS.LastYaw)/dt;
-        /*低通滤波(没滤)*/
-        INS.PitchSpeed = INS.PitchSpeedLPF * INS.PitchSpeed + (1 - INS.PitchSpeedLPF) * INS.PitchLastSpeed;
-        INS.YawSpeed = INS.YawSpeedLPF * INS.YawSpeed + (1 - INS.YawSpeedLPF) * INS.YawLastSpeed;
-        INS.PitchLastSpeed = INS.PitchSpeed;
-        INS.YawLastSpeed = INS.YawSpeed;
-        INS.LastYaw = INS.YawTotalAngle;
-        INS.LastPitch = INS.Pitch;
-        
-        // 获取最终数据
-        #if SingleGyro == 0
-        INS.Yaw = QEKF_INS.Yaw;
-        INS.Pitch = -QEKF_INS.Roll;
-        INS.Roll = QEKF_INS.Pitch;
-        INS.YawTotalAngle = QEKF_INS.YawTotalAngle;
-        #elif SingleGyro == 1
-        INS.Yaw = QEKF_INS.Yaw;
-        INS.Pitch = QEKF_INS.Pitch;
-        INS.Roll = QEKF_INS.Roll;
-        INS.YawTotalAngle = QEKF_INS.YawTotalAngle;
-        #endif
-       
+        ins->MotionAccel_b[i] = (ins->Accel[i] - gravity_b[i]) * dt / (ins->AccelLPF + dt) + ins->MotionAccel_b[i] * ins->AccelLPF / (ins->AccelLPF + dt);
     }
+    BodyFrameToEarthFrame(ins->MotionAccel_b, ins->MotionAccel_n, ins->q); // 转换回导航系n
 
-    // temperature control
-    if ((count % 2) == 0)
-    {
-        // 500hz
-    }
+    ins->PitchSpeed = (ins->Pitch - ins->LastPitch)/dt; //角速度采样
+    ins->YawSpeed = (ins->YawTotalAngle - ins->LastYaw)/dt;
+    /*低通滤波(没滤)*/
+    ins->PitchSpeed = ins->PitchSpeedLPF * ins->PitchSpeed + (1 - ins->PitchSpeedLPF) * ins->PitchLastSpeed;
+    ins->YawSpeed = ins->YawSpeedLPF * ins->YawSpeed + (1 - ins->YawSpeedLPF) * ins->YawLastSpeed;
+    ins->PitchLastSpeed = ins->PitchSpeed;
+    ins->YawLastSpeed = ins->YawSpeed;
+    ins->LastYaw = ins->YawTotalAngle;
+    ins->LastPitch = ins->Pitch;
+    
+    // 获取最终数据
+    #if SingleGyro == 0
+    ins->Yaw = QEKF_INS.Yaw;
+    ins->Pitch = -QEKF_INS.Roll;
+    ins->Roll = QEKF_INS.Pitch;
+    ins->YawTotalAngle = QEKF_INS.YawTotalAngle;
+    #elif SingleGyro == 1
+    ins->Yaw = QEKF_INS.Yaw;
+    ins->Pitch = QEKF_INS.Pitch;
+    ins->Roll = QEKF_INS.Roll;
+    ins->YawTotalAngle = QEKF_INS.YawTotalAngle;
+    #endif
 
-    if ((count % 1000) == 0)
-    {
-        // 200hz
-    }
-
-    count++;
 }
 
 /**

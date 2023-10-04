@@ -36,8 +36,9 @@
 ..\obj\can1.o: ..\FreeRTOS\include\queue.h
 ..\obj\can1.o: ..\Algorithm\myMath.h
 ..\obj\can1.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\can1.o: ..\Algorithm\Matrix.h
+..\obj\can1.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\can1.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\can1.o: ..\Library\CMSIS\arm_math.h
 ..\obj\can1.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\can1.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\can1.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\can1.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h

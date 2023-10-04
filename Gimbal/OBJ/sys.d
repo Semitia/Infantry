@@ -34,8 +34,9 @@
 ..\obj\sys.o: ..\FreeRTOS\include\queue.h
 ..\obj\sys.o: ..\Algorithm\myMath.h
 ..\obj\sys.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\sys.o: ..\Algorithm\Matrix.h
+..\obj\sys.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\sys.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\sys.o: ..\Library\CMSIS\arm_math.h
 ..\obj\sys.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\sys.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\sys.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\sys.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h

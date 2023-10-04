@@ -1,13 +1,6 @@
 #ifndef __MAIN_H
 #define __MAIN_H
 
-#define SingleGyro 0 //是否使用单板陀螺仪
-#define Robot_ID   46 // 不同机器人用不同的序号
-//  44     下供弹4号车
-//  45     下供弹3号车
-//  46     舵轮
-//  47     备用下供弹
-
 #include "sys.h"
 #include "Start_Task.h"
 #include "gpio.h"
@@ -45,10 +38,7 @@
 #define POWER_OFF 0
 #define CHARGE_ENABLE 1
 
-//IO口地址映射 适合F405
-#define BITBAND(addr, bitnum) ((addr & 0xF0000000)+0x2000000+((addr &0xFFFFF)<<5)+(bitnum<<2)) 
-#define MEM_ADDR(addr)  *((volatile unsigned long  *)(addr)) 
-#define BIT_ADDR(addr, bitnum)   MEM_ADDR(BITBAND(addr, bitnum)) 
+
 
 
 /*步兵初始参数结构体*/

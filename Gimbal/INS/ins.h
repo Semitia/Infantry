@@ -13,9 +13,10 @@
 #ifndef _INS_H_
 #define _INS_H_
 
-#include "stdint.h"
+#include "RtosTaskCheck.h"
 #include "QuaternionEKF.h"
-#include "icm20602.h"
+#include "IMU.h"
+
 
 #define X 0
 #define Y 1
@@ -26,8 +27,7 @@
 #define ANGLE_TO_RAD_COEF 0.0174532925f
 #define PI_2 6.2831853072f
 
-typedef struct
-{
+typedef struct __INS_t {
     float q[4]; // 四元数估计值
 
     float Gyro[3];          // 角速度
@@ -53,14 +53,15 @@ typedef struct
     float LastYaw;
     float LastPitch;
     
-		//速度
-		float PitchSpeed;
-		float YawSpeed;
-		float PitchLastSpeed;
-		float YawLastSpeed;
-		float PitchSpeedLPF; //角速度低通滤波系数
-		float YawSpeedLPF;
+    //速度
+    float PitchSpeed;
+    float YawSpeed;
+    float PitchLastSpeed;
+    float YawLastSpeed;
+    float PitchSpeedLPF; //角速度低通滤波系数
+    float YawSpeedLPF;
     
+    IMU_t imu;
 } INS_t;
 
 /**
@@ -78,10 +79,8 @@ typedef struct
     float Roll;
 } IMU_Param_t;
 
-extern INS_t INS;
-
-void INS_Init(void);
-void INS_Task(IMU *IMUReceive, IMU_Data_t *icm_20602);
+void initINS(INS_t *ins);
+void updateINS(INS_t *ins);
 
 void QuaternionUpdate(float *q, float gx, float gy, float gz, float dt);
 void QuaternionToEularAngle(float *q, float *Yaw, float *Pitch, float *Roll);
@@ -89,4 +88,4 @@ void EularAngleToQuaternion(float Yaw, float Pitch, float Roll, float *q);
 void BodyFrameToEarthFrame(const float *vecBF, float *vecEF, float *q);
 void EarthFrameToBodyFrame(const float *vecEF, float *vecBF, float *q);
 
-#endif // !_INS_H_
+#endif

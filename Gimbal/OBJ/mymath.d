@@ -1,6 +1,9 @@
 ..\obj\mymath.o: ..\Algorithm\myMath.c
 ..\obj\mymath.o: ..\Algorithm\Mymath.h
 ..\obj\mymath.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\mymath.o: ..\Algorithm\Matrix.h
+..\obj\mymath.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\mymath.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\mymath.o: ..\Library\CMSIS\arm_math.h
 ..\obj\mymath.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\mymath.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdint.h

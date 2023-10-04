@@ -35,9 +35,10 @@
 ..\obj\usart3.o: ..\FreeRTOS\include\queue.h
 ..\obj\usart3.o: ..\Algorithm\myMath.h
 ..\obj\usart3.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\usart3.o: ..\Algorithm\Matrix.h
+..\obj\usart3.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\usart3.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\usart3.o: ..\Library\CMSIS\arm_math.h
 ..\obj\usart3.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\usart3.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\usart3.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\usart3.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\usart3.o: ..\Software\usart.h

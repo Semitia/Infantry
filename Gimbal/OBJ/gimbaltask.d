@@ -38,9 +38,10 @@
 ..\obj\gimbaltask.o: ..\FreeRTOS\include\queue.h
 ..\obj\gimbaltask.o: ..\Algorithm\myMath.h
 ..\obj\gimbaltask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\gimbaltask.o: ..\Algorithm\Matrix.h
+..\obj\gimbaltask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\gimbaltask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\gimbaltask.o: ..\Library\CMSIS\arm_math.h
 ..\obj\gimbaltask.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\gimbaltask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
-..\obj\gimbaltask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\gimbaltask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\gimbaltask.o: ..\Software\usart.h
