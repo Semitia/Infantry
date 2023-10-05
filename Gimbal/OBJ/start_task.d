@@ -33,6 +33,7 @@
 ..\obj\start_task.o: ..\FreeRTOS\include\deprecated_definitions.h
 ..\obj\start_task.o: ..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h
 ..\obj\start_task.o: ..\FreeRTOS\include\mpu_wrappers.h
+..\obj\start_task.o: ..\INS\RtosTaskCheck.h
 ..\obj\start_task.o: ..\FreeRTOS\include\task.h
 ..\obj\start_task.o: ..\FreeRTOS\include\list.h
 ..\obj\start_task.o: ..\FreeRTOS\include\semphr.h
@@ -47,7 +48,6 @@
 ..\obj\start_task.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\start_task.o: ..\Software\usart.h
 ..\obj\start_task.o: ..\INS\INS.h
-..\obj\start_task.o: ..\INS\RtosTaskCheck.h
 ..\obj\start_task.o: ..\INS\QuaternionEKF.h
 ..\obj\start_task.o: ..\INS\kalman_filter.h
 ..\obj\start_task.o: ..\Software\IMU.h
@@ -58,4 +58,5 @@
 ..\obj\start_task.o: ..\Software\motor.h
 ..\obj\start_task.o: ..\Algorithm\filters.h
 ..\obj\start_task.o: ..\Algorithm\pid.h
+..\obj\start_task.o: ..\Mylib\can1.h
 ..\obj\start_task.o: ..\INS\GimbalEstimateTask.h

@@ -22,6 +22,7 @@ void chassisInit(Chassis_t *chassis, ChassisTypeEnum type_enum) {
  * @note   数据消息ID为0x101~0x102
 */
 void recvGimData(Chassis_t *chassis) {          //环形缓存器版本
+    short raw[3];                               //用于存储原始数据
     uint8_t recv_flag[2] = {0};
     CanRxMsg msg[2];                            //用于存储最新can消息
     CanRing_t *p = chassis->gimbal_canRx;       //指向can消息环形缓存器的指针
@@ -31,9 +32,12 @@ void recvGimData(Chassis_t *chassis) {          //环形缓存器版本
         recv_flag[temp_msg.StdId-0x101] = 1;
     }
     if(recv_flag[0]) {                          //0x101
-        chassis->kinematic.target_vel.x = (msg[0].Data[0]<<8 | msg[0].Data[1]);
-        chassis->kinematic.target_vel.y = (msg[0].Data[2]<<8 | msg[0].Data[3]);
-        chassis->kinematic.target_vel.w = (msg[0].Data[4]<<8 | msg[0].Data[5]);
+        raw[0] = (short)(msg[0].Data[0]<<8 | msg[0].Data[1]);
+        raw[1] = (short)(msg[0].Data[2]<<8 | msg[0].Data[3]);
+        raw[2] = (short)(msg[0].Data[4]<<8 | msg[0].Data[5]);
+        chassis->kinematic.target_vel.x = raw[0]/1000.0f;
+        chassis->kinematic.target_vel.y = raw[1]/1000.0f;
+        chassis->kinematic.target_vel.w = raw[2]/1000.0f;
         chassis->yaw_100 = (msg[0].Data[6]<<8 | msg[0].Data[7]);
     }
     if(recv_flag[1]) {                          //0x102
@@ -176,13 +180,14 @@ void moveCtrl(Chassis_t *chassis) {
  * @retval None
 */
 void sendGimData(Chassis_t *chassis) {
+    short w = (short)chassis->kinematic.target_vel.w*1000;
     CanTxMsg tx_msg;
     tx_msg.IDE = CAN_ID_STD;
     tx_msg.RTR = CAN_RTR_DATA;
     tx_msg.DLC = 0x02;
     tx_msg.StdId = 0x100;
-    tx_msg.Data[0] = (chassis->kinematic.real_vel.w>>8)&0xff;
-    tx_msg.Data[1] = chassis->kinematic.real_vel.w&0xff;
+    tx_msg.Data[0] = (w>>8)&0xff;
+    tx_msg.Data[1] = w&0xff;
     CAN_Transmit(CAN2, &tx_msg);
     return;
 }

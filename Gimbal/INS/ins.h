@@ -13,10 +13,8 @@
 #ifndef _INS_H_
 #define _INS_H_
 
-#include "RtosTaskCheck.h"
 #include "QuaternionEKF.h"
 #include "IMU.h"
-
 
 #define X 0
 #define Y 1
@@ -58,10 +56,11 @@ typedef struct __INS_t {
     float YawSpeed;
     float PitchLastSpeed;
     float YawLastSpeed;
-    float PitchSpeedLPF; //角速度低通滤波系数
+    float PitchSpeedLPF;                    //角速度低通滤波系数
     float YawSpeedLPF;
     
     IMU_t imu;
+    SemaphoreHandle_t mutex;            //互斥锁
 } INS_t;
 
 /**

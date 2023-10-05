@@ -2,10 +2,10 @@
 #define __SYS_H
 
 #include "stm32f4xx.h"
-// #include "stm32f4xx_conf.h"
 #include "stm32f4xx_dac.h"
 #include "FreeRTOSConfig.h"
 #include "FreeRTOS.h"
+#include "RtosTaskCheck.h"
 #include "task.h"
 #include "semphr.h"
 

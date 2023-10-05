@@ -3,7 +3,7 @@
 
 #include "ins.h"
 
-void GimbalEstimate_task(void *pvParameters);
+//void GimbalEstimate_task(void *pvParameters);
 
 
 #endif

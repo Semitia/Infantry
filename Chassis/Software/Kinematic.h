@@ -19,9 +19,9 @@
  * 速度结构体
 */
 typedef struct __Velocity_t {
-    short x;    // x方向速度 m/s
-    short y;    // y方向速度 m/s
-    short w;    // 角速度   rad/s
+    float x;    // x方向速度 m/s
+    float y;    // y方向速度 m/s
+    float w;    // 角速度   rad/s
 }Velocity_t;
 
 /**

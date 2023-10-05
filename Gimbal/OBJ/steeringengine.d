@@ -29,6 +29,7 @@
 ..\obj\steeringengine.o: ..\FreeRTOS\include\deprecated_definitions.h
 ..\obj\steeringengine.o: ..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h
 ..\obj\steeringengine.o: ..\FreeRTOS\include\mpu_wrappers.h
+..\obj\steeringengine.o: ..\INS\RtosTaskCheck.h
 ..\obj\steeringengine.o: ..\FreeRTOS\include\task.h
 ..\obj\steeringengine.o: ..\FreeRTOS\include\list.h
 ..\obj\steeringengine.o: ..\FreeRTOS\include\semphr.h
@@ -48,7 +49,6 @@
 ..\obj\steeringengine.o: ..\Mylib\usart3.h
 ..\obj\steeringengine.o: ..\Software\usart.h
 ..\obj\steeringengine.o: ..\INS\INS.h
-..\obj\steeringengine.o: ..\INS\RtosTaskCheck.h
 ..\obj\steeringengine.o: ..\INS\QuaternionEKF.h
 ..\obj\steeringengine.o: ..\INS\kalman_filter.h
 ..\obj\steeringengine.o: ..\Software\IMU.h
@@ -59,9 +59,9 @@
 ..\obj\steeringengine.o: ..\Software\motor.h
 ..\obj\steeringengine.o: ..\Algorithm\filters.h
 ..\obj\steeringengine.o: ..\Algorithm\pid.h
+..\obj\steeringengine.o: ..\Mylib\can1.h
 ..\obj\steeringengine.o: ..\INS\GimbalEstimateTask.h
 ..\obj\steeringengine.o: ..\Mylib\gpio.h
-..\obj\steeringengine.o: ..\Mylib\can1.h
 ..\obj\steeringengine.o: ..\Mylib\tim4.h
 ..\obj\steeringengine.o: ..\Task\usart4_gryo.h
 ..\obj\steeringengine.o: ..\Mylib\usart1.h

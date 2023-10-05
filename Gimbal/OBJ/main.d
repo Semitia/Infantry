@@ -29,6 +29,7 @@
 ..\obj\main.o: ..\FreeRTOS\include\deprecated_definitions.h
 ..\obj\main.o: ..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h
 ..\obj\main.o: ..\FreeRTOS\include\mpu_wrappers.h
+..\obj\main.o: ..\INS\RtosTaskCheck.h
 ..\obj\main.o: ..\FreeRTOS\include\task.h
 ..\obj\main.o: ..\FreeRTOS\include\list.h
 ..\obj\main.o: ..\FreeRTOS\include\semphr.h
@@ -48,7 +49,6 @@
 ..\obj\main.o: ..\Mylib\usart3.h
 ..\obj\main.o: ..\Software\usart.h
 ..\obj\main.o: ..\INS\INS.h
-..\obj\main.o: ..\INS\RtosTaskCheck.h
 ..\obj\main.o: ..\INS\QuaternionEKF.h
 ..\obj\main.o: ..\INS\kalman_filter.h
 ..\obj\main.o: ..\Software\IMU.h
@@ -59,9 +59,9 @@
 ..\obj\main.o: ..\Software\motor.h
 ..\obj\main.o: ..\Algorithm\filters.h
 ..\obj\main.o: ..\Algorithm\pid.h
+..\obj\main.o: ..\Mylib\can1.h
 ..\obj\main.o: ..\INS\GimbalEstimateTask.h
 ..\obj\main.o: ..\Mylib\gpio.h
-..\obj\main.o: ..\Mylib\can1.h
 ..\obj\main.o: ..\Mylib\tim4.h
 ..\obj\main.o: ..\Task\usart4_gryo.h
 ..\obj\main.o: ..\Mylib\usart1.h

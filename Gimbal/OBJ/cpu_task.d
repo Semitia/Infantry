@@ -34,6 +34,7 @@
 ..\obj\cpu_task.o: ..\Mylib\usart3.h
 ..\obj\cpu_task.o: ..\User\sys.h
 ..\obj\cpu_task.o: ..\Library\inc\stm32f4xx_dac.h
+..\obj\cpu_task.o: ..\INS\RtosTaskCheck.h
 ..\obj\cpu_task.o: ..\FreeRTOS\include\task.h
 ..\obj\cpu_task.o: ..\FreeRTOS\include\list.h
 ..\obj\cpu_task.o: ..\FreeRTOS\include\semphr.h
@@ -48,7 +49,6 @@
 ..\obj\cpu_task.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\cpu_task.o: ..\Software\usart.h
 ..\obj\cpu_task.o: ..\INS\INS.h
-..\obj\cpu_task.o: ..\INS\RtosTaskCheck.h
 ..\obj\cpu_task.o: ..\INS\QuaternionEKF.h
 ..\obj\cpu_task.o: ..\INS\kalman_filter.h
 ..\obj\cpu_task.o: ..\Software\IMU.h
@@ -59,6 +59,7 @@
 ..\obj\cpu_task.o: ..\Software\motor.h
 ..\obj\cpu_task.o: ..\Algorithm\filters.h
 ..\obj\cpu_task.o: ..\Algorithm\pid.h
+..\obj\cpu_task.o: ..\Mylib\can1.h
 ..\obj\cpu_task.o: ..\INS\GimbalEstimateTask.h
 ..\obj\cpu_task.o: ..\INS\debug.h
 ..\obj\cpu_task.o: ..\RTOS_Test\tools.h

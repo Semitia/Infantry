@@ -29,6 +29,7 @@
 ..\obj\laser.o: ..\FreeRTOS\include\deprecated_definitions.h
 ..\obj\laser.o: ..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h
 ..\obj\laser.o: ..\FreeRTOS\include\mpu_wrappers.h
+..\obj\laser.o: ..\INS\RtosTaskCheck.h
 ..\obj\laser.o: ..\FreeRTOS\include\task.h
 ..\obj\laser.o: ..\FreeRTOS\include\list.h
 ..\obj\laser.o: ..\FreeRTOS\include\semphr.h
@@ -48,7 +49,6 @@
 ..\obj\laser.o: ..\Mylib\usart3.h
 ..\obj\laser.o: ..\Software\usart.h
 ..\obj\laser.o: ..\INS\INS.h
-..\obj\laser.o: ..\INS\RtosTaskCheck.h
 ..\obj\laser.o: ..\INS\QuaternionEKF.h
 ..\obj\laser.o: ..\INS\kalman_filter.h
 ..\obj\laser.o: ..\Software\IMU.h
@@ -59,9 +59,9 @@
 ..\obj\laser.o: ..\Software\motor.h
 ..\obj\laser.o: ..\Algorithm\filters.h
 ..\obj\laser.o: ..\Algorithm\pid.h
+..\obj\laser.o: ..\Mylib\can1.h
 ..\obj\laser.o: ..\INS\GimbalEstimateTask.h
 ..\obj\laser.o: ..\Mylib\gpio.h
-..\obj\laser.o: ..\Mylib\can1.h
 ..\obj\laser.o: ..\Mylib\tim4.h
 ..\obj\laser.o: ..\Task\usart4_gryo.h
 ..\obj\laser.o: ..\Mylib\usart1.h

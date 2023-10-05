@@ -30,6 +30,7 @@
 ..\obj\can2.o: ..\FreeRTOS\include\deprecated_definitions.h
 ..\obj\can2.o: ..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h
 ..\obj\can2.o: ..\FreeRTOS\include\mpu_wrappers.h
+..\obj\can2.o: ..\INS\RtosTaskCheck.h
 ..\obj\can2.o: ..\FreeRTOS\include\task.h
 ..\obj\can2.o: ..\FreeRTOS\include\list.h
 ..\obj\can2.o: ..\FreeRTOS\include\semphr.h

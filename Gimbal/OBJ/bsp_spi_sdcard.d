@@ -29,6 +29,7 @@
 ..\obj\bsp_spi_sdcard.o: ..\FreeRTOS\include\deprecated_definitions.h
 ..\obj\bsp_spi_sdcard.o: ..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h
 ..\obj\bsp_spi_sdcard.o: ..\FreeRTOS\include\mpu_wrappers.h
+..\obj\bsp_spi_sdcard.o: ..\INS\RtosTaskCheck.h
 ..\obj\bsp_spi_sdcard.o: ..\FreeRTOS\include\task.h
 ..\obj\bsp_spi_sdcard.o: ..\FreeRTOS\include\list.h
 ..\obj\bsp_spi_sdcard.o: ..\FreeRTOS\include\semphr.h
@@ -48,7 +49,6 @@
 ..\obj\bsp_spi_sdcard.o: ..\Mylib\usart3.h
 ..\obj\bsp_spi_sdcard.o: ..\Software\usart.h
 ..\obj\bsp_spi_sdcard.o: ..\INS\INS.h
-..\obj\bsp_spi_sdcard.o: ..\INS\RtosTaskCheck.h
 ..\obj\bsp_spi_sdcard.o: ..\INS\QuaternionEKF.h
 ..\obj\bsp_spi_sdcard.o: ..\INS\kalman_filter.h
 ..\obj\bsp_spi_sdcard.o: ..\Software\IMU.h
@@ -59,9 +59,9 @@
 ..\obj\bsp_spi_sdcard.o: ..\Software\motor.h
 ..\obj\bsp_spi_sdcard.o: ..\Algorithm\filters.h
 ..\obj\bsp_spi_sdcard.o: ..\Algorithm\pid.h
+..\obj\bsp_spi_sdcard.o: ..\Mylib\can1.h
 ..\obj\bsp_spi_sdcard.o: ..\INS\GimbalEstimateTask.h
 ..\obj\bsp_spi_sdcard.o: ..\Mylib\gpio.h
-..\obj\bsp_spi_sdcard.o: ..\Mylib\can1.h
 ..\obj\bsp_spi_sdcard.o: ..\Mylib\tim4.h
 ..\obj\bsp_spi_sdcard.o: ..\Task\usart4_gryo.h
 ..\obj\bsp_spi_sdcard.o: ..\Mylib\usart1.h

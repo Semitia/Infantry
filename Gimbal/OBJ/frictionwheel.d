@@ -29,6 +29,7 @@
 ..\obj\frictionwheel.o: ..\FreeRTOS\include\deprecated_definitions.h
 ..\obj\frictionwheel.o: ..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h
 ..\obj\frictionwheel.o: ..\FreeRTOS\include\mpu_wrappers.h
+..\obj\frictionwheel.o: ..\INS\RtosTaskCheck.h
 ..\obj\frictionwheel.o: ..\FreeRTOS\include\task.h
 ..\obj\frictionwheel.o: ..\FreeRTOS\include\list.h
 ..\obj\frictionwheel.o: ..\FreeRTOS\include\semphr.h
@@ -48,7 +49,6 @@
 ..\obj\frictionwheel.o: ..\Mylib\usart3.h
 ..\obj\frictionwheel.o: ..\Software\usart.h
 ..\obj\frictionwheel.o: ..\INS\INS.h
-..\obj\frictionwheel.o: ..\INS\RtosTaskCheck.h
 ..\obj\frictionwheel.o: ..\INS\QuaternionEKF.h
 ..\obj\frictionwheel.o: ..\INS\kalman_filter.h
 ..\obj\frictionwheel.o: ..\Software\IMU.h
@@ -59,9 +59,9 @@
 ..\obj\frictionwheel.o: ..\Software\motor.h
 ..\obj\frictionwheel.o: ..\Algorithm\filters.h
 ..\obj\frictionwheel.o: ..\Algorithm\pid.h
+..\obj\frictionwheel.o: ..\Mylib\can1.h
 ..\obj\frictionwheel.o: ..\INS\GimbalEstimateTask.h
 ..\obj\frictionwheel.o: ..\Mylib\gpio.h
-..\obj\frictionwheel.o: ..\Mylib\can1.h
 ..\obj\frictionwheel.o: ..\Mylib\tim4.h
 ..\obj\frictionwheel.o: ..\Task\usart4_gryo.h
 ..\obj\frictionwheel.o: ..\Mylib\usart1.h

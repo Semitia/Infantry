@@ -31,6 +31,7 @@
 ..\obj\gimbal.o: ..\FreeRTOS\include\deprecated_definitions.h
 ..\obj\gimbal.o: ..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h
 ..\obj\gimbal.o: ..\FreeRTOS\include\mpu_wrappers.h
+..\obj\gimbal.o: ..\INS\RtosTaskCheck.h
 ..\obj\gimbal.o: ..\FreeRTOS\include\task.h
 ..\obj\gimbal.o: ..\FreeRTOS\include\list.h
 ..\obj\gimbal.o: ..\FreeRTOS\include\semphr.h
@@ -45,7 +46,6 @@
 ..\obj\gimbal.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\gimbal.o: ..\Software\usart.h
 ..\obj\gimbal.o: ..\INS\INS.h
-..\obj\gimbal.o: ..\INS\RtosTaskCheck.h
 ..\obj\gimbal.o: ..\INS\QuaternionEKF.h
 ..\obj\gimbal.o: ..\INS\kalman_filter.h
 ..\obj\gimbal.o: ..\Software\IMU.h
@@ -56,3 +56,4 @@
 ..\obj\gimbal.o: ..\Software\motor.h
 ..\obj\gimbal.o: ..\Algorithm\filters.h
 ..\obj\gimbal.o: ..\Algorithm\pid.h
+..\obj\gimbal.o: ..\Mylib\can1.h

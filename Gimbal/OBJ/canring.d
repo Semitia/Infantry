@@ -29,6 +29,7 @@
 ..\obj\canring.o: ..\FreeRTOS\include\deprecated_definitions.h
 ..\obj\canring.o: ..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h
 ..\obj\canring.o: ..\FreeRTOS\include\mpu_wrappers.h
+..\obj\canring.o: ..\INS\RtosTaskCheck.h
 ..\obj\canring.o: ..\FreeRTOS\include\task.h
 ..\obj\canring.o: ..\FreeRTOS\include\list.h
 ..\obj\canring.o: ..\FreeRTOS\include\semphr.h

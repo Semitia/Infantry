@@ -25,7 +25,6 @@ void Chassis_task(void *pvParameters)
 		// }
 		//recvGimData(&chassis);
 		moveCtrl(&chassis);
-		//setMotorCurTest(500,500,500,500,CAN1);
 		
 		//sendGimData(&chassis);
 		

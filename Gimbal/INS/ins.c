@@ -31,6 +31,7 @@ void initINS(INS_t *ins)
     // IMU_Param.Roll = 0;
     // IMU_Param.flag = 1;
 	imuInit(&ins->imu);
+    ins->mutex = xSemaphoreCreateMutex();
     IMU_QuaternionEKF_Init(10, 0.001, 10000000, 1, 0);
 
     ins->AccelLPF = 0.0085;

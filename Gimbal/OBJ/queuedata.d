@@ -29,6 +29,7 @@
 ..\obj\queuedata.o: ..\FreeRTOS\include\deprecated_definitions.h
 ..\obj\queuedata.o: ..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h
 ..\obj\queuedata.o: ..\FreeRTOS\include\mpu_wrappers.h
+..\obj\queuedata.o: ..\INS\RtosTaskCheck.h
 ..\obj\queuedata.o: ..\FreeRTOS\include\task.h
 ..\obj\queuedata.o: ..\FreeRTOS\include\list.h
 ..\obj\queuedata.o: ..\FreeRTOS\include\semphr.h
@@ -48,7 +49,6 @@
 ..\obj\queuedata.o: ..\Mylib\usart3.h
 ..\obj\queuedata.o: ..\Software\usart.h
 ..\obj\queuedata.o: ..\INS\INS.h
-..\obj\queuedata.o: ..\INS\RtosTaskCheck.h
 ..\obj\queuedata.o: ..\INS\QuaternionEKF.h
 ..\obj\queuedata.o: ..\INS\kalman_filter.h
 ..\obj\queuedata.o: ..\Software\IMU.h
@@ -59,9 +59,9 @@
 ..\obj\queuedata.o: ..\Software\motor.h
 ..\obj\queuedata.o: ..\Algorithm\filters.h
 ..\obj\queuedata.o: ..\Algorithm\pid.h
+..\obj\queuedata.o: ..\Mylib\can1.h
 ..\obj\queuedata.o: ..\INS\GimbalEstimateTask.h
 ..\obj\queuedata.o: ..\Mylib\gpio.h
-..\obj\queuedata.o: ..\Mylib\can1.h
 ..\obj\queuedata.o: ..\Mylib\tim4.h
 ..\obj\queuedata.o: ..\Task\usart4_gryo.h
 ..\obj\queuedata.o: ..\Mylib\usart1.h

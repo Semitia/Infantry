@@ -30,6 +30,7 @@
 ..\obj\motor.o: ..\FreeRTOS\include\deprecated_definitions.h
 ..\obj\motor.o: ..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h
 ..\obj\motor.o: ..\FreeRTOS\include\mpu_wrappers.h
+..\obj\motor.o: ..\INS\RtosTaskCheck.h
 ..\obj\motor.o: ..\FreeRTOS\include\task.h
 ..\obj\motor.o: ..\FreeRTOS\include\list.h
 ..\obj\motor.o: ..\FreeRTOS\include\semphr.h

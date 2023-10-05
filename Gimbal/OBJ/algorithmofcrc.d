@@ -29,6 +29,7 @@
 ..\obj\algorithmofcrc.o: ..\FreeRTOS\include\deprecated_definitions.h
 ..\obj\algorithmofcrc.o: ..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h
 ..\obj\algorithmofcrc.o: ..\FreeRTOS\include\mpu_wrappers.h
+..\obj\algorithmofcrc.o: ..\INS\RtosTaskCheck.h
 ..\obj\algorithmofcrc.o: ..\FreeRTOS\include\task.h
 ..\obj\algorithmofcrc.o: ..\FreeRTOS\include\list.h
 ..\obj\algorithmofcrc.o: ..\FreeRTOS\include\semphr.h
@@ -48,7 +49,6 @@
 ..\obj\algorithmofcrc.o: ..\Mylib\usart3.h
 ..\obj\algorithmofcrc.o: ..\Software\usart.h
 ..\obj\algorithmofcrc.o: ..\INS\INS.h
-..\obj\algorithmofcrc.o: ..\INS\RtosTaskCheck.h
 ..\obj\algorithmofcrc.o: ..\INS\QuaternionEKF.h
 ..\obj\algorithmofcrc.o: ..\INS\kalman_filter.h
 ..\obj\algorithmofcrc.o: ..\Software\IMU.h
@@ -59,9 +59,9 @@
 ..\obj\algorithmofcrc.o: ..\Software\motor.h
 ..\obj\algorithmofcrc.o: ..\Algorithm\filters.h
 ..\obj\algorithmofcrc.o: ..\Algorithm\pid.h
+..\obj\algorithmofcrc.o: ..\Mylib\can1.h
 ..\obj\algorithmofcrc.o: ..\INS\GimbalEstimateTask.h
 ..\obj\algorithmofcrc.o: ..\Mylib\gpio.h
-..\obj\algorithmofcrc.o: ..\Mylib\can1.h
 ..\obj\algorithmofcrc.o: ..\Mylib\tim4.h
 ..\obj\algorithmofcrc.o: ..\Task\usart4_gryo.h
 ..\obj\algorithmofcrc.o: ..\Mylib\usart1.h

@@ -30,6 +30,7 @@
 ..\obj\remotectrl.o: ..\FreeRTOS\include\deprecated_definitions.h
 ..\obj\remotectrl.o: ..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h
 ..\obj\remotectrl.o: ..\FreeRTOS\include\mpu_wrappers.h
+..\obj\remotectrl.o: ..\INS\RtosTaskCheck.h
 ..\obj\remotectrl.o: ..\FreeRTOS\include\task.h
 ..\obj\remotectrl.o: ..\FreeRTOS\include\list.h
 ..\obj\remotectrl.o: ..\FreeRTOS\include\semphr.h

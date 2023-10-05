@@ -56,7 +56,6 @@
 ".\objects\usart.o"
 ".\objects\can.o"
 ".\objects\canring.o"
-".\objects\datareceivetask.o"
 ".\objects\start_task.o"
 ".\objects\chassistask.o"
 --library_type=microlib --strict --scatter ".\Objects\Infantry_S.sct"
