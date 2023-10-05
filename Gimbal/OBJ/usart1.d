@@ -47,8 +47,7 @@
 ..\obj\usart1.o: ..\Software\RemoteCtrl.h
 ..\obj\usart1.o: ..\Mylib\usart3.h
 ..\obj\usart1.o: ..\Software\usart.h
-..\obj\usart1.o: ..\INS\GimbalEstimateTask.h
-..\obj\usart1.o: ..\INS\ins.h
+..\obj\usart1.o: ..\INS\INS.h
 ..\obj\usart1.o: ..\INS\RtosTaskCheck.h
 ..\obj\usart1.o: ..\INS\QuaternionEKF.h
 ..\obj\usart1.o: ..\INS\kalman_filter.h
@@ -56,6 +55,11 @@
 ..\obj\usart1.o: ..\Mylib\can2.h
 ..\obj\usart1.o: ..\Software\CanRing.h
 ..\obj\usart1.o: ..\Mylib\counter.h
+..\obj\usart1.o: ..\Software\Shoot.h
+..\obj\usart1.o: ..\Software\motor.h
+..\obj\usart1.o: ..\Algorithm\filters.h
+..\obj\usart1.o: ..\Algorithm\pid.h
+..\obj\usart1.o: ..\INS\GimbalEstimateTask.h
 ..\obj\usart1.o: ..\Mylib\gpio.h
 ..\obj\usart1.o: ..\Mylib\can1.h
 ..\obj\usart1.o: ..\Mylib\tim4.h
@@ -70,7 +74,6 @@
 ..\obj\usart1.o: ..\Mylib\pc_uart.h
 ..\obj\usart1.o: ..\SD\bsp_spi_sdcard.h
 ..\obj\usart1.o: ..\Library\inc\stm32f4xx_spi.h
-..\obj\usart1.o: ..\Algorithm\pid.h
 ..\obj\usart1.o: ..\Algorithm\algorithmOfCRC.h
 ..\obj\usart1.o: ..\Algorithm\TD.h
 ..\obj\usart1.o: ..\User\main.h

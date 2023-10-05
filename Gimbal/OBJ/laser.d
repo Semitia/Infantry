@@ -47,8 +47,7 @@
 ..\obj\laser.o: ..\Software\RemoteCtrl.h
 ..\obj\laser.o: ..\Mylib\usart3.h
 ..\obj\laser.o: ..\Software\usart.h
-..\obj\laser.o: ..\INS\GimbalEstimateTask.h
-..\obj\laser.o: ..\INS\ins.h
+..\obj\laser.o: ..\INS\INS.h
 ..\obj\laser.o: ..\INS\RtosTaskCheck.h
 ..\obj\laser.o: ..\INS\QuaternionEKF.h
 ..\obj\laser.o: ..\INS\kalman_filter.h
@@ -56,6 +55,11 @@
 ..\obj\laser.o: ..\Mylib\can2.h
 ..\obj\laser.o: ..\Software\CanRing.h
 ..\obj\laser.o: ..\Mylib\counter.h
+..\obj\laser.o: ..\Software\Shoot.h
+..\obj\laser.o: ..\Software\motor.h
+..\obj\laser.o: ..\Algorithm\filters.h
+..\obj\laser.o: ..\Algorithm\pid.h
+..\obj\laser.o: ..\INS\GimbalEstimateTask.h
 ..\obj\laser.o: ..\Mylib\gpio.h
 ..\obj\laser.o: ..\Mylib\can1.h
 ..\obj\laser.o: ..\Mylib\tim4.h
@@ -70,7 +74,6 @@
 ..\obj\laser.o: ..\Mylib\pc_uart.h
 ..\obj\laser.o: ..\SD\bsp_spi_sdcard.h
 ..\obj\laser.o: ..\Library\inc\stm32f4xx_spi.h
-..\obj\laser.o: ..\Algorithm\pid.h
 ..\obj\laser.o: ..\Algorithm\algorithmOfCRC.h
 ..\obj\laser.o: ..\Algorithm\TD.h
 ..\obj\laser.o: ..\User\main.h

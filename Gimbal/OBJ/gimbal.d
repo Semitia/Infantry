@@ -44,3 +44,15 @@
 ..\obj\gimbal.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\gimbal.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\gimbal.o: ..\Software\usart.h
+..\obj\gimbal.o: ..\INS\INS.h
+..\obj\gimbal.o: ..\INS\RtosTaskCheck.h
+..\obj\gimbal.o: ..\INS\QuaternionEKF.h
+..\obj\gimbal.o: ..\INS\kalman_filter.h
+..\obj\gimbal.o: ..\Software\IMU.h
+..\obj\gimbal.o: ..\Mylib\can2.h
+..\obj\gimbal.o: ..\Software\CanRing.h
+..\obj\gimbal.o: ..\Mylib\counter.h
+..\obj\gimbal.o: ..\Software\Shoot.h
+..\obj\gimbal.o: ..\Software\motor.h
+..\obj\gimbal.o: ..\Algorithm\filters.h
+..\obj\gimbal.o: ..\Algorithm\pid.h

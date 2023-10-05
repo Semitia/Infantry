@@ -61,13 +61,13 @@ float lowPassTS(LowPass_t *lp, float input) {
 
 /**************************卡尔曼滤波器**************************/
 
-void updateKF(KalmanFilter_t *kf, Matrix_t z) {
-    kf->dt = (xTaskGetTickCount() - kf->t)/configTICK_RATE_HZ;
-    kf->t = xTaskGetTickCount();
-    kf->x = mul_matrix(kf->F, kf->x);
-    kf->P = add_matrix(mul_matrix(mul_matrix(kf->F, kf->P), tran_matrix(kf->F)), kf->Q);
-    kf->K = mul_matrix(mul_matrix(kf->P, tran_matrix(kf->H)), inv_matrix(add_matrix(mul_matrix(mul_matrix(kf->H, kf->P), tran_matrix(kf->H)), kf->R)));
-    kf->x = add_matrix(kf->x, mul_matrix(kf->K, sub_matrix(z, mul_matrix(kf->H, kf->x))));
-    kf->P = mul_matrix(sub_matrix(get_I(2), mul_matrix(kf->K, kf->H)), kf->P);
-}
+// void updateKF(KalmanFilter_t *kf, Matrix_t z) {
+//     kf->dt = (xTaskGetTickCount() - kf->t)/configTICK_RATE_HZ;
+//     kf->t = xTaskGetTickCount();
+//     kf->x = mul_matrix(kf->F, kf->x);
+//     kf->P = add_matrix(mul_matrix(mul_matrix(kf->F, kf->P), tran_matrix(kf->F)), kf->Q);
+//     kf->K = mul_matrix(mul_matrix(kf->P, tran_matrix(kf->H)), inv_matrix(add_matrix(mul_matrix(mul_matrix(kf->H, kf->P), tran_matrix(kf->H)), kf->R)));
+//     kf->x = add_matrix(kf->x, mul_matrix(kf->K, sub_matrix(z, mul_matrix(kf->H, kf->x))));
+//     kf->P = mul_matrix(sub_matrix(get_I(2), mul_matrix(kf->K, kf->H)), kf->P);
+// }
 

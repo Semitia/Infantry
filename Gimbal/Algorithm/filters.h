@@ -27,11 +27,11 @@ void lowPassInitTS(LowPass_t *lp, float tf);
 float lowPass(LowPass_t *lp, float input);
 float lowPassTS(LowPass_t *lp, float input);
 
-typedef struct __KalmanFilter_t {
-    Matrix_t x, P, Q, R, H, F, B, u, z, K;
-    float dt, t;
-} KalmanFilter_t;
+// typedef struct __KalmanFilter_t {
+//     Matrix_t x, P, Q, R, H, F, B, u, z, K;
+//     float dt, t;
+// } KalmanFilter_t;
 
-void updateKF(KalmanFilter_t *kf, Matrix_t z);
+// void updateKF(KalmanFilter_t *kf, Matrix_t z);
 #endif
 

@@ -47,8 +47,7 @@
 ..\obj\microsw.o: ..\Software\RemoteCtrl.h
 ..\obj\microsw.o: ..\Mylib\usart3.h
 ..\obj\microsw.o: ..\Software\usart.h
-..\obj\microsw.o: ..\INS\GimbalEstimateTask.h
-..\obj\microsw.o: ..\INS\ins.h
+..\obj\microsw.o: ..\INS\INS.h
 ..\obj\microsw.o: ..\INS\RtosTaskCheck.h
 ..\obj\microsw.o: ..\INS\QuaternionEKF.h
 ..\obj\microsw.o: ..\INS\kalman_filter.h
@@ -56,6 +55,11 @@
 ..\obj\microsw.o: ..\Mylib\can2.h
 ..\obj\microsw.o: ..\Software\CanRing.h
 ..\obj\microsw.o: ..\Mylib\counter.h
+..\obj\microsw.o: ..\Software\Shoot.h
+..\obj\microsw.o: ..\Software\motor.h
+..\obj\microsw.o: ..\Algorithm\filters.h
+..\obj\microsw.o: ..\Algorithm\pid.h
+..\obj\microsw.o: ..\INS\GimbalEstimateTask.h
 ..\obj\microsw.o: ..\Mylib\gpio.h
 ..\obj\microsw.o: ..\Mylib\can1.h
 ..\obj\microsw.o: ..\Mylib\tim4.h
@@ -70,7 +74,6 @@
 ..\obj\microsw.o: ..\Mylib\pc_uart.h
 ..\obj\microsw.o: ..\SD\bsp_spi_sdcard.h
 ..\obj\microsw.o: ..\Library\inc\stm32f4xx_spi.h
-..\obj\microsw.o: ..\Algorithm\pid.h
 ..\obj\microsw.o: ..\Algorithm\algorithmOfCRC.h
 ..\obj\microsw.o: ..\Algorithm\TD.h
 ..\obj\microsw.o: ..\User\main.h

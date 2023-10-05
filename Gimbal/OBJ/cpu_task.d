@@ -47,8 +47,7 @@
 ..\obj\cpu_task.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\cpu_task.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\cpu_task.o: ..\Software\usart.h
-..\obj\cpu_task.o: ..\INS\GimbalEstimateTask.h
-..\obj\cpu_task.o: ..\INS\ins.h
+..\obj\cpu_task.o: ..\INS\INS.h
 ..\obj\cpu_task.o: ..\INS\RtosTaskCheck.h
 ..\obj\cpu_task.o: ..\INS\QuaternionEKF.h
 ..\obj\cpu_task.o: ..\INS\kalman_filter.h
@@ -56,5 +55,10 @@
 ..\obj\cpu_task.o: ..\Mylib\can2.h
 ..\obj\cpu_task.o: ..\Software\CanRing.h
 ..\obj\cpu_task.o: ..\Mylib\counter.h
+..\obj\cpu_task.o: ..\Software\Shoot.h
+..\obj\cpu_task.o: ..\Software\motor.h
+..\obj\cpu_task.o: ..\Algorithm\filters.h
+..\obj\cpu_task.o: ..\Algorithm\pid.h
+..\obj\cpu_task.o: ..\INS\GimbalEstimateTask.h
 ..\obj\cpu_task.o: ..\INS\debug.h
 ..\obj\cpu_task.o: ..\RTOS_Test\tools.h

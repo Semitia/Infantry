@@ -47,8 +47,7 @@
 ..\obj\algorithmofcrc.o: ..\Software\RemoteCtrl.h
 ..\obj\algorithmofcrc.o: ..\Mylib\usart3.h
 ..\obj\algorithmofcrc.o: ..\Software\usart.h
-..\obj\algorithmofcrc.o: ..\INS\GimbalEstimateTask.h
-..\obj\algorithmofcrc.o: ..\INS\ins.h
+..\obj\algorithmofcrc.o: ..\INS\INS.h
 ..\obj\algorithmofcrc.o: ..\INS\RtosTaskCheck.h
 ..\obj\algorithmofcrc.o: ..\INS\QuaternionEKF.h
 ..\obj\algorithmofcrc.o: ..\INS\kalman_filter.h
@@ -56,6 +55,11 @@
 ..\obj\algorithmofcrc.o: ..\Mylib\can2.h
 ..\obj\algorithmofcrc.o: ..\Software\CanRing.h
 ..\obj\algorithmofcrc.o: ..\Mylib\counter.h
+..\obj\algorithmofcrc.o: ..\Software\Shoot.h
+..\obj\algorithmofcrc.o: ..\Software\motor.h
+..\obj\algorithmofcrc.o: ..\Algorithm\filters.h
+..\obj\algorithmofcrc.o: ..\Algorithm\pid.h
+..\obj\algorithmofcrc.o: ..\INS\GimbalEstimateTask.h
 ..\obj\algorithmofcrc.o: ..\Mylib\gpio.h
 ..\obj\algorithmofcrc.o: ..\Mylib\can1.h
 ..\obj\algorithmofcrc.o: ..\Mylib\tim4.h
@@ -70,7 +74,6 @@
 ..\obj\algorithmofcrc.o: ..\Mylib\pc_uart.h
 ..\obj\algorithmofcrc.o: ..\SD\bsp_spi_sdcard.h
 ..\obj\algorithmofcrc.o: ..\Library\inc\stm32f4xx_spi.h
-..\obj\algorithmofcrc.o: ..\Algorithm\pid.h
 ..\obj\algorithmofcrc.o: ..\Algorithm\algorithmOfCRC.h
 ..\obj\algorithmofcrc.o: ..\Algorithm\TD.h
 ..\obj\algorithmofcrc.o: ..\User\main.h

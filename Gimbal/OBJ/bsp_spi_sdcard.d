@@ -47,8 +47,7 @@
 ..\obj\bsp_spi_sdcard.o: ..\Software\RemoteCtrl.h
 ..\obj\bsp_spi_sdcard.o: ..\Mylib\usart3.h
 ..\obj\bsp_spi_sdcard.o: ..\Software\usart.h
-..\obj\bsp_spi_sdcard.o: ..\INS\GimbalEstimateTask.h
-..\obj\bsp_spi_sdcard.o: ..\INS\ins.h
+..\obj\bsp_spi_sdcard.o: ..\INS\INS.h
 ..\obj\bsp_spi_sdcard.o: ..\INS\RtosTaskCheck.h
 ..\obj\bsp_spi_sdcard.o: ..\INS\QuaternionEKF.h
 ..\obj\bsp_spi_sdcard.o: ..\INS\kalman_filter.h
@@ -56,6 +55,11 @@
 ..\obj\bsp_spi_sdcard.o: ..\Mylib\can2.h
 ..\obj\bsp_spi_sdcard.o: ..\Software\CanRing.h
 ..\obj\bsp_spi_sdcard.o: ..\Mylib\counter.h
+..\obj\bsp_spi_sdcard.o: ..\Software\Shoot.h
+..\obj\bsp_spi_sdcard.o: ..\Software\motor.h
+..\obj\bsp_spi_sdcard.o: ..\Algorithm\filters.h
+..\obj\bsp_spi_sdcard.o: ..\Algorithm\pid.h
+..\obj\bsp_spi_sdcard.o: ..\INS\GimbalEstimateTask.h
 ..\obj\bsp_spi_sdcard.o: ..\Mylib\gpio.h
 ..\obj\bsp_spi_sdcard.o: ..\Mylib\can1.h
 ..\obj\bsp_spi_sdcard.o: ..\Mylib\tim4.h
@@ -70,7 +74,6 @@
 ..\obj\bsp_spi_sdcard.o: ..\Mylib\pc_uart.h
 ..\obj\bsp_spi_sdcard.o: ..\SD\bsp_spi_sdcard.h
 ..\obj\bsp_spi_sdcard.o: ..\Library\inc\stm32f4xx_spi.h
-..\obj\bsp_spi_sdcard.o: ..\Algorithm\pid.h
 ..\obj\bsp_spi_sdcard.o: ..\Algorithm\algorithmOfCRC.h
 ..\obj\bsp_spi_sdcard.o: ..\Algorithm\TD.h
 ..\obj\bsp_spi_sdcard.o: ..\User\main.h

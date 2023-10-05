@@ -45,3 +45,15 @@
 ..\obj\gimbaltask.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\gimbaltask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\gimbaltask.o: ..\Software\usart.h
+..\obj\gimbaltask.o: ..\INS\INS.h
+..\obj\gimbaltask.o: ..\INS\RtosTaskCheck.h
+..\obj\gimbaltask.o: ..\INS\QuaternionEKF.h
+..\obj\gimbaltask.o: ..\INS\kalman_filter.h
+..\obj\gimbaltask.o: ..\Software\IMU.h
+..\obj\gimbaltask.o: ..\Mylib\can2.h
+..\obj\gimbaltask.o: ..\Software\CanRing.h
+..\obj\gimbaltask.o: ..\Mylib\counter.h
+..\obj\gimbaltask.o: ..\Software\Shoot.h
+..\obj\gimbaltask.o: ..\Software\motor.h
+..\obj\gimbaltask.o: ..\Algorithm\filters.h
+..\obj\gimbaltask.o: ..\Algorithm\pid.h

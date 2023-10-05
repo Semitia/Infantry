@@ -28,6 +28,9 @@
         "rtostaskcheck.h": "c",
         "shoot.h": "c",
         "pid.h": "c",
-        "motor.h": "c"
+        "motor.h": "c",
+        "stm32f4xx_dac.h": "c",
+        "freertosconfig.h": "c",
+        "freertos.h": "c"
     }
 }

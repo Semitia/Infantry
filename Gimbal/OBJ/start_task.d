@@ -46,8 +46,7 @@
 ..\obj\start_task.o: ..\Library\CMSIS\core_cm4.h
 ..\obj\start_task.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\start_task.o: ..\Software\usart.h
-..\obj\start_task.o: ..\INS\GimbalEstimateTask.h
-..\obj\start_task.o: ..\INS\ins.h
+..\obj\start_task.o: ..\INS\INS.h
 ..\obj\start_task.o: ..\INS\RtosTaskCheck.h
 ..\obj\start_task.o: ..\INS\QuaternionEKF.h
 ..\obj\start_task.o: ..\INS\kalman_filter.h
@@ -55,3 +54,8 @@
 ..\obj\start_task.o: ..\Mylib\can2.h
 ..\obj\start_task.o: ..\Software\CanRing.h
 ..\obj\start_task.o: ..\Mylib\counter.h
+..\obj\start_task.o: ..\Software\Shoot.h
+..\obj\start_task.o: ..\Software\motor.h
+..\obj\start_task.o: ..\Algorithm\filters.h
+..\obj\start_task.o: ..\Algorithm\pid.h
+..\obj\start_task.o: ..\INS\GimbalEstimateTask.h

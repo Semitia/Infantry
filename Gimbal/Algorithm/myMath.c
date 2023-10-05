@@ -24,3 +24,18 @@ Roots_t solveQuadratic(double a, double b, double c) {
     return roots;
 }
 
+/**
+ * @brief 线性映射函数
+ * @param x 输入
+ * @param in_min 输入最小值
+ * @param in_max 输入最大值
+ * @param out_min 输出最小值
+ * @param out_max 输出最大值
+ * @return float 输出
+*/
+float linerMap(float x, float in_min, float in_max, float out_min, float out_max) {
+    float out;
+    out = (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+    return out;
+}
+

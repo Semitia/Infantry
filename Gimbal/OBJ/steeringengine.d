@@ -47,8 +47,7 @@
 ..\obj\steeringengine.o: ..\Software\RemoteCtrl.h
 ..\obj\steeringengine.o: ..\Mylib\usart3.h
 ..\obj\steeringengine.o: ..\Software\usart.h
-..\obj\steeringengine.o: ..\INS\GimbalEstimateTask.h
-..\obj\steeringengine.o: ..\INS\ins.h
+..\obj\steeringengine.o: ..\INS\INS.h
 ..\obj\steeringengine.o: ..\INS\RtosTaskCheck.h
 ..\obj\steeringengine.o: ..\INS\QuaternionEKF.h
 ..\obj\steeringengine.o: ..\INS\kalman_filter.h
@@ -56,6 +55,11 @@
 ..\obj\steeringengine.o: ..\Mylib\can2.h
 ..\obj\steeringengine.o: ..\Software\CanRing.h
 ..\obj\steeringengine.o: ..\Mylib\counter.h
+..\obj\steeringengine.o: ..\Software\Shoot.h
+..\obj\steeringengine.o: ..\Software\motor.h
+..\obj\steeringengine.o: ..\Algorithm\filters.h
+..\obj\steeringengine.o: ..\Algorithm\pid.h
+..\obj\steeringengine.o: ..\INS\GimbalEstimateTask.h
 ..\obj\steeringengine.o: ..\Mylib\gpio.h
 ..\obj\steeringengine.o: ..\Mylib\can1.h
 ..\obj\steeringengine.o: ..\Mylib\tim4.h
@@ -70,7 +74,6 @@
 ..\obj\steeringengine.o: ..\Mylib\pc_uart.h
 ..\obj\steeringengine.o: ..\SD\bsp_spi_sdcard.h
 ..\obj\steeringengine.o: ..\Library\inc\stm32f4xx_spi.h
-..\obj\steeringengine.o: ..\Algorithm\pid.h
 ..\obj\steeringengine.o: ..\Algorithm\algorithmOfCRC.h
 ..\obj\steeringengine.o: ..\Algorithm\TD.h
 ..\obj\steeringengine.o: ..\User\main.h

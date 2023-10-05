@@ -47,8 +47,7 @@
 ..\obj\frictionwheel.o: ..\Software\RemoteCtrl.h
 ..\obj\frictionwheel.o: ..\Mylib\usart3.h
 ..\obj\frictionwheel.o: ..\Software\usart.h
-..\obj\frictionwheel.o: ..\INS\GimbalEstimateTask.h
-..\obj\frictionwheel.o: ..\INS\ins.h
+..\obj\frictionwheel.o: ..\INS\INS.h
 ..\obj\frictionwheel.o: ..\INS\RtosTaskCheck.h
 ..\obj\frictionwheel.o: ..\INS\QuaternionEKF.h
 ..\obj\frictionwheel.o: ..\INS\kalman_filter.h
@@ -56,6 +55,11 @@
 ..\obj\frictionwheel.o: ..\Mylib\can2.h
 ..\obj\frictionwheel.o: ..\Software\CanRing.h
 ..\obj\frictionwheel.o: ..\Mylib\counter.h
+..\obj\frictionwheel.o: ..\Software\Shoot.h
+..\obj\frictionwheel.o: ..\Software\motor.h
+..\obj\frictionwheel.o: ..\Algorithm\filters.h
+..\obj\frictionwheel.o: ..\Algorithm\pid.h
+..\obj\frictionwheel.o: ..\INS\GimbalEstimateTask.h
 ..\obj\frictionwheel.o: ..\Mylib\gpio.h
 ..\obj\frictionwheel.o: ..\Mylib\can1.h
 ..\obj\frictionwheel.o: ..\Mylib\tim4.h
@@ -70,7 +74,6 @@
 ..\obj\frictionwheel.o: ..\Mylib\pc_uart.h
 ..\obj\frictionwheel.o: ..\SD\bsp_spi_sdcard.h
 ..\obj\frictionwheel.o: ..\Library\inc\stm32f4xx_spi.h
-..\obj\frictionwheel.o: ..\Algorithm\pid.h
 ..\obj\frictionwheel.o: ..\Algorithm\algorithmOfCRC.h
 ..\obj\frictionwheel.o: ..\Algorithm\TD.h
 ..\obj\frictionwheel.o: ..\User\main.h

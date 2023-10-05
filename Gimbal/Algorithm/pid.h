@@ -1,6 +1,8 @@
 #ifndef __PID_H
 #define __PID_H
 
+#include "myMath.h"
+
 typedef struct{
 	float K1;			
 	float K2;
