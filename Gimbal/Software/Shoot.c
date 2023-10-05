@@ -18,7 +18,7 @@ void sendSingleMoto(Motor_t *moto, CAN_TypeDef* CANx) {
         min_id = 0x201;
         tx_msg.StdId = 0x200;
     }
-    tx_msg.Data[moto->id - min_id] = (uint8_t)((moto->target_current >> 8) & 0xFF);
-    tx_msg.Data[moto->id - min_id + 1] = (uint8_t)(moto->target_current & 0xFF);
+    tx_msg.Data[2*(moto->id - min_id)] = (uint8_t)((moto->target_current >> 8) & 0xFF);
+    tx_msg.Data[2*(moto->id - min_id) + 1] = (uint8_t)(moto->target_current & 0xFF);
     CAN_Transmit(CANx, &tx_msg);
 }

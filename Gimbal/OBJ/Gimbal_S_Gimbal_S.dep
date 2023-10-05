@@ -43,7 +43,7 @@ I (..\Library\CMSIS\arm_math.h)(0x62F84D4C)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
 I (..\Task\Start_Task.h)(0x651AD478)
 I (..\Task\GimbalTask.h)(0x651EB9C1)
-I (..\Software\Gimbal.h)(0x651EB9EB)
+I (..\Software\Gimbal.h)(0x651ECB4A)
 I (..\Software\RemoteCtrl.h)(0x651C2D31)
 I (..\Mylib\usart3.h)(0x651AAABF)
 I (..\Software\usart.h)(0x651C1C10)
@@ -710,7 +710,7 @@ I (..\Library\CMSIS\arm_math.h)(0x62F84D4C)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
 I (..\Task\Start_Task.h)(0x651AD478)
 I (..\Task\GimbalTask.h)(0x651EB9C1)
-I (..\Software\Gimbal.h)(0x651EB9EB)
+I (..\Software\Gimbal.h)(0x651ECB4A)
 I (..\Software\RemoteCtrl.h)(0x651C2D31)
 I (..\Mylib\usart3.h)(0x651AAABF)
 I (..\Software\usart.h)(0x651C1C10)
@@ -817,7 +817,7 @@ I (..\Library\CMSIS\arm_math.h)(0x62F84D4C)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
 I (..\Task\Start_Task.h)(0x651AD478)
 I (..\Task\GimbalTask.h)(0x651EB9C1)
-I (..\Software\Gimbal.h)(0x651EB9EB)
+I (..\Software\Gimbal.h)(0x651ECB4A)
 I (..\Software\RemoteCtrl.h)(0x651C2D31)
 I (..\Mylib\usart3.h)(0x651AAABF)
 I (..\Software\usart.h)(0x651C1C10)
@@ -903,7 +903,7 @@ I (..\Library\CMSIS\arm_math.h)(0x62F84D4C)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
 I (..\Task\Start_Task.h)(0x651AD478)
 I (..\Task\GimbalTask.h)(0x651EB9C1)
-I (..\Software\Gimbal.h)(0x651EB9EB)
+I (..\Software\Gimbal.h)(0x651ECB4A)
 I (..\Software\RemoteCtrl.h)(0x651C2D31)
 I (..\Mylib\usart3.h)(0x651AAABF)
 I (..\Software\usart.h)(0x651C1C10)
@@ -989,7 +989,7 @@ I (..\Library\CMSIS\arm_math.h)(0x62F84D4C)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
 I (..\Task\Start_Task.h)(0x651AD478)
 I (..\Task\GimbalTask.h)(0x651EB9C1)
-I (..\Software\Gimbal.h)(0x651EB9EB)
+I (..\Software\Gimbal.h)(0x651ECB4A)
 I (..\Software\RemoteCtrl.h)(0x651C2D31)
 I (..\Mylib\usart3.h)(0x651AAABF)
 I (..\Software\usart.h)(0x651C1C10)
@@ -1075,7 +1075,7 @@ I (..\Library\CMSIS\arm_math.h)(0x62F84D4C)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
 I (..\Task\Start_Task.h)(0x651AD478)
 I (..\Task\GimbalTask.h)(0x651EB9C1)
-I (..\Software\Gimbal.h)(0x651EB9EB)
+I (..\Software\Gimbal.h)(0x651ECB4A)
 I (..\Software\RemoteCtrl.h)(0x651C2D31)
 I (..\Mylib\usart3.h)(0x651AAABF)
 I (..\Software\usart.h)(0x651C1C10)
@@ -1161,7 +1161,7 @@ I (..\Library\CMSIS\arm_math.h)(0x62F84D4C)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
 I (..\Task\Start_Task.h)(0x651AD478)
 I (..\Task\GimbalTask.h)(0x651EB9C1)
-I (..\Software\Gimbal.h)(0x651EB9EB)
+I (..\Software\Gimbal.h)(0x651ECB4A)
 I (..\Software\RemoteCtrl.h)(0x651C2D31)
 I (..\Mylib\usart3.h)(0x651AAABF)
 I (..\Software\usart.h)(0x651C1C10)
@@ -1247,7 +1247,7 @@ I (..\Library\CMSIS\arm_math.h)(0x62F84D4C)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
 I (..\Task\Start_Task.h)(0x651AD478)
 I (..\Task\GimbalTask.h)(0x651EB9C1)
-I (..\Software\Gimbal.h)(0x651EB9EB)
+I (..\Software\Gimbal.h)(0x651ECB4A)
 I (..\Software\RemoteCtrl.h)(0x651C2D31)
 I (..\Mylib\usart3.h)(0x651AAABF)
 I (..\Software\usart.h)(0x651C1C10)
@@ -1401,7 +1401,7 @@ I (..\Library\CMSIS\arm_math.h)(0x62F84D4C)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
 I (..\Task\Start_Task.h)(0x651AD478)
 I (..\Task\GimbalTask.h)(0x651EB9C1)
-I (..\Software\Gimbal.h)(0x651EB9EB)
+I (..\Software\Gimbal.h)(0x651ECB4A)
 I (..\Software\RemoteCtrl.h)(0x651C2D31)
 I (..\Mylib\usart3.h)(0x651AAABF)
 I (..\Software\usart.h)(0x651C1C10)
@@ -1487,7 +1487,7 @@ I (..\Library\CMSIS\arm_math.h)(0x62F84D4C)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
 I (..\Task\Start_Task.h)(0x651AD478)
 I (..\Task\GimbalTask.h)(0x651EB9C1)
-I (..\Software\Gimbal.h)(0x651EB9EB)
+I (..\Software\Gimbal.h)(0x651ECB4A)
 I (..\Software\RemoteCtrl.h)(0x651C2D31)
 I (..\Mylib\usart3.h)(0x651AAABF)
 I (..\Software\usart.h)(0x651C1C10)
@@ -1587,7 +1587,7 @@ I (..\Library\CMSIS\arm_math.h)(0x62F84D4C)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
 I (..\Task\Start_Task.h)(0x651AD478)
 I (..\Task\GimbalTask.h)(0x651EB9C1)
-I (..\Software\Gimbal.h)(0x651EB9EB)
+I (..\Software\Gimbal.h)(0x651ECB4A)
 I (..\Software\RemoteCtrl.h)(0x651C2D31)
 I (..\Mylib\usart3.h)(0x651AAABF)
 I (..\Software\usart.h)(0x651C1C10)
@@ -1674,7 +1674,7 @@ I (..\Library\CMSIS\arm_math.h)(0x62F84D4C)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
 I (..\Task\Start_Task.h)(0x651AD478)
 I (..\Task\GimbalTask.h)(0x651EB9C1)
-I (..\Software\Gimbal.h)(0x651EB9EB)
+I (..\Software\Gimbal.h)(0x651ECB4A)
 I (..\Software\RemoteCtrl.h)(0x651C2D31)
 I (..\Mylib\usart3.h)(0x651AAABF)
 I (..\Software\usart.h)(0x651C1C10)
@@ -1765,7 +1765,7 @@ I (..\Library\CMSIS\arm_math.h)(0x62F84D4C)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
 I (..\Task\Start_Task.h)(0x651AD478)
 I (..\Task\GimbalTask.h)(0x651EB9C1)
-I (..\Software\Gimbal.h)(0x651EB9EB)
+I (..\Software\Gimbal.h)(0x651ECB4A)
 I (..\Software\RemoteCtrl.h)(0x651C2D31)
 I (..\Mylib\usart3.h)(0x651AAABF)
 I (..\Software\usart.h)(0x651C1C10)
@@ -1870,7 +1870,7 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 F (..\Task\Start_Task.c)(0x651D2A96)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Task -I ..\Mylib -I ..\Library\inc -I ..\Library\CMSIS -I ..\FreeRTOS\include -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\Algorithm -I ..\Algorithm -I ..\Task -I ..\RTOS_Test -I ..\INS -I ..\SEGGER_RTT_V784\RTT -I ..\SEGGER_RTT_V784\Config -I ..\SD -I ..\Software-ID:\WORK\RM\Task\Infantry\Gimbal\Project\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM-o ..\obj\start_task.o --omf_browse ..\obj\start_task.crf --depend ..\obj\start_task.d)
 I (..\Task\Start_Task.h)(0x651AD478)
 I (..\Task\GimbalTask.h)(0x651EB9C1)
-I (..\Software\Gimbal.h)(0x651EB9EB)
+I (..\Software\Gimbal.h)(0x651ECB4A)
 I (..\Software\RemoteCtrl.h)(0x651C2D31)
 I (..\Mylib\usart3.h)(0x651AAABF)
 I (..\User\sys.h)(0x651EBA32)
@@ -1957,7 +1957,7 @@ I (..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h)(0x62F84D4C)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x62F84D4C)
 I (..\Task\Start_Task.h)(0x651AD478)
 I (..\Task\GimbalTask.h)(0x651EB9C1)
-I (..\Software\Gimbal.h)(0x651EB9EB)
+I (..\Software\Gimbal.h)(0x651ECB4A)
 I (..\Software\RemoteCtrl.h)(0x651C2D31)
 I (..\Mylib\usart3.h)(0x651AAABF)
 I (..\User\sys.h)(0x651EBA32)
@@ -2079,9 +2079,9 @@ I (..\Library\inc\stm32f4xx_spi.h)(0x62F84D4C)
 I (..\Mylib\counter.h)(0x64059D40)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
-F (..\Task\GimbalTask.c)(0x651EAB0A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Task -I ..\Mylib -I ..\Library\inc -I ..\Library\CMSIS -I ..\FreeRTOS\include -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\Algorithm -I ..\Algorithm -I ..\Task -I ..\RTOS_Test -I ..\INS -I ..\SEGGER_RTT_V784\RTT -I ..\SEGGER_RTT_V784\Config -I ..\SD -I ..\Software-ID:\WORK\RM\Task\Infantry\Gimbal\Project\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM-o ..\obj\gimbaltask.o --omf_browse ..\obj\gimbaltask.crf --depend ..\obj\gimbaltask.d)
+F (..\Task\GimbalTask.c)(0x651ED950)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Task -I ..\Mylib -I ..\Library\inc -I ..\Library\CMSIS -I ..\FreeRTOS\include -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\Algorithm -I ..\Algorithm -I ..\Task -I ..\RTOS_Test -I ..\INS -I ..\SEGGER_RTT_V784\RTT -I ..\SEGGER_RTT_V784\Config -I ..\SD -I ..\Software-ID:\WORK\RM\Task\Infantry\Gimbal\Project\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM-o ..\obj\gimbaltask.o --omf_browse ..\obj\gimbaltask.crf --depend ..\obj\gimbaltask.d)
 I (..\Task\GimbalTask.h)(0x651EB9C1)
-I (..\Software\Gimbal.h)(0x651EB9EB)
+I (..\Software\Gimbal.h)(0x651ECB4A)
 I (..\Software\RemoteCtrl.h)(0x651C2D31)
 I (..\Mylib\usart3.h)(0x651AAABF)
 I (..\User\sys.h)(0x651EBA32)
@@ -2592,8 +2592,8 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x62F84D4C)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
 I (..\Mylib\counter.h)(0x64059D40)
-F (..\Software\Gimbal.c)(0x651EB92D)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Task -I ..\Mylib -I ..\Library\inc -I ..\Library\CMSIS -I ..\FreeRTOS\include -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\Algorithm -I ..\Algorithm -I ..\Task -I ..\RTOS_Test -I ..\INS -I ..\SEGGER_RTT_V784\RTT -I ..\SEGGER_RTT_V784\Config -I ..\SD -I ..\Software-ID:\WORK\RM\Task\Infantry\Gimbal\Project\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM-o ..\obj\gimbal.o --omf_browse ..\obj\gimbal.crf --depend ..\obj\gimbal.d)
-I (..\Software\Gimbal.h)(0x651EB9EB)
+F (..\Software\Gimbal.c)(0x651ED8A7)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Task -I ..\Mylib -I ..\Library\inc -I ..\Library\CMSIS -I ..\FreeRTOS\include -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\Algorithm -I ..\Algorithm -I ..\Task -I ..\RTOS_Test -I ..\INS -I ..\SEGGER_RTT_V784\RTT -I ..\SEGGER_RTT_V784\Config -I ..\SD -I ..\Software-ID:\WORK\RM\Task\Infantry\Gimbal\Project\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM-o ..\obj\gimbal.o --omf_browse ..\obj\gimbal.crf --depend ..\obj\gimbal.d)
+I (..\Software\Gimbal.h)(0x651ECB4A)
 I (..\Software\RemoteCtrl.h)(0x651C2D31)
 I (..\Mylib\usart3.h)(0x651AAABF)
 I (..\User\sys.h)(0x651EBA32)
@@ -2693,7 +2693,7 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x62F84D4C)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
 I (..\Software\usart.h)(0x651C1C10)
-F (..\Software\Shoot.c)(0x651E8D38)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Task -I ..\Mylib -I ..\Library\inc -I ..\Library\CMSIS -I ..\FreeRTOS\include -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\Algorithm -I ..\Algorithm -I ..\Task -I ..\RTOS_Test -I ..\INS -I ..\SEGGER_RTT_V784\RTT -I ..\SEGGER_RTT_V784\Config -I ..\SD -I ..\Software-ID:\WORK\RM\Task\Infantry\Gimbal\Project\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM-o ..\obj\shoot.o --omf_browse ..\obj\shoot.crf --depend ..\obj\shoot.d)
+F (..\Software\Shoot.c)(0x651EC41E)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Task -I ..\Mylib -I ..\Library\inc -I ..\Library\CMSIS -I ..\FreeRTOS\include -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\Algorithm -I ..\Algorithm -I ..\Task -I ..\RTOS_Test -I ..\INS -I ..\SEGGER_RTT_V784\RTT -I ..\SEGGER_RTT_V784\Config -I ..\SD -I ..\Software-ID:\WORK\RM\Task\Infantry\Gimbal\Project\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DARM_MATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -D__CC_ARM-o ..\obj\shoot.o --omf_browse ..\obj\shoot.crf --depend ..\obj\shoot.d)
 I (..\Software\Shoot.h)(0x651E8D41)
 I (..\Software\CanRing.h)(0x65145113)
 I (..\User\sys.h)(0x651EBA32)

@@ -13,6 +13,11 @@
 
 #define MIN_SPEED -1.0                             //速度最小值
 #define MAX_SPEED 1.0                              //速度最大值
+#define MIN_YAW_SPEED -100                          //yaw轴速度最小值
+#define MAX_YAW_SPEED 100                           //yaw轴速度最大值
+#define MIN_PITCH_SPEED -100                        //pitch轴速度最小值
+#define MAX_PITCH_SPEED 100                         //pitch轴速度最大值
+
 #define MIN_PITCH -10.0f                           //pitch轴最小角度
 #define MAX_PITCH 25.0f                            //pitch轴最大角度
 #define MIN_YAW  -180                              //yaw轴最小角度
@@ -88,5 +93,6 @@ typedef struct __Gimbal_t {
 void gimbalInit(Gimbal_t *gimbal);
 void gimUpdate(Gimbal_t *gimbal);
 void setPosCur(Gimbal_t *gimbal);
+void setMotorTest(void);
 #endif
 
