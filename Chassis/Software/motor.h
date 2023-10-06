@@ -33,7 +33,9 @@ typedef enum __MotorTypeEnum {
     RM6020
 }MotorTypeEnum;
 
-
+/**
+ * 电机结构体
+*/
 typedef struct __Motor_t {
     MotorTypeEnum type_enum;    //电机类型
     float current_ratio;        //电流转换比例

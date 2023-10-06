@@ -4,8 +4,6 @@
 #include "RemoteCtrl.h"
 #include "INS.h"
 #include "Shoot.h"
-#include "motor.h"
-#include "pid.h"
 #include "can1.h"
 
 #define CHASSIS_CANTX CAN2
@@ -94,5 +92,7 @@ void gimbalInit(Gimbal_t *gimbal);
 void gimUpdate(Gimbal_t *gimbal);
 void setPosCur(Gimbal_t *gimbal);
 void setMotorTest(void);
+void sendChassisState(ChassisInfo_t *info);
+void sendChassisVel(ChassisInfo_t *info);
 #endif
 

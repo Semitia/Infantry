@@ -5,6 +5,9 @@
 
 #define CAN_RING_SIZE 6
 
+/**
+ * @brief  CAN消息环形缓存器结构体
+*/
 typedef struct __CanRing_t {
     CanRxMsg msg[CAN_RING_SIZE];
     short head;

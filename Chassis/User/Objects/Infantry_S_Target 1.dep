@@ -1,7 +1,7 @@
 Dependencies for Project 'Infantry_S', Target 'Target 1': (DO NOT MODIFY !)
 F (.\main.c)(0x65141D81)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (main.h)(0x6511ACF2)
-I (sys.h)(0x6511ACF2)
+I (sys.h)(0x651FD8D1)
 I (stm32f4xx.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -34,16 +34,17 @@ I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
 I (..\FreeRTOS\include\semphr.h)(0x6511ACF2)
 I (..\FreeRTOS\include\queue.h)(0x6511ACF2)
-I (..\Algorithm\myMath.h)(0x651AD5FD)
+I (..\Algorithm\myMath.h)(0x651FD977)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Algorithm\Matrix.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\cap.h)(0x6511ACF2)
 I (..\Hardware\adc.h)(0x6511ACF2)
 I (..\Hardware\usart2.h)(0x6511ACF2)
-I (..\Hardware\uart4.h)(0x6511ACF2)
+I (..\Hardware\uart4.h)(0x651FCFF2)
 I (..\Software\usart.h)(0x6511ACF2)
 I (..\Hardware\tim2.h)(0x6511ACF2)
 I (..\Mylib\tim.h)(0x6511ACF2)
@@ -56,15 +57,15 @@ I (..\Hardware\counter.h)(0x6511ACF2)
 I (..\Task\Start_Task.h)(0x6511ACF2)
 I (..\Task\ChassisTask.h)(0x6511ACF2)
 I (..\User\main.h)(0x6511ACF2)
-I (..\Software\chassis.h)(0x651813F8)
-I (..\Software\Kinematic.h)(0x651EA63F)
+I (..\Software\chassis.h)(0x651FED2E)
+I (..\Software\Kinematic.h)(0x651FED09)
 I (..\Hardware\can1.h)(0x65144B38)
 I (..\Software\Can.h)(0x65144707)
-I (..\Software\CanRing.h)(0x65145113)
+I (..\Software\CanRing.h)(0x651FD804)
 I (..\Algorithm\pid.h)(0x6511ACF2)
-I (..\Software\motor.h)(0x651833D7)
-I (..\Algorithm\filters.h)(0x6518343D)
-I (..\Software\JudgeMsg.h)(0x6511ACF2)
+I (..\Software\motor.h)(0x651FEB2E)
+I (..\Algorithm\filters.h)(0x651FDD45)
+I (..\Software\JudgeMsg.h)(0x651FEED0)
 I (..\Hardware\can2.h)(0x65144E75)
 F (.\stm32f4xx_it.c)(0x6511ACF2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\stm32f4xx_it.o --omf_browse .\objects\stm32f4xx_it.crf --depend .\objects\stm32f4xx_it.d)
 I (stm32f4xx_it.h)(0x6511ACF2)
@@ -109,7 +110,7 @@ I (..\Library\inc\misc.h)(0x6511ACF2)
 I (..\Library\inc\stm32f4xx_can.h)(0x6511ACF2)
 F (.\FreeRTOSConfig.h)(0x6511ACF2)()
 F (.\sys.c)(0x6511ACF2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\sys.o --omf_browse .\objects\sys.crf --depend .\objects\sys.d)
-I (sys.h)(0x6511ACF2)
+I (sys.h)(0x651FD8D1)
 I (stm32f4xx.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -142,10 +143,11 @@ I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
 I (..\FreeRTOS\include\semphr.h)(0x6511ACF2)
 I (..\FreeRTOS\include\queue.h)(0x6511ACF2)
-I (..\Algorithm\myMath.h)(0x651AD5FD)
+I (..\Algorithm\myMath.h)(0x651FD977)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Algorithm\Matrix.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 F (..\Library\src\misc.c)(0x6511ACF2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\misc.o --omf_browse .\objects\misc.crf --depend .\objects\misc.d)
@@ -689,7 +691,7 @@ I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
 F (..\Hardware\adc.c)(0x6511ACF2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
 I (..\Hardware\adc.h)(0x6511ACF2)
-I (..\User\sys.h)(0x6511ACF2)
+I (..\User\sys.h)(0x651FD8D1)
 I (..\User\stm32f4xx.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -721,16 +723,17 @@ I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
 I (..\FreeRTOS\include\semphr.h)(0x6511ACF2)
 I (..\FreeRTOS\include\queue.h)(0x6511ACF2)
-I (..\Algorithm\myMath.h)(0x651AD5FD)
+I (..\Algorithm\myMath.h)(0x651FD977)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Algorithm\Matrix.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 F (..\Hardware\can1.c)(0x651AB9F8)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\can1.o --omf_browse .\objects\can1.crf --depend .\objects\can1.d)
 I (..\Hardware\can1.h)(0x65144B38)
 I (..\Software\Can.h)(0x65144707)
-I (..\User\sys.h)(0x6511ACF2)
+I (..\User\sys.h)(0x651FD8D1)
 I (..\User\stm32f4xx.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -762,17 +765,18 @@ I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
 I (..\FreeRTOS\include\semphr.h)(0x6511ACF2)
 I (..\FreeRTOS\include\queue.h)(0x6511ACF2)
-I (..\Algorithm\myMath.h)(0x651AD5FD)
+I (..\Algorithm\myMath.h)(0x651FD977)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Algorithm\Matrix.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
-I (..\Software\CanRing.h)(0x65145113)
+I (..\Software\CanRing.h)(0x651FD804)
 F (..\Hardware\can2.c)(0x6514513E)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\can2.o --omf_browse .\objects\can2.crf --depend .\objects\can2.d)
 I (..\Hardware\can2.h)(0x65144E75)
 I (..\Software\Can.h)(0x65144707)
-I (..\User\sys.h)(0x6511ACF2)
+I (..\User\sys.h)(0x651FD8D1)
 I (..\User\stm32f4xx.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -804,16 +808,17 @@ I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
 I (..\FreeRTOS\include\semphr.h)(0x6511ACF2)
 I (..\FreeRTOS\include\queue.h)(0x6511ACF2)
-I (..\Algorithm\myMath.h)(0x651AD5FD)
+I (..\Algorithm\myMath.h)(0x651FD977)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Algorithm\Matrix.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
-I (..\Software\CanRing.h)(0x65145113)
+I (..\Software\CanRing.h)(0x651FD804)
 F (..\Hardware\counter.c)(0x6511ACF2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\counter.o --omf_browse .\objects\counter.crf --depend .\objects\counter.d)
 I (..\Hardware\counter.h)(0x6511ACF2)
-I (..\User\sys.h)(0x6511ACF2)
+I (..\User\sys.h)(0x651FD8D1)
 I (..\User\stm32f4xx.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -845,15 +850,16 @@ I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
 I (..\FreeRTOS\include\semphr.h)(0x6511ACF2)
 I (..\FreeRTOS\include\queue.h)(0x6511ACF2)
-I (..\Algorithm\myMath.h)(0x651AD5FD)
+I (..\Algorithm\myMath.h)(0x651FD977)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Algorithm\Matrix.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 F (..\Hardware\dac.c)(0x6511ACF2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\dac.o --omf_browse .\objects\dac.crf --depend .\objects\dac.d)
 I (..\User\main.h)(0x6511ACF2)
-I (..\User\sys.h)(0x6511ACF2)
+I (..\User\sys.h)(0x651FD8D1)
 I (..\User\stm32f4xx.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -885,16 +891,17 @@ I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
 I (..\FreeRTOS\include\semphr.h)(0x6511ACF2)
 I (..\FreeRTOS\include\queue.h)(0x6511ACF2)
-I (..\Algorithm\myMath.h)(0x651AD5FD)
+I (..\Algorithm\myMath.h)(0x651FD977)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Algorithm\Matrix.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\cap.h)(0x6511ACF2)
 I (..\Hardware\adc.h)(0x6511ACF2)
 I (..\Hardware\usart2.h)(0x6511ACF2)
-I (..\Hardware\uart4.h)(0x6511ACF2)
+I (..\Hardware\uart4.h)(0x651FCFF2)
 I (..\Software\usart.h)(0x6511ACF2)
 I (..\Hardware\tim2.h)(0x6511ACF2)
 I (..\Mylib\tim.h)(0x6511ACF2)
@@ -906,19 +913,19 @@ I (..\Hardware\i2c.h)(0x6511ACF2)
 I (..\Hardware\counter.h)(0x6511ACF2)
 I (..\Task\Start_Task.h)(0x6511ACF2)
 I (..\Task\ChassisTask.h)(0x6511ACF2)
-I (..\Software\chassis.h)(0x651813F8)
-I (..\Software\Kinematic.h)(0x651EA63F)
+I (..\Software\chassis.h)(0x651FED2E)
+I (..\Software\Kinematic.h)(0x651FED09)
 I (..\Hardware\can1.h)(0x65144B38)
 I (..\Software\Can.h)(0x65144707)
-I (..\Software\CanRing.h)(0x65145113)
+I (..\Software\CanRing.h)(0x651FD804)
 I (..\Algorithm\pid.h)(0x6511ACF2)
-I (..\Software\motor.h)(0x651833D7)
-I (..\Algorithm\filters.h)(0x6518343D)
-I (..\Software\JudgeMsg.h)(0x6511ACF2)
+I (..\Software\motor.h)(0x651FEB2E)
+I (..\Algorithm\filters.h)(0x651FDD45)
+I (..\Software\JudgeMsg.h)(0x651FEED0)
 I (..\Hardware\can2.h)(0x65144E75)
 F (..\Hardware\i2c.c)(0x6511ACF2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\i2c.o --omf_browse .\objects\i2c.crf --depend .\objects\i2c.d)
 I (..\User\main.h)(0x6511ACF2)
-I (..\User\sys.h)(0x6511ACF2)
+I (..\User\sys.h)(0x651FD8D1)
 I (..\User\stm32f4xx.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -950,16 +957,17 @@ I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
 I (..\FreeRTOS\include\semphr.h)(0x6511ACF2)
 I (..\FreeRTOS\include\queue.h)(0x6511ACF2)
-I (..\Algorithm\myMath.h)(0x651AD5FD)
+I (..\Algorithm\myMath.h)(0x651FD977)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Algorithm\Matrix.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\cap.h)(0x6511ACF2)
 I (..\Hardware\adc.h)(0x6511ACF2)
 I (..\Hardware\usart2.h)(0x6511ACF2)
-I (..\Hardware\uart4.h)(0x6511ACF2)
+I (..\Hardware\uart4.h)(0x651FCFF2)
 I (..\Software\usart.h)(0x6511ACF2)
 I (..\Hardware\tim2.h)(0x6511ACF2)
 I (..\Mylib\tim.h)(0x6511ACF2)
@@ -971,19 +979,19 @@ I (..\Hardware\i2c.h)(0x6511ACF2)
 I (..\Hardware\counter.h)(0x6511ACF2)
 I (..\Task\Start_Task.h)(0x6511ACF2)
 I (..\Task\ChassisTask.h)(0x6511ACF2)
-I (..\Software\chassis.h)(0x651813F8)
-I (..\Software\Kinematic.h)(0x651EA63F)
+I (..\Software\chassis.h)(0x651FED2E)
+I (..\Software\Kinematic.h)(0x651FED09)
 I (..\Hardware\can1.h)(0x65144B38)
 I (..\Software\Can.h)(0x65144707)
-I (..\Software\CanRing.h)(0x65145113)
+I (..\Software\CanRing.h)(0x651FD804)
 I (..\Algorithm\pid.h)(0x6511ACF2)
-I (..\Software\motor.h)(0x651833D7)
-I (..\Algorithm\filters.h)(0x6518343D)
-I (..\Software\JudgeMsg.h)(0x6511ACF2)
+I (..\Software\motor.h)(0x651FEB2E)
+I (..\Algorithm\filters.h)(0x651FDD45)
+I (..\Software\JudgeMsg.h)(0x651FEED0)
 I (..\Hardware\can2.h)(0x65144E75)
 F (..\Hardware\ina260.c)(0x65141DBB)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\ina260.o --omf_browse .\objects\ina260.crf --depend .\objects\ina260.d)
 I (..\Hardware\ina260.h)(0x6511ACF2)
-I (..\User\sys.h)(0x6511ACF2)
+I (..\User\sys.h)(0x651FD8D1)
 I (..\User\stm32f4xx.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1015,10 +1023,11 @@ I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
 I (..\FreeRTOS\include\semphr.h)(0x6511ACF2)
 I (..\FreeRTOS\include\queue.h)(0x6511ACF2)
-I (..\Algorithm\myMath.h)(0x651AD5FD)
+I (..\Algorithm\myMath.h)(0x651FD977)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Algorithm\Matrix.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\i2c.h)(0x6511ACF2)
@@ -1045,7 +1054,7 @@ I (..\Library\inc\misc.h)(0x6511ACF2)
 I (..\Library\inc\stm32f4xx_can.h)(0x6511ACF2)
 F (..\Hardware\tim2.c)(0x6511ACF2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\tim2.o --omf_browse .\objects\tim2.crf --depend .\objects\tim2.d)
 I (..\User\main.h)(0x6511ACF2)
-I (..\User\sys.h)(0x6511ACF2)
+I (..\User\sys.h)(0x651FD8D1)
 I (..\User\stm32f4xx.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1077,16 +1086,17 @@ I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
 I (..\FreeRTOS\include\semphr.h)(0x6511ACF2)
 I (..\FreeRTOS\include\queue.h)(0x6511ACF2)
-I (..\Algorithm\myMath.h)(0x651AD5FD)
+I (..\Algorithm\myMath.h)(0x651FD977)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Algorithm\Matrix.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\cap.h)(0x6511ACF2)
 I (..\Hardware\adc.h)(0x6511ACF2)
 I (..\Hardware\usart2.h)(0x6511ACF2)
-I (..\Hardware\uart4.h)(0x6511ACF2)
+I (..\Hardware\uart4.h)(0x651FCFF2)
 I (..\Software\usart.h)(0x6511ACF2)
 I (..\Hardware\tim2.h)(0x6511ACF2)
 I (..\Mylib\tim.h)(0x6511ACF2)
@@ -1098,20 +1108,20 @@ I (..\Hardware\i2c.h)(0x6511ACF2)
 I (..\Hardware\counter.h)(0x6511ACF2)
 I (..\Task\Start_Task.h)(0x6511ACF2)
 I (..\Task\ChassisTask.h)(0x6511ACF2)
-I (..\Software\chassis.h)(0x651813F8)
-I (..\Software\Kinematic.h)(0x651EA63F)
+I (..\Software\chassis.h)(0x651FED2E)
+I (..\Software\Kinematic.h)(0x651FED09)
 I (..\Hardware\can1.h)(0x65144B38)
 I (..\Software\Can.h)(0x65144707)
-I (..\Software\CanRing.h)(0x65145113)
+I (..\Software\CanRing.h)(0x651FD804)
 I (..\Algorithm\pid.h)(0x6511ACF2)
-I (..\Software\motor.h)(0x651833D7)
-I (..\Algorithm\filters.h)(0x6518343D)
-I (..\Software\JudgeMsg.h)(0x6511ACF2)
+I (..\Software\motor.h)(0x651FEB2E)
+I (..\Algorithm\filters.h)(0x651FDD45)
+I (..\Software\JudgeMsg.h)(0x651FEED0)
 I (..\Hardware\can2.h)(0x65144E75)
 F (..\Hardware\uart4.c)(0x6511ACF2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\uart4.o --omf_browse .\objects\uart4.crf --depend .\objects\uart4.d)
-I (..\Hardware\uart4.h)(0x6511ACF2)
+I (..\Hardware\uart4.h)(0x651FCFF2)
 I (..\Software\usart.h)(0x6511ACF2)
-I (..\User\sys.h)(0x6511ACF2)
+I (..\User\sys.h)(0x651FD8D1)
 I (..\User\stm32f4xx.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1143,15 +1153,16 @@ I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
 I (..\FreeRTOS\include\semphr.h)(0x6511ACF2)
 I (..\FreeRTOS\include\queue.h)(0x6511ACF2)
-I (..\Algorithm\myMath.h)(0x651AD5FD)
+I (..\Algorithm\myMath.h)(0x651FD977)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Algorithm\Matrix.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 F (..\Hardware\usart2.c)(0x6511ACF2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\usart2.o --omf_browse .\objects\usart2.crf --depend .\objects\usart2.d)
 I (..\User\main.h)(0x6511ACF2)
-I (..\User\sys.h)(0x6511ACF2)
+I (..\User\sys.h)(0x651FD8D1)
 I (..\User\stm32f4xx.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1183,16 +1194,17 @@ I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
 I (..\FreeRTOS\include\semphr.h)(0x6511ACF2)
 I (..\FreeRTOS\include\queue.h)(0x6511ACF2)
-I (..\Algorithm\myMath.h)(0x651AD5FD)
+I (..\Algorithm\myMath.h)(0x651FD977)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Algorithm\Matrix.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\cap.h)(0x6511ACF2)
 I (..\Hardware\adc.h)(0x6511ACF2)
 I (..\Hardware\usart2.h)(0x6511ACF2)
-I (..\Hardware\uart4.h)(0x6511ACF2)
+I (..\Hardware\uart4.h)(0x651FCFF2)
 I (..\Software\usart.h)(0x6511ACF2)
 I (..\Hardware\tim2.h)(0x6511ACF2)
 I (..\Mylib\tim.h)(0x6511ACF2)
@@ -1204,20 +1216,20 @@ I (..\Hardware\i2c.h)(0x6511ACF2)
 I (..\Hardware\counter.h)(0x6511ACF2)
 I (..\Task\Start_Task.h)(0x6511ACF2)
 I (..\Task\ChassisTask.h)(0x6511ACF2)
-I (..\Software\chassis.h)(0x651813F8)
-I (..\Software\Kinematic.h)(0x651EA63F)
+I (..\Software\chassis.h)(0x651FED2E)
+I (..\Software\Kinematic.h)(0x651FED09)
 I (..\Hardware\can1.h)(0x65144B38)
 I (..\Software\Can.h)(0x65144707)
-I (..\Software\CanRing.h)(0x65145113)
+I (..\Software\CanRing.h)(0x651FD804)
 I (..\Algorithm\pid.h)(0x6511ACF2)
-I (..\Software\motor.h)(0x651833D7)
-I (..\Algorithm\filters.h)(0x6518343D)
-I (..\Software\JudgeMsg.h)(0x6511ACF2)
+I (..\Software\motor.h)(0x651FEB2E)
+I (..\Algorithm\filters.h)(0x651FDD45)
+I (..\Software\JudgeMsg.h)(0x651FEED0)
 I (..\Hardware\can2.h)(0x65144E75)
 F (..\Hardware\cap.c)(0x6511ACF2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\cap.o --omf_browse .\objects\cap.crf --depend .\objects\cap.d)
 I (..\Hardware\cap.h)(0x6511ACF2)
 I (..\Hardware\adc.h)(0x6511ACF2)
-I (..\User\sys.h)(0x6511ACF2)
+I (..\User\sys.h)(0x651FD8D1)
 I (..\User\stm32f4xx.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1249,15 +1261,16 @@ I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
 I (..\FreeRTOS\include\semphr.h)(0x6511ACF2)
 I (..\FreeRTOS\include\queue.h)(0x6511ACF2)
-I (..\Algorithm\myMath.h)(0x651AD5FD)
+I (..\Algorithm\myMath.h)(0x651FD977)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Algorithm\Matrix.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 F (..\Mylib\tim.c)(0x6511ACF2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\tim.o --omf_browse .\objects\tim.crf --depend .\objects\tim.d)
 I (..\Mylib\tim.h)(0x6511ACF2)
-I (..\User\sys.h)(0x6511ACF2)
+I (..\User\sys.h)(0x651FD8D1)
 I (..\User\stm32f4xx.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1289,15 +1302,16 @@ I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
 I (..\FreeRTOS\include\semphr.h)(0x6511ACF2)
 I (..\FreeRTOS\include\queue.h)(0x6511ACF2)
-I (..\Algorithm\myMath.h)(0x651AD5FD)
+I (..\Algorithm\myMath.h)(0x651FD977)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Algorithm\Matrix.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 F (..\Hardware\usart1.c)(0x6511ACF2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\usart1.o --omf_browse .\objects\usart1.crf --depend .\objects\usart1.d)
 I (..\User\main.h)(0x6511ACF2)
-I (..\User\sys.h)(0x6511ACF2)
+I (..\User\sys.h)(0x651FD8D1)
 I (..\User\stm32f4xx.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1329,16 +1343,17 @@ I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
 I (..\FreeRTOS\include\semphr.h)(0x6511ACF2)
 I (..\FreeRTOS\include\queue.h)(0x6511ACF2)
-I (..\Algorithm\myMath.h)(0x651AD5FD)
+I (..\Algorithm\myMath.h)(0x651FD977)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Algorithm\Matrix.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\cap.h)(0x6511ACF2)
 I (..\Hardware\adc.h)(0x6511ACF2)
 I (..\Hardware\usart2.h)(0x6511ACF2)
-I (..\Hardware\uart4.h)(0x6511ACF2)
+I (..\Hardware\uart4.h)(0x651FCFF2)
 I (..\Software\usart.h)(0x6511ACF2)
 I (..\Hardware\tim2.h)(0x6511ACF2)
 I (..\Mylib\tim.h)(0x6511ACF2)
@@ -1350,19 +1365,19 @@ I (..\Hardware\i2c.h)(0x6511ACF2)
 I (..\Hardware\counter.h)(0x6511ACF2)
 I (..\Task\Start_Task.h)(0x6511ACF2)
 I (..\Task\ChassisTask.h)(0x6511ACF2)
-I (..\Software\chassis.h)(0x651813F8)
-I (..\Software\Kinematic.h)(0x651EA63F)
+I (..\Software\chassis.h)(0x651FED2E)
+I (..\Software\Kinematic.h)(0x651FED09)
 I (..\Hardware\can1.h)(0x65144B38)
 I (..\Software\Can.h)(0x65144707)
-I (..\Software\CanRing.h)(0x65145113)
+I (..\Software\CanRing.h)(0x651FD804)
 I (..\Algorithm\pid.h)(0x6511ACF2)
-I (..\Software\motor.h)(0x651833D7)
-I (..\Algorithm\filters.h)(0x6518343D)
-I (..\Software\JudgeMsg.h)(0x6511ACF2)
+I (..\Software\motor.h)(0x651FEB2E)
+I (..\Algorithm\filters.h)(0x651FDD45)
+I (..\Software\JudgeMsg.h)(0x651FEED0)
 I (..\Hardware\can2.h)(0x65144E75)
 F (..\Algorithm\algorithmOfCRC.c)(0x6511ACF2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\algorithmofcrc_1.o --omf_browse .\objects\algorithmofcrc_1.crf --depend .\objects\algorithmofcrc_1.d)
 I (..\User\main.h)(0x6511ACF2)
-I (..\User\sys.h)(0x6511ACF2)
+I (..\User\sys.h)(0x651FD8D1)
 I (..\User\stm32f4xx.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1394,16 +1409,17 @@ I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
 I (..\FreeRTOS\include\semphr.h)(0x6511ACF2)
 I (..\FreeRTOS\include\queue.h)(0x6511ACF2)
-I (..\Algorithm\myMath.h)(0x651AD5FD)
+I (..\Algorithm\myMath.h)(0x651FD977)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Algorithm\Matrix.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\cap.h)(0x6511ACF2)
 I (..\Hardware\adc.h)(0x6511ACF2)
 I (..\Hardware\usart2.h)(0x6511ACF2)
-I (..\Hardware\uart4.h)(0x6511ACF2)
+I (..\Hardware\uart4.h)(0x651FCFF2)
 I (..\Software\usart.h)(0x6511ACF2)
 I (..\Hardware\tim2.h)(0x6511ACF2)
 I (..\Mylib\tim.h)(0x6511ACF2)
@@ -1415,19 +1431,19 @@ I (..\Hardware\i2c.h)(0x6511ACF2)
 I (..\Hardware\counter.h)(0x6511ACF2)
 I (..\Task\Start_Task.h)(0x6511ACF2)
 I (..\Task\ChassisTask.h)(0x6511ACF2)
-I (..\Software\chassis.h)(0x651813F8)
-I (..\Software\Kinematic.h)(0x651EA63F)
+I (..\Software\chassis.h)(0x651FED2E)
+I (..\Software\Kinematic.h)(0x651FED09)
 I (..\Hardware\can1.h)(0x65144B38)
 I (..\Software\Can.h)(0x65144707)
-I (..\Software\CanRing.h)(0x65145113)
+I (..\Software\CanRing.h)(0x651FD804)
 I (..\Algorithm\pid.h)(0x6511ACF2)
-I (..\Software\motor.h)(0x651833D7)
-I (..\Algorithm\filters.h)(0x6518343D)
-I (..\Software\JudgeMsg.h)(0x6511ACF2)
+I (..\Software\motor.h)(0x651FEB2E)
+I (..\Algorithm\filters.h)(0x651FDD45)
+I (..\Software\JudgeMsg.h)(0x651FEED0)
 I (..\Hardware\can2.h)(0x65144E75)
 F (..\Algorithm\pid.c)(0x6511ACF2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\pid.o --omf_browse .\objects\pid.crf --depend .\objects\pid.d)
 I (..\Algorithm\pid.h)(0x6511ACF2)
-I (..\User\sys.h)(0x6511ACF2)
+I (..\User\sys.h)(0x651FD8D1)
 I (..\User\stm32f4xx.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1459,14 +1475,15 @@ I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
 I (..\FreeRTOS\include\semphr.h)(0x6511ACF2)
 I (..\FreeRTOS\include\queue.h)(0x6511ACF2)
-I (..\Algorithm\myMath.h)(0x651AD5FD)
+I (..\Algorithm\myMath.h)(0x651FD977)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Algorithm\Matrix.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 F (..\Algorithm\filters.c)(0x6511ACF2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\filters.o --omf_browse .\objects\filters.crf --depend .\objects\filters.d)
-I (..\Algorithm\filters.h)(0x6518343D)
+I (..\Algorithm\filters.h)(0x651FDD45)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1496,7 +1513,7 @@ I (..\FreeRTOS\include\mpu_wrappers.h)(0x6511ACF2)
 I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
 F (..\Algorithm\myMath.c)(0x651AD63E)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\mymath.o --omf_browse .\objects\mymath.crf --depend .\objects\mymath.d)
-I (..\Algorithm\Mymath.h)(0x651AD5FD)
+I (..\Algorithm\Mymath.h)(0x651FD977)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4.h)(0x6511ACF2)
@@ -1505,6 +1522,9 @@ I (..\Library\CMSIS\core_cmInstr.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cmFunc.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4_simd.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Algorithm\Matrix.h)(0x6511ACF2)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 F (..\Algorithm\tool.c)(0x6511ACF2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\tool.o --omf_browse .\objects\tool.crf --depend .\objects\tool.d)
 I (..\FreeRTOS\include\tools.h)(0x6511ACF2)
 F (..\Algorithm\Matrix.c)(0x6511ACF2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\matrix.o --omf_browse .\objects\matrix.crf --depend .\objects\matrix.d)
@@ -1513,15 +1533,15 @@ I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 F (..\Algorithm\RLS.c)(0x6511ACF2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\rls.o --omf_browse .\objects\rls.crf --depend .\objects\rls.d)
-I (..\Algorithm\RLS.h)(0x6511ACF2)
+I (..\Algorithm\RLS.h)(0x651FDCB0)
 I (..\Algorithm\Matrix.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 F (..\Software\motor.c)(0x651836A6)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\motor.o --omf_browse .\objects\motor.crf --depend .\objects\motor.d)
-I (..\Software\motor.h)(0x651833D7)
+I (..\Software\motor.h)(0x651FEB2E)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
-I (..\Algorithm\Mymath.h)(0x651AD5FD)
+I (..\Algorithm\Mymath.h)(0x651FD977)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4.h)(0x6511ACF2)
@@ -1529,7 +1549,10 @@ I (..\Library\CMSIS\core_cmInstr.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cmFunc.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4_simd.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
-I (..\Algorithm\filters.h)(0x6518343D)
+I (..\Algorithm\Matrix.h)(0x6511ACF2)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
+I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
+I (..\Algorithm\filters.h)(0x651FDD45)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stddef.h)(0x574E3E26)
 I (..\User\FreeRTOSConfig.h)(0x6511ACF2)
@@ -1553,12 +1576,12 @@ I (..\FreeRTOS\port\RVDS\ARM_CM4F\portmacro.h)(0x6511ACF2)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x6511ACF2)
 I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
-F (..\Software\Chassis.c)(0x651EA7C2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\chassis.o --omf_browse .\objects\chassis.crf --depend .\objects\chassis.d)
-I (..\Software\Chassis.h)(0x651813F8)
-I (..\Software\Kinematic.h)(0x651EA63F)
+F (..\Software\Chassis.c)(0x651FFA3C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\chassis.o --omf_browse .\objects\chassis.crf --depend .\objects\chassis.d)
+I (..\Software\Chassis.h)(0x651FED2E)
+I (..\Software\Kinematic.h)(0x651FED09)
 I (..\Hardware\can1.h)(0x65144B38)
 I (..\Software\Can.h)(0x65144707)
-I (..\User\sys.h)(0x6511ACF2)
+I (..\User\sys.h)(0x651FD8D1)
 I (..\User\stm32f4xx.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1590,25 +1613,26 @@ I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
 I (..\FreeRTOS\include\semphr.h)(0x6511ACF2)
 I (..\FreeRTOS\include\queue.h)(0x6511ACF2)
-I (..\Algorithm\myMath.h)(0x651AD5FD)
+I (..\Algorithm\myMath.h)(0x651FD977)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Algorithm\Matrix.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
-I (..\Software\CanRing.h)(0x65145113)
+I (..\Software\CanRing.h)(0x651FD804)
 I (..\Algorithm\pid.h)(0x6511ACF2)
-I (..\Software\motor.h)(0x651833D7)
-I (..\Algorithm\filters.h)(0x6518343D)
-I (..\Software\JudgeMsg.h)(0x6511ACF2)
+I (..\Software\motor.h)(0x651FEB2E)
+I (..\Algorithm\filters.h)(0x651FDD45)
+I (..\Software\JudgeMsg.h)(0x651FEED0)
 I (..\Software\usart.h)(0x6511ACF2)
 I (..\Hardware\can2.h)(0x65144E75)
-I (..\Hardware\uart4.h)(0x6511ACF2)
+I (..\Hardware\uart4.h)(0x651FCFF2)
 F (..\Software\Kinematic.c)(0x651C0E57)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\kinematic.o --omf_browse .\objects\kinematic.crf --depend .\objects\kinematic.d)
-I (..\Software\Kinematic.h)(0x651EA63F)
+I (..\Software\Kinematic.h)(0x651FED09)
 I (..\Hardware\can1.h)(0x65144B38)
 I (..\Software\Can.h)(0x65144707)
-I (..\User\sys.h)(0x6511ACF2)
+I (..\User\sys.h)(0x651FD8D1)
 I (..\User\stm32f4xx.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1640,21 +1664,23 @@ I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
 I (..\FreeRTOS\include\semphr.h)(0x6511ACF2)
 I (..\FreeRTOS\include\queue.h)(0x6511ACF2)
-I (..\Algorithm\myMath.h)(0x651AD5FD)
+I (..\Algorithm\myMath.h)(0x651FD977)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Algorithm\Matrix.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
-I (..\Software\CanRing.h)(0x65145113)
+I (..\Software\CanRing.h)(0x651FD804)
 I (..\Algorithm\pid.h)(0x6511ACF2)
-I (..\Software\motor.h)(0x651833D7)
-I (..\Algorithm\filters.h)(0x6518343D)
+I (..\Software\motor.h)(0x651FEB2E)
+I (..\Algorithm\filters.h)(0x651FDD45)
 F (..\Software\Power.c)(0x6511ACF2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\power.o --omf_browse .\objects\power.crf --depend .\objects\power.d)
 I (..\Software\Power.h)(0x6511ACF2)
 F (..\Software\JudgeMsg.c)(0x6511ACF2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\judgemsg.o --omf_browse .\objects\judgemsg.crf --depend .\objects\judgemsg.d)
-I (..\Software\JudgeMsg.h)(0x6511ACF2)
-I (..\User\sys.h)(0x6511ACF2)
+I (..\Software\JudgeMsg.h)(0x651FEED0)
+I (..\Software\usart.h)(0x6511ACF2)
+I (..\User\sys.h)(0x651FD8D1)
 I (..\User\stm32f4xx.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1686,16 +1712,16 @@ I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
 I (..\FreeRTOS\include\semphr.h)(0x6511ACF2)
 I (..\FreeRTOS\include\queue.h)(0x6511ACF2)
-I (..\Algorithm\myMath.h)(0x651AD5FD)
+I (..\Algorithm\myMath.h)(0x651FD977)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Algorithm\Matrix.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
-I (..\Software\usart.h)(0x6511ACF2)
 F (..\Software\Usart.c)(0x6511ACF2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\usart.o --omf_browse .\objects\usart.crf --depend .\objects\usart.d)
 I (..\Software\Usart.h)(0x6511ACF2)
-I (..\User\sys.h)(0x6511ACF2)
+I (..\User\sys.h)(0x651FD8D1)
 I (..\User\stm32f4xx.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1727,15 +1753,16 @@ I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
 I (..\FreeRTOS\include\semphr.h)(0x6511ACF2)
 I (..\FreeRTOS\include\queue.h)(0x6511ACF2)
-I (..\Algorithm\myMath.h)(0x651AD5FD)
+I (..\Algorithm\myMath.h)(0x651FD977)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Algorithm\Matrix.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 F (..\Software\Can.c)(0x65144769)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\can.o --omf_browse .\objects\can.crf --depend .\objects\can.d)
 I (..\Software\Can.h)(0x65144707)
-I (..\User\sys.h)(0x6511ACF2)
+I (..\User\sys.h)(0x651FD8D1)
 I (..\User\stm32f4xx.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1767,15 +1794,16 @@ I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
 I (..\FreeRTOS\include\semphr.h)(0x6511ACF2)
 I (..\FreeRTOS\include\queue.h)(0x6511ACF2)
-I (..\Algorithm\myMath.h)(0x651AD5FD)
+I (..\Algorithm\myMath.h)(0x651FD977)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Algorithm\Matrix.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 F (..\Software\CanRing.c)(0x65144B1E)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\canring.o --omf_browse .\objects\canring.crf --depend .\objects\canring.d)
-I (..\Software\CanRing.h)(0x65145113)
-I (..\User\sys.h)(0x6511ACF2)
+I (..\Software\CanRing.h)(0x651FD804)
+I (..\User\sys.h)(0x651FD8D1)
 I (..\User\stm32f4xx.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1807,15 +1835,16 @@ I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
 I (..\FreeRTOS\include\semphr.h)(0x6511ACF2)
 I (..\FreeRTOS\include\queue.h)(0x6511ACF2)
-I (..\Algorithm\myMath.h)(0x651AD5FD)
+I (..\Algorithm\myMath.h)(0x651FD977)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Algorithm\Matrix.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 F (..\Task\Start_Task.c)(0x6514318F)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\start_task.o --omf_browse .\objects\start_task.crf --depend .\objects\start_task.d)
 I (..\Task\Start_Task.h)(0x6511ACF2)
-I (..\User\sys.h)(0x6511ACF2)
+I (..\User\sys.h)(0x651FD8D1)
 I (..\User\stm32f4xx.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1847,10 +1876,11 @@ I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
 I (..\FreeRTOS\include\semphr.h)(0x6511ACF2)
 I (..\FreeRTOS\include\queue.h)(0x6511ACF2)
-I (..\Algorithm\myMath.h)(0x651AD5FD)
+I (..\Algorithm\myMath.h)(0x651FD977)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Algorithm\Matrix.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Task\ChassisTask.h)(0x6511ACF2)
@@ -1858,7 +1888,7 @@ I (..\User\main.h)(0x6511ACF2)
 I (..\Hardware\cap.h)(0x6511ACF2)
 I (..\Hardware\adc.h)(0x6511ACF2)
 I (..\Hardware\usart2.h)(0x6511ACF2)
-I (..\Hardware\uart4.h)(0x6511ACF2)
+I (..\Hardware\uart4.h)(0x651FCFF2)
 I (..\Software\usart.h)(0x6511ACF2)
 I (..\Hardware\tim2.h)(0x6511ACF2)
 I (..\Mylib\tim.h)(0x6511ACF2)
@@ -1868,20 +1898,20 @@ I (..\Hardware\dac.h)(0x6511ACF2)
 I (..\Hardware\ina260.h)(0x6511ACF2)
 I (..\Hardware\i2c.h)(0x6511ACF2)
 I (..\Hardware\counter.h)(0x6511ACF2)
-I (..\Software\chassis.h)(0x651813F8)
-I (..\Software\Kinematic.h)(0x651EA63F)
+I (..\Software\chassis.h)(0x651FED2E)
+I (..\Software\Kinematic.h)(0x651FED09)
 I (..\Hardware\can1.h)(0x65144B38)
 I (..\Software\Can.h)(0x65144707)
-I (..\Software\CanRing.h)(0x65145113)
+I (..\Software\CanRing.h)(0x651FD804)
 I (..\Algorithm\pid.h)(0x6511ACF2)
-I (..\Software\motor.h)(0x651833D7)
-I (..\Algorithm\filters.h)(0x6518343D)
-I (..\Software\JudgeMsg.h)(0x6511ACF2)
+I (..\Software\motor.h)(0x651FEB2E)
+I (..\Algorithm\filters.h)(0x651FDD45)
+I (..\Software\JudgeMsg.h)(0x651FEED0)
 I (..\Hardware\can2.h)(0x65144E75)
 F (..\Task\ChassisTask.c)(0x651EA650)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\Mylib -I ..\Library\CMSIS -I ..\Library\inc -I ..\Library\src -I ..\Task -I ..\Mylib -I ..\FreeRTOS\src -I ..\FreeRTOS\port\MemMang -I ..\FreeRTOS\port\RVDS\ARM_CM4F -I ..\FreeRTOS\include -I ..\Algorithm -I ..\Hardware -I ..\Software -I ..\Task-ID:\WORK\RM\Task\Infantry\Chassis\User\RTE-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\WORK\SOFTWARES\MDK5\ARM\CMSIS\Include-ID:\WORK\SOFTWARES\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Device\Include-D__UVISION_VERSION="521" -DSTM32F405xx -DUSE_STDPERIPH_DRIVER -DSTM32F40_41xxx -DMATH_CM4 -D__FPU_PRESENT="1" -D__FPU_USED="1" -DARM_MATH_CM4 -D__CC_ARM-o .\objects\chassistask.o --omf_browse .\objects\chassistask.crf --depend .\objects\chassistask.d)
 I (..\Task\ChassisTask.h)(0x6511ACF2)
 I (..\User\main.h)(0x6511ACF2)
-I (..\User\sys.h)(0x6511ACF2)
+I (..\User\sys.h)(0x651FD8D1)
 I (..\User\stm32f4xx.h)(0x6511ACF2)
 I (..\Library\CMSIS\core_cm4.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -1913,16 +1943,17 @@ I (..\FreeRTOS\include\task.h)(0x6511ACF2)
 I (..\FreeRTOS\include\list.h)(0x6511ACF2)
 I (..\FreeRTOS\include\semphr.h)(0x6511ACF2)
 I (..\FreeRTOS\include\queue.h)(0x6511ACF2)
-I (..\Algorithm\myMath.h)(0x651AD5FD)
+I (..\Algorithm\myMath.h)(0x651FD977)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\math.h)(0x574E3E26)
 I (..\Library\CMSIS\arm_math.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\string.h)(0x574E3E26)
+I (..\Algorithm\Matrix.h)(0x6511ACF2)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 I (D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
 I (..\Hardware\cap.h)(0x6511ACF2)
 I (..\Hardware\adc.h)(0x6511ACF2)
 I (..\Hardware\usart2.h)(0x6511ACF2)
-I (..\Hardware\uart4.h)(0x6511ACF2)
+I (..\Hardware\uart4.h)(0x651FCFF2)
 I (..\Software\usart.h)(0x6511ACF2)
 I (..\Hardware\tim2.h)(0x6511ACF2)
 I (..\Mylib\tim.h)(0x6511ACF2)
@@ -1933,13 +1964,13 @@ I (..\Hardware\ina260.h)(0x6511ACF2)
 I (..\Hardware\i2c.h)(0x6511ACF2)
 I (..\Hardware\counter.h)(0x6511ACF2)
 I (..\Task\Start_Task.h)(0x6511ACF2)
-I (..\Software\chassis.h)(0x651813F8)
-I (..\Software\Kinematic.h)(0x651EA63F)
+I (..\Software\chassis.h)(0x651FED2E)
+I (..\Software\Kinematic.h)(0x651FED09)
 I (..\Hardware\can1.h)(0x65144B38)
 I (..\Software\Can.h)(0x65144707)
-I (..\Software\CanRing.h)(0x65145113)
+I (..\Software\CanRing.h)(0x651FD804)
 I (..\Algorithm\pid.h)(0x6511ACF2)
-I (..\Software\motor.h)(0x651833D7)
-I (..\Algorithm\filters.h)(0x6518343D)
-I (..\Software\JudgeMsg.h)(0x6511ACF2)
+I (..\Software\motor.h)(0x651FEB2E)
+I (..\Algorithm\filters.h)(0x651FDD45)
+I (..\Software\JudgeMsg.h)(0x651FEED0)
 I (..\Hardware\can2.h)(0x65144E75)

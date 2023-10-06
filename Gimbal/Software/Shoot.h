@@ -3,6 +3,7 @@
 
 #include "CanRing.h"
 #include "motor.h"
+#include "pid.h"
 
 #define FRIC_MOTOR0_ID 0x202
 #define FRIC_MOTOR1_ID 0x201

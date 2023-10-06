@@ -40,6 +40,7 @@
 .\objects\kinematic.o: ..\Library\CMSIS\arm_math.h
 .\objects\kinematic.o: ..\Library\CMSIS\core_cm4.h
 .\objects\kinematic.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\kinematic.o: ..\Algorithm\Matrix.h
 .\objects\kinematic.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\kinematic.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\kinematic.o: ..\Software\CanRing.h

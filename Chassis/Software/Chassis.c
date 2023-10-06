@@ -35,7 +35,7 @@ void recvGimData(Chassis_t *chassis) {          //环形缓存器版本
         raw[0] = (short)(msg[0].Data[0]<<8 | msg[0].Data[1]);
         raw[1] = (short)(msg[0].Data[2]<<8 | msg[0].Data[3]);
         raw[2] = (short)(msg[0].Data[4]<<8 | msg[0].Data[5]);
-        chassis->kinematic.target_vel.x = raw[0]/1000.0f;
+        chassis->kinematic.target_vel.x = raw[0]/1000.0f;//注意原始数据放大了1000倍
         chassis->kinematic.target_vel.y = raw[1]/1000.0f;
         chassis->kinematic.target_vel.w = raw[2]/1000.0f;
         chassis->yaw_100 = (msg[0].Data[6]<<8 | msg[0].Data[7]);

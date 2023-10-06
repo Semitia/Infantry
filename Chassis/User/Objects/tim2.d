@@ -38,6 +38,7 @@
 .\objects\tim2.o: ..\Library\CMSIS\arm_math.h
 .\objects\tim2.o: ..\Library\CMSIS\core_cm4.h
 .\objects\tim2.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\tim2.o: ..\Algorithm\Matrix.h
 .\objects\tim2.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\tim2.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\tim2.o: ..\Hardware\cap.h

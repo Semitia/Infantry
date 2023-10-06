@@ -2,7 +2,6 @@
 #define __UART4_H
 
 #include "usart.h"
-#include "sys.h"
 
 #define TX_MAX_SIZE 128
 #define RX_MAX_SIZE 45

@@ -8,3 +8,6 @@
 .\objects\mymath.o: ..\Library\CMSIS\core_cmFunc.h
 .\objects\mymath.o: ..\Library\CMSIS\core_cm4_simd.h
 .\objects\mymath.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\mymath.o: ..\Algorithm\Matrix.h
+.\objects\mymath.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\mymath.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h

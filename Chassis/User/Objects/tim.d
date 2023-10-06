@@ -38,5 +38,6 @@
 .\objects\tim.o: ..\Library\CMSIS\arm_math.h
 .\objects\tim.o: ..\Library\CMSIS\core_cm4.h
 .\objects\tim.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\tim.o: ..\Algorithm\Matrix.h
 .\objects\tim.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\tim.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h

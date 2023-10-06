@@ -4,8 +4,6 @@
 #include "can1.h"
 #include "pid.h"
 #include "motor.h"
-#include "myMath.h"
-
 
 //底盘类型
 #define CHASSIS_TYPE 1 //0 全向轮，1 麦克纳母轮，2 舵轮

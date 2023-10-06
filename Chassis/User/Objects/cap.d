@@ -39,5 +39,6 @@
 .\objects\cap.o: ..\Library\CMSIS\arm_math.h
 .\objects\cap.o: ..\Library\CMSIS\core_cm4.h
 .\objects\cap.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\cap.o: ..\Algorithm\Matrix.h
 .\objects\cap.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\cap.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h

@@ -38,5 +38,6 @@
 .\objects\counter.o: ..\Library\CMSIS\arm_math.h
 .\objects\counter.o: ..\Library\CMSIS\core_cm4.h
 .\objects\counter.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\counter.o: ..\Algorithm\Matrix.h
 .\objects\counter.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\counter.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h

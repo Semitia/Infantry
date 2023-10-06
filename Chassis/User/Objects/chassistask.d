@@ -39,6 +39,7 @@
 .\objects\chassistask.o: ..\Library\CMSIS\arm_math.h
 .\objects\chassistask.o: ..\Library\CMSIS\core_cm4.h
 .\objects\chassistask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\chassistask.o: ..\Algorithm\Matrix.h
 .\objects\chassistask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\chassistask.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\chassistask.o: ..\Hardware\cap.h

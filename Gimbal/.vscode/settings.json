@@ -31,6 +31,9 @@
         "motor.h": "c",
         "stm32f4xx_dac.h": "c",
         "freertosconfig.h": "c",
-        "freertos.h": "c"
+        "freertos.h": "c",
+        "quaternionekf.h": "c",
+        "kalman_filter.h": "c",
+        "td.h": "c"
     }
 }

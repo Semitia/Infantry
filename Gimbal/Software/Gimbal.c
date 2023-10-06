@@ -23,7 +23,7 @@ void gimbalInit(Gimbal_t *gimbal) {
   gimbal->pose.pitch_spd_pid.P = 350.0f;
   gimbal->pose.pitch_spd_pid.I = 1.000f;
   gimbal->pose.pitch_spd_pid.D = 0.0f;
-  gimbal->pose.pitch_spd_pid.IMax = 40.0f;
+  gimbal->pose.pitch_spd_pid.IMax = 1000.0f;
   gimbal->pose.pitch_spd_pid.I_U = 60.0f;
   gimbal->pose.pitch_spd_pid.I_L = 20.0f;
   gimbal->pose.pitch_spd_pid.OutMax = 30000.0f;
@@ -38,7 +38,7 @@ void gimbalInit(Gimbal_t *gimbal) {
   gimbal->pose.yaw_pos_pid.OutMax = 5.5f;
   gimbal->pose.yaw_pos_pid.RC_DF = 0.5f;
   
-  gimbal->pose.yaw_spd_pid.P = 10.0f;
+  gimbal->pose.yaw_spd_pid.P = 350.0f;
   gimbal->pose.yaw_spd_pid.I = 0.000f;
   gimbal->pose.yaw_spd_pid.D = 0.0f;
   gimbal->pose.yaw_spd_pid.IMax = 40.0f;
@@ -89,7 +89,39 @@ void setPosCur(Gimbal_t *gimbal) {
   return;
 }
 
-void sendChassisInfo(ChassisInfo_t *info) {
+/**
+ * @brief 发送底盘状态
+ * @param info 底盘交互信息结构体
+*/
+void sendChassisState(ChassisInfo_t *info) {
+  return;
+}
+
+
+/**
+ * @brief 发送底盘目标速度
+ * @param info 底盘交互信息结构体
+*/
+void sendChassisVel(ChassisInfo_t *info) {
+  short raw[3];
+  CanTxMsg msg;
+	msg.IDE = CAN_ID_STD;
+	msg.RTR = CAN_RTR_DATA;
+	msg.DLC = 0x08;
+	msg.StdId = 0x101;
+
+  raw[0] = info->tar_vel.x * 1000;
+  raw[1] = info->tar_vel.y * 1000;
+  raw[2] = info->tar_vel.w * 1000;
+
+  msg.Data[0] = (raw[0]>>8)&0xff;
+  msg.Data[1] = raw[0]&0xff;
+  msg.Data[2] = (raw[1]>>8)&0xff;
+  msg.Data[3] = raw[1]&0xff;
+  msg.Data[4] = (raw[2]>>8)&0xff;
+  msg.Data[5] = raw[2]&0xff;
+
+  CAN_Transmit(CHASSIS_CANTX, &msg);
   return;
 }
 
@@ -118,9 +150,9 @@ void gimUpdate(Gimbal_t *gimbal) {
   posUpdate(&gimbal->pose);
   /* 仅依靠陀螺仪进行控制 */
   //位置环
-  gimbal->pose.pitch_pos_pid.ActualValue = gimbal->ins.Pitch;
-  gimbal->pose.pitch_pos_pid.SetPoint = gimbal->pose.tar_pitch;
-  gimbal->pose.moto_pitch.target_speed = PID_Calc(&gimbal->pose.pitch_pos_pid);
+  //gimbal->pose.pitch_pos_pid.ActualValue = gimbal->ins.Pitch;
+  //gimbal->pose.pitch_pos_pid.SetPoint = gimbal->pose.tar_pitch;
+  //gimbal->pose.moto_pitch.target_speed = PID_Calc(&gimbal->pose.pitch_pos_pid);
   //速度环
   gimbal->pose.pitch_spd_pid.ActualValue = gimbal->ins.PitchSpeed;
   gimbal->pose.pitch_spd_pid.SetPoint = gimbal->pose.moto_pitch.target_speed;

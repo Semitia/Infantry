@@ -21,6 +21,9 @@
 #define GZ_OFF -0.00629083067f
 #define G_NORM 9.6937418f
 
+/**
+ * @brief IMU结构体
+*/
 typedef struct __IMU_t {
     float g_norm;                //重力加速度模值
     float gyro[3];               //角速度

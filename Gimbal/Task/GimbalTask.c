@@ -34,9 +34,10 @@ void gimbalTask(void *pvParameters) {
     while(1)
     {
         xLastWakeTime = xTaskGetTickCount();
-				gimUpdate(&gimbal);
-				//setMotorTest();
-				//PitchCan2Send(5000);
+        gimUpdate(&gimbal);
+        //setMotorTest();
+        //PitchCan2Send(5000);
+        sendChassisVel(&gimbal.chassis);
         vTaskDelayUntil(&xLastWakeTime, xFrequency);
 #if INCLUDE_uxTaskGetStackHighWaterMark
 		Gimbal_high_water = uxTaskGetStackHighWaterMark(NULL);

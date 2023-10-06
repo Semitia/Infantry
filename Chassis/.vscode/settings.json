@@ -3,6 +3,22 @@
         "kinematic.h": "c",
         "main.h": "c",
         "chassistask.h": "c",
-        "chassis.h": "c"
+        "chassis.h": "c",
+        "can2.h": "c",
+        "uart4.h": "c",
+        "judgemsg.h": "c",
+        "usart.h": "c",
+        "sys.h": "c",
+        "can1.h": "c",
+        "mymath.h": "c",
+        "motor.h": "c",
+        "pid.h": "c",
+        "stm32f4xx.h": "c",
+        "can.h": "c",
+        "arm_math.h": "c",
+        "math.h": "c",
+        "matrix.h": "c",
+        "rls.h": "c",
+        "filters.h": "c"
     }
 }

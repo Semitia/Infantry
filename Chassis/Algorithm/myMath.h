@@ -3,6 +3,7 @@
 
 #include <math.h>
 #include "arm_math.h"
+#include "Matrix.h"
 
 #define DEG2R(x) ((x)*PI /180.0f)                         //角度转弧度
 #define R2DEG(x) ((x)*180.0f /PI)                         //弧度转角度

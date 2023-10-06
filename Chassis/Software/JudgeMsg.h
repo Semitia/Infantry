@@ -1,7 +1,6 @@
 #ifndef __JUDGEMSG_H
 #define __JUDGEMSG_H
 
-#include "sys.h"
 #include "usart.h"
 
 #define JUDGE_RXBUF_LEN 45
@@ -60,6 +59,9 @@ typedef struct __JudegSend_t {
 }JudgeSend_t;
 
 
+/**
+ * 裁判系统信息接收与处理结构体
+*/
 typedef struct __Judge_t {
     JudgeRecv_t recv_msg;           //接收消息
     UsartIF_t *usart_if;            //串口接口

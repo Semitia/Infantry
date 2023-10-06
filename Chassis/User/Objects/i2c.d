@@ -38,6 +38,7 @@
 .\objects\i2c.o: ..\Library\CMSIS\arm_math.h
 .\objects\i2c.o: ..\Library\CMSIS\core_cm4.h
 .\objects\i2c.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\i2c.o: ..\Algorithm\Matrix.h
 .\objects\i2c.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\i2c.o: D:\WORK\SOFTWARES\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\i2c.o: ..\Hardware\cap.h
