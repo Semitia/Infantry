@@ -576,3 +576,8 @@ typedef struct __Gimbal_t {
 
 ## 部分功能测试
 
+​	暂时能调试的功能不是很多，粗调了一下云台和底盘电机
+
+这是云台响应曲线
+
+![pitch曲线](imgs/pitch曲线.png)
