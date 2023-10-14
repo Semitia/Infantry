@@ -11,8 +11,8 @@
 
 #define MIN_SPEED -1.0                             //速度最小值
 #define MAX_SPEED 1.0                              //速度最大值
-#define MIN_YAW_SPEED -100                          //yaw轴速度最小值
-#define MAX_YAW_SPEED 100                           //yaw轴速度最大值
+#define MIN_YAW_SPEED -300                          //yaw轴速度最小值
+#define MAX_YAW_SPEED 300                           //yaw轴速度最大值
 #define MIN_PITCH_SPEED -100                        //pitch轴速度最小值
 #define MAX_PITCH_SPEED 100                         //pitch轴速度最大值
 

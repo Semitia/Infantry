@@ -55,7 +55,7 @@ typedef struct PID{
 	  float Out;          //总输出
 		float Out_last;     //上一次输出
 		
-		float I_U;          //变速积分上限
+		float I_U;          //变速积分上限，判别对象是误差
 		float I_L;          //变速积分下限
 		
 		float RC_DF;        //不完全微分滤波系数

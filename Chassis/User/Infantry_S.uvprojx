@@ -705,11 +705,6 @@
           <GroupName>Tasks</GroupName>
           <Files>
             <File>
-              <FileName>DataReceiveTask.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Task\DataReceiveTask.c</FilePath>
-            </File>
-            <File>
               <FileName>Start_Task.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Task\Start_Task.c</FilePath>

@@ -16,10 +16,10 @@
 #define MAX_CALIB_TIMES 6000
 #define MIN_CALIB_TIMES 4000
 
-#define GX_OFF -0.00218699244f
-#define GY_OFF 0.0105982339f
-#define GZ_OFF -0.00629083067f
-#define G_NORM 9.6937418f
+#define GX_OFF  0.00887970906f
+#define GY_OFF  0.00248288154f
+#define GZ_OFF -0.00579680875f
+#define G_NORM  9.6937418f
 
 /**
  * @brief IMU结构体

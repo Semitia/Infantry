@@ -668,6 +668,11 @@
               <FileType>1</FileType>
               <FilePath>..\Algorithm\myMath.c</FilePath>
             </File>
+            <File>
+              <FileName>Matrix.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Algorithm\Matrix.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -783,11 +788,6 @@
         <Group>
           <GroupName>INS</GroupName>
           <Files>
-            <File>
-              <FileName>icm20602.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\INS\icm20602.c</FilePath>
-            </File>
             <File>
               <FileName>ins.c</FileName>
               <FileType>1</FileType>
