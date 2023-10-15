@@ -18,10 +18,10 @@
 
 #define MIN_PITCH -10.0f                           //pitch轴最小角度
 #define MAX_PITCH 25.0f                            //pitch轴最大角度
-#define MIN_YAW  -180                              //yaw轴最小角度
-#define MAX_YAW  180                               //yaw轴最大角度
+#define MIN_YAW  -80                               //yaw轴最小角度
+#define MAX_YAW  80                                //yaw轴最大角度
 
-#define THETA0 0.0f                                //云台正方向与底盘正方向初始夹角
+#define THETA0 1.01101671f                         //云台正方向与底盘正方向初始夹角
 #define YAW_ID 0x205                               //yaw轴电机id
 #define PITCH_ID 0x207                             //pitch轴电机id
 #define YAW_CAN_TX CAN1
@@ -83,13 +83,14 @@ typedef struct __Gimbal_t {
     RC_t rc;                    //遥控器结构体
     INS_t ins;                  //惯导结构体
     Shoot_t shoot;              //射击结构体
-    Velocity_t vel;             //速度 云台坐标系
+    Velocity_t vel;             //速度 云台坐标系期望速度
     GimPosture_t pose;          //云台位姿控制结构体
     ChassisInfo_t chassis;      //底盘交互信息
 }Gimbal_t;
 
 void gimbalInit(Gimbal_t *gimbal);
 void gimUpdate(Gimbal_t *gimbal);
+void gimSetPose(Gimbal_t *gimbal);
 void setPosCur(Gimbal_t *gimbal);
 void setMotorTest(void);
 void sendChassisState(ChassisInfo_t *info);

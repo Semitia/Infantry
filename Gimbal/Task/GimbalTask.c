@@ -1,24 +1,5 @@
 #include "GimbalTask.h"
 
-void PitchCan2Send(short tempX)
-{
-	CanTxMsg tx_message;
-	tx_message.IDE = CAN_ID_STD;
-	tx_message.RTR = CAN_RTR_DATA;
-	tx_message.DLC = 0x08;
-	tx_message.StdId = 0x1FF;
-	tempX = LIMIT_MAX_MIN(tempX, 30000, -30000); // 30000
-
-
-		tx_message.Data[4] = (unsigned char)((tempX >> 8) & 0xff); // pitch
-		tx_message.Data[5] = (unsigned char)(tempX & 0xff);
-
-	
-//	memset(&tx_message.Data,0,8);
-	
-	CAN_Transmit(CAN2, &tx_message);
-}
-
 Gimbal_t gimbal;
 /**
  * @brief 云台任务
@@ -35,9 +16,10 @@ void gimbalTask(void *pvParameters) {
     {
         xLastWakeTime = xTaskGetTickCount();
         gimUpdate(&gimbal);
-        //setMotorTest();
-        //PitchCan2Send(5000);
+        gimSetPose(&gimbal);
         sendChassisVel(&gimbal.chassis);
+        //setMotorTest();
+			
         vTaskDelayUntil(&xLastWakeTime, xFrequency);
 #if INCLUDE_uxTaskGetStackHighWaterMark
 		Gimbal_high_water = uxTaskGetStackHighWaterMark(NULL);

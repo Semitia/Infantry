@@ -23,7 +23,7 @@ void Chassis_task(void *pvParameters)
 		// {
 		// 	xTaskNotifyGive(User_Tasks[JUDGERECEIVE_TASK]);
 		// }
-		//recvGimData(&chassis);
+		recvGimData(&chassis);
 		moveCtrl(&chassis);
 		
 		//sendGimData(&chassis);

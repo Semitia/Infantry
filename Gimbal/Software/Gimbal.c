@@ -29,16 +29,16 @@ void gimbalInit(Gimbal_t *gimbal) {
   gimbal->pose.pitch_spd_pid.OutMax = 30000.0f;
   gimbal->pose.pitch_spd_pid.RC_DF = 0.5f;
 
-  gimbal->pose.yaw_pos_pid.P = 5.0f;
+  gimbal->pose.yaw_pos_pid.P = 27.0f;
   gimbal->pose.yaw_pos_pid.I = 0.000f;
-  gimbal->pose.yaw_pos_pid.D = 0.0f;
+  gimbal->pose.yaw_pos_pid.D = 1.2f;
   gimbal->pose.yaw_pos_pid.IMax = 30.0f;
   gimbal->pose.yaw_pos_pid.I_U = 20.0f;
   gimbal->pose.yaw_pos_pid.I_L = 10.0f;
   gimbal->pose.yaw_pos_pid.OutMax = 300.0f;
   gimbal->pose.yaw_pos_pid.RC_DF = 0.5f;
   
-  gimbal->pose.yaw_spd_pid.P = 700.0f;
+  gimbal->pose.yaw_spd_pid.P = 620.0f;
   gimbal->pose.yaw_spd_pid.I = 15.000f;
   gimbal->pose.yaw_spd_pid.D = 0.0f;
   gimbal->pose.yaw_spd_pid.IMax = 8000.0f;
@@ -55,6 +55,7 @@ void gimbalInit(Gimbal_t *gimbal) {
  * @param pose 云台位姿结构体
 */
 void posUpdate(GimPosture_t *pose) {
+	uint8_t pitch_recv=0, yaw_recv=0;
   CanRxMsg msg;
   CanRing_t *p;
   /* PITCH */
@@ -62,20 +63,27 @@ void posUpdate(GimPosture_t *pose) {
   //NVIC_DisableIRQ
   while(canRingHasMsg(p)) {
     CanRxMsg temp_msg = popCanMsg(p);
-    if(msg.StdId == pose->moto_pitch.id) { msg = temp_msg; }
+    if(temp_msg.StdId == pose->moto_pitch.id) { 
+			msg = temp_msg;
+			pitch_recv=1;
+		}
     //应该还需要将误pop的消息重新压入队列
 
   }
-  motorUpdateAll(&pose->moto_pitch, msg.Data);
+  if(pitch_recv) motorUpdateAll(&pose->moto_pitch, msg.Data);
+	
   /* YAW */  
   p = YAW_CAN_RX;
   while(canRingHasMsg(p)) {
     CanRxMsg temp_msg = popCanMsg(p);
-    if(msg.StdId == pose->moto_yaw.id) { msg = temp_msg; }
+    if(temp_msg.StdId == pose->moto_yaw.id) { 
+			msg = temp_msg;
+			yaw_recv=1;
+		}
     //应该还需要将误pop的消息重新压入队列
 
   }
-  motorUpdateAll(&pose->moto_yaw, msg.Data);
+  if(yaw_recv) motorUpdateAll(&pose->moto_yaw, msg.Data);
   pose->theta = DEG2R(pose->moto_yaw.angle) - pose->theta0;
   return;
 }
@@ -137,24 +145,37 @@ void gimUpdate(Gimbal_t *gimbal) {
     gimbal->vel.y = linerMap(gimbal->rc.stick.ch1, MIN_STK_SIG, MAX_STK_SIG, MIN_SPEED, MAX_SPEED);
     if(gimbal->rc.stick.s1 == 3) {        //速度模式//右边中间
       //跟随
-			gimbal->pose.moto_yaw.target_speed = linerMap(gimbal->rc.stick.ch2, MIN_STK_SIG, MAX_STK_SIG, MAX_YAW_SPEED, MIN_YAW_SPEED);//摇杆似乎是反的，所以这里也反一下
+			//gimbal->pose.moto_yaw.target_speed = linerMap(gimbal->rc.stick.ch2, MIN_STK_SIG, MAX_STK_SIG, MAX_YAW_SPEED, MIN_YAW_SPEED);//摇杆似乎是反的，所以这里也反一下
       //阶跃
-			//if(gimbal->rc.stick.ch2 > 1200) gimbal->pose.moto_yaw.target_speed = 150;
-			//else if(gimbal->rc.stick.ch2 < 800) gimbal->pose.moto_yaw.target_speed = -150;
-			//else gimbal->pose.moto_yaw.target_speed = 0;
-			
+			if(gimbal->rc.stick.ch2 > 1200) gimbal->pose.moto_yaw.target_speed = 150;
+			else if(gimbal->rc.stick.ch2 < 800) gimbal->pose.moto_yaw.target_speed = -150;
+			else gimbal->pose.moto_yaw.target_speed = 0;
 			
 			//gimbal->pose.moto_pitch.target_speed = linerMap(gimbal->rc.stick.ch3, MIN_STK_SIG, MAX_STK_SIG, MIN_PITCH_SPEED, MAX_PITCH_SPEED);
     }
     else if(gimbal->rc.stick.s1 == 2) {   //位置模式//右边下面
-      //gimbal->pose.tar_pitch = linerMap(gimbal->rc.stick.ch3, MIN_STK_SIG, MAX_STK_SIG, MIN_PITCH, MAX_PITCH);
-      //gimbal->pose.tar_yaw = linerMap(gimbal->rc.stick.ch2, MIN_STK_SIG, MAX_STK_SIG, MAX_YAW, MIN_YAW);
+      gimbal->pose.tar_yaw = linerMap(gimbal->rc.stick.ch2, MIN_STK_SIG, MAX_STK_SIG, MAX_YAW, MIN_YAW);
     }
   }
+	gimbal->pose.tar_pitch = linerMap(gimbal->rc.stick.ch3, MIN_STK_SIG, MAX_STK_SIG, MIN_PITCH, MAX_PITCH);
 
   /* 更新云台电机位姿 */
   posUpdate(&gimbal->pose);
-  /* 仅依靠陀螺仪进行控制 */
+
+  /* 云台坐标系转换到底盘坐标系 */
+  gimbal->chassis.tar_vel.x = gimbal->vel.x * cos(gimbal->pose.theta) + gimbal->vel.y * sin(gimbal->pose.theta);
+  gimbal->chassis.tar_vel.y = gimbal->vel.y * cos(gimbal->pose.theta) - gimbal->vel.x * sin(gimbal->pose.theta);
+
+  return;
+}
+
+/**
+ * @brief 设置云台位姿
+ * @note  依靠陀螺仪对pitch，yaw电机进行控制
+ * @param gimbal 云台结构体
+ * @return None
+*/
+void gimSetPose(Gimbal_t *gimbal) {
   //位置环
   //gimbal->pose.pitch_pos_pid.ActualValue = gimbal->ins.Pitch;
   //gimbal->pose.pitch_pos_pid.SetPoint = gimbal->pose.tar_pitch;
@@ -177,13 +198,12 @@ void gimUpdate(Gimbal_t *gimbal) {
 	if(gimbal->ins.Yaw > 70 || gimbal->ins.Yaw < -70) return;
 	
   setPosCur(gimbal);
-
-  /* 云台坐标系转换到底盘坐标系 */
-
-
   return;
 }
 
+/**
+ * @brief 电机测试
+*/
 void setMotorTest(void) {
 	Motor_t moto;
   motorInit(&moto, RM6020, 0x207);

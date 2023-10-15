@@ -85,10 +85,10 @@ void CAN1_Configuration(void)
 		can_filter.CAN_FilterNumber = 1; //选择过滤器1
 		can_filter.CAN_FilterMode = CAN_FilterMode_IdList; //列表模式
 		can_filter.CAN_FilterScale = CAN_FilterScale_16bit;//CAN_FilterScale_32bit;
-		can_filter.CAN_FilterIdHigh = 0x100<<5;
-		can_filter.CAN_FilterIdLow =  0x200<<5;
-		can_filter.CAN_FilterMaskIdHigh = 0 <<5;  
-		can_filter.CAN_FilterMaskIdLow = 0 <<5;//0 | CAN_ID_STD;
+		can_filter.CAN_FilterIdHigh = 0x205<<5;
+		can_filter.CAN_FilterIdLow =  0x204<<5;
+		can_filter.CAN_FilterMaskIdHigh = 0x000 <<5;  
+		can_filter.CAN_FilterMaskIdLow = 0x000 <<5;//0 | CAN_ID_STD;
 		can_filter.CAN_FilterFIFOAssignment = 1;//fifo
 		can_filter.CAN_FilterActivation = ENABLE;
 		CAN_FilterInit(&can_filter);
